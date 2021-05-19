@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="90px" viewBox="0 0 30 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Star_Mobile_Spritesheet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="//Sprites" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <polygon id="Star-1-Copy-3" fill="#FFDF1B" points="15.5 50.2668737 10.2467111 53 11.25 47.2111456 7 43.1114562 12.8733555 42.2668737 15.5 37 18.1266445 42.2668737 24 43.1114562 19.75 47.2111456 20.7532889 53"></polygon>
+            <path d="M15.5,79.5388043 L10.7832214,81.9456084 L11.6845289,76.8451827 L7.84894697,73.216407 L13.1477774,72.4690939 L15.5,67.8431873 L17.8522226,72.4690939 L23.151053,73.216407 L19.3154711,76.8451827 L20.2167786,81.9456084 L15.5,79.5388043 Z" id="Star-1-Copy" stroke="#666666" stroke-width="1.04866667"></path>
+            <polygon id="Star-1-Copy-2" fill="#CCB206" points="15.5 20.2668737 10.2467111 23 11.25 17.2111456 7 13.1114562 12.8733555 12.2668737 15.5 7 18.1266445 12.2668737 24 13.1114562 19.75 17.2111456 20.7532889 23"></polygon>
+        </g>
+    </g>
+</svg>

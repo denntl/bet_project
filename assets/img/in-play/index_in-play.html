@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> bet365 - Online Sports Betting</title>
+    <link rel="shortcut icon" href="../img/main-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/owl.carousel.min.css">
+    <link rel="stylesheet" href="../style/style_in-play.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+<header class="inner_header">
+    <div class="top_header">
+        <a href="/" class="logo"></a>
+        <nav class="main_menu">
+            <a href="../index.html" class="menu_link">Sports</a>
+            <a href="../in-play/index_in-play.html" class="menu_link">In-Play</a>
+            <a href="../casino/index-home.html" class="menu_link">Casino</a>
+            <a href="#" class="menu_link">Live Casino</a>
+            <a href="#" class="menu_link">Games</a>
+            <a href="#" class="menu_link">Poker</a>
+            <a href="#" class="menu_link">Vegas</a>
+            <a href="#" class="menu_link">Bingo</a>
+        </nav>
+        <div class="admin_block">
+            <div class="input_block">
+                <input type="text" class="input_field light_green_text" placeholder="Username">
+                <input type="password" class="input_field light_green_text" placeholder="Password">
+                <button tabindex="0" class="loginBtn ">GO</button>
+            </div>
+            <div class="helper_block">
+                <a href="#">Join Now</a>
+                <a href="#">Lost Login?</a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_header">
+        <div class="search_block">
+            <div class="search_icon">
+                <svg class="search_loupe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23">
+                    <path fill-rule="evenodd"
+                          d="M16.12 8.06C16.12 3.61 12.51 0 8.06 0 3.61 0 0 3.61 0 8.06c0 4.45 3.61 8.06 8.06 8.06 1.795 0 3.452-.587 4.792-1.58l7.684 7.41.72.694 1.388-1.44-.72-.694-7.623-7.35c1.14-1.39 1.82-3.165 1.82-5.1zm-8.06 6.06c3.347 0 6.06-2.713 6.06-6.06C14.12 4.713 11.407 2 8.06 2 4.713 2 2 4.713 2 8.06c0 3.347 2.713 6.06 6.06 6.06z"></path>
+                </svg>
+            </div>
+            <input type="text" placeholder="Search" class="input_search">
+        </div>
+
+        <ul class="second_menu">
+            <li><a href="#" class="menu_link light_green_text">Responsible Gambling</a></li>
+            <li><a href="#" class="menu_link light_green_text">Live Streaming</a></li>
+            <li><a href="#" class="menu_link light_green_text">Help</a></li>
+            <li class="drop_down_menu">
+                <a href="#" class="menu_link drop light_green_text">Language
+                    <span class="selected_option">English</span>
+                </a>
+                <ul class="sub_menu language">
+                    <li class="active"><a class="sub_menu_link">English</a></li>
+                    <li><a class="sub_menu_link">Español</a></li>
+                    <li><a class="sub_menu_link">Deutsch</a></li>
+                    <li><a class="sub_menu_link">Italiano</a></li>
+                    <li><a class="sub_menu_link">Dansk</a></li>
+                    <li><a class="sub_menu_link">Svenska</a></li>
+                    <li><a class="sub_menu_link">Norsk</a></li>
+                </ul>
+            </li>
+            <li class="drop_down_menu">
+                <a href="#" class="menu_link drop light_green_text">Odds
+                    <span class="selected_option">American</span>
+                </a>
+                <ul class="sub_menu odd">
+                    <li class="active"><a class="sub_menu_link">American</a></li>
+                    <li><a class="sub_menu_link">Fractional</a></li>
+                    <li><a class="sub_menu_link">Decimal</a></li>
+                </ul>
+
+            </li>
+            <li class="drop_down_menu">
+                <a href="#" class="menu_link services">Services</a>
+                <ul class="sub_menu services">
+                    <li class="active"><a class="sub_menu_link">Help</a></li>
+                    <li><a class="sub_menu_link">Responsible Gambling</a></li>
+                    <li><a class="sub_menu_link">Banking</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="current_time">
+            <time id="doc_time"></time>
+        </div>
+
+    </div>
+</header>
+
+<div class="main_content in-play">
+    <div class="main_content_wrapper">
+        <div class="home_page">
+
+            <div class="columns_container">
+
+
+<!-------------column_one------------->
+                <div class="column_one">
+                    <div class="home_page_header in-play">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#overview">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#event_view">Event View</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#schedule">Schedule</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="scroll_block">
+                    <!-- Tab panes -->
+                    <div class="tab-content tables">
+<!-------------- overview tab------------------>
+                        <div id="overview" class="tab-pane active">
+                            <!--slider-block-->
+                            <div class="owl-carousel in-play-slider">
+                                <div class="item" data-hash="soccer">
+                                    <a class="slider_content selected-0" data-sport="#favourites">
+                                        <img src="../img/favourities.svg" class="slider_img" alt="favourites">
+                                        <p class="title">Favourites</p>
+                                    </a>
+                                </div>
+                                <div class="item" data-hash="soccer">
+                                    <a class="slider_content selected-1" data-sport="#soccer">
+                                        <img src="../img/soccer.svg" class="slider_img" alt="soccer">
+                                        <p class="title">Soccer</p>
+                                    </a>
+                                </div>
+                                <div class="item" data-hash="tennis">
+                                    <a class="slider_content selected-2" data-sport="#tennis">
+                                        <img src="../img/tennis.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Tennis</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a  class="slider_content selected-3" data-sport="#baseball">
+                                        <img src="../img/baseball.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Baseball</p>
+                                    </a>
+                                </div>
+                                <div class="item" data-hash="badminton">
+                                    <a class="slider_content selected-4" data-sport="#badminton">
+                                        <img src="../img/badminton.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Badminton</p>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a class="slider_content selected-5" data-sport="#">
+                                        <img src="../img/criket.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Cricket</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-6" data-sport="#">
+                                        <img src="../img/futsal.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Futsal</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-7" data-sport="#">
+                                        <img src="../img/golf.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Golf</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-8" data-sport="#">
+                                        <img src="../img/greyhounds.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Greyhounds</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-9" data-sport="#">
+                                        <img src="../img/handball.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Handball</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-10" data-sport="#">
+                                        <img src="../img/handball.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Handball</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-11" data-sport="#">
+                                        <img src="../img/handball.svg" class="slider_img" alt="tennis">
+                                        <p class="title">Handball</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- in_play_table-->
+                            <!--table for soccer-->
+                            <div class="play_classification in-play" id="soccer">
+                                <div class="play_classification_header sport_green_header">
+                                    <span>Soccer</span>
+                                    <div class="sport_events">
+                                        <div class="events_btn selected">All Events</div>
+                                        <div class="events_btn">Live Streaming</div>
+                                    </div>
+                                    <div class="markets_block">
+                                        <div class="markets_btn">All Markets</div>
+                                        <div class="markets_btn selected">Main Markets</div>
+                                    </div>
+                                </div>
+                                <div class="play_classification_league">
+                                    <div class="play_league">
+                                        <div class="play_league_header">
+                                            <div class="competition_btn">
+                                                <div class="league_name">Algeria Youth League</div>
+                                                <div class="league_header_buttons visible">
+                                                    <div class="event_label">1X2</div>
+                                                    <div class="event_label">Next Goal</div>
+                                                    <div class="event_label">Match Goals</div>
+                                                </div>
+                                                <div class="favourite_icon_wrapper">
+                                                    <div class="favourite_icon"></div>
+
+                                                </div>
+                                            </div>
+                                            <div class="play_league_group_wrapp opened">
+                                                <div class="participant_group_wrapper">
+                                                          <div class="participant_group">
+                                                            <div class="timer_wrapper">
+                                                                <span class="event_timer">35:27</span>
+                                                                <p class="extra_time">ET</p>
+                                                            </div>
+                                                            <div class="participant_wrapper">
+                                                                <div class="participant_stack">
+                                                                    <p class="participant_name">FK Qarabag II
+                                                                        <span class="participant_goal">GOAL</span>
+                                                                    </p>
+
+                                                                    <div class="participant_score">
+                                                                        <span class="event_score yellow_text">0</span>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="participant_stack">
+                                                                    <p class="participant_name">FK Qarabag II
+                                                                        <span class="participant_goal">GOAL</span>
+                                                                    </p>
+                                                                    <div class="participant_score">
+                                                                        <span class="event_score yellow_text">0</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="participant_stack">
+                                                                    <p class="participant_name">Draw</p>
+
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="play_icon_wrapper">
+                                                                <div class="play_icon"></div>
+
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                                    <div class="event_odds">
+                                                        <div class="column">
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="column">
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="column">
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+                                                            <div class="value_wrapp">
+                                                                <span class="participant_odds yellow_text">+200</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event_count_btn">
+                                                        <div class="favourite_icon"></div>
+                                                        <div class="event_count">41</div>
+
+                                                    </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                            <!-- end table for soccer-->
+
+                            <!---------table for tennis------->
+                            <div class="play_classification in-play" id="tennis">
+                                <div class="play_classification_header sport_olive_header">
+                                    <span>Tennis</span>
+                                    <div class="sport_events">
+                                        <div class="events_btn selected">All Events</div>
+                                        <div class="events_btn">Top Events</div>
+                                        <div class="events_btn">Live Streaming</div>
+                                    </div>
+                                    <div class="markets_block">
+                                        <div class="markets_btn">All Markets</div>
+                                        <div class="markets_btn selected">Main Markets</div>
+                                    </div>
+                                </div>
+                                <div class="play_classification_league">
+                                    <div class="play_league">
+                                        <div class="play_league_header">
+                                            <div class="competition_btn">
+                                                <div class="league_name">ATP Beijing</div>
+                                                <div class="league_header_buttons visible">
+                                                    <div class="event_label">Winner</div>
+                                                    <div class="event_label">Current Set</div>
+                                                    <div class="event_label">Next Game</div>
+                                                </div>
+                                                <div class="favourite_icon_wrapper">
+                                                    <div class="favourite_icon"></div>
+
+                                                </div>
+                                            </div>
+                                            <div class="play_league_group_wrapp opened">
+                                                <div class="participant_group_wrapper">
+                                                    <div class="participant_group">
+                                                        <div class="participant_wrapper">
+                                                            <div class="participant_stack">
+                                                                <p class="participant_name">
+                                                                    <span class="player_indicator"></span>
+                                                                    Andreas Seppi
+                                                                </p>
+
+                                                                <div class="participant_score">
+                                                                    <span class="event_score yellow_text">3</span>
+                                                                    <span class="event_score yellow_text">1</span>
+                                                                    <span class="event_score yellow_text">40</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="participant_stack">
+                                                                <p class="participant_name">
+                                                                    <span class="player_indicator active"></span>
+                                                                    Marton Fucsovics
+                                                                </p>
+                                                                <div class="participant_score">
+                                                                    <span class="event_score yellow_text">6</span>
+                                                                    <span class="event_score yellow_text">3</span>
+                                                                    <span class="event_score yellow_text">30</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="participant_stack info_game">
+                                                                <p class="participant_name">
+                                                                    Set
+                                                                    <span class="count">2</span>
+                                                                </p>
+                                                                <p class="participant_name">
+                                                                    Game
+                                                                    <span class="count">16</span>
+                                                                </p>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="play_icon_wrapper">
+                                                            <div class="play_icon video"></div>
+                                                            <div class="play_icon grass"></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event_odds">
+                                                    <div class="column">
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="column">
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="column">
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event_count_btn">
+                                                    <div class="favourite_icon"></div>
+                                                    <div class="event_count">41</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end table for table-->
+
+
+                            <!---------table for baseball------->
+                            <div class="play_classification in-play" id="baseball">
+                                <div class="play_classification_header sport_orange_header">
+                                    <span>Baseball</span>
+                                    <div class="sport_events">
+                                        <div class="events_btn selected"></div>
+                                        <div class="events_btn"></div>
+                                        <div class="events_btn"></div>
+                                    </div>
+                                    <div class="markets_block">
+                                        <div class="markets_btn">All Markets</div>
+                                        <div class="markets_btn selected">Main Markets</div>
+                                    </div>
+                                </div>
+                                <div class="play_classification_league">
+                                    <div class="play_league">
+                                        <div class="play_league_header">
+                                            <div class="competition_btn">
+                                                <div class="league_name"></div>
+                                                <div class="league_header_buttons visible">
+                                                    <div class="event_label">Run Line</div>
+                                                    <div class="event_label">Total</div>
+                                                    <div class="event_label">Money Line</div>
+                                                </div>
+                                                <div class="favourite_icon_wrapper">
+                                                    <div class="favourite_icon"></div>
+
+                                                </div>
+                                            </div>
+                                            <div class="play_league_group_wrapp opened">
+                                                <div class="participant_group_wrapper">
+                                                    <div class="participant_group">
+                                                        <div class="participant_wrapper">
+                                                            <div class="participant_stack">
+                                                                <p class="participant_name">
+                                                                    Yokohama Bay Stars
+                                                                </p>
+
+                                                                <div class="participant_score">
+                                                                    <span class="event_score yellow_text">1</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="participant_stack">
+                                                                <p class="participant_name">
+                                                                    Hanshin Tigers
+                                                                </p>
+                                                                <div class="participant_score">
+                                                                    <span class="event_score yellow_text">0</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="play_icon_wrapper">
+                                                            <div class="play_icon baseball_icon"></div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event_odds">
+                                                    <div class="column">
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_handicap">-1.5</span>
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_handicap">-1.5</span>
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="column">
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="column">
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                        <div class="value_wrapp">
+                                                            <span class="participant_odds yellow_text">+200</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="event_count_btn">
+                                                    <div class="favourite_icon"></div>
+                                                    <div class="event_count">41</div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- end table for baseball-->
+
+
+
+                         </div>
+<!--------------event_view tab------------------>
+                        <div id="event_view" class="tab-pane fade">
+                            <div class="event_sidebar">
+                                 <div class="scroll_block">
+                                     <div class="control_bar">
+                                         <span class="collapse_btn"></span>
+                                         <span class="control_bar_btn selected">All</span>
+                                         <span class="control_bar_btn">Top</span>
+                                         <span class="control_bar_btn media"></span>
+                                     </div>
+                                     <div class="classification_block favourite">
+                                         <div class="classification_header favourite">
+                                             <span class="classification_header_icon"></span>
+                                             <span class="classification_header_label">Favourites</span>
+                                         </div>
+                                         <div class="classification_container favourite">
+                                             <div class="classification_noFavourites">
+                                                 Click on a
+                                                 <img src="../img/grey_star.svg" alt="favourites">
+                                                 below to move the event here.
+                                             </div>
+                                         </div>
+                                     </div>
+
+                                     <div class="classification_block soccer">
+                                         <div class="classification_header soccer green_header">
+                                             <span class="classification_header_icon"></span>
+                                             <span class="classification_header_label">Soccer</span>
+                                         </div>
+                                         <div class="classification_container soccer">
+                                             <div class="competition">
+                                                 <div class="competition_header">
+                                                     International Match
+                                                 </div>
+                                                 <div class="competition_fovourite_btn"></div>
+                                                 <div class="competition_container">
+                                                     <div class="fixture">
+                                                         <div class="fixture_btn">
+                                                             <div class="open_icon"></div>
+                                                             <div class="team_stack">
+                                                                 <div class="team_stack_team">
+                                                                     Bangladesh
+                                                                 </div>
+                                                                 <div class="team_stack_team">
+                                                                     Laos
+                                                                 </div>
+                                                             </div>
+                                                             <div class="score_display_standart">
+                                                                 <div class="team_score">
+                                                                     <span class="score">1</span>-<span class="score">0</span>
+                                                                 </div>
+                                                                 <div class="game_timer">
+                                                                     78:27
+                                                                 </div>
+                                                             </div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+
+                                         </div>
+                                     </div>
+
+                                 </div>
+                            </div>
+
+
+
+                        </div>
+<!-------------schedule tab---------------------->
+                        <div id="schedule" class="tab-pane fade">
+                            <!--slider-block-->
+                            <div class="owl-carousel schedule_slider">
+                                <div class="item" data-hash="soccer">
+                                    <a class="slider_content selected-0" data-sport="#all_sports">
+                                        <p class="title">All Sports</p>
+                                    </a>
+                                </div>
+                                <div class="item" data-hash="soccer">
+                                    <a class="slider_content selected-1" data-sport="#soccer">
+                                        <p class="title">Soccer</p>
+                                    </a>
+                                </div>
+                                <div class="item" data-hash="tennis">
+                                    <a class="slider_content selected-2" data-sport="#tennis">
+                                        <p class="title">Tennis</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a  class="slider_content selected-3" data-sport="#baseball">
+                                        <p class="title">Baseball</p>
+                                    </a>
+                                </div>
+                                <div class="item" data-hash="badminton">
+                                    <a class="slider_content selected-4" data-sport="#badminton">
+                                        <p class="title">Badminton</p>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a class="slider_content selected-5" data-sport="#">
+                                        <p class="title">Cricket</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-6" data-sport="#">
+                                        <p class="title">Futsal</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-7" data-sport="#">
+                                        <p class="title">Golf</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-8" data-sport="#">
+                                        <p class="title">Greyhounds</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-9" data-sport="#">
+                                        <p class="title">Handball</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-10" data-sport="#">
+                                        <p class="title">Handball</p>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="slider_content selected-11" data-sport="#">
+                                        <p class="title">Handball</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="schedule_table_wrapper">
+                                <div class="play_results_header">
+                                    <div class="play_results_header_label play_results_header_data">
+
+                                    </div>
+                                    <div class="play_results_header_label play_results_header_video">
+
+                                    </div>
+                                    <div class="play_results_header_label play_results_header_audio">
+
+                                    </div>
+                                    <div class="play_results_header_label play_results_header_time">
+                                        Time
+                                    </div>
+                                    <div class="play_results_header_label play_results_header_channel">
+
+                                    </div>
+                                </div>
+                                <div class="event_row">
+                                    <div class="event_row_item event_row_cat">Greyhounds</div>
+                                    <div class="event_row_item event_row_name">3.59 Monmore (RACE 7)</div>
+                                    <div class="event_row_item event_row_video_icon"></div>
+                                    <div class="event_row_item event_row_audio_icon"></div>
+                                    <div class="event_row_item event_row_time">19:45</div>
+                                    <div class="event_row_item event_row_channel">Live</div>
+                                </div>
+                                <div class="event_row">
+                                    <div class="event_row_item event_row_cat">Tennis</div>
+                                    <div class="event_row_item event_row_name">Diego Schwartzman vs Daniil Medvedev</div>
+                                    <div class="event_row_item event_row_video_icon"></div>
+                                    <div class="event_row_item event_row_audio_icon"></div>
+                                    <div class="event_row_item event_row_time">08:30</div>
+                                    <div class="event_row_item event_row_channel">Live at bet365</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="inner_footer">
+                        <div class="important_info">
+                            <div class="important_info_header">Important note on information displayed and transmission delays</div>
+                            <div class="important_info_content">
+                                <div class="close_btn">Close X</div>
+                                <p class="header_info">Important Info</p>
+                                <p class="important_info_text">
+                                    Although every effort is made to ensure that information displayed on site with regards to an event is correct, it is to be used as a guide only. In the event of any particular information (score, time of game etc) being incorrect we assume no liability for this. Please refer to our betting rules for information on how we settle individual markets.
+                                </p>
+                                <p class="important_info_text">
+                                    For the purposes of In-Play betting, customers should be aware that transmissions described as live by some broadcasters including bet365 Live Streaming may actually be delayed.  The extent of any delay may vary between customers, depending on the set-up through which they are receiving pictures or data.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="footer_wrapper">
+                            <div class="menu_column_wrapper">
+                                <div class="menu_column">
+                                    <div class="column_title help">Help</div>
+                                    <a href="#" class="footer_link">Deposits</a>
+                                    <a href="#" class="footer_link">Withdrawals</a>
+                                    <a href="#" class="footer_link">Contact Us</a>
+                                    <a href="#" class="footer_link">bet365 FAQ</a>
+                                    <a href="#" class="footer_link">Terms and Conditions</a>
+                                    <a href="#" class="footer_link">Responsible Gambling</a>
+                                    <a href="#" class="footer_link">Privacy Policy</a>
+                                    <a href="#" class="footer_link">Cookies Policy</a>
+                                    <a href="#" class="footer_link">Fair Payouts</a>
+                                    <a href="#" class="footer_link">Complaints Procedure</a>
+                                </div>
+                                <div class="menu_column">
+                                    <div class="column_title form">Form & Stats</div>
+                                    <a href="#" class="footer_link">Soccer Stats</a>
+                                    <a href="#" class="footer_link">US Sports Stats</a>
+                                    <a href="#" class="footer_link">Sports Stats</a>
+                                    <a href="#" class="footer_link">Australian Sports Stats</a>
+                                    <a href="#" class="footer_link">UK & Irish Horse Form</a>
+                                    <a href="#" class="footer_link">UK & Irish Racing Archive</a>
+                                    <a href="#" class="footer_link">Australian Horse Form</a>
+                                    <a href="#" class="footer_link">US Horse Form</a>
+                                    <a href="#" class="footer_link">UK & Irish Greyhound Form</a>
+
+                                </div>
+                                <div class="menu_column">
+                                    <div class="column_title scores">Scores & Results</div>
+                                    <a href="#" class="footer_link">Live Scores</a>
+                                    <a href="#" class="footer_link">Results</a>
+
+                                    <div class="column_title promotions">Promotions</div>
+                                    <a href="#" class="footer_link">Open Account Offer</a>
+                                    <a href="#" class="footer_link">Current Offers</a>
+
+                                    <div class="column_title audio">Audio</div>
+                                    <a href="#" class="footer_link">Horse Racing</a>
+                                    <a href="#" class="footer_link">Greyhounds</a>
+                                    <a href="#" class="footer_link">Soccer</a>
+                                    <a href="#" class="footer_link">Cricket</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="footer_logo">
+                            <img src="../img/bet365.png" alt="bet365">
+                        </div>
+                        <div class="footer_wrapper">
+                            <nav class="footer_menu">
+                                <a href="#" class="footer_menu_link">Mobile & Tablet</a>
+                                <a href="#" class="footer_menu_link">Betting News</a>
+                                <a href="#" class="footer_menu_link">Affiliates</a>
+                                <a href="#" class="footer_menu_link">Careers</a>
+                                <a href="#" class="footer_menu_link">Extra</a>
+                                <a href="#" class="footer_menu_link">Casino</a>
+                                <a href="#" class="footer_menu_link">Games</a>
+                                <a href="#" class="footer_menu_link">Poker</a>
+                                <a href="#" class="footer_menu_link">Bingo</a>
+                                <a href="#" class="footer_menu_link">Vegas</a>
+                            </nav>
+
+                            <div class="footer_partners">
+                                <a href="#"><img src="../img/partner1.png" alt="partner"></a>
+                                <a href="#"><img src="../img/partner2.png" alt="partner"></a>
+                                <a href="#"><img src="../img/partner3.png" alt="partner"></a>
+                                <a href="#"><img src="../img/partner4.png" alt="partner"></a>
+                                <a href="#"><img src="../img/partner5.png" alt="partner"></a>
+                                <a href="#"><img src="../img/partner6.png" alt="partner"></a>
+                            </div>
+                            <div class="footer_info_text">
+                                By accessing, continuing to use or navigating throughout this site you accept that we will use certain browser cookies to improve your customer experience with us. bet365 only uses cookies which will improve your experience with us and will not interfere with your privacy. Please refer to our
+                                <a href="#">Cookies Policy</a>
+                                for further information on our use of cookies and how you can disable or manage their use should you wish.
+                            </div>
+                            <div class="footer_info_text">
+                                Registered Office Hillside (International Sports) LP (registration number 119), Unit 1.1, First Floor, Waterport Place, 2 Europort Avenue, Gibraltar. Hillside (International Sports) LP is licensed by the Government of Gibraltar and regulated by the Gibraltar Gambling Commissioner (RGL number 076).
+                            </div>
+                            <div class="footer_info_text">
+                                © 2001-2018 bet365. All rights reserved.
+                            </div>
+                            <div class="footer_socials">
+                                <a href="#" class="twitter">Follow</a>
+                                <a href="#" class="facebook">Like</a>
+
+                            </div>
+                        </div>
+
+                    </footer>
+                    </div>
+                </div>
+<!-------------end column_one-------------->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="page_right_content in-play">
+        <div class="icon_buttons">
+            <div class="icon_block icon_sound"></div>
+            <ul class="nav nav-tabs tabs_match">
+                <li class="nav-item">
+                    <a class="nav-link active live_stream" data-toggle="tab" href="#live_Stream">Live Stream</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link match_live" data-toggle="tab" href="#match_live">Match Live</a>
+                </li>
+            </ul>
+            <div class="icon_block icon_resize"></div>
+            <div class="icon_block icon_view"></div>
+        </div>
+        <div class="tab-content">
+            <div id="live_Stream" class="tab-pane active">
+
+                <!--live_stream_video-->
+                <div class="live_stream_video">
+                    <div class="video_control_container">
+                        <div class="btn-group select_video">
+                            <button type="button" class="select_video btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="option">Irodotos v Apollon Pontou Kalamaria</span> </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="tennis_video"><a href="#" class="select_video"><span class="option" >Irodotos v Apollon Pontou Kalamaria</span></a></li>
+                                <li class="football_video"><a href="#" class="select_video"><span class="option" >Acs Bucovina Radauti v Gaz Metan Medias</span></a></li>
+                                <li class="football_video"><a href="#" class="select_video"><span class="option" >CS Luceafarul Oradea v Astra Giurgiu</span></a></li>
+                                <li class="football_video"><a href="#" class="select_video"><span class="option" >Dibba Al Fujairah v Al Dhafra SCC</span></a></li>
+                                <li class="tennis_video"><a href="#" class="select_video"><span class="option" >Taro Daniel v Fernando Verdasco</span></a></li>
+                                <li class="tennis_video"><a href="#" class="select_video"><span class="option" >Gregoire Barrere v Antoine Hoang</span></a></li>
+                                <li class="tennis_video"><a href="#" class="select_video"><span class="option" >Sandro Ehrat v Juan P Varillas</span></a></li>
+                                <li class="tennis_video"><a href="#" class="select_video"><span class="option" >Sandro Ehrat v Juan P Varillas</span></a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="lock_btn"></div>
+                    </div>
+                    <div class="media_player">
+                        <div class="media_player_container">
+                            <div class="media_player_wrapper">
+                                <div class="media_player_message">
+                                    <div class="media_player_message_header">Live Streaming Available</div>
+                                    <div class="media_player_message_text">Please log in to view</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-----------match_live tab-------------->
+            <div id="match_live" class="tab-pane fade">
+               <div class="match_live_view">
+                   <div class="match_live_view_container">
+                       <div class="match_live_view_module">
+                           <div class="score_header">
+                               <div class="score_header_column column_left">
+                                   <div class="scoreHeader_team">
+                                       <div class="scoreHeader_team_border"> </div>
+                                       <div class="scoreHeader_team_text">AS Ain M'lila U21</div>
+                                   </div>
+                                   <div class="scoreHeader_score_container">
+                                       <div class="scoreHeader_score">1</div>
+                                   </div>
+
+                               </div>
+                               <div class="score_header_column column_right">
+                                   <div class="scoreHeader_score_container">
+                                       <div class="scoreHeader_score">1</div>
+                                   </div>
+                                   <div class="scoreHeader_team">
+                                       <div class="scoreHeader_team_border"> </div>
+                                       <div class="scoreHeader_team_text">NA Hussein Dey U21</div>
+                                   </div>
+
+                               </div>
+
+                           </div>
+                           <div class="ml1-MatchLiveSoccerModule_SVGPitchContainer "><svg class="ml1-SoccerPitch_SVG" xmlns="http://www.w3.org/2000/svg" width="400px" height="180px" viewBox="0 0 400 180" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><defs><!-- This is where the colours get pumped when the possession changes --><linearGradient id="ml1-Gradient1"><stop class="gradStart" offset="0%" style="stop-opacity:0.4"></stop><stop class="gradEnd" offset="100%" style="stop-opacity:0.4"></stop></linearGradient><linearGradient id="ml1-Gradient2"><stop class="gradStart" offset="0%" style="stop-opacity:0.4"></stop><stop class="gradEnd" offset="100%" style="stop-opacity:0.4"></stop></linearGradient><linearGradient id="ml1-SolidTeamColour"><stop id="ml1-SolidTeam1" offset="0%" stop-color="#FFDF1B"></stop><stop id="ml1-SolidTeam2" offset="100%" stop-color="#FFDF1B"></stop></linearGradient></defs><g id="pitch" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path fill="#222" d="M0 0h400v180h-400z"></path><rect id="pitch-BG" fill="#2C7836" x="0" y="0" width="400" height="180"></rect><rect id="18-yard-away" stroke="#3A8943" stroke-width="2" x="348" y="44" width="51" height="93"></rect><rect id="18-yard-home" stroke="#3A8943" stroke-width="2" x="1" y="44" width="51" height="93"></rect><path d="M199,3 L199,178 L199,179 L201,179 L201,178 L201,3 L201,2 L199,2 L199,3 L199,3 Z" id="Shape" fill="#3A8943"></path><path d="M200,118 L200,118 C215.463973,118 228,105.463973 228,90 C228,74.536027 215.463973,62 200,62 C184.536027,62 172,74.536027 172,90 C172,105.463973 184.536027,118 200,118 L200,118 Z M200,120 L200,120 C183.431458,120 170,106.568542 170,90 C170,73.4314575 183.431458,60 200,60 C216.568542,60 230,73.4314575 230,90 C230,106.568542 216.568542,120 200,120 L200,120 Z" id="Shape-Copy" fill="#3A8943"></path><circle id="Oval-344" fill="#3A8943" cx="200" cy="90" r="6"></circle><path d="M74,63 C65.5522257,68.9666814 60,79.0570309 60,90.5 C60,101.942969 65.5522257,112.033319 74,118" id="d-left" stroke="#3A8943" stroke-width="2" transform="translate(67.000000, 90.500000) scale(-1, 1) translate(-59.000000, -90.500000) "></path><circle id="Oval-70" fill="#3A8943" cx="34" cy="90" r="3"></circle><path d="M1,11 C6.5228475,11 11,6.5228475 11,1 L9.046875,1 C9.046875,5.44416635 5.44416635,9.046875 1,9.046875 L1,11 L1,11 Z" id="Shape" fill="#3A8943"></path><path d="M1,171 C5.418278,171 9,174.581722 9,179 L11,179 C11,173.477153 6.5228475,169 1,169 L1,171 L1,171 Z" id="Shape" fill="#3A8943"></path><path d="M337.884236,62 C328.64831,68.2472191 323,78.6467666 323,90 C323,101.353233 328.64831,111.752781 337.884236,118 L339,116.354082 C330.305144,110.472845 324.989964,100.686649 324.989964,90 C324.989964,79.3133507 330.305144,69.5271551 339,63.645918 L337.884236,62 L337.884236,62 Z" transform="translate(9,0)" id="Shape-Copy-2" fill="#3A8943"></path><rect id="6-yard-home" stroke="#3A8943" stroke-width="2" x="1" y="69" width="16" height="41"></rect><path d="M399,69 L383,69 L383,110 L399,110 L399,69 L399,69 Z" id="6-yard-away" stroke="#3A8943" stroke-width="2" sketch:type="MSShapeGroup"></path><circle id="Oval-70" fill="#3A8943" cx="365" cy="90" r="3"></circle><path d="M399,9.046875 C394.555834,9.046875 390.953125,5.44416635 390.953125,1 L389,1 C389,6.5228475 393.477153,11 399,11 L399,9.046875 L399,9.046875 Z" id="Shape" fill="#3A8943"></path><path d="M399,169 C393.477153,169 389,173.477153 389,179 L391,179 C391,174.581722 394.581722,171 399,171 L399,169 L399,169 Z" id="Shape" fill="#3A8943"></path><rect stroke="#3A8943" stroke-width="2" x="1" y="1" width="398" height="178"></rect></g><path class="ml1-SoccerPitch_AnimationElement" id="ml1-Possession1" opacity="0" d="" fill="url(https://www.bet365.com/#ml1-Gradient1)" style="opacity: 0;"></path><path class="ml1-SoccerPitch_AnimationElement" id="ml1-Possession2" d="" fill="url(https://www.bet365.com/#ml1-Gradient2)" style="opacity: 0;"></path><g class="ml1-SoccerPitch_AnimationElement" id="ml1-WideKickRadial" opacity="0"><path id="ml1-WideKickRadialOuter" fill="#165031" d="M94.703,73.698C110.554,53.359,120,27.784,120,0c0-27.764-9.433-53.321-25.262-73.653L0,0.036L94.703,73.698z" style="opacity: 0;"></path><path id="ml1-WideKickRadialCentre" fill="#165031" d="M62.325,48.514C72.765,35.123,79,18.294,79,0c0-18.274-6.222-35.085-16.639-48.469L0,0.036L62.325,48.514z" style="opacity: 0;"></path><path id="ml1-WideKickRadialInner" fill="#165031" d="M30.759,23.961C35.918,17.349,39,9.037,39,0c0-9.017-3.068-17.311-8.205-23.917L0,0.036L30.759,23.961z" style="opacity: 0;"></path></g><g class="ml1-SoccerPitch_AnimationElement" id="ml1-NarrowKickRadial" opacity="0"><path id="ml1-NarrowKickRadialOuter" fill="#165031" d="M0.031,0.013l117.647,45.045C123.041,31.064,126,15.881,126,0s-2.959-31.065-8.322-45.059L0.093-0.036L0.031,0.013z" style="opacity: 0;"></path><path id="ml1-NarrowKickRadialCentre" fill="#165031" d="M0.031,0.013l77.43,29.647c3.536-9.21,5.488-19.204,5.488-29.66s-1.952-20.45-5.487-29.66L0.093-0.036L0.031,0.013z" style="opacity: 0;"></path><path id="ml1-NarrowKickRadialInner" fill="#165031" d="M0.031,0.013l38.208,14.629c1.746-4.546,2.71-9.48,2.71-14.642s-0.964-10.096-2.709-14.642L0.093-0.036L0.031,0.013z" style="opacity: 0;"></path></g><g class="ml1-SoccerPitch_AnimationElement" id="ml1-ThrowRadial" opacity="0"><path id="ml1-ThrowRadialOuter" fill="#165031" d="M53.033,53.068c29.289-29.289,29.289-76.777,0-106.066L0,0.035L53.033,53.068z" style="opacity: 0;"></path><path id="ml1-ThrowRadialInner" fill="#165031" d="M26.517,26.552c14.646-14.645,14.644-38.39,0-53.033L0,0.035L26.517,26.552z" style="opacity: 0;"></path></g></svg></div>
+                           <div class="match_information">
+                               <div class="match_information_container">
+                                   <div class="match_info_popup">
+                                       <div class="match_info_popup_row">
+                                           <div class="match_info_popup_title">Kick Off: </div>
+                                           <div class="match_info_popup_value">12:30</div>
+                                       </div>
+                                       <div class="match_info_popup_row">
+                                           <div class="match_info_popup_title">Pitch: </div>
+                                           <div class="match_info_popup_value">Good</div>
+                                       </div>
+                                       <div class="match_info_popup_row">
+                                           <div class="match_info_popup_title">Weather: </div>
+                                           <div class="match_info_popup_value">Good</div>
+                                       </div>
+                                   </div>
+                                   <div class="match_info_text"> Match Info</div>
+                               </div>
+
+
+                           </div>
+
+                       </div>
+
+                   </div>
+
+               </div>
+            </div>
+            <div class="bet_slip_block">
+                <div class="bet_slip_header green_header">
+                    <span class="yellow_text">Bet Slip</span>
+                </div>
+                <div class="bet_slip_container">
+                    <iframe src="https://www.bet365.com/betslip/WebInterface/BsInterface.aspx?v=1048" name="bsFrame" scrolling="no" allowtransparency="false" class="bw-BetslipWebModule_Frame " style="height: 114px;"></iframe>
+                </div>
+            </div>
+
+            <div class="info_block">
+                <div class="info_details">
+                    <div class="info_details_header">First Deposit</div>
+                    <div class="info_details_content">
+                        <div class="info_details_img">
+                            <img src="../img/chat.jpg" alt="chat">
+                        </div>
+                        <div class="info_details_text">
+                            Chat with one of our advisors.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/inner_js.js"></script>
+</body>
+</html>

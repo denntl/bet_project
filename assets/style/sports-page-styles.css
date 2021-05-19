@@ -1,0 +1,2356 @@
+.inner-wrapper {width: 100%;}
+.page {width: 100%;}
+.page * {-webkit-font-smoothing:antialiased;}
+.page .header {position: relative;display: flex;flex-wrap: wrap; width: 100%;min-height: 30px;padding: 0 10px;color: #e8e8e8;background: #474747;border-bottom: 1px solid #404040;}
+
+.CreateCouponContainer {position: absolute;top: -35px;left: 0;right: 0;text-align: center;transition: top .3s;pointer-events: none;}
+.CreateCouponContainer.visible {top: 0;z-index: 10;}
+.CreateCouponTab {position: relative;display: inline-block;padding: 5px 5px 5px 7px;line-height: 19px;background-color: #d8d8d8;border-radius: 0 0 1px 1px;pointer-events: auto;}
+.CreateCouponTab_Count {position: relative;display: inline-block;width: 20px;height: 20px;padding-top: 1px;vertical-align: middle;line-height: 17px; text-align: center;font-size: 12px;color: #e4e4e4;background-color: #404040;border-radius: 50%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;}
+.CreateCouponTab_Selections {position: relative;display: inline-block; min-width: 90px;padding-left: 4px;padding-right: 20px;vertical-align: middle;text-align: left;font-size: 12px;color: #404040;}
+.CreateCouponTab_Button {position: relative;display: inline-block;height: 25px;min-width: 114px;padding: 0 10px;vertical-align: middle;line-height: 23px;text-align: center;font-size: 12px;color: #474747;background-color: #ffdf1b;border: 1px solid #bbb;border-radius: 1px;cursor: pointer;
+    transition: background-color .1s ease-in-out,color .1s ease-in-out;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;}
+
+.MarketGroupButtonWrapper {position: relative;}
+.MarketGroupButton {position: relative;z-index: 10;display: flex;justify-content: space-between;min-height: 29px;padding: 0 60px 0 10px;line-height: 29px;text-overflow: ellipsis;font-size: 14px;color: #e4e4e4;overflow: hidden;white-space: nowrap;clear: both;background-color: #14805e;cursor: pointer;transition: background-color .4s cubic-bezier(0,.26,0,1);}
+.MarketGroupButton.MarketGroupButtonNoCollapse {padding: 0 10px 0 10px;}
+.MarketGroupButton.MarketGroupButtonNoCollapse:after {display: none;}
+
+.BreadcrumbTrail {position: relative;display: flex;width: calc(100% + 20px);height: 30px;margin: 0 -10px;padding: 0 0;color: #e8e8e8;}
+.BreadcrumbTrail_BackButton {display: inline-block;width: 30px;height: 29px;vertical-align: middle;border-right: 1px solid #545454;color: #bbb;cursor: pointer;}
+.BreadcrumbTrail_BackButton:before {content: "\e817";display: block;height: 29px;line-height: 29px;text-align: center;text-transform: none;font-family: bet365UI;font-size: 10px;font-style: normal;font-weight: 400;font-variant: normal;speak: none;}
+.BreadcrumbTrail_BackButton:hover:before{color:#fff}
+.BreadcrumbTrail_TrailInner {position:relative; display: flex;align-items: center;justify-content: flex-start;width: 100%;height: 29px;padding: 0 10px;}
+.BreadcrumbTrail_Breadcrumb,
+.BreadcrumbTrail_Divider {display: inline-block;line-height: 16px;font-size: 13px;color: #a7a7a7;vertical-align: top;}
+.BreadcrumbTrail_Divider:after,
+.BreadcrumbTrail_Divider:before {content: "\00a0";}
+.BreadcrumbTrail_Breadcrumb {flex: 0 0 auto;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;cursor: pointer;}
+.BreadcrumbTrail_Breadcrumb.dropdown {
+    position: relative;
+    z-index: 30;
+    /*flex: 1 1 auto;*/
+    /*display: inline-block;*/
+    min-width: 50px;
+    padding-right: 15px;
+    vertical-align: middle;
+    overflow: visible;
+    color: #e4e4e4;
+    cursor: pointer;}
+.BreadcrumbTrail_Breadcrumb:hover {
+    color: #e4e4e4;
+}
+.DropDownToggle {font-size: 13px;line-height: 16px;color: #e4e4e4;white-space: nowrap;cursor: pointer;}
+.DropDownToggle:after {content: "\e801";display: inline-block;margin-left: 6px;vertical-align: middle;text-transform: none;line-height: 1;font-family: bet365UI; font-size: 5px;font-weight: 400;font-variant: normal;color: #e4e4e4;speak: none;}
+.DropDownContainer {z-index: 110;display: none;max-height: 300px;width: 320px;padding: 0;background-color: #ddd;border-radius: 2px;overflow: auto;}
+.DropDownItem {position: relative;display: block;width: 100%;line-height: 30px;padding: 0 15px 0 11px;vertical-align: top;text-overflow: ellipsis;line-height: 30px;font-size: 12px;color: #333;background-color: #ddd;cursor: pointer; overflow: hidden;white-space: nowrap;transition: background-color .1s;transition-timing-function: ease-in-out;border-top: 1px solid #ccc;}
+.DropDownItem:hover {background-color: #e4e4e4;}
+.DropDownItem.selected {background-color: #f0f0f0;color: #14805e;}
+.DropDownItem.selected:before {content: "";position: absolute;top: -1px;left: 0;width: 4px;height: 31px;background-color: #4acfa5;}
+
+.BreadcrumbTrail_LeagueFixture {flex: 1 0 auto;padding: 0 14px 0 10px;text-align: right;}
+.BreadcrumbTrail_LeagueFixture .DropDownToggle  {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;vertical-align: inherit;font-size: 11px;color: #ddd;cursor: pointer;}
+.BreadcrumbTrail_LeagueFixture .DropDownToggle:hover {color: #ffdf1b;}
+    
+.page .header .title {font-size: 13px;min-height: 29px;line-height: 29px;white-space: nowrap;}
+.page .header .nav-tabs {position: relative;display: block;margin: 0 auto;border: none;}
+.page .header .nav-tabs.PeriodOption-tabs {position: absolute;left: 50%;width: auto;justify-content: center;}
+.page .header .nav-tabs .ClassificationHeader-PeriodOption {position: relative;display: inline-block;min-width: 18px;line-height: 27px;font-size: 11px;color: #aaa; border-bottom: 2px solid transparent;cursor: pointer;}
+.page .header .nav-tabs .ClassificationHeader-PeriodOption.active {color: #e8e8e8;border-bottom-color: #bbb;padding-left:3px}
+.page .header .nav-tabs .ClassificationHeader-PeriodOption:hover{
+    color: #e8e8e8;
+}
+.page .header .nav-tabs .ClassificationHeader-PeriodOption+.ClassificationHeader-PeriodOption {margin-left: 20px;}
+.page .header .nav-tabs .ClassificationHeader-PeriodOption+.ClassificationHeader-PeriodOption:before {content: "";display: block;position: absolute;left: -10px;top: 10px;
+height: 10px;width: 1px;background-color: #aaa;}
+.page .header .nav-tabs a,
+.page .header .nav-tabs a:hover {text-decoration: none;}
+
+.LiveInPlayHeader {position: relative;padding: 0 2px 0 10px;margin-top: -1px;color: #e8e8e8;background-color: #474747;border-top: 1px solid #545454;border-bottom: 1px solid #404040;overflow: hidden;}
+.LiveInPlayHeader_Container {display: flex;justify-content: flex-end;align-content: center;}
+.LiveInPlayHeader_Container .LiveInPlayHeader_LiveLabel {margin-right: 7px;color: #e8e8e8;font-size: 13px;line-height: 29px;}
+.LiveInPlayHeader_Container .LiveInPlayHeader_InPlayNumber {color: #e8e8e8;font-size: 13px;line-height: 29px;}
+.LiveInPlayHeader_Container .LiveInPlayHeader_InPlayNumber:after {content: "\e813";position: relative;top: -1px;right: 0;display: inline-block; margin-left: 7px;text-transform: none;font-family: bet365UI;font-size: 9px;font-style: normal;font-weight: 400; font-variant: normal;color: #e8e8e8;speak: none;line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.LiveInPlayHeader_Container .LiveInPlayHeader_InPlayLabel {margin-right: 7px;color: #ffdf1b;font-size: 13px;line-height: 29px;}
+
+.LiveInPlayHeader_ButtonBar {float: left;display: inline-block;border: none;}
+.LiveInPlayHeader_ButtonBarButton {display: inline-block;margin-right: 20px;line-height: 27px;font-size: 13px;color: #bbb;cursor: pointer;}
+.LiveInPlayHeader_ButtonBarButton:hover {color: #e8e8e8;}
+.LiveInPlayHeader_ButtonBarButton.active {color: #e8e8e8;border-bottom: 2px solid #ddd;}
+
+.page .MarketGroup-GroupName {display: flex;min-height: 30px;padding: 0 30px 0 10px;line-height: 30px;font-size: 14px;color: #e4e4e4;background-color: #14805e;border-bottom: 1px solid #116b4f;cursor: pointer;transition: all .45s}
+.page .MarketGroup-GroupName:hover {color: #fff;background-color: #168c67;}
+.page .MarketGroup-GroupName:after {content: "\e801";position: absolute;top: 2px;right: 10px;font-family: bet365UI;font-size: 5px;color: #ddd;opacity: 0;transition: opacity .35s ease-in-out;}
+.page .MarketGroup-GroupName:hover:after {opacity: 1;transition: opacity .45s}
+
+.page .Market-Header {position: relative;display: flex;justify-content: flex-start;height: 30px;padding: 0 10px;line-height: 30px;font-size: 13px;color: #ddd;background: #888;border-bottom: 1px solid #969696;cursor: pointer;transition: all .45s}
+.page .Market-Header:hover {color: #fff;background-color: #8c8c8c;}
+.page .Market-Header:after {content: "\e801";position: absolute;top: 2px;right: 10px;font-family: bet365UI;font-size: 5px;color: #ddd;opacity: 0;transition: opacity .35s ease-in-out;}
+.page .Market-Header:hover:after {opacity: 1;transition: opacity .45s}
+
+.page .Market-Cluster {position: relative;display: flex;justify-content:flex-start;flex-wrap: wrap;background: #666;}
+.page .Market-Cluster:after {content: "";flex: auto;width: calc(25% - 10px);}
+.page .Market-Cluster.collapse {display: none;}
+.page .Market-Cluster.collapse.show {display: flex;} 
+.page .Market-Cluster .item {display: flex;width: calc(25% - 10px);/*flex-grow: 1;*/height: 30px;padding: 0 10px 0 0;line-height: 30px;font-size: 12px;color: #ddd;background-color: #666;border-top: 1px solid transparent;border-bottom: 1px solid #737373;}
+.page .MarketGroup .CouponLink_Label {flex-grow: 1;margin:0 0 0 10px;color: #ddd;cursor: pointer;}
+.page .MarketGroup .CouponLink_Label:hover {color: #ffdf1b;}
+.page .MarketGroup label {display: flex;justify-content: flex-start;align-content: center;align-items: center;padding: 0 10px;transition: all 300ms;}
+.page .MarketGroup input[type="checkbox"] {width: 11px;height: 11px;margin: 0 7px 0 0;cursor: pointer;border: none;background-color: #a7a7a7;}
+.page .MarketGroup label .checkmark {display: none;}
+.page .NoAvailableMarkets { padding: 0 20px;line-height: 20px;}
+.page .NoAvailableMarkets .desc {padding-top: 14px;font-size: 14px;color: #e4e4e4;}
+.page .NoAvailableMarkets .info {padding-top: 10px;font-size: 13px;color: #c7c7c7;}
+
+ .page .MarketGroup label.checkbox {position: relative;cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;}
+.page .MarketGroup label.checkbox {max-width: 12px;min-width: 12px;padding: 0 0;margin:  0 0 0 10px;}
+.page .MarketGroup label.Market-AllLabel.checkbox {padding: 0 0 0 20px;}
+.page .MarketGroup label.checkbox input {position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+.page .MarketGroup label.checkbox .checkmark {position: absolute;top: calc(50% - 6px);left: 0;display: block;height: 11px;width: 11px;background-color: #888;}
+.page .MarketGroup label.Market-AllLabel.checkbox .checkmark {background-color: #a7a7a7;}
+.page .MarketGroup label.checkbox .checkmark:hover {background-color: #aaa;}
+.page .MarketGroup label.checkbox input:checked ~ .checkmark {background-color: #ffdf1b;}
+.page .MarketGroup label.checkbox input:checked ~ span {color: #FFF;}
+.page .MarketGroup label.checkbox .checkmark:after {content: "";position: absolute;display: none;}
+.page .MarketGroup label.checkbox input:checked ~ .checkmark:after {display: block;}
+.page .MarketGroup label.checkbox .checkmark:after {left: 3px;top: 1px;width: 5px;height: 7px;border-right: 2px solid #000;border-bottom: 2px solid #000;transform: rotate(45deg);}
+
+.MarketGroupSeparator {position: relative;padding: 0 10px;text-align: center;line-height: 49px;font-size: 13px;color: #bbb;background-color: #585858;}
+.ClosableMarketGrid-closed+.ClosableMarketGrid-open .MarketGroupSeparator,
+.ClosableMarketGrid-open .MarketGroupSeparator {margin-top: 5px;}
+.MarketGroupSeparator:after,
+.MarketGroupSeparator:before {content: '';position: absolute;top: 50%;width: 50%;border-bottom: 1px solid #6e6e6e;}
+.MarketGroupSeparator:before {left: 10px;}
+.MarketGroupSeparator:after {right: 10px;}
+.MarketGroupSeparator_Label {position: relative;  z-index: 10;    display: inline-block; padding: 0 15px;vertical-align: middle;background-color: #585858;}
+
+.MarketGroupHorizontalNavBar { height: 31px;margin-top: -1px;border-top: 1px solid #545454;}
+.ScrollableHorizontalNavBar { position: relative;width: calc(100% + 20px);padding: 0 10px;margin: 0 -10px;background-color: #474747;border-bottom: 1px solid #545454;overflow: hidden;}
+.ScrollableHorizontalNavBar_ButtonContainer {position: relative;left: 0;width: 100%;background-color: #474747;border-bottom: 1px solid #545454;overflow: hidden;}
+.MarketGroupNavBarButton {display: inline-block;margin-right: 20px;line-height: 27px;font-size: 13px;color: #bbb;cursor: pointer;}
+.MarketGroupNavBarButton:hover {color: #e8e8e8;}
+.MarketGroupNavBarButton.active {color: #e8e8e8;border-bottom: 2px solid #ddd;}
+.MarketGroupNavBarButton_NewIcon {position: relative;top: -8px;right: -1px;display: inline-block;height: 11px;min-width: 31px;margin-left: 2px;padding: 0 2px;line-height: 11px;text-align: center;text-transform: uppercase;font-size: 9px;color: #333;background-color: #4acfa5;border-radius: 1px;}
+.MarketGroupNavBarButton_NewIcon:after {content: " ";position: absolute;bottom: -17px;width: 100%;height: 10px;background: #474747;right: -2px;border-left: 2px solid #474747;}
+
+.CouponMarketGroupButton_Title {max-width: 100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;line-height: 29px;font-size: 14px;    color: #e4e4e4;}
+.CouponMarketGroup_ChangeMarket {position: relative;padding: 0 9px; flex: 0 0 auto;margin-right: auto;}
+.ChangeMarket {position: relative;display: inline-block;font-size: 11px;color: #ffdf1b;cursor: pointer;}
+.ChangeMarket:after {content: "\e801";display: inline-block;padding-left: 5px;vertical-align: middle;text-transform: none; line-height: 1;font-family: bet365UI;font-size: 5px;font-style: normal;font-weight: 400;font-variant: normal;speak: none;color: #ffdf1b;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.MarketGroupButton_UpdateWrapper {padding-left: 10px;text-align: right;font-size: 11px;color: #4acfa5;vertical-align: top;white-space: nowrap;}
+.MarketGroupButton_LastUpdatedLabel {display: none;padding-right: 5px;font-size: 11px;color: #4acfa5;vertical-align: middle; white-space: nowrap;}
+.MarketGroupButton_LastUpdated {display: none;vertical-align: middle;font-size: 11px;color: #4acfa5;white-space: nowrap;}
+.MarketGroupButton_LiveUpdateLabel {position: relative;display: block;height: 31px;font-size: 12px;color: #4acfa5;}
+.MarketGroupButton_LiveUpdateLabel:before {content: "";position: relative;left: -3px;top: 2px;display: inline-block;width: 15px;height: 15px;background-image: url('/img/update-label.svg');background-repeat: no-repeat;}
+    
+    
+.CouponParticipantWithBookCloses {position: relative;display: inline-flex;align-items: center;height: 34px;width: 100%;padding: 0 10px;color: #ddd;font-size: 12px;border-right: 1px solid #757575;border-bottom: 1px solid #757575;background-color: #666;}
+.CouponParticipantWithBookCloses:last-child {border-bottom: none;}
+.CouponParticipantWithBookCloses_LeftSideContainer {min-width: 46px;}
+.CouponParticipantWithBookCloses_BookCloses {margin-right: 10px;font-size: 11px;color: #bbb;cursor: default;}
+.CouponParticipantClockInPlay_OuterWrapper {display: inline-block;max-width: 45px;padding: 1px 3px;text-align: center;line-height: 12px;font-size: 11px;color: #444;border-radius: 1px;background-color: #a7a7a7;}
+.CouponParticipantWithBookCloses_NameContainer {display: inline-flex;flex: 1;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.CouponParticipantWithBookCloses_Name {flex: 0 1 auto;width: 100%;white-space: nowrap;cursor: pointer;overflow: inherit;text-overflow: ellipsis;cursor: pointer; color: #ddd}
+.CouponParticipantWithBookCloses_Name:hover {color: #ffdf1b;}
+.CouponParticipantWithBookCloses_Icons {align-items: center;text-align: right;color: #999;}
+.CouponParticipantWithBookCloses_IconsGeneric {display: inline-block;padding-left: 10px;vertical-align: middle;}
+.CouponParticipantWithBookCloses_IconsAudioAvailable {font-size: 10px;}
+.CouponParticipantWithBookCloses_IconsStats {font-size: 13px;cursor: pointer;}
+.CouponParticipantWithBookCloses_Icons-2 .sl-CouponParticipantWithBookCloses_IconsStats {margin-top: -2px;}
+.CouponParticipantWithBookCloses_IconsVideoAvailable {font-size: 10px;cursor: pointer;}
+.CouponParticipantWithBookCloses_IconsLiveInPlay {font-size: 13px;}
+.CouponParticipantWithBookCloses_IconsStats:hover,
+.CouponParticipantWithBookCloses_IconsVideoAvailable:hover {color: #bbb;}
+.CouponParticipantWithBookCloses_IconsGeneric:before {font-family: bet365UI;line-height: 1;text-transform: none;font-style: normal;font-weight: 400;font-variant: normal;speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.CouponParticipantWithBookCloses_IconsLiveInPlay:before {content: "\E816";}
+.CouponParticipantWithBookCloses_IconsStats:before {content: "\e810";}
+.CouponParticipantWithBookCloses_IconsAudioAvailable:before {content: "\E811";}
+.CouponParticipantWithBookCloses_IconsVideoAvailable:before {content: "\E924";font-family: bet365UI-icomoon!important;}
+.CouponParticipantWithBookCloses_IconsNeutralGround:before {content: "\E923";font-family: bet365UI-icomoon!important;}
+
+.LiveAlertsMarketGroupPopupLauncher_BackgroundWrapper {border-bottom: 1px solid #4d4d4d;background-color: #666;}
+.LiveAlertsMarketGroupPopupLauncher {display: flex;justify-content: center;margin: auto;padding: 7px 10px;font-size: 12px;}
+.LiveAlertsMarketGroupPopupLauncher_ContentWrapper {vertical-align: middle;cursor: default;}
+.LiveAlertsMarketGroupPopupLauncher_HeaderLabel {display: inline-block;margin-right: 20px;line-height: 20px;color: #ddd;}
+.LiveAlertsMarketGroupPopupLauncher_HeaderLabel:before {content: " ";display: inline-block;width: 18px;height: 18px;margin-top: -3px;margin-right: 6px;vertical-align: middle;
+background-image: url('/img/bell.svg');}
+.LiveAlertsMarketGroupPopupLauncher_DescriptionLabel {display: inline-block;margin-right: 20px;line-height: 20px;color: #bbb;}
+.LiveAlertsMarketGroupPopupLauncher_OpenButton {min-width: 85px;height: 20px;padding-left: 5px;padding-right: 5px;vertical-align: middle;text-align: center;border: 1px solid #41b590;border-radius: 2px;color: #4acfa5;white-space: nowrap;cursor: pointer;}
+.LiveAlertsMarketGroupPopupLauncher_OpenButton:hover {color: #545454;background-color: #41b590;}
+
+.MarketCouponValuesExplicit33+.MarketCouponFixtureLink .CouponFixtureLinkParticipant {height: 30px;}
+.MarketCouponValuesExplicit26 {border-top: 1px solid #757575;}
+.MarketCouponValuesExplicit27 {border-top: 1px solid #6e6e6e;}
+.MarketCouponValuesExplicit36,
+.MarketCouponValuesExplicit37 {display: inline-block;vertical-align: top;}
+
+.MarketGroupExtraData_RightContainer {display: inline-flex;justify-content: flex-end;width: 210px;text-align: right;white-space: nowrap;}
+.MatchAlertsButton {cursor: pointer;white-space: nowrap;}
+.MatchAlertsButton_Label {display: inline-block;vertical-align: middle;font-size: 12px;line-height: 15px;color: #999;}
+.MatchAlertsButton_Icon {display: inline-block;width: 18px;height: 18px;padding-left: 20px;vertical-align: middle;background-image: url('/img/bell.svg');background-repeat: no-repeat;}
+.CouponMatchAlertsButton_Label {line-height: 29px;}
+.MatchAlertsButton:hover.MatchAlertsButton_InnerWrapper-open .MatchAlertsButton_Label,
+.MatchAlertsButton:hover .MatchAlertsButton_Label,
+.MatchAlertsButton_InnerWrapper-open .MatchAlertsButton_Label {color: #e4e4e4;}
+.MarketGroupExtraData_Icons {display: inline;color: #999;}
+.MarketGroupExtraData_IconsGeneric {display: inline-block;margin-left: 10px;color: #999;}
+.MarketGroupExtraData_IconsVideoAvailable {font-size: 10px;cursor: pointer;}
+.MarketGroupExtraData_IconsGeneric:before {display: inline-block;font-size: inherit;font-family: bet365UI;speak: none;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1;  color: #999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+.MarketGroupExtraData_IconsVideoAvailable:before {content: "\E924";font-family: bet365UI-icomoon!important;line-height: none;}
+
+.OutrightLinkParticipant {display: inline-table;table-layout: fixed; width: 100%;border-right-width: 0;}
+.OutrightLinkParticipant.Market_CN-2,
+.OutrightLinkParticipant.Market_CN-3,
+.OutrightLinkParticipant.Market_CN-4 {border-color: #757575;border-bottom-width: 1px;border-bottom-style: solid;}
+.OutrightLinkParticipant_Wrapper {display: table-cell;}
+.OutrightLinkParticipant_InnerWrapper {position: relative;display: inline-block;max-width: 100%;padding-left: 10px;line-height: 35px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;font-size: 12px;color: #ddd;cursor: pointer;}
+.OutrightLinkParticipant_InnerWrapper:hover {color: #ffdf1b;}
+
+.MarketGroupExtraData {display: flex;justify-content: space-between;width: 100%;height: 30px;padding: 0 0;background-color: #474747;border-bottom: 1px solid #404040;}
+.MarketGroupExtraData_LeftContainer {width: auto;text-align: left;color: #999;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.MarketGroupExtraData_Time {display: inline;color: #999;padding-right: 10px;}
+.MarketGroupExtraData_TimeLabel,
+.MarketGroupExtraData_TimeStamp {display: inline;vertical-align: middle;line-height: 29px;font-size: 11px;color: #999;}
+.MarketGroupExtraData_TimeLabel:after,
+.MarketGroupExtraData_TimeStamp:after {content: "\00a0";display: inline-block;}
+.Participant {position: relative;display: inline-flex;align-items: center;width: 100%;height: 35px;padding: 0 10px;white-space: nowrap;font-size: 12px;color: #ddd;background-color: #5e5e5e;cursor: pointer;}
+.Participant_Name {flex: 0 1 auto;display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.Participant_Odds {flex: 1 0 auto;display: inline-block;    color: #ffdf1b;}
+.Participant_Name+.Participant_Odds {padding-left: 10px;}
+
+.SlipTitle {align-items: center;display: table;width: 100%;height: 29px;padding-left: 10px;background-color: #14805e;}
+.SlipTitle_Text { display: table-cell;padding: 6px 0;line-height: 17px;font-size: 14px;color: #ddd; }
+.Slip_SelectionPane {display: table;width: 100%;text-align: center;background-color: #666;}
+.Slip_SelectionListWrapper {padding-left: 10px;}
+.Slip_EmptyMessage {display: table-cell;padding: 42px 0;vertical-align: middle;font-size: 14px;color: #ddd;}
+.ControlBar {display: table;width: 100%;border-bottom: 1px solid #474747;}
+.ControlBar_AddSelection {display: table-cell;height: 29px; line-height: 15px;font-size: 12px;color: #e4e4e4;border-top: 1px solid #757575;background-color: #666;cursor: pointer;vertical-align: middle;}
+.ControlBar_AddSelection:before {font-family: bet365UI-icomoon!important;speak: none;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ControlBar_AddSelection:before { content: "\e90e";position: relative; padding: 0 10px;font-size: 12px;color: #54e8b9;}
+.OddsButton {display: table-cell; height: 29px;width: 35%;vertical-align: middle;text-align: center;}
+.OddsButton_NoSelections {padding: 0 10px;line-height: 29px;font-size: 12px;background-color: #585858;color: rgba(255,223,27,.45);cursor: default;}
+.HowTo {position: relative;}
+.HowTo_Button {width: 100%;padding: 37px 0 27px;text-align: center;font-size: 13px;color: #bbb;line-height: 16px;cursor: pointer;}
+.HowTo_Button:after {font-family: bet365UI;speak: none;font-style: normal;font-weight: 400; font-variant: normal;text-transform: none;line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.HowTo_Button:after {content: "\e801";padding-left: 7px;font-size: 6px;vertical-align: middle;}
+
+.MarketSliders {display: flex;justify-content: space-between;width: 100%;padding: 0 10px;background: #666;}
+.MarketSliders_SliderOneContainer,
+.MarketSliders_SliderTwoContainer { position: relative;display: block;width: 40%;height: 100%;}
+.MarketSliders_Gap {width: 40px;}
+.MarketSliders_SliderTitleContOne,
+.MarketSliders_SliderTitleContTwo {padding: 18px 0 10px 0;}
+.MarketSliders_SliderTitle{display: block;margin: 0 auto 20px auto;text-align: center;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;font-size: 12px;color: #ddd;}
+
+.MarketSliders .MarketSliders_OddsContainer {margin: 30px 10px 0 10px;width: 100px;height: 40px;cursor: pointer;}
+.ParticipantSliderResultField_Name {margin-right: 9px; font-size: 12px;color: #ddd;}
+.ParticipantSliderResultField_Odds {font-size: 12px;color: #ffdf1b;}
+
+/*** Input Type RANGE ***/
+.MarketSliders_range-slider {position: relative;width: 100%;padding: 0 10px;}
+
+.MarketSliders_range-slider input {
+  -webkit-appearance: none; appearance: none;
+  height: 7px;width: 100%;padding: 0 0;margin: 0 0 5px 0;border-radius: 0;border: 1px solid #5f5f5f;background: rgb(20,128,94);outline: none;transition: all 0.3s;}
+  ::-moz-range-track { background: #d7dcdf; border: 0; }
+ input::-moz-focus-inner,
+ input::-moz-focus-outer { border: 0;}
+.MarketSliders_range-slider input::-webkit-slider-thumb,
+.MarketSliders_ange-slider input::-moz-range-thumb{position: relative;z-index: 100;
+ -webkit-appearance: none; appearance: none;
+ width: 14px;height: 14px;background: #dddddd;border-radius: 50%;border: none;cursor: pointer;
+ -webkit-transition: background .15s ease-in-out; transition: background .15s ease-in-out; }
+ 
+ .MarketSliders_range-slider input::-webkit-slider-thumb:hover,
+.MarketSliders_range-slider input::-moz-range-thumb:hover,
+.MarketSliders_range-slider input:focus::-webkit-slider-thumb,
+.MarketSliders_range-slider input:focus::-moz-range-thumb,
+.MarketSliders_range-slider input:active::-webkit-slider-thumb,
+.MarketSliders_range-slider input:active::-moz-range-thumb {border: none; box-shadow: none;background: #dddddd;}
+
+.MarketSliders_range-slider datalist {display: flex;justify-content: space-between;align-items: center;width: 100%;}
+.MarketSliders_range-slider option {line-height: 12px;font-size: 11px;color: #e4e4e4;cursor: pointer;}
+.MarketSliders_range-slider option.active {color: #ffdf1b;}
+.MarketSliders_range-slider option:before {content: '';display: block;width: 2px;height: 6px;margin: 0 auto 2px auto;background: #757575;}
+
+/*** / Input Type RANGE ***/
+
+.OthersOnRequest {position: relative;width: 100%;padding: 0 0 0 10px;line-height: 34px;text-align: left; font-size: 12px;background-color: #666;border-top: 1px solid #757575;}
+.OthersOnRequest_Link {display: inline;color: #a7a7a7;cursor: pointer;}
+.OthersOnRequest_Link:after {content: "\e813";position: relative; top: -1px; margin-left: 6px;vertical-align: middle;text-transform: none;line-height: 1;font-family: bet365UI;font-size: 8px; font-style: normal;font-weight: 400;font-variant: normal; color: #a7a7a7;speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.OthersOnRequest_Link:hover,
+.OthersOnRequest_Link:hover:after,
+.Participant {cursor: pointer;color: #ddd;}
+.OthersOnRequestAlert {opacity: 0;position: absolute;top: 0;left: -18px;display: none;max-width: 178px;padding: 10px 8px;font-size: 12px;text-align: center;line-height: 15px;border-radius: 3px;background-color: #e4e4e4;color: #474747;}
+.OthersOnRequestAlert-above, .OthersOnRequestAlert-below {z-index: 30;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;}
+.OthersOnRequestAlert-visible {top: -36px;display: block;
+    -webkit-animation: OthersOnRequestAlert_PopupAnimation 5s;
+    animation: OthersOnRequestAlert_PopupAnimation 5s;}
+@-webkit-keyframes OthersOnRequestAlert_PopupAnimation{0%{opacity:0}
+5%{opacity:1}
+95%{opacity:1}
+to{opacity:0}
+}
+@keyframes OthersOnRequestAlert_PopupAnimation{0%{opacity:0}
+5%{opacity:1}
+95%{opacity:1}
+to{opacity:0;}
+}
+.OthersOnRequestAlert_Nib {position: absolute;left: calc(50% - 10px);display: block;width: 0;height: 0;border-left: 7px solid transparent;border-right: 7px solid transparent;border-bottom: 7px solid #e4e4e4;margin: 0 auto;z-index: 10;bottom: -6px;}
+.OthersOnRequestAlert-above .OthersOnRequestAlert_Nib {border-top: 7px solid #e4e4e4;border-bottom: none;}
+.OthersOnRequestAlert_LoginLink {display: inline;color: #14805e;cursor: pointer;}
+
+.MarketGroup_ButtonBar {position: absolute;z-index: 10;display: inline-flex;flex: 1 0 auto;text-align: right;padding: 0 25px 0 0;pointer-events: none;border: none;}
+.MarketGroup_BBarItem {vertical-align: top;line-height: 27px;font-size: 12px;color: #4acfa5;pointer-events: auto;}
+.MarketGroup_BBarItem:hover {    color: #ddd;}
+.MarketGroup_BBarItem.active {color: #ddd; border-bottom: 2px solid #e4e4e4;}
+.MarketGroup_BBarItem+.MarketGroup_BBarItem {margin-left: 20px;}
+
+.RacingMarketGroup_Link {
+    display: inline-block;
+    margin-left: 10px;
+    color: #4acfa5;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.icon_status:after{
+    content: "\e810";
+        font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon_resize:after{
+    content: "\e903";    font-family: bet365UI-icomoon!important;
+}
+.ParticipantLink:after {
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e813";
+    color: #aaa;
+    font-size: 8px;
+    display: inline-block;
+    margin-left: 6px;
+    position: relative;
+    top: -1px;
+}
+.sidebar_link.active:before {opacity: 1;}
+.sidebar_link.active {
+    background-color: #383838;
+    color: #e8e8e8;
+    text-decoration: none;
+}
+.LottoMarketGroup_CurrentInfo {
+    background-color: #a7a7a7;
+    font-size: 12px;
+    color: #444;
+    line-height: 20px;
+    padding: 0 10px;
+}
+
+
+/**** NTR ****/
+
+
+.ntr-AusParticipant_TrapImg1,.ntr-AusParticipant_TrapImg2,.ntr-AusParticipant_TrapImg3,.ntr-AusParticipant_TrapImg4,.ntr-AusParticipant_TrapImg5,.ntr-AusParticipant_TrapImg6,.ntr-AusParticipant_TrapImg7,.ntr-AusParticipant_TrapImg8,.ntr-AusParticipant_TrapImg9,.ntr-AusParticipant_TrapImg10 {
+    display: block;
+    min-width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='20' height='200' viewBox='0 0 20 200' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAUS_GH_Silks%3C/title%3E%3Cdefs%3E%3Crect id='a' width='20' height='20' rx='2'/%3E%3Cmask id='l' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23a'/%3E%3C/mask%3E%3Crect id='b' width='20' height='20' rx='2'/%3E%3Cmask id='m' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23b'/%3E%3C/mask%3E%3Crect id='c' width='20' height='20' rx='2'/%3E%3Cmask id='n' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23c'/%3E%3C/mask%3E%3Crect id='d' width='20' height='20' rx='2'/%3E%3Cmask id='o' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23d'/%3E%3C/mask%3E%3Crect id='e' width='20' height='20' rx='2'/%3E%3Cmask id='p' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23e'/%3E%3C/mask%3E%3Crect id='f' width='20' height='20' rx='2'/%3E%3Cmask id='q' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23f'/%3E%3C/mask%3E%3Crect id='g' width='20' height='20' rx='2'/%3E%3Cmask id='r' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23g'/%3E%3C/mask%3E%3Crect id='s' width='20' height='20' rx='2'/%3E%3Crect id='u' width='20' height='20' rx='2'/%3E%3Crect id='h' width='20' height='20' rx='2.174'/%3E%3Cmask id='w' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23h'/%3E%3C/mask%3E%3Cpath d='M4.032 8.295V7.16c.527-.024.897-.059 1.107-.106.336-.074.61-.223.82-.445.145-.153.255-.356.329-.61.043-.152.064-.265.064-.34h1.389v8.497h-1.71v-5.86H4.031zm8.162 3.935c.16.517.488.776.985.776.496 0 .82-.259.975-.776.154-.518.232-1.265.232-2.241 0-1.024-.078-1.782-.232-2.274-.154-.492-.48-.738-.975-.738-.497 0-.825.246-.985.738-.16.492-.24 1.25-.24 2.274 0 .976.08 1.723.24 2.24zm3.26-5.487c.436.761.654 1.843.654 3.246 0 1.402-.218 2.482-.653 3.24-.436.758-1.194 1.137-2.276 1.137-1.083 0-1.841-.38-2.277-1.137-.435-.758-.653-1.838-.653-3.24 0-1.403.218-2.485.653-3.246.436-.762 1.194-1.143 2.277-1.143 1.082 0 1.84.38 2.276 1.143z' id='i'/%3E%3Cmask id='x' x='-1.5' y='-1.5' width='15.076' height='11.766'%3E%3Cpath fill='%23fff' d='M2.532 4.1h15.076v11.766H2.532z'/%3E%3Cuse xlink:href='%23i'/%3E%3C/mask%3E%3Crect id='j' width='20' height='20' rx='2'/%3E%3Cmask id='y' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23j'/%3E%3C/mask%3E%3Crect id='k' width='20' height='20' rx='2'/%3E%3Cmask id='z' x='0' y='0' width='20' height='20' fill='%23fff'%3E%3Cuse xlink:href='%23k'/%3E%3C/mask%3E%3C/defs%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cuse stroke='%238C2B2B' mask='url(%23l)' stroke-width='2' fill='%23CC2323' xlink:href='%23a'/%3E%3Cpath d='M11.334 14.275V5.28H9.865c-.052.343-.16.63-.325.861a1.969 1.969 0 0 1-.604.559c-.239.141-.507.24-.806.296a4.42 4.42 0 0 1-.93.07v1.375h2.288v5.834h1.846z' fill='%23FFF'/%3E%3Cg transform='translate(0 40)'%3E%3Cuse stroke='%23444' mask='url(%23m)' stroke-width='2' fill='%23E8E8E8' xlink:href='%23b'/%3E%3Cpath d='M9.35 9.097v1.285c.225 0 .461.006.709.019.247.013.474.06.682.141.208.082.38.212.514.392.134.18.201.441.201.784 0 .437-.143.782-.429 1.034-.286.253-.637.38-1.053.38-.269 0-.5-.048-.696-.142a1.42 1.42 0 0 1-.487-.379 1.684 1.684 0 0 1-.299-.565 2.568 2.568 0 0 1-.117-.688H6.62c-.009.523.067.985.228 1.388.16.403.387.743.682 1.022.295.278.652.49 1.072.636.42.145.887.218 1.398.218a4.21 4.21 0 0 0 1.274-.193 3.314 3.314 0 0 0 1.079-.565c.312-.248.561-.557.748-.925.186-.369.279-.788.279-1.26 0-.514-.143-.955-.429-1.323-.286-.369-.68-.608-1.183-.72v-.025c.425-.12.743-.347.955-.682a2.11 2.11 0 0 0 .319-1.156c0-.403-.091-.758-.273-1.067a2.62 2.62 0 0 0-.709-.783 3.123 3.123 0 0 0-.981-.482 3.852 3.852 0 0 0-1.092-.161c-.468 0-.893.075-1.274.225-.381.15-.708.362-.981.636a2.887 2.887 0 0 0-.638.983 3.785 3.785 0 0 0-.253 1.266h1.755c-.009-.463.106-.846.345-1.15.238-.304.591-.457 1.059-.457.338 0 .637.103.897.309.26.205.39.501.39.887 0 .257-.063.462-.189.616a1.209 1.209 0 0 1-.48.354c-.196.081-.406.13-.631.148a3.95 3.95 0 0 1-.637 0z' fill='%23222'/%3E%3C/g%3E%3Cg transform='translate(0 60)'%3E%3Cuse stroke='%23104078' mask='url(%23n)' stroke-width='2' fill='%23185CA9' xlink:href='%23c'/%3E%3Cpath d='M10.442 7.567v3.123H8.05l2.353-3.123h.039zm0 4.626v2.082h1.755v-2.082h1.209V10.69h-1.209V5.28h-1.651l-3.952 5.243v1.67h3.848z' fill='%23FFF'/%3E%3C/g%3E%3Cg transform='translate(0 80)'%3E%3Cuse stroke='%23858523' mask='url(%23o)' stroke-width='2' fill='%23F7F73A' xlink:href='%23d'/%3E%3Cpath d='M12.886 6.943V5.44H7.803l-.897 4.973H8.57c.182-.248.377-.43.585-.546.208-.116.477-.174.806-.174.251 0 .472.043.663.129.19.086.355.206.494.36s.243.334.312.54a2.037 2.037 0 0 1-.006 1.304c-.074.21-.178.394-.313.552a1.563 1.563 0 0 1-.494.386 1.435 1.435 0 0 1-.656.148c-.416 0-.758-.122-1.027-.367-.269-.244-.425-.571-.468-.983H6.62c.009.471.106.885.292 1.24.187.356.436.654.748.893.312.24.67.418 1.072.534.404.115.826.173 1.268.173.46.009.893-.066 1.3-.225a3.265 3.265 0 0 0 1.807-1.709 3.07 3.07 0 0 0 .273-1.291c0-.42-.063-.816-.189-1.189a2.846 2.846 0 0 0-.546-.97 2.624 2.624 0 0 0-.877-.655 2.784 2.784 0 0 0-1.196-.245c-.364 0-.689.054-.975.161a2.295 2.295 0 0 0-.806.533l-.026-.025.364-2.044h3.757z' fill='%23222'/%3E%3C/g%3E%3Cg transform='translate(0 100)'%3E%3Cuse stroke='%232E4514' mask='url(%23p)' stroke-width='2' fill='%236CA131' xlink:href='%23e'/%3E%3Cpath d='M10.104 9.71a1.252 1.252 0 0 1 1.053.534c.113.158.197.338.254.54.056.2.084.408.084.623 0 .205-.03.407-.091.604-.06.197-.152.372-.273.526a1.445 1.445 0 0 1-.436.373 1.195 1.195 0 0 1-.591.141 1.338 1.338 0 0 1-1.085-.52 1.702 1.702 0 0 1-.287-.54 1.976 1.976 0 0 1-.097-.61c0-.223.03-.435.091-.636.06-.201.152-.38.273-.533.121-.155.275-.277.461-.367.187-.09.401-.135.644-.135zm1.326-2.017h1.755a3.085 3.085 0 0 0-.325-1.067 2.498 2.498 0 0 0-.637-.777c-.26-.21-.559-.37-.897-.482a3.469 3.469 0 0 0-1.092-.167c-.65 0-1.2.141-1.651.424-.45.283-.819.649-1.105 1.099a4.84 4.84 0 0 0-.624 1.51 7.326 7.326 0 0 0-.195 1.67c0 .574.052 1.137.156 1.69.104.553.29 1.047.559 1.484.269.437.628.79 1.079 1.06.45.27 1.018.405 1.703.405.477 0 .91-.083 1.3-.25a3.013 3.013 0 0 0 1.658-1.735 3.6 3.6 0 0 0 .227-1.292c0-.36-.056-.715-.169-1.066a2.596 2.596 0 0 0-.533-.938 2.862 2.862 0 0 0-.949-.675 2.77 2.77 0 0 0-1.144-.25c-.442 0-.832.077-1.17.23-.338.155-.633.412-.884.772l-.026-.026c.009-.248.043-.531.104-.848.06-.317.156-.615.286-.893.13-.279.305-.514.527-.707a1.21 1.21 0 0 1 .825-.289c.32 0 .59.111.806.334.217.223.355.484.416.784z' fill='%23E60000'/%3E%3C/g%3E%3Cg transform='translate(0 120)'%3E%3Cuse stroke='%23111' mask='url(%23q)' stroke-width='2' fill='%23222' xlink:href='%23f'/%3E%3Cpath d='M13.107 7.008V5.44H6.893v1.696h4.316a13.76 13.76 0 0 0-2.1 3.418 12.153 12.153 0 0 0-.955 3.881h1.976c.009-.6.08-1.246.214-1.94.135-.694.325-1.38.572-2.056.248-.677.555-1.315.923-1.915.369-.6.791-1.105 1.268-1.516z' fill='%23FFDF1B'/%3E%3C/g%3E%3Cg transform='translate(0 140)'%3E%3Cuse stroke='%23661336' mask='url(%23r)' stroke-width='2' fill='%23CC276C' xlink:href='%23g'/%3E%3Cpath d='M8.622 7.901c0-.205.037-.385.11-.54.074-.153.176-.282.306-.385.13-.103.28-.182.448-.237.17-.056.345-.084.527-.084.286 0 .518.043.696.128.177.086.316.193.415.322.1.128.167.263.202.405.035.14.052.272.052.391 0 .386-.13.68-.39.88-.26.202-.585.303-.975.303-.373 0-.698-.101-.975-.302-.277-.202-.416-.495-.416-.88zm-1.677-.167c0 .446.113.836.338 1.17.225.334.559.56 1.001.68v.027c-.546.128-.968.385-1.268.77-.299.386-.448.866-.448 1.44 0 .488.097.908.293 1.26.195.35.454.642.78.873.325.231.693.4 1.104.508.412.107.839.16 1.281.16.425 0 .84-.058 1.248-.173.407-.116.771-.29 1.092-.52.32-.232.578-.523.774-.875.195-.35.292-.766.292-1.246 0-.565-.147-1.043-.442-1.433-.295-.39-.715-.645-1.261-.764v-.026c.442-.146.773-.386.995-.72a2.07 2.07 0 0 0 .331-1.17c0-.222-.052-.472-.156-.75a2.254 2.254 0 0 0-.513-.785 2.965 2.965 0 0 0-.943-.623c-.39-.171-.867-.257-1.43-.257-.373 0-.741.051-1.105.154a3.177 3.177 0 0 0-.981.463c-.29.205-.527.462-.709.77a2.059 2.059 0 0 0-.273 1.067zm1.469 3.997c0-.463.156-.816.468-1.06.312-.244.693-.367 1.144-.367.217 0 .418.035.604.103.187.069.351.167.494.296a1.36 1.36 0 0 1 .462 1.04c0 .223-.039.429-.117.617-.078.189-.188.35-.332.482a1.545 1.545 0 0 1-.494.309c-.186.073-.392.109-.617.109-.217 0-.425-.036-.624-.11-.2-.072-.37-.175-.513-.308a1.49 1.49 0 0 1-.475-1.112z' fill='%23000'/%3E%3C/g%3E%3Crect width='20' height='20' rx='2.174' fill='%23FFF' transform='translate(0 160)'/%3E%3Crect width='20' height='20' rx='2.174' fill='none' fill-opacity='0' transform='translate(0 160)'/%3E%3Cg transform='translate(0 160)'%3E%3Cmask id='t' fill='%23fff'%3E%3Cuse xlink:href='%23s'/%3E%3C/mask%3E%3Cg fill='%237ED321' mask='url(%23t)'%3E%3Cpath d='M.133 1.602L1.689-.024 7.2 0 .26 7.254zM.266 11.988L12 .142 18.4 0-.08 18.022zM2.433 20.033l17.6-17.6.029 5.629-12 12zM12.724 19.924l7.2-7.2.029 5.629-1.6 1.6z'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(0 160)'%3E%3Cmask id='v' fill='%23fff'%3E%3Cuse xlink:href='%23u'/%3E%3C/mask%3E%3Cg mask='url(%23v)' stroke-width='2' stroke='%23447310'%3E%3Cuse mask='url(%23w)' xlink:href='%23h'/%3E%3C/g%3E%3C/g%3E%3Cpath d='M9.896 169.986a1.252 1.252 0 0 1-1.053-.533 1.725 1.725 0 0 1-.254-.54 2.302 2.302 0 0 1-.084-.623c0-.206.03-.407.091-.604.06-.197.152-.373.273-.527.121-.154.269-.279.442-.373.173-.094.368-.141.585-.141a1.338 1.338 0 0 1 1.085.52c.126.159.221.339.287.54.065.201.097.405.097.61 0 .223-.03.435-.091.636-.06.202-.152.38-.273.534a1.307 1.307 0 0 1-.455.366c-.182.09-.399.135-.65.135zm-1.326 2.017H6.815c.052.394.16.746.325 1.054a2.574 2.574 0 0 0 1.534 1.266c.338.107.702.16 1.092.16.65 0 1.2-.139 1.651-.417.45-.279.819-.643 1.105-1.092a4.84 4.84 0 0 0 .624-1.51c.13-.557.195-1.114.195-1.67a9.15 9.15 0 0 0-.156-1.684 4.406 4.406 0 0 0-.559-1.497 3.137 3.137 0 0 0-1.072-1.067c-.447-.27-1.017-.405-1.71-.405-.477 0-.91.086-1.3.257-.39.172-.726.405-1.008.7a3.078 3.078 0 0 0-.65 1.042 3.6 3.6 0 0 0-.227 1.291c0 .36.056.715.169 1.067.113.35.29.663.533.938.26.282.576.507.949.674.373.167.754.25 1.144.25.442 0 .832-.076 1.17-.23.338-.155.633-.412.884-.771l.026.025a8.15 8.15 0 0 1-.11.848c-.057.317-.15.615-.28.893a2.15 2.15 0 0 1-.52.707c-.217.193-.494.29-.832.29-.32 0-.59-.112-.806-.335a1.542 1.542 0 0 1-.416-.784z' fill='%23000' opacity='.9'/%3E%3Cg transform='translate(0 180)'%3E%3Cpath fill='%23FFF' d='M7.2.8h5.6v18.4H7.2z'/%3E%3Cpath fill='%23E60000' d='M.8.8h6.4v18.4H.8z'/%3E%3Cpath fill='%233600FF' d='M12.8.8h6.4v18.4h-6.4z'/%3E%3Cuse fill='%23222' xlink:href='%23i'/%3E%3Cuse fill='%23000' xlink:href='%23i'/%3E%3Cuse stroke='%23FFF' mask='url(%23x)' stroke-width='3' xlink:href='%23i'/%3E%3Cellipse fill='%23FFF' cx='13.2' cy='10.8' rx='.4' ry='2'/%3E%3Cuse stroke='%23222' mask='url(%23y)' stroke-width='2' fill-opacity='0' fill='%23FFF' xlink:href='%23j'/%3E%3C/g%3E%3Cg transform='translate(0 20)'%3E%3Cuse stroke='%23111' mask='url(%23z)' stroke-width='2' fill='%23222' xlink:href='%23k'/%3E%3Cpath fill='%23FFF' d='M.8 2.4h18.4v2.4H.8zM.8 8.8h18.4v2.4H.8zM.8 15.2h18.4v2.4H.8z'/%3E%3Cpath d='M7.219 12.619c.254-.604.854-1.244 1.8-1.919.82-.588 1.352-1.008 1.594-1.262.37-.396.556-.83.556-1.3 0-.384-.106-.703-.319-.957-.213-.254-.517-.381-.912-.381-.542 0-.91.202-1.107.606-.112.234-.179.604-.2 1.113H6.9c.03-.771.169-1.394.419-1.869.475-.904 1.318-1.356 2.531-1.356.958 0 1.72.265 2.287.797.567.53.85 1.234.85 2.109 0 .67-.2 1.267-.6 1.788-.262.345-.693.73-1.293 1.156l-.713.506c-.446.317-.75.546-.915.688a2.015 2.015 0 0 0-.416.493h3.956V14.4H6.8c.017-.65.156-1.244.419-1.781z' fill='%23CC2323'/%3E%3Cpath d='M7.219 12.619A4.258 4.258 0 0 0 6.8 14.4h6.206v-1.569H9.05c.113-.187.251-.352.416-.493.164-.142.47-.371.915-.688l.713-.506c.6-.425 1.031-.81 1.293-1.156.4-.521.6-1.117.6-1.788 0-.875-.283-1.578-.85-2.11-.566-.53-1.329-.796-2.287-.796-1.213 0-2.056.452-2.531 1.356-.25.475-.39 1.098-.419 1.869h1.731c.021-.509.088-.88.2-1.113.196-.404.565-.606 1.107-.606.395 0 .7.127.912.381.213.254.319.573.319.956 0 .471-.186.905-.556 1.3-.242.255-.773.675-1.594 1.263-.946.675-1.546 1.315-1.8 1.919zm-1.106-.466c.356-.846 1.098-1.637 2.207-2.429.76-.544 1.316-1.174 1.417-1.107.1.067-1.106 1.102-1.106 1.102H5.654L5.7 8.473c.035-.937.213-1.731.555-2.381.695-1.322 1.957-1.998 3.594-1.998 1.248 0 2.305.368 3.108 1.121.818.766 1.23 1.789 1.23 2.985a4.05 4.05 0 0 1-.845 2.513c-.348.459-.943.887-.943.887l.606.031h1.2V15.6H5.57l.031-1.23c.021-.82.2-1.582.54-2.278l-.027.061z' fill='%23FFF'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+}
+
+.ie-8 .ntr-AusParticipant_TrapImg1,.ie-8 .ntr-AusParticipant_TrapImg2,.ie-8 .ntr-AusParticipant_TrapImg3,.ie-8 .ntr-AusParticipant_TrapImg4,.ie-8 .ntr-AusParticipant_TrapImg5,.ie-8 .ntr-AusParticipant_TrapImg6,.ie-8 .ntr-AusParticipant_TrapImg7,.ie-8 .ntr-AusParticipant_TrapImg8,.ie-8 .ntr-AusParticipant_TrapImg9,.ie-8 .ntr-AusParticipant_TrapImg10,.ie-9 .ntr-AusParticipant_TrapImg1,.ie-9 .ntr-AusParticipant_TrapImg2,.ie-9 .ntr-AusParticipant_TrapImg3,.ie-9 .ntr-AusParticipant_TrapImg4,.ie-9 .ntr-AusParticipant_TrapImg5,.ie-9 .ntr-AusParticipant_TrapImg6,.ie-9 .ntr-AusParticipant_TrapImg7,.ie-9 .ntr-AusParticipant_TrapImg8,.ie-9 .ntr-AusParticipant_TrapImg9,.ie-9 .ntr-AusParticipant_TrapImg10,.no-svg .ntr-AusParticipant_TrapImg1,.no-svg .ntr-AusParticipant_TrapImg2,.no-svg .ntr-AusParticipant_TrapImg3,.no-svg .ntr-AusParticipant_TrapImg4,.no-svg .ntr-AusParticipant_TrapImg5,.no-svg .ntr-AusParticipant_TrapImg6,.no-svg .ntr-AusParticipant_TrapImg7,.no-svg .ntr-AusParticipant_TrapImg8,.no-svg .ntr-AusParticipant_TrapImg9,.no-svg .ntr-AusParticipant_TrapImg10 {
+    background-image: url(/sports/SplashModule/assets/racing/AUS_Trap_20x20.png)
+}
+
+.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg1,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg2,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg3,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg4,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg5,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg6,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg7,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg8,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg9,.ntr-Participant_Suspended .ntr-AusParticipant_TrapImg10 {
+    opacity: .5
+}
+
+.ntr-AusParticipant_TrapImg2 {
+    background-position: 0 -20px
+}
+
+.ntr-AusParticipant_TrapImg3 {
+    background-position: 0 -40px
+}
+
+.ntr-AusParticipant_TrapImg4 {
+    background-position: 0 -60px
+}
+
+.ntr-AusParticipant_TrapImg5 {
+    background-position: 0 -80px
+}
+
+.ntr-AusParticipant_TrapImg6 {
+    background-position: 0 -100px
+}
+
+.ntr-AusParticipant_TrapImg7 {
+    background-position: 0 -120px
+}
+
+.ntr-AusParticipant_TrapImg8 {
+    background-position: 0 -140px
+}
+
+.ntr-AusParticipant_TrapImg9 {
+    background-position: 0 -160px
+}
+
+.ntr-AusParticipant_TrapImg10 {
+    background-position: 0 -180px
+}
+
+.ntr-Participant {
+    background-color: #666;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #707070;
+    height: 40px;
+    position: relative
+}
+.Horses .ntr-Participant { height: 50px;}
+
+.ntr-Participant:hover,
+.Participant:hover{
+    background-color: #707070;
+    position: relative
+}
+
+.ntr-Participant.ntr-Participant_Highlighted {
+    background-color: #e4e4e4
+}
+
+.ntr-Fixture:last-child .ntr-Participant {
+    border-right: none
+}
+
+.ie-9 .ntr-Participant {
+    border-collapse: collapse
+}
+
+.ie-8 .ntr-Participant,.ie-9 .ntr-Participant {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0
+}
+
+.ntr-Participant_Name,.ntr-Participant_Odds,.ntr-Participant_Traps {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.ie-8 .ntr-Participant_Name,.ie-8 .ntr-Participant_Odds,.ie-8 .ntr-Participant_Traps,.ie-9 .ntr-Participant_Name,.ie-9 .ntr-Participant_Odds,.ie-9 .ntr-Participant_Traps {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.ntr-Participant_Traps {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.ie-8 .ntr-Participant_Traps,.ie-9 .ntr-Participant_Traps {
+    width: 40px;
+    padding: 0 10px
+}
+
+.ntr-Participant_Name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    font-size: 12px;
+    color: #ddd;
+    display: block
+}
+
+.ie-8 .ntr-Participant_Name,.ie-9 .ntr-Participant_Name {
+    width: 100%
+}
+
+.ntr-Participant_Highlighted .ntr-Participant_Name {
+    color: #545454
+}
+
+.ntr-Participant_HighlightedEditBet .ntr-Participant_Name,.ntr-Participant_Suspended .ntr-Participant_Name {
+    color: #a7a7a7
+}
+
+.ntr-Participant_Odds {
+    font-size: 13px;
+    line-height: 13px;
+    color: #ffdf1b;
+    padding: 0 10px;
+    text-align: right;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    top: -1px
+}
+
+.ntr-Participant_Highlighted .ntr-Participant_Odds {
+    color: #14805e
+}
+
+.ntr-Participant_Suspended .ntr-Participant_Odds {
+    display: none
+}
+
+.ntr-Participant_HighlightedEditBet .ntr-Participant_Odds {
+    color: #a7a7a7
+}
+
+.ie-8 .ntr-Participant_Odds,.ie-9 .ntr-Participant_Odds {
+    width: 60px
+}
+
+.ntr-Participant_HighlightedEditBet {
+    background-color: #757575!important
+}
+
+.ntr-Fixture {
+    transition-timing-function: cubic-bezier(.77,0,.175,1);
+    min-width: 33.33%;
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    transition: opacity .4s,visibility .4s
+}
+
+.ntr-Fixture.ntr-Fixture_InsertingRace,.ntr-Fixture.ntr-Fixture_RemovingRace {
+    opacity: 0;
+    visibility: hidden
+}
+
+.ntr-Fixture.ntr-Fixture_RemovingRace:before {
+    content: "";
+    display: block;
+    height: 20px;
+    color: #444;
+    background-color: #a7a7a7
+}
+
+.ntr-Fixture:last-child .ntr-Fixture.ntr-Fixture_RemovingRace:before {
+    border-right: none
+}
+
+.ntr-Fixture.ntr-Fixture_MovingRaceAlong {
+    transition-timing-function: cubic-bezier(.77,0,.175,1);
+    transition: opacity .4s,visibility .4s,-webkit-transform .6s;
+    transition: opacity .4s,visibility .4s,transform .6s;
+    transition: opacity .4s,visibility .4s,transform .6s,-webkit-transform .6s;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.ntr-Fixture_ParticipantContainer {
+    border-right: 1px solid #707070;
+    border-bottom: 1px solid #707070
+}
+
+.ntr-Fixture:last-child .ntr-Fixture_ParticipantContainer {
+    border-right: none
+}
+
+.ntr-Fixture_AussParticipant .ntr-Fixture_ParticipantContainer,.ntr-Fixture_InternationalTrottingsParticipant .ntr-Fixture_ParticipantContainer,.ntr-Fixture_ItalysParticipant .ntr-Fixture_ParticipantContainer,.ntr-Fixture_ItalyTrottingParticipant .ntr-Fixture_ParticipantContainer,.ntr-Fixture_TrottingsParticipant .ntr-Fixture_ParticipantContainer,.ntr-Fixture_UksParticipant .ntr-Fixture_ParticipantContainer {
+    height: 150px
+}
+
+.ntr-Fixture_AusParticipant .ntr-Fixture_ParticipantContainer,.ntr-Fixture_UkParticipant .ntr-Fixture_ParticipantContainer,.ntr-Fixture_UsParticipant .ntr-Fixture_ParticipantContainer {
+    height: 120px
+}
+
+.ntr-Fixture_Header {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: #444;
+    background-color: #a7a7a7;
+    padding: 0 10px;
+    cursor: pointer;
+    border-right: 1px solid #8c8c8c
+}
+
+.ntr-Fixture:last-child .ntr-Fixture_Header {
+    border-right: none
+}
+
+.ntr-Fixture_ViewAllButtonWrapper {
+    display: block;
+    background-color: #666;
+    cursor: pointer;
+    border-right: 1px solid #707070;
+    color: #bbb;
+    height: 35px
+}
+
+.ntr-Fixture:last-child .ntr-Fixture_ViewAllButtonWrapper {
+    border-right: none
+}
+
+.ntr-Fixture_ViewAllButtonWrapper:hover {
+    color: #ffdf1b
+}
+
+.ntr-Fixture_ViewAllButton {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 35px;
+    padding: 0 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden
+}
+
+.ntr-Fixture_ViewAllButton:after {
+    content: "\e813";
+    font-family: bet365UI;
+    font-size: 8px;
+    margin-left: 7px;
+    vertical-align: middle
+}
+
+.asia-browser .ntr-Fixture_ViewAllButton:after {
+    -webkit-transform: scale(.7) translateX(0) translateY(0);
+    -ms-transform: scale(.7) translateX(0) translateY(0);
+    transform: scale(.7) translateX(0) translateY(0);
+    display: inline-block
+}
+
+.ntr-sParticipant {
+    background-color: #666;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 50px;
+    border-bottom: 1px solid #707070;
+    position: relative
+}
+
+.ntr-sParticipant:hover {
+    background-color: #707070;
+    position: relative
+}
+
+.ntr-sParticipant.ntr-sParticipant_Highlighted {
+    background-color: #e4e4e4
+}
+
+.ntr-sParticipant.ntr-sParticipant_HighlightedEditBet {
+    background-color: #757575!important
+}
+
+.ie-9 .ntr-sParticipant {
+    border-collapse: collapse
+}
+
+.ie-8 .ntr-sParticipant,.ie-9 .ntr-sParticipant {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0
+}
+
+.ntr-sParticipant_Suspended {
+    cursor: default
+}
+
+.ntr-sParticipant_Suspended:hover {
+    background-color: #666
+}
+
+.ntr-sParticipantDetails,.ntr-sParticipant_Odds,.ntr-sParticipant_SilkAuss,.ntr-sParticipant_SilkItalys,.ntr-sParticipant_SilkTrotting,.ntr-sParticipant_SilkUks {
+    font-size: 0;
+    line-height: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.ie-8 .ntr-sParticipantDetails,.ie-8 .ntr-sParticipant_Odds,.ie-8 .ntr-sParticipant_SilkAuss,.ie-8 .ntr-sParticipant_SilkItalys,.ie-8 .ntr-sParticipant_SilkTrotting,.ie-8 .ntr-sParticipant_SilkUks,.ie-9 .ntr-sParticipantDetails,.ie-9 .ntr-sParticipant_Odds,.ie-9 .ntr-sParticipant_SilkAuss,.ie-9 .ntr-sParticipant_SilkItalys,.ie-9 .ntr-sParticipant_SilkTrotting,.ie-9 .ntr-sParticipant_SilkUks {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.ntr-sParticipant_SilkUks {
+    margin: 0 10px;
+    -webkit-flex: 0 0 33px;
+    -ms-flex: 0 0 33px;
+    flex: 0 0 33px;
+    max-width: 33px;
+    position: relative;
+    top: -1px
+}
+
+.ie-8 .ntr-sParticipant_SilkUks,.ie-9 .ntr-sParticipant_SilkUks {
+    width: 53px;
+    min-width: 53px;
+    padding: 0 10px
+}
+
+.ntr-sParticipant_SilkAuss,.ntr-sParticipant_SilkItalys {
+    margin: 0 10px;
+    -webkit-flex: 0 0 23px;
+    -ms-flex: 0 0 23px;
+    flex: 0 0 23px;
+    max-width: 23px;
+    position: relative;
+    top: -1px
+}
+
+.ie-8 .ntr-sParticipant_SilkAuss,.ie-8 .ntr-sParticipant_SilkItalys,.ie-9 .ntr-sParticipant_SilkAuss,.ie-9 .ntr-sParticipant_SilkItalys {
+    width: 53px;
+    min-width: 53px;
+    padding: 0 10px
+}
+
+.ntr-sParticipant_SilkTrotting {
+    margin: 0 10px;
+    -webkit-flex: 0 0 30px;
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+    position: relative;
+    top: -1px
+}
+
+.ie-8 .ntr-sParticipant_SilkTrotting,.ie-9 .ntr-sParticipant_SilkTrotting {
+    width: 50px;
+    padding: 0 10px
+}
+
+.ntr-sParticipant_NoSilk {
+    display: table-cell;
+    width: 10px
+}
+
+.ntr-sParticipant_Silk {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.ie-8 .ntr-sParticipant_Silk,.ie-9 .ntr-sParticipant_Silk {
+    height: 100%;
+    width: 33px
+}
+
+.ntr-sParticipant_Suspended .ntr-sParticipant_Silk {
+    opacity: .5
+}
+
+.ntr-sParticipant_SilkUks .ntr-sParticipant_Silk {
+    max-width: 33px
+}
+
+.ntr-sParticipant_SilkAuss .ntr-sParticipant_Silk,.ntr-sParticipant_SilkItalys .ntr-sParticipant_Silk {
+    max-width: 23px
+}
+
+.ie-8 .ntr-sParticipant_SilkItalys .ntr-sParticipant_Silk,.ie-9 .ntr-sParticipant_SilkItalys .ntr-sParticipant_Silk {
+    height: auto
+}
+
+.ntr-sParticipant_SilkTrotting .ntr-sParticipant_Silk {
+    max-width: 30px
+}
+
+.ntr-sParticipantDetails {
+    padding: 9px 0 8px;
+    overflow: hidden;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.ie-8 .ntr-sParticipantDetails,.ie-9 .ntr-sParticipantDetails {
+    width: 100%
+}
+
+.ntr-sParticipant {
+    font-size: 14px;
+    line-height: 16px;
+    color: #e4e4e4;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%
+}
+
+.ntr-sParticipant_Highlighted .ntr-sParticipant {
+    color: #545454
+}
+
+.ntr-sParticipant_HighlightedEditBet .ntr-sParticipant,.ntr-sParticipant_Suspended .ntr-sParticipant {
+    color: #a7a7a7
+}
+
+.ntr-sParticipant_Jockey {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a7a7a7;
+    width: 100%
+}
+
+.ntr-sParticipant_Highlighted .ntr-sParticipant_Jockey {
+    color: #545454
+}
+
+.ntr-sParticipant_HighlightedEditBet .ntr-sParticipant_Jockey,.ntr-sParticipant_Suspended .ntr-sParticipant_Jockey {
+    color: #a7a7a7
+}
+
+.ie-8 .ntr-sParticipant_Jockey {
+    line-height: 15px
+}
+
+.ntr-sParticipant_Odds {
+    font-size: 13px;
+    line-height: 13px;
+    color: #ffdf1b;
+    padding: 0 10px;
+    text-align: right;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    top: -1px
+}
+
+.ntr-sParticipant_Highlighted .ntr-sParticipant_Odds {
+    color: #14805e
+}
+
+.ntr-sParticipant_HighlightedEditBet .ntr-sParticipant_Odds {
+    color: #a7a7a7
+}
+
+.ntr-sParticipant_Suspended .ntr-sParticipant_Odds {
+    display: none
+}
+
+.ie-8 .ntr-sParticipant_Odds,.ie-9 .ntr-sParticipant_Odds {
+    width: 60px
+}
+
+.ntr-ItalyTrottingParticipant_Details {
+    padding: 9px 0 8px 10px
+}
+
+.ntr-NextRacesContainer_Container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #666
+}
+
+.ntr-NextRacesContainer {
+    height: 205px
+}
+
+.ntr-NextRacesContainer {
+    width: 100%;
+    min-height: 175px;
+}
+/****  /NTR ****/
+.DaySelectContainer {
+    display: block;
+    position: relative;
+    z-index: 10;
+    border: none;
+    background-color: #a7a7a7;
+}
+.MarketContainerTab {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+}
+.MarketContainerTab_Selected {
+    border-bottom: 2px solid #14805e;
+    padding-bottom: 2px;
+    color: #11654f;
+}
+.MarketContainerTab_Title {
+    position: relative;
+    color: #444;
+    font-size: 12px;
+    cursor: pointer;
+    height: 29px;
+    line-height: 27px;
+}
+.MarketContainerTab_Selected .MarketContainerTab_Title {
+        color: #11654f; }
+.RacingMarketGroupChild {
+    position: relative;
+}
+.page .Market-Cluster.MarketRaceMeeting.collapse.show {
+    display: block;
+}
+.RaceMeeting {
+    border-bottom: 1px solid #757575;
+    min-height: 79px;
+}
+.MeetingHeader {
+    display: flex;justify-content: space-between;
+    background-color: #666;
+    width: 100%;
+    font-size: 0;
+}
+.MeetingHeader_LeftContainer {
+    white-space: nowrap;
+    padding-top: 7px;
+}
+.MeetingHeader_RightContainer {
+    text-align: right;
+    padding-top: 3px;
+}
+.MeetingHeader_RaceName {
+    color: #ddd;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1px 0 10px;
+    line-height: 16px;
+}
+.MeetingHeader_Video {
+    padding: 0 3px;
+    background-color: #999;
+    margin: 3px 0 0;
+}
+.MeetingHeader_Tris,
+.MeetingHeader_Video {
+    height: 14px;
+    line-height: 14px;
+    min-width: 22px;
+    text-align: left;
+    color: #444;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 1px;
+    display: inline-block;
+    float: right;
+}
+.RaceMeetingCluster {
+}
+.page .Market-Cluster .item.RaceMeetingContainer{
+    padding: 5px 0 9px 10px;
+    position: relative;
+    display: inline-block;
+    height: initial;
+    /*width: 12%;*/
+    min-width: 160px;
+    font-size: 12px;
+    color: #bbb;
+    line-height: 15px;
+    cursor: pointer;
+    vertical-align: top;
+    border: none;
+}
+.item.RaceMeetingContainer .RaceName {
+    color: #ddd;
+    line-height: 20px;
+    font-size: 13px;
+    float: left;
+    min-width: 10px;
+}
+.item.RaceMeetingContainer .Status {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;
+    clear: both;
+    float: left;
+    font-size: 11px;
+    padding: 0 3px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 2px;
+        color: #a7a7a7;
+    margin-left: -3px;
+    margin-top: 2px;
+}
+.item.RaceMeetingContainer .CountdownHighlighted {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 85%;
+    line-height: 20px;
+    color: #a7a7a7;
+    font-size: 11px;
+    float: left;
+    position: relative;
+    bottom: 1px;
+    clear: both;
+}
+.RaceMeeting_FixedWinPriceAvailable {
+    display: inline-block;
+    font-size: 10px;
+    color: #a7a7a7;
+    padding: 0 0 8px 10px;
+    line-height: 20px;
+}
+.RacingMarketGroup_StatusInProgress {
+    display: inline-block;
+    float: right;
+    text-transform: none;
+    font-weight: 300;
+    font-size: 12px;
+    color: #4acfa5;
+}
+.ntr-Participant_SilkUk {
+    display: flex;
+    margin: 0 10px;
+    -webkit-flex: 0 0 33px;
+    -ms-flex: 0 0 33px;
+    flex: 0 0 33px;
+    max-width: 33px;
+    position: relative;
+    top: -1px;
+}
+.ntr-Participant_Silk {
+    display: block;
+    width: 100%;
+    height: auto;
+        max-width: 33px;
+}
+.ntr-ParticipantDetails {
+    padding: 9px 0 8px;
+    overflow: hidden;
+    display: flex;
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.ntr-Participant_Horse {
+    font-size: 14px;
+    line-height: 16px;
+    color: #e4e4e4;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+.ntr-Participant_Jockey {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a7a7a7;
+    width: 100%;
+}
+
+
+/*** Odds ***/
+
+.OddsOnCouponNavBarButton {
+    display: inline-block;
+    font-size: 13px;
+    color: #bbb;
+    cursor: pointer;
+    height: 29px;
+    line-height: 29px;
+    margin: 0 10px;
+}
+.OddsOnCouponNavBarButton:hover {
+    color: #e4e4e4;
+}
+.OddsOnCouponNavBarButton.active{
+    color: #e4e4e4;
+    border-bottom: 2px solid #e4e4e4;
+}
+.FilterClassificationHeader {
+    background-color: #14805e;
+    font-size: 14px;
+    min-height: 29px;
+    line-height: 29px;
+    color: #e4e4e4;
+    padding: 0 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.FilterClassificationHeader_Title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+.FilterClassificationHeader_TimeDropDown {
+    display: inline-block;
+    vertical-align: top;
+    height: 29px;
+    padding: 0 9px;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    position: relative;
+}
+.TimeDropDown {
+    font-size: 11px;
+    color: #ffdf1b;
+    cursor: pointer;
+    position: relative;
+}
+.TimeDropDown:after {
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e801";
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 5px;
+    line-height: 1;
+    padding-left: 5px;
+}
+.FilterClassificationHeader_Sort {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: right;
+    white-space: nowrap;
+}
+.FilterClassificationHeader_SortLabel {
+    padding-right: 10px;
+}
+.FilterClassificationHeader_SortLabel,
+.SortButtons,
+.SortButtons_Button {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #4acfa5;
+}
+.FilterClassificationHeader_SortLabel,
+.SortButtons,
+.SortButtons_Button {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #4acfa5;
+}
+.SortButtons_Button {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.SortButtons_Selected {
+    color: #ddd;
+    position: relative;
+}
+.SortButtons_Selected:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+}
+.OddsOnGrid {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-top: 1px solid #116b4f;
+}
+.OddsOnColumn {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 0;
+    border-bottom: 1px solid #4d4d4d;
+}
+.OddsOnColumn_Date {
+    width: 62px;
+}
+.OddsOnColumn_Participant.OddsOnColumn_W5 {
+    width: 14.33333333333333%;
+}
+
+.OddsOnColumnHeader {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #a7a7a7;
+    line-height: 20px;
+    height: 20px;
+    font-size: 12px;
+    color: #444;
+    text-align: center;
+    padding: 0 10px;
+}
+.OddsOnParticipantDate {
+    height: 50px;
+    border-bottom: 1px solid #757575;
+    background-color: #666;
+    padding: 5px 9px 0;
+}
+.OddsOnParticipantDate_Date, .OddsOnParticipantDate_Time {
+    font-size: 11px;
+    color: #bbb;
+    display: block;
+    line-height: 19px;
+}
+.OddsOnParticipantDate_Time {
+    line-height: 17px;
+}
+.OddsOnParticipantFixture {
+    height: 50px;
+    border-bottom: 1px solid #757575;
+    background-color: #666;
+    padding-top: 5px;
+    position: relative;
+}
+.OddsOnParticipantFixture_Teams {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #e4e4e4;
+    display: block;
+    line-height: 19px;
+    padding-right: 10px;
+}
+.OddsOnParticipantFixture_Competition {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 11px;
+    color: #bbb;
+    display: block;
+    line-height: 17px;
+    padding-right: 10px;
+}
+.OddsOnParticipantFixture_Icons {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 10px;
+}
+.OddsOnParticipantFixture_IconsVideoAvailable {
+    font-size: 10px;
+    line-height: 1;
+    color: #999;
+    cursor: pointer;
+}
+.OddsOnParticipantFixture_IconsVideoAvailable:before {
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: bet365UI-icomoon!important;
+    content: "\E924";
+}
+.Participant_General {position: relative;border-color: #757575;border-bottom-width: 1px;border-bottom-style: solid;}
+/*.Participant_General.Market_CN-2:nth-last-child(2),*/
+/*.Participant_General.Market_CN-3:nth-last-child(-n+3),*/
+/*.Participant_General.Market_CN-4:nth-last-child(-n+4),*/
+/*.Participant_General.Market_CN-5:nth-last-child(-n+5),*/
+/*.Participant_General.Market_CN-6:nth-last-child(-n+6),*/
+/*.Participant_General.Market_CN-7:nth-last-child(-n+7),*/
+/*.Participant_General:last-child {*/
+    /*border-bottom: none;*/
+/*}*/
+
+.Market_CN-2 {width: 50%!important;}
+
+.ParticipantOddsOnly,
+.MarketGroupContainer_HasLabels .ParticipantOddsOnly {display: inline-flex;align-items: center;justify-content: center;height: 35px;width: 100%;padding: 0 10px;font-size: 12px;color: #ffdf1b;cursor: pointer;white-space: nowrap; background-color: #666;}
+.ParticipantOddsOnly.ParticipantOddsOnlyDarker {height: 35px;background-color: #585858;border-color: #666;border-right: 1px solid #666;}
+.ParticipantOddsOnly_Odds {display: inline-block;color: inherit;}
+.ParticipantOddsOnlyDarker.ParticipantOddsOnly:hover {background-color: #6e6e6e;}
+.OddsOnParticipantOddsOnly {height: 50px;background-color: #585858;border-color: #666;border-right-width: 1px;border-right-style: solid;}
+.ParticipantOddsOnly:hover {
+    background-color: #707070!important;
+    outline: 1px solid transparent;
+}
+.Market_General+.Market_General .Participant_General {border-left-width: 1px;border-left-style: solid;border-left-color: #757575;}
+
+.NoResultsMessage {
+    background-color: #666;
+    padding: 39px 145px 41px;
+    text-align: center;
+    border-top: 1px solid #116b4f;
+}
+.NoResultsMessage_Text {
+    font-size: 13px;
+    line-height: 20px;
+    color: #ddd;
+}
+/*** /Odds ***/
+
+/*** MMM ***/
+.MultiMakerClassificationBar_ButtonContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    position: relative;
+    left: 0;
+    transition: left .35s ease-in-out;
+    width: 100%;
+    background: #404040;
+    text-align: center;
+    border: 0 solid #303030;
+    border-width: 1px 0;
+}
+.MultiMakerClassificationBarButton {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.MultiMakerClassificationBarButton.active {
+    cursor: default;
+    position: relative;
+}
+.MultiMakerClassificationBarButton_Icon {
+    height: 27px;
+    width: 100%;
+    margin-bottom: 4px;
+    opacity: .5;
+}
+.MultiMakerClassificationBarButton.active .MultiMakerClassificationBarButton_Icon {
+    opacity: 1;
+}
+.MultiMakerClassificationIcon {
+    display: block;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 27px;
+    min-width: 37px;
+}
+.MultiMakerClassificationBarButton_Label {
+    color: #999;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+}
+.MultiMakerClassificationBarButton:hover .MultiMakerClassificationBarButton_Label {color: #bbb;}
+.MultiMakerClassificationBarButton:hover .MultiMakerClassificationBarButton_Icon {opacity: .75;}
+.MultiMakerClassificationBarButton.active .MultiMakerClassificationBarButton_Label {
+    color: #ffdf1b;
+}
+.MultiMakerClassificationIcon-1 {
+    background-image: url('/img/MultiMakerClassificationIcon-1.svg');
+}
+.MultiMakerClassificationIcon-13 {
+    background-image: url('/img/MultiMakerClassificationIcon-13.svg');
+}
+.MultiMakerClassificationIcon-12 {
+    background-image: url('/img/MultiMakerClassificationIcon-12.svg');
+}
+.MultiMakerClassificationIcon-18 {
+    background-image: url('/img/MultiMakerClassificationIcon-18.svg');
+}
+.MultiMakerClassificationIcon-15 {
+    background-image: url('/img/MultiMakerClassificationIcon-15.svg');
+}
+.MultiMakerClassificationIcon-17 {
+    background-image: url('/img/MultiMakerClassificationIcon-17.svg');
+}
+.MultiMakerScrollableHorizontalNavBar_ButtonContainer.filtre{
+    background: #14805e;
+    text-align: left;
+}
+.MultiMakerCompetitionBarButton {
+    display: inline-block;
+    font-size: 12px;
+    color: #bbb;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10px;
+}
+.MultiMakerCompetitionBarButton:hover {color: #ddd;}
+.MultiMakerCompetitionBarButton.active {
+    color: #ddd;
+    position: relative;
+}
+.MultiMakerScrollableHorizontalNavBar_ButtonContainer {
+        display: block;
+    white-space: nowrap;
+    min-height: 30px;
+        border-bottom: 1px solid #116b4f;
+}
+.MultiMakerMarketHeaderBarButton {
+    display: inline-block;
+    font-size: 12px;
+    color: #53e8b9;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10px;
+}
+.MultiMakerMarketHeaderBarButton_Selected {color: #e4e4e4;}
+.MarketGroupContainer {display: flex;justify-content: space-between;flex-wrap: wrap;width: 100%;background-color: #666;}
+/*.MarketGroupContainer.MarketGroupContainer_HasLabels {flex-wrap: nowrap;}*/
+.MarketCouponFixtureLabelBase {width: auto;vertical-align: top; border-bottom: 1px solid #757575;}
+.header_wrapp .MarketCouponFixtureLabelBase{
+    border-bottom: none;
+}
+.Market_General.MarketCouponFixtureLabelBase {width: auto;flex-grow: 1;}
+.MarketCouponValuesExplicit33,
+.MarketCouponValuesExplicit34 {
+    display: table-cell;
+    vertical-align: top;
+    border-bottom: 1px solid #757575;
+}
+.Market_General {width: 100%;}
+.MarketCastsBase {display: table;table-layout: fixed;width: 100%;}
+.MarketFullWidth,
+.MarketHeadToHead {display: inline-block;vertical-align: top;}
+.MarketColumnHeader~.Participant_General.Market_CN-2:nth-child(2n+3), .MarketColumnHeader~.Participant_General.Market_CN-3:nth-child(3n+3), .MarketColumnHeader~.Participant_General.Market_CN-3:nth-child(3n+4), .MarketColumnHeader~.Participant_General.Market_CN-4:nth-child(4n+3), .MarketColumnHeader~.Participant_General.Market_CN-4:nth-child(4n+4), .MarketColumnHeader~.Participant_General.Market_CN-4:nth-child(4n+5), .MarketColumnHeader~.Participant_General.Market_CN-5:nth-child(5n+3), .MarketColumnHeader~.Participant_General.Market_CN-5:nth-child(5n+4), .MarketColumnHeader~.Participant_General.Market_CN-5:nth-child(5n+5), .MarketColumnHeader~.Participant_General.Market_CN-5:nth-child(5n+6), .MarketColumnHeader~.Participant_General.Market_CN-6:nth-child(6n+3), .MarketColumnHeader~.Participant_General.Market_CN-6:nth-child(6n+4), .MarketColumnHeader~.Participant_General.Market_CN-6:nth-child(6n+5), .MarketColumnHeader~.Participant_General.Market_CN-6:nth-child(6n+6), .MarketColumnHeader~.Participant_General.Market_CN-6:nth-child(6n+7), .MarketColumnHeader~.Participant_General.Market_CN-7:nth-child(7n+3), .MarketColumnHeader~.Participant_General.Market_CN-7:nth-child(7n+4), .MarketColumnHeader~.Participant_General.Market_CN-7:nth-child(7n+5), .MarketColumnHeader~.Participant_General.Market_CN-7:nth-child(7n+6), .MarketColumnHeader~.Participant_General.Market_CN-7:nth-child(7n+7), .MarketColumnHeader~.Participant_General.Market_CN-7:nth-child(7n+8), .MarketExtraDataHeader~.Participant_General.Market_CN-2:nth-child(2n+3), .MarketExtraDataHeader~.Participant_General.Market_CN-3:nth-child(3n+3), .MarketExtraDataHeader~.Participant_General.Market_CN-3:nth-child(3n+4), .MarketExtraDataHeader~.Participant_General.Market_CN-4:nth-child(4n+3), .MarketExtraDataHeader~.Participant_General.Market_CN-4:nth-child(4n+4), .MarketExtraDataHeader~.Participant_General.Market_CN-4:nth-child(4n+5), .MarketExtraDataHeader~.Participant_General.Market_CN-5:nth-child(5n+3), .MarketExtraDataHeader~.Participant_General.Market_CN-5:nth-child(5n+4), .MarketExtraDataHeader~.Participant_General.Market_CN-5:nth-child(5n+5), .MarketExtraDataHeader~.Participant_General.Market_CN-5:nth-child(5n+6), .MarketExtraDataHeader~.Participant_General.Market_CN-6:nth-child(6n+3), .MarketExtraDataHeader~.Participant_General.Market_CN-6:nth-child(6n+4), .MarketExtraDataHeader~.Participant_General.Market_CN-6:nth-child(6n+5), .MarketExtraDataHeader~.Participant_General.Market_CN-6:nth-child(6n+6), .MarketExtraDataHeader~.Participant_General.Market_CN-6:nth-child(6n+7), .MarketExtraDataHeader~.Participant_General.Market_CN-7:nth-child(7n+3), .MarketExtraDataHeader~.Participant_General.Market_CN-7:nth-child(7n+4), .MarketExtraDataHeader~.Participant_General.Market_CN-7:nth-child(7n+5), .MarketExtraDataHeader~.Participant_General.Market_CN-7:nth-child(7n+6), .MarketExtraDataHeader~.Participant_General.Market_CN-7:nth-child(7n+7), .MarketExtraDataHeader~.Participant_General.Market_CN-7:nth-child(7n+8), .Participant_General:first-child~.Participant_General.Market_CN-2:nth-child(2n), .Participant_General:first-child~.Participant_General.Market_CN-3:nth-child(3n), .Participant_General:first-child~.Participant_General.Market_CN-3:nth-child(3n-1), .Participant_General:first-child~.Participant_General.Market_CN-4:nth-child(4n), .Participant_General:first-child~.Participant_General.Market_CN-4:nth-child(4n-1), .Participant_General:first-child~.Participant_General.Market_CN-4:nth-child(4n-2), .Participant_General:first-child~.Participant_General.Market_CN-5:nth-child(5n), .Participant_General:first-child~.Participant_General.Market_CN-5:nth-child(5n-1), .Participant_General:first-child~.Participant_General.Market_CN-5:nth-child(5n-2), .Participant_General:first-child~.Participant_General.Market_CN-5:nth-child(5n-3), .Participant_General:first-child~.Participant_General.Market_CN-6:nth-child(6n), .Participant_General:first-child~.Participant_General.Market_CN-6:nth-child(6n-1), .Participant_General:first-child~.Participant_General.Market_CN-6:nth-child(6n-2), .Participant_General:first-child~.Participant_General.Market_CN-6:nth-child(6n-3), .Participant_General:first-child~.Participant_General.Market_CN-6:nth-child(6n-4), .Participant_General:first-child~.Participant_General.Market_CN-7:nth-child(7n), .Participant_General:first-child~.Participant_General.Market_CN-7:nth-child(7n-1), .Participant_General:first-child~.Participant_General.Market_CN-7:nth-child(7n-2), .Participant_General:first-child~.Participant_General.Market_CN-7:nth-child(7n-3), .Participant_General:first-child~.Participant_General.Market_CN-7:nth-child(7n-4), .Participant_General:first-child~.Participant_General.Market_CN-7:nth-child(7n-5) {border-left-width: 1px;   border-left-style: solid;}
+
+.Market_PWidth-100 {width: 100%;}
+.Market_PWidth-75 {width: 75%;}
+.Market_PWidth-62-5 {width: 62.5%;}
+.Market_PWidth-60 {width: 60%;}
+.Market_PWidth-50 {width: 50%;}
+.Market_PWidth-37-5 {width: 37.5%;}
+.Market_PWidth-33-3333 {width: 33.3333%;}
+.Market_PWidth-25 {width: 25%;}
+.Market_PWidth-18-75 {width: 18.75%;}
+.Market_PWidth-13-333 {width: 13.333%;}
+.Market_PWidth-12-5 {width: 12.5%;}
+.Market_PWidth-12-3333 {width: 100%;max-width: 12.3333%;}
+.Market_PWidth-10 {width: 10%;}
+.Market_CN-3 {width: 33.3333%!important;}
+.Market_CN-4 {width: 25%!important;}
+
+.Market3 {display: inline-block;vertical-align: top;}
+.MarketCouponFixtureLink,
+.MarketCouponFixtureLinkDoubleHeight {width: 50px;min-width: 50px;}
+.header_wrapp .MarketCouponFixtureLink{border-bottom: 1px solid #757575}
+.MarketColumnHeader {position: relative; display: flex;justify-content: center;align-items: center;padding: 0;text-align: center;text-overflow: ellipsis; line-height: 20px;font-size: 12px;color: #444;overflow: hidden;white-space: nowrap;background-color: #a7a7a7;}
+.MarketColumnHeader.MarketCouponValuesExplicit33_ReducedPadding {justify-content: center;}
+.Market_HasLabels+.Market_General .Participant_General {border-left: none;}
+.MarketHeaderLabel {min-height: 20px;}
+.MarketHeaderLabel_Date {justify-content: flex-start;text-align: left;cursor: default;font-size: 11px;
+    padding: 0 0 0 10px;}
+
+.MarketExtraDataHeader {display: flex;padding: 0 10px;margin-right: auto;font-size: 12px;line-height: 20px;color: #444;background-color: #a7a7a7;}
+.MarketExtraDataHeader .DropDownToggle:after {color: #ffdf1b;}
+.MarketExtraDataHeader_Comments {flex: 0 1 100%;padding-right: 10px;text-align: left;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.MarketExtraDataHeader_Icons {flex: 0 0 auto;}
+.MarketExtraDataHeader_BookCloses {flex: 0 0 auto;}
+
+.MarketCouponLeagueStatisticsHeader_Item {flex: 1 0 auto;display: inline-block; width: 14.2%;padding: 0 5px 0 10px;text-align: center;text-overflow: ellipsis;font-size: 12px;overflow: hidden;white-space: nowrap;}
+.MarketCouponLeagueStatisticsHeader_Wrapper {flex: 0 0 auto;width: 55%;padding-right: 10px;text-align: right;}
+.MarketCouponLeagueStatisticsTriple .MarketCouponLeagueStatisticsHeader_Wrapper {width: 59%;}
+.MarketCouponLeagueStatisticsHeader_Wrapper .MarketCouponLeagueStatisticsHeader_Item {display: inline-block;vertical-align: top;padding: 0;}
+.CouponMarketGroupLiveUpdates {}
+.CouponMarketGroupLiveUpdates .MarketCouponLeagueStatisticsHeader_Label {text-align: left;}
+.CouponParticipantLeagueStatistics {display: flex;align-items: center;height: 35px;font-size: 12px;color: #bbb;border-bottom: 1px solid #757575;}
+.CouponParticipantLeagueStatistics_BorderDashed {padding-bottom: 1px;border-bottom: none;background-image: linear-gradient(90deg,#888 5px,#666 0);background-size: 10px 1px;background-position: 0 100%;background-repeat: repeat-x;}
+.CouponParticipantLeagueStatistics_NameWrapper {flex: 1 1 auto;padding-right: 10px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.CouponParticipantLeagueStatistics_Number {position: relative;display: inline-block;width: 40px;padding: 0 10px;line-height: 15px;text-align: center;color: #bbb;}
+.CouponParticipantLeagueStatistics_Number:after {content: "";position: absolute;left: 28px;top: 3px;display: block;width: 7px;height: 9px;}
+.CouponParticipantLeagueStatistics_Name {display: inline;line-height: 15px;}
+.CouponParticipantLeagueStatistics_Linked .CouponParticipantLeagueStatistics_Name {color: #ddd;cursor: pointer;}
+.CouponParticipantLeagueStatistics_Linked .CouponParticipantLeagueStatistics_Name:hover {color: #ffdf1b;}
+.MarketCouponLeagueStatisticsTriple .CouponParticipantLeagueStatistics_StatsWrapper {width: 59%;}
+.CouponParticipantLeagueStatistics_StatsWrapper {flex: 0 0 auto;width: 55%;padding-right: 10px;text-align: right;}
+.CouponParticipantLeagueStatistics_Item {display: inline-block;width: 14.2%;text-align: center;line-height: 29px;font-size: 12px; }
+.MarketCouponLeagueOddsHeader {padding: 0 5px;}
+.CouponParticipantOddsOnlyLeagueTable {height: 30px;padding: 0 5px;}
+.MarketCouponLeagueStatistics+.MarketCouponLeagueOdds .CouponParticipantOddsOnlyLeagueTable,
+.MarketCouponLeagueStatisticsDouble+.MarketCouponLeagueOdds .CouponParticipantOddsOnlyLeagueTable,
+.MarketCouponLeagueStatisticsTriple+.MarketCouponLeagueOdds .CouponParticipantOddsOnlyLeagueTable {border-left: none;}
+.CouponParticipantOddsOnlyAdditionalRowHeight,
+.MarketGroupContainer_HasLabels .ParticipantOddsOnly.CouponParticipantOddsOnlyAdditionalRowHeight {height: 35px;}
+.CouponParticipantPlayerTeam {padding: 0 10px;line-height: 34px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;font-size: 12px;color: #a7a7a7;border-bottom: 1px solid #757575;background-color: #666;}
+.CouponParticipantPlayerTeam:last-child {border-bottom: none;line-height: 35px;}
+.CouponParticipantPlayerTeam_Name {display: inline;padding-right: 10px;color: #ddd;}
+
+.CastsDropDown {display: table-cell;border-right: 1px solid #757575;}
+.CastsDropDownButton {position: relative;display: flex;width: 100%;vertical-align: middle;padding: 10px 30px 10px 10px;white-space: nowrap;overflow: hidden;background-color: #666; cursor: pointer;}
+.CastsDropDownButton:after {content: "\e801";position: absolute;right: 10px;top: 15px;text-transform: none;font-family: bet365UI;speak: none;font-style: normal;font-variant: normal;font-size: 5px;font-weight: 400;color: #bbb;line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.CastsDropDownButton:hover {color: #fff;background-color: #707070;}
+.CastsDropDownButton_Participant.CastsDropDownButton_ParticipantTruncate {flex: 0 1 auto;min-width: 45px;}
+.CastsDropDownButton:hover .CastsDropDownButton_Participant {color: #e4e4e4;}
+.CastsDropDownButton_Market,
+.CastsDropDownButton_Participant { display: inline-block;flex: 0 0 auto;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;font-size: 12px;vertical-align: top;cursor: pointer;color: #ddd;}
+.CastsDropDownButton_Market {color: #a7a7a7;padding-left: 10px;}
+.CastsDropDown .DropDownContainer {width: 100%;}
+.CastsParticipant {display: table-cell; width: 100px;vertical-align: middle;text-align: center;cursor: pointer;font-size: 12px;background-color: #585858;color: #ffdf1b;}
+.CastsParticipant:hover {background-color: #707070;}
+
+.MarketFixtureComment {padding: 0 10px;font-size: 12px;line-height: 29px;color: #4acfa5;background: #14805e;border-bottom: 1px solid #116b4f;}
+.MarketFixtureComment_Text {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.MarketGroup_Open+.MarketGroup_Wrapper.MarketFixtureComment_Child {border-top-color: #189970;}
+
+.CouponParticipantRowValueReduceRowHeight {height: 30px;}
+
+.ParticipantRowValue {display: flex;justify-content: center;align-items: center;width: 100%; height: 35px;padding: 0 10px;background-color: #666;font-size: 12px;color: #ddd;border-bottom: 1px solid #757575;}
+.ParticipantRowValue.CouponParticipantRowValueReduceRowHeight {height: 35px;}
+.ParticipantRowValue:last-child {border-bottom: none;}
+.ParticipantRowValue_Name {display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+
+.CouponParticipantLabel {padding: 0 10px;line-height: 34px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;font-size: 12px;color: #ddd;border-bottom: 1px solid #757575;}
+.ParticipantCentered {display: flex;align-items: center;justify-content: center;height: 30px;width: 100%;padding: 0 10px;background-color: #666;font-size: 12px;color: #ddd;cursor: pointer;white-space: nowrap;}
+.ParticipantCentered:hover,
+.MarketGroupContainer_HasLabels .ParticipantCentered:hover {background-color: #707070;outline: 1px solid transparent;}
+.ParticipantCentered_BlankName,
+.ParticipantCentered_NoHandicap {justify-content: flex-start;}
+.CouponParticipantCenteredNotUniqueAdditionalRowHeight {height: 35px;}
+.ParticipantCentered_Name { display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.ParticipantCentered_Name:empty {display: none!important;}
+.ParticipantCentered_NoHandicap .ParticipantCentered_Name {flex: 0 1 auto;min-width: 50%;padding-right: 5px;text-align: right;}
+.ParticipantCentered_Name:empty~.ParticipantCentered_Odds,
+.ParticipantCentered_NoHandicap .ParticipantCentered_Odds { flex: 1 1 auto;padding-left: 5px;max-width: 50%;}
+.ParticipantCentered_Handicap {display: inline-block;padding: 0 10px;}
+.ParticipantCentered_Odds {display: inline-block;color: #ffdf1b;}
+.ParticipantCentered_Name:empty~.ParticipantCentered_Odds,
+.ParticipantCentered_NoHandicap .ParticipantCentered_Odds { flex: 1 1 auto;max-width: 50%;padding-left: 5px;}
+.ParticipantCentered_NoHandicap .ParticipantCentered_Name:empty~.ParticipantCentered_Odds {width: 100%;max-width: 100%;padding: 0;text-align: center;}
+.ParticipantCentered_Odds { width: 100%;max-width: 100%;padding: 0;/*text-align: center;*/}
+.CouponParticipantCenteredAdditionalRowHeight {height: 35px;}
+.CouponParticipantCenteredAdditionalRowHeight .ParticipantCentered_Odds { width: auto;}
+.ParticipantDummy {display: inline-block;height: 35px;width: 100%;vertical-align: top;background-color: #666;}
+.CouponParticipantRowName {display: flex;align-items: center;width: 100%;height: 35px; padding: 0 10px;font-size: 12px;color: #ddd;border-bottom: 1px solid #757575;background-color: #666;}
+.CouponParticipantRowName_Name {display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.CouponParticipantRowName_Odds {display: none!important;}
+
+.CouponParticipantWithoutBookCloses {display: flex;align-items: center;width: 100%;height: 35px;padding: 0 10px;font-size: 12px;
+color: #ddd;background-color: #666;border-bottom: 1px solid #757575;}
+/*.CouponParticipantWithoutBookCloses:last-child {border-bottom: none;}*/
+.CouponParticipantWithoutBookCloses_Name {display: inline-block;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+
+.MarketCouponScorerTitle,
+.MarketCouponScorerTitleTwoColumn,
+.MarketCouponScorerValues {display: inline-block;vertical-align: top;}
+
+.MultiMakerCouponParticipantWithBookCloses {
+    background-color: #666;
+    color: #ddd;
+    font-size: 12px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    height: 59px;
+    width: 100%;
+    border-bottom: 1px solid #757575;
+    padding: 0 10px;
+}
+.MultiMakerParticipantOddsOnlyDarker {
+    background-color: #585858;
+    font-size: 12px;
+    color: #ffdf1b;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 10px;
+    white-space: nowrap;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 59px;
+}
+.MarketGroupContainer_HasLabels .MultiMakerParticipantOddsOnlyDarker {background-color: #585858;border-color: #666;}
+.MarketGroupContainer_HasLabels .ParticipantCentered {background-color: #5e5e5e;border-color: #6e6e6e;}
+.MarketGroupContainer_HasLabels .ParticipantOddsOnly {background-color: #5e5e5e;border-color: #6e6e6e;}
+.MultiMakerCouponParticipantWithBookCloses_LeftSideContainer {
+    height: 44px;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    line-height: 22px;
+}
+.MultiMakerCouponParticipantWithBookCloses_BookCloses {
+    font-size: 11px;
+    color: #bbb;
+    cursor: default;
+}
+.MultiMakerCouponParticipantWithBookCloses_TeamKitContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.MultiMakerCouponParticipantWithBookCloses_KitElement {
+    width: 14px;
+    height: 20px;
+    margin: 4px 0;
+}
+.MultiMakerCouponParticipantWithBookCloses_NameContainer {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+.MultiMakerCouponParticipantWithBookCloses_Name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 22px;
+}
+.MultiMakerCouponParticipantWithBookCloses_Icons {
+    text-align: right;
+    font-size: 0;
+    color: #999;
+    padding-left: 10px;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.MultiMakerCouponParticipantWithBookCloses_Icons-1 {
+    width: 25px;
+}
+.MultiMakerCouponParticipantWithBookCloses_IconsGeneric {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+.MultiMakerCouponParticipantWithBookCloses_IconsStats {
+    font-size: 13px;
+    cursor: pointer;
+}
+.MultiMakerCouponParticipantWithBookCloses_IconsGeneric:first-child {
+    padding-left: 0;
+}
+.MultiMakerCouponParticipantWithBookCloses_IconsGeneric:before {
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.MultiMakerCouponParticipantWithBookCloses_IconsStats:before {
+    content: "\e810";
+}
+.MultiMakerCouponParticipantWithBookCloses_IconsAudioAvailable:before {
+    content: "\E811";
+}
+.MultiMakerParticipantOddsOnlyDarker_Odds {
+    display: inline-block;
+    cfont-size: 12px;
+    color: #ffdf1b;
+    cursor: pointer;
+}
+.CouponFixtureLinkParticipant {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #666;
+    color: #bbb;
+    font-size: 12px;
+    padding: 0 6px 0 0;
+    height: 35px;
+    border-bottom: 1px solid #757575;
+}
+.CouponFixtureLinkParticipant_Name {display: table-cell;width: 100%;vertical-align: middle;text-align: right;cursor: pointer; color: #ddd;}
+.CouponFixtureLinkParticipant_Name:after {content: "\e813";position: relative;top: -1px;display: inline-block;margin-left: 6px;font-family: bet365UI;speak: none;font-size: 8px;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1; color: #aaa;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+.CouponFixtureLinkParticipant_Name:hover,
+.CouponFixtureLinkParticipant_Name:hover:after {color: #ffdf1b;}
+
+.MultiMakerCouponFixtureLinkParticipant.CouponFixtureLinkParticipant {
+    height: 59px;
+}
+/*** /MMM ***/
+
+/*** VR ***/
+.VirtualRacingVideoPlayer {
+    margin: 20px auto 20px auto;
+    position: relative;
+    background-color: #14805e;
+    text-align: center;
+    width: 514px;
+    border: 1px solid #404040;
+}
+.VirtualRacingMeetingsButtonContainer {
+    display: table;
+    table-layout: fixed;
+    cursor: default;
+    margin: 0 auto;
+    border-spacing: 20px 0;
+}
+.MeetingButton {
+    display: table-cell;
+    line-height: 27px;
+    font-size: 13px;
+    color: #4acfa5;
+    text-align: center;
+    cursor: pointer;
+}
+.MeetingButton_Selected {
+    border-bottom: 2px solid #ddd;
+    color: #ddd;
+    cursor: default;
+}
+.VirtualRacingVideoPlayer_VideoWindow {
+    border-top: 1px solid #404040;
+    background-color: #404040;
+    height: 289px;
+    overflow: hidden;
+}
+.VirtualRacingVideoPlayer_Spinner:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 5px;
+    content: "";
+    display: block;
+    -webkit-animation: VirtualRacing_SpinnerRotate .4s infinite linear;
+    animation: VirtualRacing_SpinnerRotate .4s infinite linear;
+    height: 20px;
+    width: 20px;
+    background-image: url('/img/VirtualRacingVideoPlayer_Spinner.svg');
+}
+
+@-webkit-keyframes VirtualRacing_SpinnerRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes VirtualRacing_SpinnerRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+.MediaPlayer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #303030;
+}
+.MediaPlayerCoreContainer {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.MarketGroup {
+    border-top: none;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+.CouponVirtualsMarketGroupButton_RaceInfo {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    line-height: 29px;
+    position: relative;
+}
+.CouponVirtualsMarketGroupButton_RaceInfoText {
+    display: inline-block;
+    vertical-align: top;
+    color: #e4e4e4;
+    font-size: 15px;
+    font-weight: 400;
+}
+.CouponVirtualsMarketGroupButton_NavContainer {
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    overflow: hidden;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+.VirtualRaceNavBar {
+    position: relative;
+}
+.VirtualRaceNavBar_LeftArrow,
+.VirtualRaceNavBar_RightArrow {
+    width: 17px;
+    text-align: center;
+    background-color: #14805e;
+    font-size: 9px;
+    color: #41b590;
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+    border: 1px solid #41b590;
+    z-index: 20;
+}
+.VirtualRaceNavBar_HScroll {
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    position: relative;
+}
+.VirtualRaceNavBarButton {
+    display: inline-block;
+    font-size: 12px;
+    color: #4acfa5;
+    text-align: center;
+    min-width: 25px;
+    margin: 0 10px;
+    line-height: 27px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+.VirtualRaceNavBarButton_Selected {
+    color: #ddd;
+    border-bottom-color: #ddd;
+    cursor: default;
+}
+
+.ParticipantVirtual {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #666;
+    cursor: pointer;
+}
+.ParticipantVirtualHorse {
+    border-bottom: 1px solid #757575;
+}
+.ParticipantVirtualHorse_DrawWrapper {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 10px;
+    width: 40px;
+}
+.ParticipantVirtualHorse_DrawNumber {
+    display: inline-block;
+    width: 37px;
+    line-height: 21px;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #e4e4e4;
+    text-align: center;
+}
+.VirtualSilk_HorseVirtual, .VirtualSilk_TrottingVirtual {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20px 0 13px;
+    width: 70px;
+}
+.VirtualSilk_Image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.ParticipantVirtual_Name {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.ParticipantVirtual_Identifier {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #e4e4e4;
+    display: block;
+    max-width: 100%;
+}
+.ParticipantVirtualHorse_Jockey {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 11px;
+    color: #bbb;
+    display: block;
+    max-width: 100%;
+}
+.ParticipantVirtualOddsOnly {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #5e5e5e;
+    color: #ffdf1b;
+    border-bottom: none;
+    height: 49px;
+    width: 12%;
+}
+.ParticipantVirtualOddsOnly_Odds {
+    display: table-cell;
+    width: 12%;
+    text-align: center;
+    font-size: 13px;
+    padding: 0 10px;
+}
+.CouponRacingMarketGroupButton_RaceInfo {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    padding: 0 0 0 10px;
+    line-height: 29px;
+    position: relative;
+    display: inherit;
+}
+.CouponRacingMarketGroupButton_RaceInfoText {
+    display: inline-block;
+    vertical-align: top;
+    color: #e4e4e4;
+    font-size: 14px;
+    font-weight: 400;
+}
+.CouponRacingMarketGroupButton_Raceoff {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 7px;
+    color: #53e8b9;
+    line-height: 17px;
+    height: 14px;
+    font-size: 13px;
+    text-transform: uppercase;
+    z-index: 30;
+    margin-left: 13px;
+}
+.CouponVirtualsMarketGroupButton_RaceOff {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 7px;
+    padding: 0 3px;
+    margin: 0 10px;
+    color: #14805e;
+    background: #ddd;
+    line-height: 13px;
+    height: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 1px;
+    z-index: 30;
+}
+.MarketGroup_Wrapper {
+    border-top: 1px solid #116b4f;
+}
+.MarketRacingCastRunner {
+    display: table-cell;
+}
+.MarketColumnHeaderCast {
+    height: 20px;
+    overflow: visible;
+    padding: 0;
+}
+.MarketColumnHeaderCast_Text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+.RacingCastRunnerParticipant+.RacingCastRunnerParticipant {
+    border-top: 1px solid #757575;
+}
+.RacingCastRunnerParticipant {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding-right: 10px;
+    color: #e4e4e4;
+    background: #666;
+    font-size: 12px;
+    line-height: 29px;
+}
+.RacingCastRunnerParticipant_Number {
+    width: 35px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 9px 0 10px;
+    color: #bbb;
+    text-align: center;
+}
+.RacingCastRunnerParticipant_Name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+}
+.MarketRacingCast {
+    display: table-cell;
+    vertical-align: top;
+    background: #5e5e5e;
+    font-size: 12px;
+    line-height: 29px;
+}
+
+.MarketColumnHeaderCast {
+    height: 20px;
+    overflow: visible;
+    padding: 0;
+}
+.MarketColumnHeaderCast_Text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 10px;
+}
+.MarketRacingCast_ColSpan3 .MarketColumnHeaderCast_Text {
+    width: 300%;
+    z-index: 10;
+}
+.RacingCastOrderParticipant {
+    padding: 0 10px;
+    text-align: center;
+    color: #bbb;
+    background: #5e5e5e;
+    border-right: 1px solid #6e6e6e;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.CouponCastFooter_Footer {
+    background: #666;
+    height: 51px;
+    line-height: 50px;
+    border-top: 1px solid #757575;
+    clear: both;
+}
+.CouponCastFooter_Addtoslip {
+    float: right;
+    margin: 10px 10px 0 0;
+    background: #5e5e5e;
+    color: #777;
+    border: 1px solid #585858;
+    font-size: 13px;
+    line-height: 27px;
+    height: 30px;
+    text-align: center;
+    padding: 0 10px;
+    border-radius: 1px;
+    min-width: 160px;
+    cursor: default;
+}
+.CouponCastFooter_Clear {
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #888;
+    cursor: default;
+}
+/*** /VR ***/
+
+.MarketGroupTeamBetting_NavContainer {width: 100%;background-color: #404040;}
+.TeamNavBar {position: relative;display: block;height: 81px;border-bottom: 1px solid #333;overflow: hidden;}
+.TeamNavBar_HScroll {position: relative;display: block;height: 81px;border-top: 1px solid #333;overflow: hidden;white-space: nowrap;max-width: calc(100vw - (179px + 277px) - 20px);margin: 0 auto;padding: 0 20px;}
+.TeamNavBar_HScroll.owl-carousel .owl-stage-outer {height: 84px;}
+.TeamNavBar_HScroll.owl-carousel .owl-nav {position: absolute;z-index: 10;top: 0;width: 100%;}
+.TeamNavBar_HScroll.owl-carousel .owl-nav button.owl-next,
+.TeamNavBar_HScroll.owl-carousel .owl-nav button.owl-prev {position: absolute;width: 20px; height: 81px; z-index: 30;text-align: center;background-color: #404040;font-size: 9px;color: #a7a7a7;cursor: pointer;outline: 1px solid transparent;}
+.TeamNavBar_HScroll.owl-carousel .owl-nav button.owl-next {right: 20px;border-top: 1px solid #333;border-bottom: 1px solid #333;border-left: 1px solid #333;}
+.TeamNavBar_HScroll.owl-carousel .owl-nav button.owl-prev {left: -20px;border-top: 1px solid #333;border-bottom: 1px solid #333;  border-right: 1px solid #333;}
+.TeamNavBar_HScroll.owl-carousel .owl-nav button.owl-next:before,
+.TeamNavBar_HScroll.owl-carousel .owl-nav button.owl-prev:before {position: absolute;top: 32px;height: 16px;text-align: center;font-family: bet365UI; font-size: 14px;speak: none;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+/*.TeamNavBar_HScroll.owl-carousel .owl-nav button.owl-prev:before {content: "\e80C";left: 5px;}*/
+/*.TeamNavBar_HScroll.owl-carousel .owl-nav button.owl-next:before {content: "\e80B";right: 5px;}*/
+
+
+.TeamNavBarButtonBase {position: relative;display: inline-block;min-width: 65px;max-width: 96px;padding: 10px 8px 0 8px;margin: 0 auto;text-align: center;cursor: pointer;}
+.TeamNavBarButtonBase_TeamWrapper {position: relative;width: 65px;margin: 0 auto;}
+.TeamNavBarButtonBase_TeamStrip {position: relative;top: 1px;width: 32px;height: 33px;margin: 0 auto;opacity: .5;}
+.TeamKitsLarge {width: 32px;height: 33px;}
+.TeamNavBarButtonBase_InfoButton {position: absolute;top: 31px;right: -2px;width: 15px;height: 15px;color: #ddd;font-size: 14px;opacity: 0;z-index: 20;}
+.TeamNavBarButtonWithFavourites_FavouriteButton {position: absolute;top: 11px;right: -2px;width: 15px;height: 15px;font-size: 14px;color: #ddd;opacity: 0;z-index: 20;}
+.TeamNavBarButtonBase_InfoButton:after,
+.TeamNavBarButtonWithFavourites_FavouriteButton:after {text-transform: none;line-height: 1;font-family: bet365UI; font-style: normal;font-weight: 400;font-variant: normal;speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.TeamNavBarButtonBase_InfoButton:after {content: "\e80A";position: absolute;top: 0;left: 0;}
+.TeamNavBarButtonWithFavourites_FavouriteButton:after {content: "\e80D";position: absolute;top: 0;left: 0;}
+
+.TeamNavBarButtonBase_TeamName {padding: 9px 0;line-height: 15px;font-size: 12px;color: #999;border-bottom: 2px solid rgba(0,0,0,0);text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.TeamNavBarButtonBase:hover .TeamNavBarButtonBase_TeamStrip,
+.TeamNavBarButtonBase.Selected .TeamNavBarButtonBase_TeamStrip {opacity: 1;}
+.TeamNavBarButtonBase:hover .TeamNavBarButtonBase_InfoButton,
+.TeamNavBarButtonBase.Selected .TeamNavBarButtonBase_InfoButton {opacity: .5;}
+.TeamNavBarButtonBase:hover .TeamNavBarButtonBase_InfoButton:hover,
+.TeamNavBarButtonBase.Selected .TeamNavBarButtonBase_InfoButton:hover {opacity: 1;}
+.TeamNavBarButtonBase:hover .TeamNavBarButtonWithFavourites_FavouriteButton,
+.TeamNavBarButtonBase.Selected .TeamNavBarButtonWithFavourites_FavouriteButton {opacity: .5;}
+.TeamNavBarButtonBase:hover .TeamNavBarButtonWithFavourites_FavouriteButton:hover,
+.TeamNavBarButtonBase.Selected .TeamNavBarButtonWithFavourites_FavouriteButton:hover {opacity: 1;color: #ddd;}
+.TeamNavBarButtonBase:hover .TeamNavBarButtonBase_TeamName {color: #bbb;}
+.TeamNavBarButtonBase.Selected .TeamNavBarButtonBase_TeamName,
+.TeamNavBarButtonBase:hover .TeamNavBarButtonBase_TeamName, .TeamNavBarButtonBase.active .TeamNavBarButtonBase_TeamName {border-bottom: 2px solid rgba(74,207,165,1);color: #e4e4e4;}
+
+.MarketGrid_PairL,
+.MarketGrid_PairR {display: inline-block;width: 50%;vertical-align: top;}
+.MarketGrid_PairL {padding-right: 1px;}
+.MarketGrid_PairL .ParticipantOddsOnly,
+.MarketGrid_PairR .ParticipantOddsOnly {height: 35px;}
+.Market_General+.Market_General .Participant_General {border-left-width: 1px;border-left-style: solid;border-left-color: #757575;}
+.MarketGrid_PairL .ParticipantCentered, .MarketGrid_PairR .ParticipantCentered {height: 35px;}
+
+.ClosableMarketGrid_Button {position: relative;display: flex;align-items: center;width: 100%;height: 30px;padding: 0 30px 0 10px;text-overflow: ellipsis;white-space: nowrap;font-size: 13px;cursor: pointer;color: #ddd;background-color: #474747;}
+.ClosableMarketGrid_ExtraData,
+.ClosableMarketGrid_Icons,
+.ClosableMarketGrid_Name {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.ClosableMarketGrid_ExtraData,
+.ClosableMarketGrid_Name {flex: 0 1 auto;}
+.ClosableMarketGrid_Icons {flex: 0 0 auto;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.ClosableMarketGrid_IconsGeneric {display: inline-block;margin-right: 8px;color: #999;}
+.ClosableMarketGrid_IconsAudioAvailable {padding-left: 10px;font-size: 10px;cursor: default;}
+.ClosableMarketGrid_IconsGeneric:before {font-family: bet365UI;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1;speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+.ClosableMarketGrid_IconsAudioAvailable:before {content: "\E811";}
+.ClosableMarketGrid_BookCloses {flex: 1 0 auto;text-align: right;font-size: 11px;color: #999;}
+#page_leagues .MarketGroupContainer_HasLabels .marker_row_wrapp_wrapp{
+    max-width: 37%;
+}
+/*#page_leagues .participant_odds {*/
+    /*margin: 0 auto;*/
+/*}*/
+/*#page_leagues .participant_name{*/
+    /*display: none;*/
+/*}*/
+#page_leagues .Participant.grid3 {
+    width: 33.33%;
+}
+#page_leagues .Participant{
+    background-color: #585858;
+}
+#page_leagues .Participant:hover{
+    background-color: #6e6e6e;
+}
+#page_leagues .Market_General.MarketCouponFixtureLabelBase{
+    width: 65%;
+}
+/*#page_leagues .Market_PWidth-12-3333{*/
+    /*max-width: 20%;*/
+    /*width: 20%;*/
+/*}*/
+.MarketCouponValuesExplicit33{
+    max-width: 20%;
+    width: 20%;
+}
+.MarketCouponValuesExplicit33.Market_PWidth-12-3333{
+    width: 100%;
+    max-width: 12.3333%;
+}
+.MarketGroupContainer.MarketGroupContainer_HasLabels .MarketCouponFixtureLink.Market_General .MultiMakerCouponFixtureLinkParticipant{
+    height: 59px;
+}
+/*#page_leagues .Market_General.MarketCouponFixtureLabelBase.three_col{*/
+    /*width: 95%;*/
+/*}*/
+#page_leagues .displayed_line {
+display: none;
+}
+#page_leagues .Participant.grid2{
+    justify-content: center;
+}
+.header_table_corners {
+    display: flex;
+}
+.header_table_corners .MarketColumnHeader {
+    min-width: 25%;
+}
+.row_table_corners {
+    display: flex;
+}
+.row_table_corners .ParticipantCentered_Odds {
+    text-align: center;
+}
+.BreadcrumbSelectMarket{
+    position: absolute;
+    right: 14px;
+    padding-right: 14px;
+}
+.BreadcrumbSelectMarket:after{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e801";
+    display: block;
+    color: #c7c7c7;
+    font-size: 5px;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 11px;
+}
+
+.selectedMarket{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: inherit;
+    font-size: 11px;
+    color: #ddd;
+    cursor: pointer;
+}
+.BreadcrumbSelectMarket:hover .selectedMarket,
+.BreadcrumbSelectMarket:hover:after{
+    color: #ffdf1b;
+}
+.DropDownContainerSelectMarket{
+    z-index: 110;
+    max-height: 300px;
+    width: 320px;
+    padding: 0;
+    background-color: #ddd;
+    border-radius: 2px;
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    left: -215px;
+}

@@ -1,0 +1,680 @@
+body {width: 100%;margin: 0;font-family: "Verdana","Geneva","Arial",sans-serif;color: #e4e4e4;-webkit-font-smoothing: antialiased;overflow-y: scroll;
+position: relative;-webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;background-color: #191919 !important;}
+header * { -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;-webkit-font-smoothing: antialiased;}
+header {position: relative;display: block;table-layout: fixed;width: 100%;background-color: #333;font-size: 11px;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.top-container {display: table;table-layout: fixed;width: 100%;padding: 0 25px;border-bottom: 1px solid #444;}
+.top-container .logo-container {display: table-cell;height: 25px;width: 119px;padding-bottom: 25px;vertical-align: bottom;font-size: 11px;text-decoration: none;outline: none;}
+.top-container .logo-container .logo {display: inline;height: 25px;width: 118px;}
+.top-container .navigation-inner-container {float: none;display: table;table-layout: fixed;height: auto;margin: 0 auto;border-spacing: 20px 0;}
+.top-container .navigation-inner-container a {display: table-cell; height: 80px;vertical-align: middle;text-align: center;font-size: 14px;color: #e4e4e4;line-height: 1;border-bottom: 3px solid transparent;}
+.top-container .navigation-inner-container a.selected {color: #fff;border-bottom: 3px solid #00fff2;}
+.top-container .right-hand-side-container {display: table-cell;width: 244px;vertical-align: top;}
+.top-container .right-hand-side-container div.loginFieldsContainer {display: table;table-layout: fixed;margin: 16px 0 0 auto;}
+.top-container .right-hand-side-container div.loginFieldsContainer .username-wrapper,
+.top-container .right-hand-side-container div.loginFieldsContainer .password-wrapper {position: relative;display: inline-block;vertical-align: top;text-align: right;}
+.top-container .right-hand-side-container div.LoginContainer input {display: none;width: 100px;height: 25px;padding: 0 5px 0 6px;vertical-align: top;line-height: 20px;font-size: 11px;color: #888;border-radius: 1px;border: 1px solid #888;background-color: #333;box-shadow: none;}
+.top-container .right-hand-side-container div.LoginContainer input.txtUserName,
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus {display: inline-block;}
+.top-container .right-hand-side-container div.LoginContainer input:focus {outline: none;}
+.top-container .right-hand-side-container div.loginFieldsContainer a {display: block;line-height: 25px;font-size: 11px;color: #00fff2;cursor: pointer;}
+.top-container .right-hand-side-container div.loginFieldsContainer a.aGo {position: relative;display: inline-block;font-family: Verdana,Geneva,Arial,sans-serif;font-weight:800;font-size: 12px;color: #333;text-align: center;min-width: 25px;height: 23px;padding: 0 2px;margin-left: 1px;margin-top: 1px;line-height: 23px;background-color: #ddd;
+border-radius: 1px;cursor: pointer;outline: 1px solid transparent;border: none;}
+.top-container .right-hand-side-container .username-wrapper a.JoinNow:hover,
+.top-container .right-hand-side-container .password-wrapper a.lost-login:hover {text-decoration: underline;}
+.top-container .right-hand-side-container div.LoginContainer input.txtUserName,
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus {display: inline-block;}
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus,
+.top-container .right-hand-side-container div.LoginContainer input.passwordToggle { margin-left: 5px;}
+.top-container .right-hand-side-container div.LoginContainer a.aGo {position: relative;display: inline-block;height: 23px;min-width: 25px;padding: 0 2px;margin-left: 1px;margin-top: 1px;line-height: 23px;text-align: center;font-family: Verdana,Geneva,Arial,sans-serif;font-weight: 800;background-color: #ddd;color: #333;font-size: 12px;border-radius: 1px;background-color: #ddd;cursor: pointer;outline: 1px solid transparent;border: none;}
+.top-container .right-hand-side-container div.LoginContainer a.aGo:hover {background-color: #ffdf1b;color: #444;}
+
+.bottom-container { float: left;display: table;table-layout: fixed;width: 100%;padding: 0 25px;}
+.bottom-container .clock-container {position: relative;z-index: 10002;float: left;height: 14px;padding: 8px 0;line-height: 14px;color: #888;}
+.bottom-container .clock-container .time-zone {padding-left: 5px;}
+.bottom-bar-right-hand-side {position: relative;float: right;display: table;text-align: right;z-index: 10002;}
+
+.language-selector {position: relative;float: none;display: inline-block;margin-left: 25px;cursor: pointer;}
+.language-selector__title-wrapper {height: 22px;}
+.language-selector__header-text {color: #888;}
+.language-selector--active .language-selector__header-sub-text {color: #fff;}
+.language-selector--active .language-selector__arrow {background-image: url(//content001.bet365.com/Casino/Header-V7/chevronsheet.png);background-position: 0 -6px;}
+.language-selector__language-list {position: absolute;right: -90px;top: 20px;z-index: 1;display: none;width: 320px;margin: 0;padding: 0;font-size: 12px;background-color: #ddd;border: none;border-radius: 0 0 2px 2px;list-style: none;}
+.language-selector--active .language-selector__language-list {display: block;}
+.language-selector__language-list-item {float: left;width: 50%;line-height: 30px;    background-color: #ddd;border-bottom: 1px solid #b5b5b5;}
+.language-selector__language-list-item--selected {background-color: #f0f0f0;}
+.language-selector__description {float: left;height: 30px;padding-left: 10px;font-size: 12px;color: #333;cursor: pointer;border: 0;}
+.language-selector__description--selected {background-color: #f0f0f0;border-left: 4px solid #4acfa5;color: #14805e;cursor: default;}
+
+.bottom-bar-right-hand-side .service-selector {position: relative;display: inline-block;margin-left: 25px;}
+.bottom-bar-right-hand-side .service-selector .services-text {height: 30px;line-height: 30px;color: #e4e4e4;cursor: pointer;background-repeat: no-repeat;}
+.bottom-bar-right-hand-side .service-selector .service-arrow {display: inline-block;width: 9px;height: 6px;margin-left: 5px;background-repeat: no-repeat;}
+.service-arrow {background-image: url(//content001.bet365.com/Casino/Header-V7/chevronsheet.png');}
+.bottom-bar-right-hand-side .service-selector .services-container {position: absolute;top: 28px;right: -5px;display: none;width: 180px;}
+.bottom-bar-right-hand-side .service-selector .services-container-inner { border-radius: 2px;}
+.bottom-bar-right-hand-side .service-selector .services-container-inner a {display: inline-table;table-layout: fixed;width: 100%;padding: 0 10px; line-height: 28px;text-align: left;font-size: 12px;color: #333;background-color: #ddd;border-bottom: 1px solid #b5b5b5;white-space: nowrap;}
+
+.content {position: relative;}
+.main_content.game-pages {position: relative;display: block !important;background: #191919;}
+
+.top-navigation {position: absolute; top: -27px;width: 100%; height: 25px;padding-right: 124px;padding-left: 45px;-webkit-box-sizing: border-box;box-sizing: border-box;overflow: hidden;z-index: 1;}
+.top-navigation__link-container-wrapper {position: relative;width: 100%;height: 25px;padding-right: 45px;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.top-navigation__link-container {position: relative;display: table;height: 25px; margin: auto;padding: 0 11px 0 0;white-space: nowrap;z-index: 10000;}
+.top-navigation__item {margin-right: 25px;line-height: 16px;font-size: 12px;color: #e4e4e4;}
+.top-navigation__item--selected {color: #00fff2;}
+.search-bar {position: relative;width: auto;max-width: 1250px;height: 70px;margin: 10px auto;color: #e4e4e4;}
+.search-bar__icon-wrapper {cursor: pointer;}
+.search-bar__icon {position: absolute; z-index: 100;  top: 14px; right: 69px;left: auto;bottom: 0;width: 35px;margin: auto;background-repeat: no-repeat;background-size: 20px 20px;background-position: 0 center; background-image: url('//content001.bet365.com/Casino/V3/Search/Search Icon.png');visibility: visible;}
+.search-bar__label {position: absolute;z-index: 100;right: 0;top: 42px;display: block;line-height: 22px;font-size: 18px;font-weight: bold; color: #e4e4e4;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
+.search-bar__input-wrapper {position: relative;float: right;height: 56px;width: 0;min-width: 0;margin-top: 14px;background-color: #444;overflow: hidden;transition: none;}
+.search-bar__input {height: 56px;width: 100%; padding: 0;padding-left: 50px;padding-right: 36px;font-size: 22px; color: #999;line-height: normal;background-color: #444; background-image: url('//content001.bet365.com/Casino/V3/Search/Search Icon.png');background-position: 15px center;background-repeat: no-repeat;background-size: 20px 20px;border: 0;box-sizing: border-box;outline: 0;}
+.search-bar__close {position: absolute;right: 0;top: 0;bottom: 0; width: 31px;padding-right: 0;background-repeat: no-repeat; background-position: 0 center;background-image: url(//content001.bet365.com/Casino/V3/Search/Close Icon.png);background-size: 16px 16px;cursor: pointer;opacity: 0;-webkit-transition: opacity .35s ease-out;transition: opacity .35s ease-out;-webkit-transition-delay: .35s;transition-delay: .35s;}
+
+footer.footer {width: 100%;max-width: 1000px;margin: 0 auto;padding: 0 10px; text-align: center;}
+.footer__logo {margin: 30px auto 24px;}
+.footer__links {margin-bottom: 22px;font-size: 11px;line-height: 20px;}
+.footer__link {display: inline-block;margin: 0 8px;text-decoration: none;color: #bbb;outline: none;}
+.footer__icons {display: block;margin-bottom: 15px;line-height: 42px;}
+.footer__icon {display: inline-block;height: 42px;margin: 0 14px;text-decoration: none;outline: none;}
+.footer__icon img {vertical-align: middle;}
+.footer__text {margin-bottom: 16px;font-size: 10px;line-height: 16px;color: #777;}
+.footer__text--copyright {margin-bottom: 24px;line-height: 13px;}
+.footer__social-links {display: block;line-height: 16px;margin-bottom: 30px;}
+.footer__social-link {display: inline;height: 16px;margin-right: 16px;text-align: center;font-size: 12px;color: #777;background-image: url(//content001.bet365.com/Casino/V3/Footer/SocialMediaSpriteVertical.png);background-repeat: no-repeat;}
+.footer__social-link--twitter {background-position: 0 -48px;padding-left: 26px;}
+.footer__social-link--facebook {background-position: 0 -16px;}
+.footer--hyperlink {color: #bbb;}
+    
+.SearchBar {
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 150px;
+    z-index: 100;
+} 
+.searchIcon {
+    background-image: url(https://content001.bet365.com/Games/v3/sprites/Mega-Sprite-V2.png);
+}
+.SearchBar .searchIcon {
+    background-color: transparent;
+    background-position: -5px -3343px;
+    -webkit-background-size: 85px 6891px;
+    background-size: 85px 6891px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+.SearchBar input {
+    background-color: transparent;
+    border: none;
+    color: #999;
+    font-size: 19px;
+    margin: -40px 46px 8px 8px;
+    padding: 7px 12px 7px 16px;
+    position: absolute;
+    right: 0;
+    width: auto;
+    z-index: 60;
+    border-radius: 0;
+    vertical-align: bottom;
+    outline: 0;
+    -webkit-transition: width .3s;
+    transition: width .3s;
+    height: 36px;
+    text-align: right;
+}
+.SearchBar .close {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    z-index: 55;
+    width: 322px;
+    height: 40px;
+    background-repeat: no-repeat;
+    color: #777;
+    background-color: #fff;
+    cursor: pointer;
+    display: none;
+    border-radius: 0;
+}
+.SearchBar .SearchResults {
+    background-color: #ccc;
+    display: none;
+    margin-top: 0;
+    padding: 56px 0 10px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 340px;
+    cursor: pointer;
+    z-index: 50;
+}
+.navigation {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 19px;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+}
+.navigation ul li {
+    float: left;
+    padding: 0 20px 0 20px;
+}
+.navigation a {
+    color: #999;
+}
+.navigation .Selected a, .navigation .Selected a:hover {
+    color: #8efde4;
+}
+
+
+.carousel-outer {
+    position: relative;
+    white-space: nowrap;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    display: block;
+    height: 290px;
+}
+.carousel-outer .carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    font-size: 0;
+    padding: 0;
+    white-space: nowrap;
+    min-height: 175px;
+    height: 290px;
+    overflow: hidden!important;
+}
+.carousel-outer .carousel-slide {
+    width: 580px;
+    height: 290px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    background-color: #0a6c4d;
+    vertical-align: top;
+    margin-right: 10px;
+    overflow: hidden;
+}
+.carousel-outer .slide-content-wrapper {
+    float: right;
+    width: 50%;
+    padding: 10px 20px 10px 20px;
+    top: auto;
+}
+.carousel-outer .slide-primary-image {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    width: 50%;
+    left: auto;
+    top: auto;
+    position: relative;
+    backface-visibility: hidden;
+    white-space: nowrap;
+}
+.carousel-outer .slide-content-wrapper>* {
+    position: relative;
+    z-index: 10;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.carousel-outer .slide-blur-image {
+    width: 100%;
+    height: 100%;
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    z-index: 0!important;
+}
+.carousel-outer .slide-title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-top: 3px;
+    color: #fff;
+    white-space: normal;
+    -webkit-font-smoothing: antialiased;
+}
+.carousel-outer .carousel-terms a {
+    color: #fff;
+    font-size: 9px;
+    display: inline-block;
+    white-space: normal;
+    margin-bottom: 6px;
+}
+.carousel-outer .slide-action, .carousel-outer .OptInLink {
+    color: #ffdf1b;
+    font-size: 13px;
+    margin-top: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 10px 25px;
+    border: 1px solid #ffdf1b;
+    border-radius: 2px;
+    background-color: rgba(25,25,25,.2);
+    -webkit-transition: background-color,color .2s;
+    transition: background-color,color .2s;
+    display: inline-block;
+}
+.carousel-outer .owl-carousel .owl-item img {
+    display: initial;
+    width: 50%;
+}
+.carousel-outer .slide-mobile-content {
+    display: none;
+}
+.carousel-outer .slide-rating {
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+.carousel-outer .slide-rating div {
+    float: left;
+    line-height: 15px;
+}
+.carousel-outer .slide-rating div.empty {
+    color: #191919;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.carousel-outer .slide-plays {
+    display: block;
+    clear: both;
+    padding-top: 18px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+.carousel-outer .slide-plays span {
+    font-weight: bold;
+}
+
+
+/*************************************
+-------- Promotions Page --------
+*************************************/
+
+.promotions-page__container {
+    width: 782px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 0;
+}
+.promotions-page__container .GamesPromoPod {
+    min-height: 400px;
+    margin-bottom: 40px;
+    display: inline-block;
+    font-size: 11px;
+}
+.promotions-page__container .GamesPromoPod .PodImage {
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+.promotions-page__container .GamesPromoPod .PodImage img {
+    height: 100%;
+    width: 100%;
+}
+.promotions-page__container .GamesPromoPod .PodContent {
+    float: left;
+    width: 342px;
+    margin-left: 40px;
+}
+.promotions-page__container .GamesPromoPod .MainHeader {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 36px;
+    padding-top: 35px;
+    margin-bottom: 5px;
+}
+.promotions-page__container .GamesPromoPod .SubHeader {
+    font: "Verdana","Geneva","Arial",sans-serif;
+    font-size: 16px;
+    color: #999;
+    font-weight: normal;
+    line-height: 26px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+}
+.promotions-page__container .GamesPromoPod .Buttons {
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #85b8ab;
+}
+.promotions-page__container .GamesPromoPod .ReadMoreButton {
+    float: left;
+    min-width: 100px;
+    color: #8efde4;
+    border: solid #8efde4;
+    border-width: 1px;
+    background: 20% #191919;
+    border-radius: 4px;
+    line-height: 30px;
+    padding: 1px 10px 2px 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+.promotions-page__container .GamesPromoPod .Buttons a:first-child {
+    margin-bottom: 20px;
+}
+.promotions-page__container .GamesPromoPod .FlexibleButton {
+    float: left;
+    min-width: 100px;
+    color: #ffe418;
+    border: solid #ffe418;
+    border-width: 1px;
+    background: 20% #191919;
+    border-radius: 4px;
+    line-height: 30px;
+    padding: 1px 10px 2px 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/*************************************
+-------- All Games Page --------
+*************************************/
+.SecondaryNavigation {
+    width: 100%;
+    height: auto;
+    font-size: 11px;
+    font-weight: bold;
+    color: #ccc;
+    background-color: #222;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.SecondaryNavigation .SecondaryNavigationList {
+    max-width: 1280px;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    margin: auto;
+    min-width: 850px;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList {
+    list-style-type: none;
+    text-align: center;
+    margin: 21px 0 9px 0;
+    overflow: hidden;
+    width: 100%;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList li { width: 12.5%;
+    float: left;
+    cursor: pointer;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .active {
+    color: #8efde4;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .icon {
+    background-repeat: no-repeat;
+    height: 45px;
+    margin: auto;
+    margin-bottom: 4px;
+    width: 50px;
+    background-image: url(https://content001.bet365.com/Games/v3/sprites/Mega-Sprite-V2.png);
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .active .Featured-Category {
+    background-position: 7px -8367px;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .Jackpots-Category {
+    background-position: 8px -6867px;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .PremiumSlots-Category {
+    background-position: -3px -6511px;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .BonusSlots-Category {
+    background-position: 4px -6581px;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .VideoSlots-Category {
+    background-position: 7px -6646px;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .TableGames-Category {
+    background-position: 0 -6715px;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .Arcade-Category {
+    background-position: 6px -6787px;
+}
+.SecondaryNavigation .SecondaryNavigationList #navList .InstantWins-Category {
+    background-position: 4px -6944px;
+}
+
+.game-pod-grid-header {
+    height: 36px;
+    max-width: 1280px;
+    margin: 16px auto 14px auto;
+    position: relative;
+}
+.game-pod-grid-header h1 {
+    color: #fff;
+    margin: 0 0 0 27px;
+    padding-top: 6px;
+    font-size:22px;
+}
+.game-pod-grid-header .game-pod-order-container {
+    z-index: 10;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    margin: auto;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-label {
+    padding-right: 28px;
+    position: relative;
+    top: 5px;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder {
+    display: inline-block;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-current-order {
+    display: none;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order {
+    margin-right: 24px;
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order.recommended {
+    padding-left: 17px;
+    background-position: -2px -10487px;
+    background-repeat: no-repeat;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order.recommended.active {
+    background-position: -2px -10541px;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order span {
+    position: relative;
+    top: 5px;
+} 
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order.active span {
+    color: #8efde4;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order {
+    margin-right: 24px;
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order.highest-rated {
+    padding-left: 21px;
+    background-position: -2px -10594px;
+    background-repeat: no-repeat;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order span {
+    position: relative;
+    top: 5px;
+} 
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order {
+    margin-right: 24px;
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .game-pod-order.most-played {
+    padding-left: 20px;
+    background-position: 0 -10701px;
+    background-repeat: no-repeat;
+}
+.game-pod-grid-header .game-pod-order-container .game-pod-order-holder .order-category-bar {
+    position: absolute;
+    height: 4px;
+    width: 0;
+    background-color: #8efde4;
+    margin-top: 6px;
+}
+
+
+.game-grid-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.game-grid-container .game-pod-grid {
+    max-width: 1280px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 22px;
+    position: relative;
+}
+.game-grid-container .game-pod-grid .game-pod {
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 196px;
+    min-width: 196px;
+    margin: 5px;
+    -webkit-transition: height 0s;
+    transition: height 0s;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-color: #0a6c4d;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+.game-grid-container .game-pod-grid .game-pod .game-pod-image {
+        display: block;
+    width: 100%;
+    height: auto;
+}
+.slider-item-content {
+    font-size: 11px;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+    background-color: #14805e;
+    z-index: 20;
+    padding-bottom: 10px;
+    text-align: center;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.slider-item-jackpot {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 13px;
+    color: #e1d858;
+    background-color: #333;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+}
+.slider-item-name-container {
+    height: 38px;
+    line-height: 38px;
+}
+.slider-item-name {
+    font-size: 11px;
+    line-height: 12px;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px 0 10px;
+    white-space: normal;
+}
+.slider-item-rating {
+    color: #8efde4;
+    font-size: 13px;
+    padding-bottom: 8px;
+    width: 100%;
+    text-align: center;
+    display: block;padding-top: 2px;
+}
+.slider-item-rating div {
+    display: inline;
+    margin-right: 2px;
+}
+.slider-game-data-wrapper {flex-wrap: nowrap;
+    margin: 10px auto 0;
+    width: 100%;
+    padding: 0 10px;
+}
+.slide-game-data {
+    display: inline-block;
+    text-align: center;
+    color: #8efde4;
+    min-width: 25%;
+}
+.slide-game-data span {
+    display: block;
+    line-height: 13px;
+    font-weight: bold;
+    color: #8efde4;
+}
+.slide-game-launch {
+    margin: 11px 20px 2px;
+    padding: 6px 3px 7px;
+    border: 1px solid #ffdf1b;
+    background-color: #127357;
+    color: #ffdf1b;
+    font-weight: bold;
+    display: block;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-transition: background-color,color .2s;
+    transition: background-color,color .2s;
+}
+.selected_bet {
+    background-color: #e4e4e4!important;
+}
+.selected_bet .yellow_text {
+    color: #14805e;
+}
+.selected_bet .desc_bets {
+    color: #545454!important;
+}

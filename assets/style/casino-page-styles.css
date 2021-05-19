@@ -1,0 +1,2214 @@
+
+header * { -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;-webkit-font-smoothing: antialiased;}
+header {position: relative;display: block;table-layout: fixed;width: 100%;height: 105px;background-color: #333;font-size: 11px;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.top-container {display: table;table-layout: fixed;width: 100%;padding: 0 25px;border-bottom: 1px solid #444;}
+.top-container .logo-container {display: table-cell;height: 25px;width: 119px;padding-bottom: 25px;vertical-align: bottom;font-size: 11px;text-decoration: none;outline: none;}
+.top-container .logo-container .logo {display: inline;height: 25px;width: 118px;}
+.top-container .navigation-inner-container {float: none;display: table;table-layout: fixed;height: auto;margin: 0 auto;border-spacing: 20px 0;}
+.top-container .navigation-inner-container a {display: table-cell; height: 80px;vertical-align: middle;text-align: center;font-size: 14px;color: #e4e4e4;line-height: 1;border-bottom: 3px solid transparent;}
+.top-container .navigation-inner-container a.selected {color: #fff;border-bottom: 3px solid #00fff2;}
+.top-container .right-hand-side-container {display: table-cell;width: 244px;vertical-align: top;}
+.top-container .right-hand-side-container div.loginFieldsContainer {display: table;table-layout: fixed;margin: 16px 0 0 auto;}
+.top-container .right-hand-side-container div.loginFieldsContainer .username-wrapper,
+.top-container .right-hand-side-container div.loginFieldsContainer .password-wrapper {position: relative;display: inline-block;vertical-align: top;text-align: right;}
+.top-container .right-hand-side-container div.LoginContainer input {display: none;width: 100px;height: 25px;padding: 0 5px 0 6px;vertical-align: top;line-height: 20px;font-size: 11px;color: #888;border-radius: 1px;border: 1px solid #888;background-color: #333;box-shadow: none;}
+.top-container .right-hand-side-container div.LoginContainer input.txtUserName,
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus {display: inline-block;}
+.top-container .right-hand-side-container div.LoginContainer input:focus {outline: none;}
+.top-container .right-hand-side-container div.loginFieldsContainer a {display: block;line-height: 25px;font-size: 11px;color: #00fff2;cursor: pointer;}
+.top-container .right-hand-side-container div.loginFieldsContainer a.aGo {position: relative;display: inline-block;font-family: Verdana,Geneva,Arial,sans-serif;font-weight:800;font-size: 12px;color: #333;text-align: center;min-width: 25px;height: 23px;padding: 0 2px;margin-left: 1px;margin-top: 1px;line-height: 23px;background-color: #ddd;
+border-radius: 1px;cursor: pointer;outline: 1px solid transparent;border: none;}
+.top-container .right-hand-side-container .username-wrapper a.JoinNow:hover,
+.top-container .right-hand-side-container .password-wrapper a.lost-login:hover {text-decoration: underline;}
+.top-container .right-hand-side-container div.LoginContainer input.txtUserName,
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus {display: inline-block;}
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus,
+.top-container .right-hand-side-container div.LoginContainer input.passwordToggle { margin-left: 5px;}
+.top-container .right-hand-side-container div.LoginContainer a.aGo {position: relative;display: inline-block;height: 23px;min-width: 25px;padding: 0 2px;margin-left: 1px;margin-top: 1px;line-height: 23px;text-align: center;font-family: Verdana,Geneva,Arial,sans-serif;font-weight: 800;background-color: #ddd;color: #333;font-size: 12px;border-radius: 1px;background-color: #ddd;cursor: pointer;outline: 1px solid transparent;border: none;}
+.top-container .right-hand-side-container div.LoginContainer a.aGo:hover {background-color: #ffdf1b;color: #444;}
+
+.bottom-container { float: left;display: table;table-layout: fixed;width: 100%;padding: 0 25px;}
+.bottom-container .clock-container {position: relative;z-index: 10002;float: left;height: 14px;padding: 8px 0;line-height: 14px;color: #888;}
+.bottom-container .clock-container .time-zone {padding-left: 5px;}
+.bottom-bar-right-hand-side {position: relative;float: right;display: table;text-align: right;z-index: 10002;}
+
+.language-selector {position: relative;float: none;display: inline-block;margin-left: 25px;cursor: pointer;}
+.language-selector__title-wrapper {height: 22px;}
+.language-selector__header-text {color: #888;}
+.language-selector--active .language-selector__header-sub-text {color: #fff;}
+.language-selector--active .language-selector__arrow {background-image: url(//content001.bet365.com/Casino/Header-V7/chevronsheet.png);background-position: 0 -6px;}
+.language-selector__language-list {position: absolute;right: -90px;top: 20px;z-index: 1;display: none;width: 320px;margin: 0;padding: 0;font-size: 12px;background-color: #ddd;border: none;border-radius: 0 0 2px 2px;list-style: none;}
+.language-selector--active .language-selector__language-list {display: block;}
+.language-selector__language-list-item {float: left;width: 50%;line-height: 30px;    background-color: #ddd;border-bottom: 1px solid #b5b5b5;}
+.language-selector__language-list-item--selected {background-color: #f0f0f0;}
+.language-selector__description {float: left;height: 30px;padding-left: 10px;font-size: 12px;color: #333;cursor: pointer;border: 0;}
+.language-selector__description--selected {background-color: #f0f0f0;border-left: 4px solid #4acfa5;color: #14805e;cursor: default;}
+
+.bottom-bar-right-hand-side .service-selector {position: relative;display: inline-block;margin-left: 25px;}
+.bottom-bar-right-hand-side .service-selector .services-text {height: 30px;line-height: 30px;color: #e4e4e4;cursor: pointer;background-repeat: no-repeat;}
+.bottom-bar-right-hand-side .service-selector .service-arrow {display: inline-block;width: 9px;height: 6px;margin-left: 5px;background-repeat: no-repeat;}
+/*.service-arrow {background-image: url(//content001.bet365.com/Casino/Header-V7/chevronsheet.png');}*/
+.bottom-bar-right-hand-side .service-selector .services-container {position: absolute;top: 28px;right: -5px;display: none;width: 180px;}
+.bottom-bar-right-hand-side .service-selector .services-container-inner { border-radius: 2px;}
+.bottom-bar-right-hand-side .service-selector .services-container-inner a {display: inline-table;table-layout: fixed;width: 100%;padding: 0 10px; line-height: 28px;text-align: left;font-size: 12px;color: #333;background-color: #ddd;border-bottom: 1px solid #b5b5b5;white-space: nowrap;}
+
+.content {position: relative;}
+.top-navigation {position: absolute; top: -27px;width: 100%; height: 25px;padding-right: 124px;padding-left: 45px;-webkit-box-sizing: border-box;box-sizing: border-box;overflow: hidden;z-index: 1000;}
+.top-navigation__link-container-wrapper {position: relative;width: 100%;height: 25px;padding-right: 45px;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.top-navigation__link-container {position: relative;display: table;height: 25px; margin: auto;padding: 0 11px 0 0;white-space: nowrap;z-index: 10000;}
+.top-navigation_item {margin-right: 25px;line-height: 50px;font-size: 12px;color: #e4e4e4; display: inline-block}
+.top-navigation_item:hover{
+    color: #fff;
+}
+.top-navigation_item.active{color: #00fff2;}
+.search-bar {position: relative;width: auto;max-width: 1250px;height: 70px;margin: 10px auto;color: #e4e4e4;}
+.search-bar__icon-wrapper {cursor: pointer;}
+.search-bar__icon {position: absolute; z-index: 100;  top: 14px; right: 69px;left: auto;bottom: 0;width: 35px;margin: auto;background-repeat: no-repeat;background-size: 20px 20px;background-position: 0 center; background-image: url('//content001.bet365.com/Casino/V3/Search/Search Icon.png');visibility: visible;}
+.search-bar__label {position: absolute;z-index: 100;right: 0;top: 42px;display: block;line-height: 22px;font-size: 18px;font-weight: bold; color: #e4e4e4;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
+.search-bar__input-wrapper {position: relative;float: right;height: 56px;width: 0;min-width: 0;margin-top: 14px;background-color: #444;overflow: hidden;transition: none;}
+.search-bar__input {height: 56px;width: 100%; padding: 0;padding-left: 50px;padding-right: 36px;font-size: 22px; color: #999;line-height: normal;background-color: #444; background-image: url('//content001.bet365.com/Casino/V3/Search/Search Icon.png');background-position: 15px center;background-repeat: no-repeat;background-size: 20px 20px;border: 0;box-sizing: border-box;outline: 0;}
+.search-bar__close {position: absolute;right: 0;top: 0;bottom: 0; width: 31px;padding-right: 0;background-repeat: no-repeat; background-position: 0 center;background-image: url(//content001.bet365.com/Casino/V3/Search/Close Icon.png);background-size: 16px 16px;cursor: pointer;opacity: 0;-webkit-transition: opacity .35s ease-out;transition: opacity .35s ease-out;-webkit-transition-delay: .35s;transition-delay: .35s;}
+
+.promotional-area {position: relative;display: block;height: 300px; width: auto;max-width: 1250px;padding: 0;margin: 0 auto;}
+.promotional-area__slider {position: absolute;left: 0;right: 313px;float: left;
+height: 300px;width: auto;padding: 0;margin-bottom: 0;overflow: auto;}
+.promotional-area__slider-wrapper {height: 100%;width: 100%;}
+.promotional-slider {position: relative;height: 100%;width: 100%;overflow: hidden;z-index: 1;}
+.promotional-slider-item {position: relative;display: block;height: 300px;cursor: pointer;overflow: hidden;}
+.promotional-slider-item__background-image {position: absolute;left: -100%;right: -100%;top: 0;bottom: 0; width: auto;height: 100%;max-width: none;min-width: 100%;min-height: 150px;margin: auto;-webkit-touch-callout: none;-webkit-transition: all .35s ease;transition: all .35s ease;-webkit-user-drag: none;}
+.promotional-slider-item:hover .promotional-slider-item__background-image {-webkit-filter: brightness(120%);filter: brightness(120%);-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+.promotional-slider-item__content {position: relative;top: 165px;float: left;height: 135px;width: 385px;border-bottom: none;-webkit-transition: all .35s ease;transition: all .35s ease;background-color: #333;opacity: .9;}
+.promotional-slider-item:hover .promotional-slider-item__content {background-color: #1a1a1a;opacity: .95;}
+.promotional-slider-item__title {cursor: pointer;display: block;width: auto; height: auto;max-height: 48px;margin-left: 10px; margin-right: 10px;margin-top: 10px;line-height: 22px;font-size: 18px;font-weight: normal;color: #e4e4e4;overflow-y: hidden;}
+.promotional-slider-item__link a {display: block;margin-left: 10px;margin-top: 5px;text-decoration: none;font-weight: normal;font-size: 16px;line-height: 18px;color: #00fff2;cursor: pointer;}
+.promotional-slider-item__terms-conditions-spannk a,
+.promotional-slider-item__terms-conditions-link a {cursor: pointer;display: block;margin: 7px 10px 10px;margin-top: 8px; line-height: 1.4;text-decoration: none;font-size: 9px;color: #bbb;}
+.promotional-slider-item__spannk a,
+.promotional-slider-item__link a {display: block; margin-top: 5px;margin-left: 10px; text-decoration: none;font-size: 16px;line-height: 18px;font-weight: normal;color: #00fff2;cursor: pointer;}
+
+.promotional-area__games { float: right;display: inline-block;height: 300px;width: 311px;background-color: #333;}
+.promotional-area__games-top {  float: right;height: 147px;width: 100%;}
+.promotional-area__games-top-left {float: left;height: 100%; width: 154px;margin-right: 2px;padding: 0; -webkit-box-sizing: border-box;box-sizing: border-box;}
+.promotional-banner-roulette {display: block;margin: 0;padding: 0;}
+.promotional-banner-roulette__quicklink-roulette {display: block;width: 154px;padding: 11px 0 16px;background-color: #222;}
+.promotional-banner-roulette__roulette-table {padding: 9px 0 12px;}
+.promotional-banner-roulette__rotate-wheel {position: relative;height: 81px;width: 81px; margin: 0 auto;background-image: url(//content001.bet365.com/Casino/V3/Roulette/icon-rouletteWheel-new.png);-webkit-backface-visibility: hidden;
+backface-visibility: hidden;background-repeat: no-repeat;-webkit-background-size: cover;background-size: cover;border-radius: 81px;perspective: 1000px;}
+.promotional-banner-roulette__roulette-ball::after {content: '';position: absolute;z-index: 10;left: 50%;top: 1px;display: block;height: 4px;width: 4px;background-color: #fff;border: 1px solid #333;border-radius: 8px;
+-webkit-perspective: 1000px;perspective: 1000px;
+-webkit-transform: translate(-2px,0);
+-ms-transform: translate(-2px,0);
+transform: translate(-2px,0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;}
+.promotional-banner-roulette__quicklink-roulette:active,
+.no-touchevents .promotional-banner-roulette__quicklink-roulette:hover {background-color: #111;}
+.promotional-area__games-top-right {float: left;height: 100%;width: 155px;}
+.promotional-banner-blackjack {display: block;height: 100%;width: 100%;position: relative;}
+.promotional-banner-blackjack__quicklink-blackjack {display: block;width: 155px;padding: 11px 0 16px;background-color: #222;}
+.promotional-banner-blackjack__card-wrapper {padding: 9px 0 18px;}
+.promotional-banner-blackjack__card-deck {position: relative;height: 75px;width: 110px;margin: 0 auto;}
+.promotional-banner-blackjack__card-left {position: absolute;z-index: 10;left: 0;top: 0;height: 100%;width: 50%;
+  -webkit-transform: translateX(0%);
+-ms-transform: translateX(0%);
+transform: translateX(0%);
+-webkit-transition: .2s -webkit-transform;
+transition: .2s -webkit-transform;
+transition: .2s transform;
+transition: .2s transform,.2s -webkit-transform;}
+.promotional-banner-blackjack__card-left--rotate {background-position: center;background-repeat: no-repeat;-webkit-background-size: contain;background-size: contain;border-radius: 5px;height: inherit;outline: 1px solid transparent;
+-webkit-transform: rotate(-10deg) translate(0,0);
+-ms-transform: rotate(-10deg) translate(0,0);
+transform: rotate(-10deg) translate(0,0);
+-webkit-transform-origin: center;
+-ms-transform-origin: center;
+transform-origin: center;
+-webkit-transition: -webkit-transform .2s;
+transition: -webkit-transform .2s;
+transition: transform .2s;
+transition: transform .2s,-webkit-transform .2s;
+will-change: auto;}
+.promotional-banner-blackjack__card-right--rotate {background-image: url(//content001.bet365.com/Casino/V3/PromoBars/jack-114x146.png);}
+.promotional-banner-blackjack__card-left--rotate {background-image: url(//content001.bet365.com/Casino/V3/PromoBars/ace-114x144.png);}
+.promotional-banner-blackjack__card-right {position: absolute; z-index: 5;right: 0;top: 0;width: 50%;height: 100%;
+-webkit-transform: translateX(0%);
+-ms-transform: translateX(0%);
+transform: translateX(0%);
+-webkit-transition: .2s -webkit-transform;
+transition: .2s -webkit-transform;
+transition: .2s transform;
+transition: .2s transform,.2s -webkit-transform;}
+.promotional-banner-blackjack__quicklink-title-wrapper {position: relative;text-align: center;width: 100%;background-color: transparent;}
+.promotional-banner-blackjack__quicklink-title {font-size: 15px; font-weight: normal;line-height: 18px;color: #00fff2;}
+.promotional-banner-blackjack__title-playnow {display: none;font-size: 15px;font-weight: normal;line-height: 18px;color: #00fff2;white-space: nowrap;}
+.promotional-area__games-bottom {position: relative;float: left;height: 151px;width: 100%;margin-top: 2px;padding-right: 0;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.promotional-banner-tile { position: relative;display: block;height: 100%;background-color: #222;overflow: hidden;}
+.promotional-banner-tile__image { position: absolute;left: -100%;right: -100%;top: -1px;bottom: 0;height: 100%;max-height: none;max-width: none;min-height: 100%;margin: auto;border: none;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-transition: all .35s ease-in;
+transition: all .35s ease-in;}
+.promotional-banner-tile__overlay {position: absolute;right: -1px;left: -1px;bottom: -1px;top: -1px; opacity: 0;background: rgba(26,26,26,.9);
+-webkit-transform: translateZ(0);
+ transform: translateZ(0);
+-webkit-transition: .2s all ease-out;
+transition: .2s all ease-out;}
+.promotional-banner-tile__title {position: absolute;right: -1px;left: 0; bottom: -1px;height: 50px;text-align: center;font-size: 15px;line-height: 50px;color: #00fff2; background-color: rgba(68,68,68,.9);}
+.promotional-banner-tile__overlay-text { position: absolute;top: 50%;width: 100%; margin-top: -15px;text-align: center; opacity: 0;font-size: 22px;color: #00fff2;
+    -webkit-transform: translateY(-11px);
+    -ms-transform: translateY(-11px);
+    transform: translateY(-11px);
+    -webkit-transition: .35s all ease-out;
+    transition: .35s all ease-out;}
+    
+.promotional-banner-roulette__quicklink-title-wrapper {position: relative;width: 100%;text-align: center;background-color: transparent;}
+.promotional-banner-roulette__quicklink-title {line-height: 18px;font-size: 15px;font-weight: normal;color: #00fff2;}
+.promotional-banner-roulette__title-playnow {display: none;font-weight: normal;font-size: 15px;line-height: 18px;color: #00fff2;white-space: nowrap;}
+.promotional-banner-roulette__quicklink-roulette:active,
+.promotional-banner-roulette__quicklink-roulette:hover {background-color: #111;}
+.promotional-banner-roulette:active .promotional-banner-roulette__rotate-wheel,
+.promotional-banner-roulette:hover .promotional-banner-roulette__rotate-wheel {-webkit-animation: move 2s infinite linear;animation: move 2s infinite linear;}
+.promotional-banner-roulette:active .promotional-banner-roulette__roulette-ball,
+.promotional-banner-roulette:hover .promotional-banner-roulette__roulette-ball,
+.promotional-banner-roulette--animate .promotional-banner-roulette__roulette-ball {
+    -webkit-animation: ballspin 1.5s cubic-bezier(0,-.11,1,1) forwards;
+    animation: ballspin 1.5s cubic-bezier(0,-.11,1,1) forwards;
+}
+.promotional-banner-roulette:active .promotional-banner-roulette__roulette-ball::after,
+.promotional-banner-roulette:hover
+.promotional-banner-roulette__roulette-ball::after,
+.promotional-banner-roulette--animate .promotional-banner-roulette__roulette-ball::after {
+    height: 8px;
+    -webkit-transform: translate(-2px,8px);
+    -ms-transform: translate(-2px,8px);
+    transform: translate(-2px,8px);
+    width: 8px;
+}
+.promotional-banner-roulette:active .promotional-banner-roulette__roulette-ball::after,
+.promotional-banner-roulette:hover .promotional-banner-roulette__roulette-ball::after,
+.promotional-banner-roulette--animate .promotional-banner-roulette__roulette-ball::after {
+    -webkit-transform: translate(-4px,4px);
+    -ms-transform: translate(-4px,4px);
+    transform: translate(-4px,4px);
+    -webkit-transition: -webkit-transform 1.5s ease-in;
+    transition: -webkit-transform 1.5s ease-in;
+    transition: transform 1.5s ease-in;
+    transition: transform 1.5s ease-in,-webkit-transform 1.5s ease-in;
+}
+
+.promotions-page {position: relative;width: 100%;max-width: 1180px;min-width: 320px;margin: 0 auto; padding: 0 50px;cursor: default;box-sizing: border-box;}
+.promotion-item {position: relative;float: left;display: inline-block;box-sizing: border-box;cursor: pointer; overflow: hidden;}
+.promotion-item--main .promotion-item {top: auto;width: 100%;height: 100%;margin-bottom: 2px;background-color: #444;}
+.promotion-item--main .promotion-item__image-container {position: relative;display: block;width: 100%;min-height: 330px;overflow: hidden;}
+.promotion-item--main .promotion-item__background-image {position: absolute;left: -100%;right: -100%;top: 0;display: block;width: auto;height: 330px;min-width: 1180px;min-height: 150px;max-height: none;margin: auto;vertical-align: top;background-color: #333;background-position: center top;background-repeat: no-repeat;background-size: cover;overflow: hidden;
+    transition: .35s all;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-property: opacity,background-color,-webkit-filter,-webkit-transform;
+    transition-property: opacity,background-color,-webkit-filter,-webkit-transform;
+    transition-property: opacity,background-color,filter,transform;
+    transition-property: opacity,background-color,filter,transform,-webkit-filter,-webkit-transform;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;}
+.promotion-item__content {position: relative; right: 0;top: 0;left: 140px;bottom: 0;padding: 11px 20px 0 13px;  background-color: #444;transition: .35s all;z-index: 999;}
+.promotion-item--main .promotion-item__content {position: absolute;top: auto;left: 0;bottom: 0;height: 135px;width: 385px;padding: 0;background-color: #333;border-bottom: none;opacity: .9;}
+.promotion-item--main .promotion-item__header_text {display: none;}
+.promotion-item--main .promotion-item__title {height: auto; width: auto;max-height: 48px;min-height: 0;padding: 0;margin-right: 10px;margin-top: 10px; line-height: 22px;font-size: 20px;color: #e4e4e4;}
+.promotion-item--main .promotion-item__link a {position: relative;left: 0;display: block;margin-left: 10px; margin-top: 5px;text-decoration: none;line-height: 18px; font-size: 16px;font-weight: normal;color: #00fff2;cursor: pointer;}
+.promotion-item--main .promotion-item__terms-conditions-link a {position: relative;right: 0; bottom: 0;display: block;margin: 7px 10px 10px;margin-top: 8px;text-decoration: none; font-size: 9px;line-height: 1.4;color: #bbb;cursor: pointer;}
+.promotion-page__large-pods-grid {position: relative;display: flex;width: 100%;padding: 0 0 44px;overflow: hidden;}
+.promotion-page__large-pods-grid .promotion-item {position: relative;width: 33.33%;margin: 0;border-bottom: 0;border-left: none;border-right: 2px solid #333;background-color: #404040;overflow: hidden; cursor: pointer; box-sizing: border-box;transition: background-color .35s ease-in-out;}
+.promotion-page__large-pods-grid .promotion-item__image-container { position: relative;display: block;height: 150px;width: 100%;overflow: hidden;}
+.promotion-page__large-pods-grid .promotion-item__background-image {position: absolute;top: 0;left: -100%;right: -100%;bottom: 0;display: block;width: auto;height: 100%;min-height: 100%;min-width: 100%;margin: auto;vertical-align: top;background-color: #333;background-position: center top;background-repeat: no-repeat;background-size: cover;overflow: hidden;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-property: opacity,background-color,-webkit-filter,-webkit-transform;
+    transition-property: opacity,background-color,-webkit-filter,-webkit-transform;
+    transition-property: opacity,background-color,filter,transform;
+    transition-property: opacity,background-color,filter,transform,-webkit-filter,-webkit-transform;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;}
+.promotion-page__large-pods-grid .promotion-item__content {position: static;z-index: 999;left: 0; bottom: 0;right: 0;top: 0;padding: 13px 15px 17px 20px; transition: .35s all;}
+    .vip-page {
+    background-color: #333;
+    cursor: default;
+    max-width: 100%;
+    width: 100%;
+        margin: 0 auto;
+}
+.vip-page__container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;max-width: 800px;
+}
+.vip-page__wire-pyramid {
+    margin-top: 33px;width: 122px;
+}
+.vip-page__vip-scheme {
+    color: #e4e4e4;
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    margin: 20px 0;
+}
+.vip-page__sub-title {
+    font-size: 22px;
+    line-height: 32px;
+    padding: 0;
+    color: #ccc;
+    text-align: left;
+}
+.vip-page__new-player-scheme {
+    font-size: 14px;
+    margin: 20px 0 30px;
+    padding: 0;
+    text-align: left;
+    line-height: 24px;
+    color: #999;
+}
+.vip-page__container .tab-control__tabs {
+    display: inline-block;
+    font-size: 0;
+    line-height: 18px;
+    position: relative;
+    padding-top: 0;
+}
+.vip-page__container .tab-control__tab-title:first-child {
+    margin-right: 75px;
+    float: left;
+}
+.vip-page__container .tab-control__tab-title {
+    color: #e4e4e4;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.vip-page__container .tab-control__tab-title--selected {
+    color: #00fff2;
+}
+.vip-page__container .tab-control__bar {
+    background-color: #00fff2;
+    bottom: 0;
+    display: inline-block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    transition: -webkit-transform .1s ease-in-out;
+    transition: transform .1s ease-in-out;
+    transition: transform .1s ease-in-out,-webkit-transform .1s ease-in-out;
+    width: 169px;
+}
+
+.tab-control__tab-content {
+    display: none;
+}
+.vip-page__container .tab-control__tab-content {
+    padding: 0;
+    border-top: 1px solid #444;
+    text-align: left;
+}
+.tab-control__tab-content--selected {
+    display: block;
+    overflow: hidden;
+}
+.vip-page__scheme-logged-out-pyramid-container {
+    text-align: center;
+}
+.vip-page__scheme-logged-out-pyramid {
+    height: 180px;
+    padding: 25px 0;
+    width: 211px;
+    display: block;
+    margin: 0 auto;
+}
+.vip-page__how-it-works h4 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #e4e4e4;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2.5px;
+    line-height: 24px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+.vip-page__how-it-works ul {
+    font-size: 11px;
+    color: #a7a7a7;
+    line-height: 20px;
+}
+.vip-page__how-it-works span {
+    margin-bottom: 27px;
+    color: #a7a7a7;
+    display: inline;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 20px 0 15px;
+}
+.vip-page__cp-head-text--levels {
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.vip-page__cp-head-text {
+    color: #e4e4e4;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    line-height: 24px;
+    margin: 50px 0;
+    text-align: center;
+}
+.vip-page__scheme-level-buttons {
+    text-align: center;
+    font-size: 15px;
+    height: 35px;
+    line-height: 22px;
+    width: 150px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 15px;
+} 
+.vip-page__scheme-level-button--bronze {
+    margin-right: 15px;
+    background-color: #ffb06b;
+    border: 1px solid #ffb06b;
+}
+.vip-page__scheme-level-button--silver {
+    margin-right: 15px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+}
+.vip-page__scheme-level-button--gold {
+    background-color: #ffd470;
+    border: 1px solid #ffd470;
+}
+
+.download-page {position: relative;width: 800px;max-width: 1250px;margin: 0 auto 75px;padding-top: 60px; text-align: center;}                  
+.download-page__title-image {display: block;max-height: 100%;max-width: 100%; margin: 0 auto;}
+.download-page h1 {margin: 40px auto 0;line-height: 40px;font-size: 34px;font-weight: normal;color: #e4e4e4;}
+.download-page h2 {margin: 35px auto 0;line-height: 28px;font-size: 18px;font-weight: normal; color: #e4e4e4;} 
+.download-page h3 {margin: 25px auto 0;text-align: center;line-height: 26px;font-size: 22px;font-weight: normal;color: #e4e4e4;}
+.download-page__step-image {position: relative;display: block;margin-top: 45px;}
+.download-page__step-image span {position: absolute;top: 13px;left: 0;width: 100%;text-align: center;font-size: 36px;color: #2ea399;}
+.download-page__title-image {display: block;max-height: 100%;max-width: 100%;margin: 0 auto;}
+.download-page p {margin: 20px auto 0;padding: 0;text-align: left;line-height: 26px;font-size: 15px;color: #999;}
+.download-page__main-content-wrapper a {text-decoration: none;font-size: 15px;color: #e4e4e4;}
+
+.player-guides-page {
+    width: 900px;
+    font-weight: normal;
+    margin: 0 auto 28px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.player-guides-animated-banner {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 90px;
+    margin: 50px auto 44px;
+    max-width: 900px;
+    height: 220px;
+    margin: 20px auto 100px;
+    position: relative;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.player-guides-animated-banner__static {
+    display: none;
+    max-width: 100%;
+    visibility: hidden;
+}
+.player-guides-animated-banner__card-image,
+.player-guides-animated-banner__chip-image {
+    display: none;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    outline: 1px solid transparent;
+    position: absolute;
+    right: 0;
+} 
+.player-guides-animated-banner__card-image {
+    height: 100%;
+    image-rendering: crisp-edges;
+}
+
+.player-guides-animated-banner__card3 {
+    opacity: 1;
+    z-index: 4;
+}
+.player-guides-animated-banner__chip2 {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    z-index: 5;
+}
+.player-guides-page img {
+    max-width: 100%;
+}
+.player-guides-animated-banner__chip-image {
+    bottom: 0;
+        height: 75px;
+    width: 75px;
+    opacity: 0;
+    top: 0;
+    /* width: 30px; */
+}
+.player-guides-animated-banner__chip2.player-guides-animated-banner--animate {
+    -webkit-animation: animateHeaderChip2 1.25s ease-in-out 110ms forwards;
+    animation: animateHeaderChip2 1.25s ease-in-out 110ms forwards;
+}
+.player-guides-animated-banner__card2 {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    z-index: 3;
+}
+.player-guides-animated-banner__card2.player-guides-animated-banner--animate {
+    -webkit-animation: animateHeaderCard2 .5s ease-in-out 110ms forwards;
+    animation: animateHeaderCard2 .5s ease-in-out 110ms forwards;
+}
+.player-guides-animated-banner__card4.player-guides-animated-banner--animate {
+    -webkit-animation: animateHeaderCard4 .5s ease-in-out 110ms forwards;
+    animation: animateHeaderCard4 .5s ease-in-out 110ms forwards;
+}
+.player-guides-animated-banner__card4 {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    z-index: 3;
+}
+.player-guides-animated-banner__card1 {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    z-index: 1;
+}
+.player-guides-animated-banner__card1.player-guides-animated-banner--animate {
+    -webkit-animation: animateHeaderCard1 .75s ease-in-out 110ms forwards;
+    animation: animateHeaderCard1 .75s ease-in-out 110ms forwards;
+}
+.player-guides-animated-banner__card5.player-guides-animated-banner--animate {
+    -webkit-animation: animateHeaderCard5 .75s ease-in-out 110ms forwards;
+    animation: animateHeaderCard5 .75s ease-in-out 110ms forwards;
+}
+.player-guides-animated-banner__card5 {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    z-index: 1;
+}
+.player-guides-animated-banner__chip1.player-guides-animated-banner--animate {
+    -webkit-animation: animateHeaderChip1 1.25s ease-in-out 110ms forwards;
+    animation: animateHeaderChip1 1.25s ease-in-out 110ms forwards;
+}
+.player-guides-animated-banner__chip1 {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    z-index: 2;
+}
+.player-guides-animated-banner__chip3.player-guides-animated-banner--animate {
+    -webkit-animation: animateHeaderChip3 1.25s ease-in-out 110ms forwards;
+    animation: animateHeaderChip3 1.25s ease-in-out 110ms forwards;
+}
+.player-guides-animated-banner__chip3 {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+    z-index: 2;
+}
+
+.player-guides-page h1 {
+    color: #e4e4e4;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 15px auto 20px;
+    padding: 0 11px;
+}
+.player-guides-page h1.player-guides-page-title {
+    line-height: 45px;
+    margin: 100px auto 35px;
+    width: 800px;
+    font-size: 34px;
+}
+.player-guides-page h3 {
+    color: #e4e4e4;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 auto 40px;
+    padding: 0 11px;
+}
+.player-guides-page h3.player-guides-page-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto 45px;
+    width: 800px;
+    color: #999;
+}
+.player-guides-page__pod {
+    border-left: 0;
+    border-right: 0;
+    height: 214px;
+    width: 33%;
+    box-sizing: border-box;
+    cursor: default;
+    float: left;
+    margin-bottom: 8px;
+    text-decoration: none;
+    position: relative;
+}
+.player-guides-card-pod__hover-area {
+    width: 170px;
+    color: #e4e4e4;
+    cursor: pointer;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+}
+.player-guides-card-pod__container {
+    height: 162px;
+    margin: 28px auto 0;
+    width: 170px;
+    color: #e4e4e4;
+    cursor: pointer;
+}
+.player-guides-card-pod__images-container {
+    height: 90px;
+    position: relative;
+}
+.player-guides-card-pod__image-left {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid transparent;
+    height: 56px;
+    position: relative;
+    top: 10px;
+    -webkit-transform: translateX(0%) rotate(-10deg);
+    -ms-transform: translateX(0%) rotate(-10deg);
+    transform: translateX(0%) rotate(-10deg);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .2s -webkit-transform;
+    transition: .2s -webkit-transform;
+    transition: .2s transform;
+    transition: .2s transform,.2s -webkit-transform;
+    will-change: transform;
+    z-index: 5;
+}
+.player-guides-card-pod__image-right {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid transparent;
+    height: 56px;
+    position: relative;
+    top: 10px;
+    -webkit-transform: translateX(0%) rotate(10deg);
+    -ms-transform: translateX(0%) rotate(10deg);
+    transform: translateX(0%) rotate(10deg);
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .2s -webkit-transform;
+    transition: .2s -webkit-transform;
+    transition: .2s transform;
+    transition: .2s transform,.2s -webkit-transform;
+    will-change: transform;
+    z-index: 10;
+}
+.player-guides-card-pod__image-left {
+    height: inherit;
+    top: 0;
+}
+.player-guides-card-pod__image-right {
+    height: inherit;
+    top: 0;
+}
+.player-guides-page img {
+    max-width: 100%; 
+}
+.player-guides-card-pod__image-static {
+    display: none;
+}
+.player-guides-card-pod__container {
+    color: #e4e4e4;
+    cursor: pointer;
+}
+.player-guides-card-pod__title {
+    letter-spacing: 2px;
+    line-height: 24px;
+    margin: 24px 0 0;
+    font-size: 18px;
+}
+.player-guides-card-pod__how-to-play {
+    line-height: 24px;
+    margin: 0 0 24px;
+    font-size: 13px;
+}
+.player-guides-roulette-pod__hover-area {
+    width: 180px;
+    color: #e4e4e4;
+    cursor: pointer;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+}
+.player-guides-roulette-pod__images-container {
+    height: 118px;
+    top: 17px;
+    width: 118px;
+    margin: 0 auto;
+    position: relative;
+}
+.player-guides-roulette-pod__roulette-wheel-wrapper {
+    height: inherit;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: inherit;
+}
+.player-guides-roulette-pod__roulette-wheel {
+    height: 106px;
+    width: 106px;
+    border: 1px solid transparent;}
+    .player-guides-roulette-pod__roulette-ball-wrapper {
+    height: 106px;
+    width: 106px;
+    left: 0;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.player-guides-roulette-pod__roulette-ball {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid transparent;
+    height: inherit;
+    opacity: 0;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    position: relative;
+    width: inherit;
+}
+.player-guides-roulette-pod__roulette-ball::after {
+    -webkit-transform: translate(-5px,0);
+    -ms-transform: translate(-5px,0);
+    transform: translate(-5px,0);
+    height: 10px;
+    width: 10px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 5px;
+    left: 50%;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    position: absolute;
+    top: 1px;
+    width: 5px;
+    z-index: 10;
+}
+.player-guides-roulette-pod__title {
+    letter-spacing: 2px;
+    line-height: 24px;
+    margin: 24px 0 0;
+    font-size: 18px;
+}
+.player-guides-roulette-pod__how-to-play {
+    line-height: 24px;
+    margin: 0 0 24px;
+    font-size: 13px;
+}
+
+
+.games-grid {min-height: 300px;margin: 0 10px ;overflow: hidden;}
+.pre-footer {margin: 20px 0 0;width: 100%;}
+.cross-sell {display: none;height: 418px;padding: 0 14px;background-color: #222;}
+.cross-sell--visible {display: block;}
+
+footer.footer {width: 100%;max-width: 1000px;margin: 0 auto;padding: 0 10px; text-align: center;}
+.footer__logo {margin: 30px auto 24px;}
+.footer__links {margin-bottom: 22px;font-size: 11px;line-height: 20px;}
+.footer__link {display: inline-block;margin: 0 8px;text-decoration: none;color: #bbb;outline: none;}
+.footer__icons {display: block;margin-bottom: 15px;line-height: 42px;}
+.footer__icon {display: inline-block;height: 42px;margin: 0 14px;text-decoration: none;outline: none;}
+.footer__icon img {vertical-align: middle;}
+.footer__text {margin-bottom: 16px;font-size: 10px;line-height: 16px;color: #777;}
+.footer__text--copyright {margin-bottom: 24px;line-height: 13px;}
+.footer__social-links {display: block;line-height: 16px;margin-bottom: 30px;}
+.footer__social-link {display: inline;height: 16px;margin-right: 16px;text-align: center;font-size: 12px;color: #777;background-image: url(//content001.bet365.com/Casino/V3/Footer/SocialMediaSpriteVertical.png);background-repeat: no-repeat;}
+.footer__social-link--twitter {background-position: 0 -48px;padding-left: 26px;}
+.footer__social-link--facebook {background-position: 0 -16px;}
+.footer--hyperlink {color: #bbb;}
+
+.MainContainerGames.Casino{
+    max-width: 1025px;
+    padding: 0;
+    background-color: #333;
+}
+.casino_offer_img{
+    cursor: pointer;
+    overflow: hidden;
+    height: 250px;
+}
+.casino_offer_img img{
+    transition: transform .25s;
+    max-width: 100%;
+    height: 250px;
+    width: 100%;
+}
+.top-navigation.casino{
+    top: -52px;
+    left: 50%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, 0);
+    width: auto;
+    z-index: 1000;
+}
+
+.casino_offer_details{
+    background-color: #474747;
+    padding: 0 20px 20px 20px;
+}
+.offer_details_header{
+    font-size: 30px;
+    line-height: 32px;
+    padding: 15px 0;
+    color: #e4e4e4;
+    text-align: center;
+}
+.casino_btn{
+    background-color: #00fff2;
+    color: #333;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 130px;
+    text-align: center;
+    cursor: pointer;
+}
+.casino_btn.casino_offer{
+    width: 198px;
+    margin: 0 auto;
+}
+.casino_btn:hover{
+    background-color: #80fff9;
+}
+.offer_details_conditions{
+    padding-top: 20px;
+    color: #999;
+    font-size: 9px;
+    line-height: 12px;
+    text-align: center;
+}
+.offer_details_conditions_link{
+    color: #e4e4e4;
+}
+.offer_details_conditions_link:hover{
+    color: #fff;
+}
+.bottom_header.casino{
+    height: 50px;
+}
+.content.casino{
+    background-color: #333;
+}
+.casino_offers:hover .casino_offer_img img{
+    -o-transform: scale3d(1.05,1.05,1.05);
+    -ms-transform: scale3d(1.05,1.05,1.05);
+    -moz-transform: scale3d(1.05,1.05,1.05);
+    -webkit-transform: scale3d(1.05,1.05,1.05);
+    transform: scale3d(1.05,1.05,1.05);
+}
+.casino_offers{
+    margin-bottom: 10px;
+}
+.casino_offers:last-of-type{
+    margin-bottom: 0;
+}
+.casino_btn.bordered{
+    border: 1px solid #00fff2;
+    border-radius: 1px;
+    color: #00fff2;
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    background-color: transparent;
+}
+.casino_btn.bordered:hover{
+    border-color: #80fff9;
+    color: #80fff9;
+}
+.casino_footer .inner_footer{
+    background-color: #333;
+}
+.loyaltyScheme_header{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.loyaltyScheme_title{
+    font-size: 45px;
+    line-height: 45px;
+    color: #ccc;
+    text-align: center;
+    padding: 25px 0 50px;
+    font-family: FuturaPTWebBook, sans-serif;
+}
+.loyaltyScheme_header .short_text{
+    color: #ccc;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 10px 10px 10px;
+    text-align: center;
+    font-family: FuturaPTWebBook, sans-serif;
+}
+.loyaltyScheme_tabs{
+    margin: 30px auto 0;
+    max-width: 800px;
+}
+.loyaltyScheme_nav{
+    border-bottom: 1px solid #555;
+    line-height: 18px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+.loyaltyScheme_link{
+    display: inline-block;
+    color: #e4e4e4;
+    cursor: pointer;
+    font-size: 15px;
+    padding-bottom: 23px;
+    border-bottom: 3px solid transparent;
+
+}
+.loyaltyScheme_link:first-child{
+    margin-right: 145px;
+}
+.loyaltyScheme_link.active{
+    border-bottom: 3px solid #00fff2;
+    color: #00fff2;
+}
+.scheme_title{
+    font-size: 20px;
+    line-height: 26px;
+    color: #ccc;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: FuturaPTWebBook,Futura,Arial,sans-serif;
+}
+.scheme_conversion{
+    padding: 35px 10px 5px 10px;
+}
+.scheme_conversion_img{
+    display: block;
+    margin: 0 auto;
+}
+.scheme_conversion_title{
+    font-size: 45px;
+    line-height: 36px;
+    font-family: FuturaPTWebBook,Futura,Arial,sans-serif;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    text-align: center;
+}
+.scheme_conversion_subtitle{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.bronze{
+    color: #ffb06b;
+}
+.silver{
+    color: #ccc;
+}
+.gold{
+    color: #ffd470;
+}
+.scheme_conversion_sections{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.scheme_section{
+    text-align: center;
+    width: 33.33%;
+    padding: 0 11px 30px 11px;
+}
+.scheme_section_title{
+    font-size: 11px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    line-height: 13px;
+    color: #ccc;
+}
+.scheme_section_subtitle{
+    font-size: 15px;
+    line-height: 18px;
+    color: #e4e4e4
+}
+.scheme_conversion_add_text{
+    font-size: 11px;
+    color: #ccc;
+    margin-top: 4px;
+    line-height: 15px;
+    text-align: center;
+}
+.currency_conversion_header{
+    color: #e4e4e4;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 26px;
+    padding: 0 0 20px 0;
+}
+.currency_conversion_header.center{
+    text-align: center;
+    color: #ccc;
+}
+.currency_conversion_table{
+    padding-bottom: 40px;
+}
+.currency_conversion_table_header{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+.currency_conversion_table_header .header_left_column,
+.currency_conversion_table_header .header_right_column{
+    width: 50%;
+    color: #999;
+    font-size: 13px;
+    position: relative;
+}
+.currency_conversion_table_header .header_left_column.white,
+.currency_conversion_table_header .header_right_column.white,
+.currency_conversion_table_header .header_center_column.white{
+    color: #e4e4e4;
+    font-size: 13px;
+}
+.currency_conversion_table_row{
+    height: 40px;
+    border-top: 1px solid #555;
+    color: #999;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.currency_conversion_table_row .left_content,
+.currency_conversion_table_row .right_content{
+    width: 50%;
+}
+
+.terms_conditions_header{
+    color: #999;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.terms_conditions_list{
+    color: #999;
+    font-size: 12px;
+    padding: 0 24px 15px;
+}
+.terms_conditions_list li{
+    list-style-type: decimal;
+}
+.three-step-guide{
+    display: flex;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 30px;
+    margin-bottom: 45px;
+}
+.guide_step{
+    width: 32.9%;
+    box-sizing: border-box;
+    padding-right: 11px;
+    padding-left: 11px;
+    padding-bottom: 30px;
+}
+.guide_step:first-child{
+    padding-left: 0;
+}
+.guide_step:last-child{
+    padding-right: 0;
+}
+.guide_step .img_container{
+    position: relative;
+}
+.icon_img{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+.arrow_img{
+    position: absolute;
+    top: 0;
+}
+.arrow_img.right{
+    right: 0;
+}
+.arrow_img.left{
+    left: 0;
+}
+.guide_step_title{
+    font-family: "FuturaPTWebBook",Futura,Arial,sans-serif;
+    font-size: 27px;
+    color: #e4e4e4;
+    padding-bottom: 5px;
+    line-height: 30px;
+    text-align: center;
+}
+.guide_step_subtitle{
+    font-size: 11px;
+    color: #ccc;
+    line-height: 14px;
+    text-align: center;
+}
+.conversion_rates{
+    padding: 5px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.conversion_rates_item{
+    width: 32.9%;
+    text-align: center;
+    font-family: FuturaPTWebBook,Futura,Arial,sans-serif;
+}
+.conversion_rates_item_title{
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 5px;
+}
+.conversion_rates_item_text{
+    color: #ccc;
+    font-size: 13px;
+    line-height: 14px;
+    padding-bottom: 11px;
+}
+.conversion_rates_item_data{
+    color: #e4e4e4;
+    font-size: 20px;
+    line-height: 21px;
+    padding-bottom: 30px;
+    font-family: FuturaPTWebBook,Futura,Arial,sans-serif;
+}
+.conversion_rates_title{
+    font-family: FuturaPTWebBook,Futura,Arial,sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 auto;
+    padding: 0 10px 10px 10px;
+    text-align: center;
+    color: #ccc;
+}
+.terms_conditions_link{
+    color: #e4e4e4;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.terms_conditions_link:hover{
+    color: #fff;
+}
+.casino_footer .menu_column_wrapper{
+    display: none;
+}
+.casino_footer .footer_logo{
+    border-top: none;
+}
+.currency_selector{
+    color: #ccc;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.currency_selector:after{
+    content: "\E801";
+    display: inline-block;
+    font-family: bet365UI;
+    font-size: 5px;
+    font-style: normal;
+    font-variant: normal;
+    height: 8px;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+}
+.currency_selector:hover{
+    color: #e4e4e4;
+}
+.dropDown_currency{
+    background-color: #ddd;
+    border-bottom: 1px solid #c7c7c7;
+    color: #333;
+    font-size: 12px;
+    line-height: 29px;
+    text-align: left;
+    width: 109px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.dropDown_currency_item{
+    background-color: #ddd;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.dropDown_currency_item.selected{
+    background-color: #e4e4e4;
+    border-left: solid 3px #4acfa5;
+    padding-left: 7px;
+}
+.dropDown_currency_item:hover{
+    background-color: #e4e4e4;
+
+}
+.slider_offer_details_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0 17px;
+}
+.slider_offer_details_header .offer_details_header{
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    font-family: 'FuturaPTWebBook',sans-serif;
+}
+.casino_offers.casino_slider{
+    width: 900px;
+    max-width: 900px;
+    display: block;
+}
+.casino_btn.casino_offer.casino_slider_btn{
+    width: 100px;
+    margin: 0;
+}
+.casino_slider .casino_offer_details{
+    min-height: 136px;
+    padding-bottom: 0;
+}
+.casino-banner-slider .owl-nav button{
+    top: 32%;
+    width: 30px;
+    background-color: #191919!important;
+    height: 100px;
+    opacity: 0;
+}
+
+.casino-banner-slider .owl-nav button:before{
+    border-color: #00fff2;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: '';
+    display: inline-block;
+    height: 15px;
+    left: 3px;
+    position: relative;
+    top: 5px;
+    vertical-align: top;
+    width: 15px;
+}
+.casino-banner-slider .owl-nav button span{
+    display: none;
+}
+.casino-banner-slider .owl-nav button.owl-next:before{
+    left: -3px;
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.casino-banner-slider .owl-nav button.owl-prev:before{
+    left: 3px;
+    o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+.casino-banner-slider .owl-nav button:hover{
+    opacity: 1;
+}
+.casino-banner-slider .owl-nav button:hover:before{
+    border-color: #fff;
+}
+.casino-banner-slider:hover button{
+    opacity: .9;
+}
+.casinoSecondContainer{
+    margin: 25px auto 0;
+    max-width: 1280px;
+    width: 100%;
+}
+.link_live_casino_wrapp{
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    width: 33.3%;
+    margin: 0 auto;
+    display: block;
+}
+.link_live_casino{
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.link_live_casino img{
+    transition: .35s all ease-out;
+   max-width: 100%;
+}
+.link_live_casino:hover img{
+    transform-origin: center;
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.overlayContainer{
+    background-color: rgba(51,51,51,.9);
+    bottom: 0;
+    height: 120px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.link_live_casino:hover .overlayContainer{
+    opacity: .9;
+    transition: .35s all ease-out;
+}
+.link_live_casino_content{
+    bottom: 0;
+    height: 30px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.link_live_casino_title{
+    background-color: rgba(68,68,68,.9);
+    height: 30px;
+    font-size: 18px;
+    display: block;
+    float: left;
+    color: #00fff2;
+    line-height: 30px;
+    padding: 0 10px;
+    text-align: center;
+}
+.overlay_text{
+    color: #00fff2;
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0;
+    text-align: center;
+    transition: .35s all ease-out;
+    -o-transform: translateY(-11px);
+    -ms-transform: translateY(-11px);
+    -moz-transform: translateY(-11px);
+    -webkit-transform: translateY(-11px);
+    transform: translateY(-11px);
+    webkit-transform: translateY(-11px);
+}
+.link_live_casino:hover .overlay_text {
+    opacity: 1;
+    webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.home_inner_navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.home_inner_navigation .top-navigation_item{
+    padding: 0 25px;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 70px;
+    margin: 0;
+}
+.block-games{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.block-games-prod{
+    overflow: hidden;
+    position: relative;
+    width: 24%;
+    cursor: pointer;
+    display: inline-block;
+    margin:0 .5px;
+    max-height: 400px;
+}
+.proposeGames .block-games-prod{
+    max-height: 250px;
+}
+.block-games-prod.wide-game{
+    width: 50%;
+}
+.games-prod-img{
+    transition: .2s all ease-out;
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    /*height: 100%;*/
+}
+.proposeGames .games-prod-img{
+    height: 218px;
+}
+.image-container-wrapp{
+    position: relative;
+    min-height: 306px;
+    overflow: hidden;
+
+}
+.alsoLikeBlock .image-container-wrapp{
+    position: relative;
+    min-height: 220px;
+}
+.game-prod-overlay{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    align-items: center;
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .2s all ease-out;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+}
+.image-container-wrapp:hover .game-prod-overlay{
+    opacity: 1;
+}
+.game-prod-overlay .overlay_text{
+    font-size: 22px;
+    line-height: 22px;
+    margin: 0 auto;
+}
+.image-container-wrapp:hover .overlay_text {
+    opacity: 1;
+    webkit-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.image-container-wrapp:hover  .games-prod-img{
+    transform-origin: center;
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.image-container{
+    overflow: hidden;
+    /*min-height: 307px;*/
+}
+/*.alsoLikeBlock .image-container{*/
+    /*max-height: 227px;*/
+/*}*/
+.game-prod-components{
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.game-prod-jackpot{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    align-items: center;
+    background-color: rgba(51,51,51,.9);
+    /*background-color: rgba(51,51,51,1);*/
+    color: #e4e4e4;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    font-size: 15px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+}
+.game-prod-exclusive{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    align-items: center;
+    background-color: #00fff2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    height: 25px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 5px -3px 0;
+    color: #111;
+    font-size: 9px;
+}
+.block-games-title{
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -moz-box-align: center;
+    align-items: center;
+    bottom: 0;
+    box-sizing: border-box;
+    color: #ccc;
+    height: 44px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -moz-box-pack: center;
+    justify-content: center;
+    left: 0;
+    padding: 0 10px;
+    display: flex;
+    font-size: 11px;
+    text-align: center;
+}
+.block-games.in-column{
+    flex-direction: column;
+}
+.block-games-in-row{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.block-games.in-row{
+    flex-direction: row;
+}
+.block-games-in-column{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+.height-game{
+    width: 50%;
+}
+.image-container.height_container{
+    height: 100%;
+}
+.block-games:nth-child(odd) {
+    margin-left: -2px;
+    margin-right: 2px;
+}
+.getTheApp_title{
+    color: #e4e4e4;
+    font-size: 45px;
+    font-family: FuturaPTWebBook,Futura,Arial,sans-serif;
+    line-height: 45px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+.getTheApp_container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.getTheApp_img_container{
+    border-bottom: 1px solid #555;
+    max-width: 750px;
+    padding-bottom: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 33px;
+}
+.getTheApp_img_container img{
+    width: 100%;
+    border-bottom: 0;
+    max-width: 731px;
+}
+.prod_badge{
+    position: absolute;
+    bottom: -11px;
+    right: 25px;
+}
+.prod_badge img{
+    width: 80px;
+    height: 80px;
+}
+.casino_btn.download{
+    height: 30px;
+    line-height: 30px;
+    width: 160px;
+    display: block;
+    margin: 0 auto 20px;
+}
+.getTheApp_faq_container{
+    margin-top: 50px;
+}
+.faq_container_title{
+    color: #00fff2;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 25px;
+    padding-bottom: 14px;
+    text-align: center;
+}
+.getTheApp_faq_container .faq_accordion{
+    margin: 0 25px;
+    padding-bottom: 25px;
+}
+.accordion_item_title.header_close{
+    color: #999;
+}
+.accordion_item_title{
+    color: #ccc;
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+    height: 25px;
+    cursor: pointer;
+}
+.accordion_item_title.header_close:before{
+    color: #999;
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.accordion_item_title:before{
+    content: "\E801";
+    font-family: bet365UI;
+    font-size: 6px;
+    font-style: normal;
+    font-variant: normal;
+    display: inline-block;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    color: #ccc;
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: .5s all ease-out;
+}
+.accordion_item_text{
+    font-size: 13px;
+    line-height: 20px;
+    overflow-y: hidden;
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    width: 100%!important;
+    transition: opacity .5s linear;
+ }
+.accordion_item_title.header_close:hover,
+.accordion_item_title.header_close:hover:before{
+    color: #ccc;
+}
+.accordion_item_text.slow_appear{
+    color: #ccc;
+    font-size: 0;
+    line-height: 0;
+    overflow-y: hidden;
+    padding: 0;
+}
+.accordion_item_text_link{
+    color: #e4e4e4;
+    font-size: 13px;
+    text-decoration: none;
+}
+.accordion_item_text.slow_appear .accordion_item_text_link{
+    font-size: 0;
+}
+.accordion_item_text_link:hover{
+    color: #fff;
+}
+.accordion_item{
+    padding-bottom: 25px;
+}
+.block-games-grid{
+    text-align: center;
+}
+.block-games-grid__filter{
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+.block-games-prod:hover .games-prod-img{
+    filter: url(#block-games-grid-duotone-filter);
+    width: 100%;
+    height: 100%;
+}
+
+.link_live_casino_filter{
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+.link_live_casino:hover{
+    filter: url(#duotone-filter);
+    width: 100%;
+    height: 100%;
+}
+.full_offer_content{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.full_offer_nav_wrapp{
+    width: 35%;
+    min-height: 40px;
+}
+.full_offer_nav{
+    border-left: 1px solid #555;
+    position: relative;
+}
+.full_offer_nav .nav_link{
+    color: #e4e4e4;
+    display: block;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+.full_offer_nav .nav_link.active{
+    color: #fff;
+    border-left: 3px solid #00fff2;
+}
+
+.full_offer_content .tab_content{
+    width: 65%;
+}
+.full_offer_title{
+    color: #e4e4e4;
+    font-family: "FuturaPTWebBook", sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.full_offer_sub_title{
+    color: #e4e4e4;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+.full_offer_sub_title2{
+    color: #e4e4e4;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+.full_offer_sub_title3{
+    color: #ccc;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.full_offer_short_text{
+    color: #999;
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 22px;
+}
+.how_to_claim_pod{
+    background-color: #444;
+    padding: 21px 20px 30px;
+    margin-bottom: 35px;
+}
+.how_to_claim_pod .title{
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.how_to_claim_icon{
+    padding-right: 20px;
+}
+.how_to_claim_pod .title_text{
+    color: #00fff2;
+    font-family: "FuturaPTWebBook",Futura,Arial,sans-serif;
+    font-size: 20px;
+}
+.how_to_claim_pod_list{
+    padding-left: 5px;
+}
+.how_to_claim_pod_list .list_item{
+    padding-bottom: 22px;
+    color: #999;
+    font-size: 14px;
+    line-height: 22px;
+}
+.how_to_claim_pod_list .list_item .list_item_number{
+    color: #00fff2;
+    margin-right: 20px;
+    font-size: 13px;
+    line-height: 22px;
+}
+.button_quaternary{
+    background-color: #00fff2;
+    color: #333;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 130px;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 0 10px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 5px;
+}
+.button_quaternary:hover{
+    background-color: #80fff9;
+}
+.terms_conditions_list.circle li{
+    list-style-type: initial;
+}
+.terms_conditions_list.full_offer li{
+    line-height: 20px;
+}
+.currency_conversion_table_row.three_content .left_content{
+    width: 40%;
+}
+.currency_conversion_table_row.three_content .left_content.w32{
+    width: 32%;
+}
+.currency_conversion_table_row.three_content .center_content{
+    width: 25%;
+}
+.currency_conversion_table_row.three_content .right_content{
+    width: 35%;
+}
+.how_to_claim_pod_list .list_item a{
+    color: #e4e4e4;
+    font-size: 13px;
+}
+.how_to_claim_pod_list .list_item a:hover{
+    color: #00fff2;
+}
+.freeSpin_modal{
+    border-radius: 7px;
+    display: block;
+    max-width: 550px;
+    background-color: #444;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 311px;
+}
+.freeSpin_modal .modal_content{
+    background-color: #444;
+}
+.freeSpin_message_block{
+    padding: 38px 53px 23px;
+    text-align: center;
+}
+.freeSpin_message_title{
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 21px;
+    color: #e4e4e4;
+}
+.freeSpin_message_text_wrapp{
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #e4e4e4;
+}
+.freeSpin_message_text.after_spinning{
+    display: none;
+}
+.freeSpin_btn{
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #00fff2;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 24px;
+    transition: opacity .2s;
+}
+.freeSpin_btn:hover{
+    color: #fff;
+}
+.freeSpin_btn.play{
+    display: none;
+}
+.freeSpin_terms{
+    margin-top: 19px;
+    color: #999;
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration: underline;
+    display: inline-block;
+}
+.freeSpin_terms:hover{
+    color: #999;
+    text-decoration: underline;
+}
+.freeSpin_canvas_block{
+    position: relative;
+    overflow: hidden;
+}
+.result_after_spinning{
+    color: #cffffe;
+    height: 80%;
+    left: 0;
+    line-height: 18px;
+    margin: 0 auto;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    right: 2px;
+    top: 10%;
+    width: 38%;
+    z-index: 2;
+}
+.result_after_spinning .result_game,
+.result_after_spinning .free_spins{
+    display: block;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+.result_after_spinning .result_game{
+    font-size: 21.6px;
+    line-height: 21.6px;
+}
+.result_after_spinning .free_spins{
+    font-size: 14.4px;
+    line-height: 14.4px;
+}
+.close_casino{
+    color: #777;
+    cursor: pointer;
+    font-size: 30px;
+    height: 20px;
+    line-height: 22px;
+    position: absolute;
+    right: 22px;
+    top: 20px;
+    width: 20px;
+    z-index: 1;
+}
+.canvas_second_wrapper{
+    margin: 0 25px;
+    padding-top: 57%;
+    overflow: hidden;
+}
+.wof-canvas{
+    margin: 0 auto;
+    position: absolute;
+    height: 569px;
+    width: 560px;
+    box-sizing: border-box;
+    display: block;
+}
+.wof-cycle{
+    background-color: #01fef3;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 74%;
+    width: 17%;
+    height: 28%;
+}
+.modal-body.freeSpin_body{
+    padding: 0;
+}
+.currency_conversion_table_row .table_row_content,
+.currency_conversion_table_header .header_table_content{
+    width: calc(100%/8);
+}
+.currency_conversion_table_header .header_table_content{
+    color: #e4e4e4;
+    font-size: 13px;
+}
+.casino_footer .footer_socials{
+    display: none;
+}
+.offer_details_conditions.slider_conditions{
+    padding-top: 0;
+}
+.casino_full_offers{
+    max-width: 1025px;
+    padding: 0;
+    margin: 0 auto;
+}
+.blockWithGame{
+    background-size: cover;
+    background-position: left center;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    overflow-x: hidden;
+}
+.iframe_header{
+    background-color: #333;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    margin: auto;
+    text-align: center;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.iframe_header .center_content{
+    color: #00fff2;
+    font-size: 15px;
+}
+.iframe_header .left_content{
+    color: #e4e4e4;
+    font-size: 11px;
+    position: relative;
+    cursor: pointer;
+}
+.iframe_header .left_content:before{
+    display: inline-block;
+    content: "\e813";
+    font-family: bet365UI;
+    font-size: 9px;
+    padding-left: 11px;
+    transform: rotate(180deg);
+}
+
+.iframe_header .right_content{
+    color: #e4e4e4;
+    height: 35px;
+    width: 45px;
+    cursor: pointer;
+}
+.iframe_header .right_content:before{
+    content: "";
+    font-family: "bet365UIGaming"!important;
+    font-size: 17px;
+    display: block;
+    margin-top: 4px;
+}
+.iframe_header .right_content:hover,
+.iframe_header .left_content:hover{
+    color: #fff;
+}
+.iframe_game_container{
+    margin: auto;
+    display: block;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    max-width: 1000px;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 563px;
+    height: 563.375px;
+    background-color: #13805e;
+}
+.alsoLikeHeader{
+    text-align: center;
+    color: #e4e4e4;
+    font-size: 27px;
+    line-height: 26px;
+    padding: 22px 0;
+    font-family: FuturaPTWebBook,Futura,Arial,sans-serif;
+}
+.proposeGames{
+    margin: 0 auto;
+    max-width: 1025px;
+    overflow: hidden;
+}
+.proposeGames .game-prod-overlay .overlay_text{
+    font-size: 15px;
+    line-height: 15px;
+}
+.blockWithGame.maximized{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.blockWithGame.maximized .iframe_game_container{
+    min-width: 1000px;
+    min-height: 563px;
+    height: 913px;
+    max-width: 100%;
+}
+.blockWithGame.maximized .iframe_header{
+    max-width: 100%;
+}
+.blackjack-key_item_key{
+    font-size: 11px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 16px;
+    text-align: center;
+    width: 40px;
+}
+.blackjack-key_item:nth-child(1) .blackjack-key_item_key{
+    background-color: #666;
+    color: #00fff2;
+}
+.blackjack-key_item:nth-child(2) .blackjack-key_item_key{
+    background-color: #999;
+    color: #333;
+}
+.blackjack-key_item:nth-child(3) .blackjack-key_item_key{
+    background-color: #b3b3b3;
+    color: #333;
+}
+.blackjack-key_item:nth-child(4) .blackjack-key_item_key{
+    background-color: #006661;
+    color: #00fff2;
+}
+.blackjack-key_item:nth-child(5) .blackjack-key_item_key{
+    background-color: #555;
+    color: #00fff2;
+}
+.blackjack-key_item:nth-child(6) .blackjack-key_item_key{
+    background-color: #444;
+    color: #00fff2;
+ }
+.blackjack-key_list{
+    padding-bottom: 40px;
+}
+.blackjack-key_item{
+    display: flex;
+    align-items: center;
+}
+.blackjack-table{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    max-width: 468px;
+    padding-bottom: 45px;
+}
+.blackjack-table-left-column{
+    text-align: right;
+    width: 59px;
+}
+.roulette-image{
+    max-width: 500px;
+    padding-bottom: 50px;
+}
+.roulette-image img{
+    width: 100%;
+    min-width: 300px;
+}
+.roulette-key_item{
+    display: flex;
+    align-items: center;
+    height: 44px;
+    margin-bottom: 25px;
+}
+.roulette-key_item_key{
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    margin-right: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #333;
+    background-color: #e4e4e4;
+}
+.roulette-key_item_title{
+    font-size: 17px;
+    color: #e4e4e4;
+}
+.roulette-key_item_description{
+    font-size: 14px;
+    color: #999;
+}
+.roulette-key_item_odd{
+    margin-right: 10px;
+    font-size: 14px;
+    color: #e4e4e4;
+}

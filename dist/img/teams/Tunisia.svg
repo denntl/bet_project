@@ -1,0 +1,44 @@
+<svg viewBox="0 0 48 52" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        K1-8
+    </title>
+    <defs>
+        <path d="M24 3.714C27.874 3.64 30 0 30 0l6.554.997L48 13.685l-6.6 7.588L36 17v19H12V17l-5.387 4.273L0 13.68 11.377 1.238 18 0s2.126 3.79 6 3.714z" id="k1-8.svg_path-1"></path>
+        <mask id="k1-8.svg_mask-2" x="0" y="0"  fill="#fff">
+            <use xlink:href="#k1-8.svg_path-1"></use>
+        </mask>
+        <mask id="k1-8.svg_mask-3" x="0" y="0" width="48" height="36" fill="#fff">
+            <use xlink:href="#k1-8.svg_path-1"></use>
+        </mask>
+        <path id="k1-8.svg_path-4" d="M7 52l5-17h24l5 17H26.4L24 45.81 21.6 52z"></path>
+        <mask id="k1-8.svg_mask-5" x="0" y="0" width="34" height="17" fill="#fff">
+            <use xlink:href="#k1-8.svg_path-4"></use>
+        </mask>
+        <mask id="k1-8.svg_mask-6" x="0" y="0" width="34" height="17" fill="#fff">
+            <use xlink:href="#k1-8.svg_path-4"></use>
+        </mask>
+    </defs>
+    <g id="SVG-Team-Kits-Separated" fill="none" fill-rule="evenodd">
+        <g id="K1-8">
+            <path d="M24 3.714C27.874 3.64 30 0 30 0l6.554.997L48 13.685l-6.6 7.588L36 17v19H12V17l-5.387 4.273L0 13.68 11.377 1.238 18 0s2.126 3.79 6 3.714z" id="color1" fill="#F0F0F0"></path>
+            <path id="color7" fill="#F0F0F0" d="M7 52l5-16h24l5 16H26.4L24 45.81 21.6 52z"></path>
+            <path d="M18 0v36h-2V.374L18 0z" id="color2" fill="#F0F0F0"></path>
+            <path d="M20 2.274V36h-2V0s.69 1.23 2 2.274z" id="color3" fill="#F0F0F0"></path>
+            <path d="M30 0v36h-2V2.211C29.31 1.181 30 0 30 0z" id="color4" fill="#F0F0F0"></path>
+            <path d="M32 .304V36h-2V0l2 .304z" id="color5" fill="#F0F0F0"></path>
+            <g id="hires-detail">
+                <g id="Outline1">
+                    <g id="Shape">
+                        <use stroke-opacity=".07" stroke="#FFF" mask="url(#k1-8.svg_mask-2)" stroke-width="4" xlink:href="#k1-8.svg_path-1"></use>
+                        <use stroke="#272727" mask="url(#k1-8.svg_mask-3)" stroke-width="2" xlink:href="#k1-8.svg_path-1"></use>
+                    </g>
+                    <g id="Shape">
+                        <use stroke-opacity=".07" stroke="#FFF" mask="url(#k1-8.svg_mask-5)" stroke-width="4" xlink:href="#k1-8.svg_path-4"></use>
+                        <use stroke="#272727" mask="url(#k1-8.svg_mask-6)" stroke-width="2" xlink:href="#k1-8.svg_path-4"></use>
+                    </g>
+                    <path d="M13 36h22v1H13v-1zm11 1h1v6h-1v-6zM34 7h1v10.818h-1V7zM13 7h1v10.818h-1V7z" id="shadow" fill="#000" opacity=".2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+import React from 'react';
+
+
+
+
+class GreyhoundsTable extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return(
+            <div className="play_league_group_wrapp  opened">
+                <div className="table_row">
+                        <div className="participant_group greyhounds">
+                            <div className="Market-Header">
+                                <div className="header_tabs">
+                                    <div className="header_tabs_wrapp">
+                                        <span className="header_tabs_label selected">Fixed Win</span>
+                                    </div>
+                                    <div className="header_tabs_wrapp">
+                                        <span className="header_tabs_label">Fixed Place</span>
+                                    </div>
+                                    <div className="header_tabs_wrapp">
+                                        <span className="header_tabs_label">Tote Win</span>
+                                    </div>
+                                    <div className="header_tabs_wrapp">
+                                        <span className="header_tabs_label">Tote Place</span>
+                                    </div>
+                                </div>
+                                <div className="header_name">Win and Each Way In-Play</div>
+                                <div className="header_go_coupon">Go to Coupon</div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        )
+
+    }
+}
+
+export default GreyhoundsTable;

@@ -1,0 +1,487 @@
+/*
+== ------------------------------------------------------------------- ==
+== @@ Mobily Frendly Styles
+== ------------------------------------------------------------------- ==
+*/
+@font-face {font-family: 'bet365UI';
+src: url('/fonts/bet365UI/bet365UI.eot');
+src: url('/fonts/bet365UI/bet365UI.eot?#iefix') format('embedded-opentype'),
+url('/fonts/bet365UI/bet365UI.woff2') format('woff2'),
+url('/fonts/bet365UI/bet365UI.woff') format('woff'),
+url('/fonts/bet365UI/bet365UI.ttf') format('truetype'),
+url('/fonts/bet365UI/bet365UI.svg#bet365UI') format('svg');
+font-weight: normal;font-style: normal;
+}
+
+.resp-visible {display: none;}
+.HeaderPod,
+.homePagePod,
+.moreAppsPod,
+.helpLinks,
+.statFormsContainer
+{display: none;}
+
+@media(max-width:940px) {
+body {font-family: -apple-system,"Helvetica Neue",Helvetica,"Segoe UI",Roboto,"Droid Sans",Arial,sans-serif;}
+.resp-hiden {display: none; }
+.resp-visible {display: block;}
+.HeaderPod,
+.homePagePod,
+.moreAppsPod {display: block;}
+
+/**** Header ****/
+.top_header {display: none;}
+.bottom_header.bottom_header_search {display: none;}
+.HeaderPod {display: block;position: fixed; z-index: 100;top: 0;left: 0;width: 100%;}
+.HeaderPod *,
+.HeaderPod :after,
+.HeaderPod :before {box-sizing: border-box;}
+.HeaderPod_Nav {position: relative;
+display: flex;justify-content: space-between;background-color: #14805e;padding-right: env(safe-area-inset-right);}
+.HeaderPod,
+.HeaderPod_Nav {padding-right: env(safe-area-inset-right);}
+.HeaderLink {display: flex;flex: 1 1 20%;align-items: center;justify-content: center;min-height: 46px;font-size: 14px;color: #fff;}
+.HeaderLinkAtoz_SidebarLauncher {justify-content: flex-start;padding-left: 11px;}
+.HeaderPod *,
+.HeaderPod :after,
+.HeaderPod :before {box-sizing: border-box;}
+.HeaderLinkAtoz_SidebarLauncher:before {content: "\e609";display: inline-block;margin-right: 6px;font-family: bet365UI;speak: none;font-style: normal;font-weight: 400;font-variant: normal;font-size: 9px;line-height: 1;text-transform: none;color: #4acfa5;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+.HeaderLinkHome_Launcher {position: relative; width: 35px;line-height: 0;background-image: url('/img/bet365-logo-mobile.svg');background-repeat: no-repeat;background-position: 50%;transition: transform .1s;}
+.HeaderLinkHome_LauncherLogo {height: 31px;width: 35px;}
+.HeaderLinkLogin_Launcher {padding: 0 2px;text-align: center;color: #ffdf1b;}
+.HeaderPod_CurrentIndicator {position: absolute;bottom: 0;left:calc(50% - 17px);display: none;height: 3px;width: 35px;background-color: #ffdf1b;}
+.HeaderPod_CurrentIndicatorDisplayed {display: block;}
+.HeaderLinkHome_Cover { position: absolute;top: 0;left: 0;opacity: 0;width: 100%;height: 100%;pointer-events: none;background-color: #14805e;transition: opacity .1s;}
+
+/**** Sidebar ****/
+.sidebar_wrapper.SidebarWrapper {position: fixed;top: 0;bottom: 0;left: -330px;width: 330px;transition: transform .2s,opacity .2s;transform: translateX(0);opacity: 0;pointer-events: none; background-color: #333;}
+.sidebar_wrapper.SidebarShow {opacity: 1;transform: translateX(100%);pointer-events: all;}
+.sidebar_wrapper {flex: 0 0 100%;width: 100%;}
+.sidebar_link, .ClassificationDropDown_link {height: 44px;width: 100%;font-size: 15px; line-height: 44px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.menu-item {display: flex;height: 44px;align-items: center;padding: 0 0;}
+.sidebar_icon_star {top: 0;display: block;padding: 22px;margin-right: -11px;margin-left: auto;background-position: 8px -54px;background-repeat: no-repeat;background-image: url('/img/SidebarModule/Star_Sprite.svg');}
+.sidebar_icon_star.starBtnOn {background-position: 8px 7px;}
+
+/**** Page Content ****/
+.page_right_content .icon_buttons,
+.play_banner,
+.choice_game_block,
+.info_block,
+.right_column_table {display: none;}
+.page_right_content {position: fixed;z-index: 100;bottom: 0;left: calc(50% - 140px);}
+.main_content {position: relative;z-index: auto!important;min-width: initial;height: 100%;margin: 46px auto 0 auto;transition: transform .2s,-webkit-transform .2s;}
+.page .header {min-height: 44px;}
+.page .header .title {font-size: 15px;min-height: 44px;line-height: 44px;}
+.page .header .nav-tabs {display: none;}
+.page .MarketGroup-GroupName {min-height: 44px;padding: 0 10px 0 10px;line-height: 44px;font-size: 15px;}
+.page .Market-Header {height: 44px;line-height: 44px;font-size: 14px;color: #e4e4e4;}
+.classification_block .classification_header:after,
+.Market-Header:after {content: "";position: absolute;top: 50%;right: 11px;height: 7px;width: 11px;background-image: url('/img/collapsed-marker.png');
+background-size: 11px 7px;
+background-repeat: no-repeat;
+transform: translate(0,-50%);
+}
+.Market-HeaderAllCheckbox {display: none;}
+.page .Market-Cluster .item {width: 50%;height: 44px;font-size: 13px;}
+.page .MarketGroup label.checkbox {display: none;}
+
+/**** Footer ****/
+.footer_wrapper {max-width: initial;padding: 10px 10px;}
+
+.menu_column_wrapper {display: none;}
+.footer_logo { border-top: none;}
+.helpLinks {display: block;}
+.helpLinks, .formStatLinks {color: #ddd;}
+.helpLinks, .formStatLinks {padding: 0;margin: 0;color: #ddd;}
+ul.helpLinks, ul.formStatLinks {text-align: center;padding: 6px 0 5px 0;-webkit-padding-start: 0;margin: 0;}
+ul.helpLinks li,
+ul.formStatLinks li {display: inline-block;padding: 0 11px 0 11px;color: #ffdf1b;}
+.helpLinks>li>a,
+.formStatLinks>li>a {font-size: 13px;color: #ddd;}
+.statFormsContainer {display: block;text-align: center;}
+.statFormsContainer .title {padding-top: 7px;font-size: 13px;font-weight: bold; color: #ddd;}
+
+/**** HOME PAGE ****/
+.home_page {padding-bottom: 0;}
+.home_page_header {display: none;}
+.columns_container {flex-wrap: wrap;}
+.column_one,
+.column_second {min-width: initial;max-width: initial;width: 100%;padding: 0 0;}
+.offer_banner {display: none;}
+.coupon_table {display: none;}
+.live_in_play_module {display: none;}
+.total_table_tabs {display: none;}
+/*.sport_classification_slider {display: none;}
+.live_in_play_module .main_header .main_header_btn {display: none;}*/
+
+.IconContainerV6Module {display: block;}
+.IconContainerV6 {width: 100%;padding: 1px 0;background-color: #474747;background-image: none;}
+.IconContainerV6 .iconBox {display: flex;flex-direction: column;align-items: center;height: 100%;width: 77px;margin-right: 1px;background-color: #585858;}
+.IconContainerV6 .iconBox>.icon {margin: -3px auto 0; background-clip: padding-box;}
+.IconContainerV6 .iconBox>.icon>.iconPic {height: 52px;width: 55px;background: url(/img/sprite/hires/HiResSportIconsV23.png),none;
+background-repeat: no-repeat;background-size: 57px 5491px;background-clip: padding-box;}
+
+.IconContainerV6 .icon_0 { background-position-y: 9000px!important; background-position: 0 -9999px,100% 50%!important;}
+.IconContainerV6 .icon_1,
+.IconContainerV6 .icon_31,
+.IconContainerV6 .icon_74,
+.IconContainerV6 .icon_82 { background-position: 0 -170px,100% 50%!important;}
+.IconContainerV6 .icon_2,
+.IconContainerV6 .icon_73,
+.IconContainerV6 .icon_81,
+.IconContainerV6 .icon_2110 { background-position: 0 -1238px,100% 50%!important;}
+.IconContainerV6 .icon_3 { background-position: 0 -2252px,100% 50%!important;}
+.IconContainerV6 .icon_4,
+.IconContainerV6 .icon_85 { background-position: 0 -3264px,100% 50%!important;}
+.IconContainerV6 .icon_5,
+.IconContainerV6 .icon_129,
+.IconContainerV6 .icon_130,
+.IconContainerV6 .icon_131,
+.IconContainerV6 .icon_132,
+.IconContainerV6 .icon_133,
+.IconContainerV6 .icon_134,
+.IconContainerV6 .icon_135,
+.IconContainerV6 .icon_136,
+.IconContainerV6 .icon_137,
+.IconContainerV6 .icon_800,
+.IconContainerV6 .icon_996 { background-position: 0 -4278px,100% 50%!important;}
+.IconContainerV6 .icon_6 { background-position: 0 -1295px,100% 50%!important;}
+.IconContainerV6 .icon_7 { background-position: 0 -2309px,100% 50%!important;}
+.IconContainerV6 .icon_8 { background-position: 0 -2476px,100% 50%!important;}
+.IconContainerV6 .icon_9 { background-position: 0 -283px,100% 50%!important;}
+.IconContainerV6 .icon_999,
+.IconContainerV6 .icon_10,
+.IconContainerV6 .icon_65,
+.IconContainerV6 .icon_114,
+.IconContainerV6 .icon_115,
+.IconContainerV6 .icon_126 { background-position: 0 -1350px,100% 50%!important;}
+.IconContainerV6 .icon_11,
+.IconContainerV6 .icon_55,
+.IconContainerV6 .icon_69 { background-position: 0 -2364px,100% 50%!important;}
+.IconContainerV6 .icon_12,
+.IconContainerV6 .icon_57,
+.IconContainerV6 .icon_61,
+.IconContainerV6 .icon_60 { background-position: 0 -3379px,100% 50%!important;}
+.IconContainerV6 .icon_13 { background-position: 0 -339px,100% 50%!important;}
+.IconContainerV6 .icon_14 { background-position: 0 -1409px,100% 50%!important;}
+.IconContainerV6 .icon_15,
+.IconContainerV6 .icon_31 { background-position: 0 -2420px,100% 50%!important;}
+.IconContainerV6 .icon_16 { background-position: 0 -3436px,100% 50%!important;}
+.IconContainerV6 .icon_17 { background-position: 0 -394px,100% 50%!important;}
+.IconContainerV6 .icon_18,
+.IconContainerV6 .icon_61,
+.IconContainerV6 .icon_62 { background-position: 0 -1464px,100% 50%!important;}
+.IconContainerV6 .icon_19 { background-position: 0 -3321px,100% 50%!important;}
+.IconContainerV6 .icon_24 { background-position: 0 -3490px,100% 50%!important;}
+.IconContainerV6 .icon_27 { background-position: 0 -450px,100% 50%!important;}
+.IconContainerV6 .icon_35 { background-position: 0 -1520px,100% 50%!important;}
+.IconContainerV6 .icon_36 { background-position: 0 -2534px,100% 50%!important;}
+.IconContainerV6 .icon_75 { background-position: 0 -3548px,100% 50%!important;}
+.IconContainerV6 .icon_38 { background-position: 0 -508px,100% 50%!important;}
+.IconContainerV6 .icon_59 { background-position: 0 -1425px,100% 50%!important;}
+.IconContainerV6 .icon_64,
+.IconContainerV6 .icon_67 { background-position: 0 -2451px,100% 50%!important;}
+.IconContainerV6 .icon_66 { background-position: 0 -3602px,100% 50%!important;}
+.IconContainerV6 .icon_998,
+.IconContainerV6 .icon_80 { background-position: 0 -399px,100% 50%!important;}
+.IconContainerV6 .icon_76,
+.IconContainerV6 .icon_77 { background-position: 0 -1482px,100% 50%!important;}
+.IconContainerV6 .icon_78 { background-position: 0 -2648px,100% 50%!important;}
+.IconContainerV6 .icon_79 { background-position: 0 -4980px,100% 50%!important;}
+.IconContainerV6 .icon_83 { background-position: 0 -4448px,100% 50%!important;}
+.IconContainerV6 .icon_84 { background-position: 0 -3660px,100% 50%!important;}
+.IconContainerV6 .icon_88 { background-position: 0 -620px,100% 50%!important;}
+.IconContainerV6 .icon_89 { background-position: 0 -1689px,100% 50%!important;}
+.IconContainerV6 .icon_90 { background-position: 0 -2703px,100% 50%!important;}
+.IconContainerV6 .icon_91,
+.IconContainerV6 .icon_95 { background-position: 0 -3718px,100% 50%!important;}
+.IconContainerV6 .icon_92 { background-position: 0 -675px,100% 50%!important;}
+.IconContainerV6 .icon_93 { background-position: 0 -1746px,100% 50%!important;}
+.IconContainerV6 .icon_94 { background-position: 0 -2760px,100% 50%!important;}
+.IconContainerV6 .icon_96 { background-position: 0 -3770px,100% 50%!important;}
+.IconContainerV6 .icon_97 { background-position: 0 -732px,100% 50%!important;}
+.IconContainerV6 .icon_98 { background-position: 0 -1805px,100% 50%!important;}
+.IconContainerV6 .icon_99 { background-position: 0 -2815px,100% 50%!important;}
+.IconContainerV6 .icon_100 { background-position: 0 -3829px,100% 50%!important;}
+.IconContainerV6 .icon_101 { background-position: 0 -788px,100% 50%!important;}
+.IconContainerV6 .icon_102 { background-position: 0 -1858px,100% 50%!important;}
+.IconContainerV6 .icon_103,
+.IconContainerV6 .icon_106 { background-position: 0 -2872px,100% 50%!important;}
+.IconContainerV6 .icon_104 { background-position: 0 -3885px,100% 50%!important;}
+.IconContainerV6 .icon_105 { background-position: 0 -845px,100% 50%!important;}
+.IconContainerV6 .icon_107 { background-position: 0 -1914px,100% 50%!important;}
+.IconContainerV6 .icon_108,
+.IconContainerV6 .icon_109 { background-position: 0 -2928px,100% 50%!important;}
+.IconContainerV6 .icon_110 { background-position: 0 -3940px,100% 50%!important;}
+.IconContainerV6 .icon_111 { background-position: 0 -900px,100% 50%!important;}
+.IconContainerV6 .icon_112 { background-position: 0 -1970px,100% 50%!important;}
+.IconContainerV6 .icon_113 { background-position: 0 -2985px,100% 50%!important;}
+.IconContainerV6 .icon_116,
+.IconContainerV6 .icon_141 { background-position: 0 -3998px,100% 50%!important;}
+.IconContainerV6 .icon_117 { background-position: 0 -958px,100% 50%!important;}
+.IconContainerV6 .icon_118,
+.IconContainerV6 .icon_119,
+.IconContainerV6 .icon_121,
+.IconContainerV6 .icon_122,
+.IconContainerV6 .icon_138 { background-position: 0 -2028px,100% 50%!important;}
+.IconContainerV6 .icon_120 { background-position: 0 -3040px,100% 50%!important;}
+.IconContainerV6 .icon_123 { background-position: 0 -4050px,100% 50%!important;}
+.IconContainerV6 .icon_124 { background-position: 0 -1012px,100% 50%!important;}
+.IconContainerV6 .icon_125 { background-position: 0 -2082px,100% 50%!important;}
+.IconContainerV6 .icon_127 { background-position: 0 -3098px,100% 50%!important;}
+.IconContainerV6 .icon_128 { background-position: 0 -4110px,100% 50%!important;}
+.IconContainerV6 .icon_139 { background-position: 0 -1068px,100% 50%!important;}
+.IconContainerV6 .icon_140 { background-position: 0 -2140px,100% 50%!important;}
+.IconContainerV6 .icon_142 { background-position: 0 -3153px,100% 50%!important;}
+.IconContainerV6 .icon_143 { background-position: 0 -4168px,100% 50%!important;}
+.IconContainerV6 .icon_145 { background-position: 0 -3490px,100% 50%!important;}
+.IconContainerV6 .icon_144,
+.IconContainerV6 .icon_145,
+.IconContainerV6 .icon_146,
+.IconContainerV6 .icon_2019,
+.IconContainerV6 .icon_2020,
+.IconContainerV6 .icon_2021,
+.IconContainerV6 .icon_2022,
+.IconContainerV6 .icon_2023,
+.IconContainerV6 .icon_2100,
+.IconContainerV6 .icon_2101,
+.IconContainerV6 .icon_2102,
+.IconContainerV6 .icon_2103,
+.IconContainerV6 .icon_2104,
+.IconContainerV6 .icon_2106,
+.IconContainerV6 .icon_2107,
+.IconContainerV6 .icon_2108,
+.IconContainerV6 .icon_2111 { background-position: 0 -1126px,100% 50%!important;}
+.IconContainerV6 .icon_147 { background-position: 0 -2196px,100% 50%!important;}
+.IconContainerV6 .icon_148 { background-position: 0 -3208px,100% 50%!important;}
+.IconContainerV6 .icon_149 { background-position: 0 -4560px,100% 50%!important;}
+.IconContainerV6 .icon_151 { background-position: 0 -4616px,100% 50%!important;}
+.IconContainerV6 .icon_152 { background-position: 0 -4393px,100% 50%!important;}
+.IconContainerV6 .icon_153 { background-position: 0 -5224px,100% 50%!important;}
+.IconContainerV6 .icon_AZ { background-position: 0 -1026px,100% 50%!important;}
+.IconContainerV6 .icon_3000 { background-position: 0 -4669px,100% 50%!important;}
+.IconContainerV6 .icon_3001,
+.IconContainerV6 .icon_3003 { background-position: 0 -4726px,100% 50%!important;}
+.IconContainerV6 .icon_3002 { background-position: 0 -4333px,100% 50%!important;}
+
+.IconContainerV6 .iconBox>.iconLabel {display: flex;align-items: center;justify-content: center; height: 30px;width: 77px;padding-bottom: 4px;margin: 0 auto;text-align: center;font-size: 11px;line-height: 13px;color: #ccc;box-sizing: border-box;white-space: normal;}
+
+.FeaturedFixtureModule {display: block;height: 156px;}
+.FeaturedFixtureModule *,
+.FeaturedFixtureModule :after,
+.FeaturedFixtureModule :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.FeaturedFixtureModule .Header { display: flex;margin: 0;align-items: center;justify-content: space-between;height: 33px;padding: 0 10px;font-weight: 400;background-color: #14805e;font-size: 15px;line-height: 18px;color: #e4e4e4;}
+.Header_Title {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.HorizontalScroller { position: relative;padding: 0;margin: 0;width: 100%;min-height: 44px;padding: 0;margin: 0;-webkit-backface-visibility: hidden;backface-visibility: hidden;transform: translateZ(0);}
+.Fixture {display: inline-block;width: 202px;padding-top: 6px; vertical-align: top;line-height: 0;background-color: #666;border-radius: 2px;overflow: hidden;border-left: 1px solid #545454;}
+.TeamInformation {display: flex;flex: 1 0 100%;justify-content: space-between;padding: 0 11px;}
+.TeamInformation_CompetitorContainer {display: flex;flex: 2 4 10%;flex-direction: column;width: inherit;overflow: hidden;align-items: baseline;}
+.Competitor {display: flex;flex-direction: row;min-height: 22px;width: 100%;overflow: hidden;}
+.Competitor_TeamKit {align-self: center;width: 15px;height: 16px;margin-right: 11px;}
+.TeamKit_SVG {width: 100%;height: 100%;}
+.Competitor_Name {display: flex;flex: 2 4 auto;font-size: 13px;line-height: 21px;color: #ddd;overflow: hidden;width: inherit;}
+.Competitor_TruncateName {width: 100%;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.Fixture_TimePlaceHolder {padding: 0 11px;height: 17px; line-height: 12px;font-size: 11px;font-weight: 400;color: #bbb;}
+.PreMatchDateTime {display: inline-block;margin-top: 3px;}
+.Fixture_VideoIcon {display: inline-block;}
+.Fixture_VideoIcon:after { content: "\e607"; margin-left: 11px;font-family: bet365UI;font-size: 10px;speak: none;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+.Market_OppContainer {display: flex;margin-top: 11px;background-color: #777;}
+.Market_OppContainerP2 .ParticipantFeaturedFixture.Participant {width: 50%;max-width: 50%;padding: 0 7.5px;}
+.ParticipantFeaturedFixture.Participant {position: inherit;display: flex;flex-wrap: wrap;align-items: center;align-content: center;width: 33.333333%;max-width: 33.333333%;min-height: 44px;padding: 0;justify-content: center;background-color: transparent;padding: 0;border: none;}
+.ParticipantFeaturedFixture+.ParticipantFeaturedFixture {border-left: 1px solid #666;}
+.ParticipantFeaturedFixture.Participant:last-child {border-bottom-color: transparent;}
+.ParticipantFeaturedFixture>.Participant_OppName {padding: 0 3.5px;font-size: 12px;line-height: 17px;color: #ddd;}
+.ParticipantFeaturedFixture>.Participant_OppOdds {padding: 0 3.5px;font-size: 12px;line-height: 17px;color: #ffdf1b;}
+
+.InPlayLauncherModule, 
+.InPlayLauncherModule *, 
+.InPlayLauncherModule :after, 
+.InPlayLauncherModule :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+.InPlayLauncherModule {margin-top: 2px;background-color: #545454;}
+.Container .InPlayLauncherModule {margin-top: 1px;}
+.InPlayLauncherHeader {display: flex;justify-content: space-between;align-items: center;min-height: 44px;padding: 0 11px;border-bottom: 1px solid #20674d;background-color: #14805e;}
+.InPlayLauncherHeader_Text {font-family: Roboto,Helvetica,Tahoma,Geneva,Arial Narrow,Arial,sans-serif;font-weight: 400;font-size: 21px;font-stretch: condensed;color: #fff;white-space: pre;}
+.InPlayLauncherHeader_InPlay {display: inline-flex;font-style: normal;color: #ffdf1b;}
+.InPlayLauncherHeader_Count {font-family: -apple-system,Helvetica Neue,Roboto,Droid Sans,Segoe UI,Verdana,Arial,Lucida Grande,sans-serif;font-weight: 400;font-size: 12px;color: #4acfa5;}
+.InPlayLauncherHeader_Count:after {content: "\e602";margin-left: 3px;font-family: bet365UI;font-size: 9px;speak: none;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+.InPlayLauncherClassificationHeader {position: relative;display: flex;align-items: center;min-height: 22px;font-size: 15px;color: #545454;background-color: #a7a7a7;}
+.InPlayLauncherClassificationHeader:before {content: " ";position: absolute;left: 4px;top: 5px;display: block;height: 12px;width: 3px;}
+.InPlayLauncherClassificationHeader-1:before {background-color: #25765c;}
+.InPlayLauncherClassificationHeader-13:before {background-color: #5f6e37;}
+.InPlayLauncherClassificationHeader-18:before {background-color: #c18c00;}
+.InPlayLauncherClassificationHeader-Title {flex-grow: 1;display: flex;width: 50%;padding-left: 11px;color: #444;font-size: 13px;line-height: 11px;}
+.Competition_CompetitorWrapper {display: flex;width: 50%;}
+.Competition_Competitor {flex: 1 0 33%; display: flex;justify-content: center;font-size: 13px;line-height: 1; color: #444;}
+.InPlayLauncherFixture { position: relative;display: flex;width: 100%;min-height: 44px;background-color: #666;}
+.InPlayLauncherFixture_GameItem {flex: 5 0 50%;display: flex;width: 50%;padding: 9px 11px;overflow: hidden;}
+.InPlayLauncherFixture_HasMeta .InPlayLauncherFixture_GameItem {padding: 8px 11px;}
+.InPlayLauncherFixture+.InPlayLauncherFixture .InPlayLauncherFixture_GameItem {border-top: 1px solid #757575;}
+.InPlayLauncherFixture_TeamsWrapper { position: relative;flex: 2 4 10%;display: flex;flex-direction: column;width: inherit;overflow: hidden;}
+.InPlayLauncherFixture_Timeable .InPlayLauncherFixture_TeamsWrapper {padding-left: 40px;}
+.InPlayLauncherFixture_TeamsText {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;color: #ddd;font-size: 12px;line-height: 15px;}
+.InPlayLauncherFixture_TeamsText+.InPlayLauncherFixture_TeamsText {margin-top: 4px;}
+.InPlayLauncherFixture_MetaContainer {display: flex;}
+.InPlayLauncherFixture_HasMeta .InPlayLauncherFixture_MetaContainer {position: relative;top: -39px; left: -39px;flex-direction: column; margin-top: 6px;width: 39px;margin-bottom: -39px;}
+.InPlayLauncherFixture_Time {display: flex;width: auto;margin-right: 8px;font-size: 11px;line-height: 13px;color: #bbb;}
+.InPlayLauncherFixture_ScoresWrapper {position: relative;flex: 0 0 auto;display: flex;flex-direction: column;justify-content: flex-start;font-size: 12px;color: #ffdf1b;white-space: nowrap;}
+.InPlayLauncherFixture_ScoreCol {display: flex;flex-direction: row-reverse;}
+.InPlayLauncherFixture_PointField {min-width: 17px;margin-left: 2px;color: #bbb;}
+.InPlayLauncherFixture_PointField:first-child {color: #ffdf1b;}
+.Market {display: flex;flex: 1 1 50%;}
+.Participant {display: flex;width: 50%;flex-direction: column;align-items: center;justify-content: center;padding: 0 11px;min-height: 44px;background-color: #585858;}
+.Participant+.Participant,
+.ParticipantDummy+.Participant {border-left: 1px solid #666;}
+.Market_HasThree .Participant {width: 33.3333%;}
+.Participant_OppName {display: block;font-size: 13px;line-height: 20px;color: #bbb;}
+.Participant_OppName:empty {display: none;}
+.Participant_OppOdds {display: block; font-size: 13px;line-height: 20px;color: #ffdf1b;}
+.InPlayLauncherFixture_Video, 
+.InPlayLauncherFixture_Video2 {display: inline-block!important; width: 38px;font-size: 10.5px;line-height: 13px;color: #bbb;}
+.InPlayLauncherFixture_Time+.InPlayLauncherFixture_Video, 
+.InPlayLauncherFixture_Time+.InPlayLauncherFixture_Video2 {margin-top: 5px;}
+.InPlayLauncherFooter {position: relative;display: flex;flex: 1 0 100%;align-items: center;justify-content: space-between;min-height: 44px;padding: 0 11px;background-color: #666;border-top: 1px solid #757575;}
+.InPlayLauncherFooter_Label {display: flex;font-size: 15px;line-height: 18px;color: #ddd;}
+.InPlayLauncherFooter_Count {display: flex;font-size: 12px;line-height: 13px;color: #ddd;display: flex;}
+
+.HighlightsMainModule *,
+.HighlightsMainModule :after,
+.HighlightsMainModule :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+.HeaderBar {display: flex;flex-direction: column;justify-content: space-between;background-color: #14805e;}
+.HeaderBar_Wrapper {padding: 8px 11px;}
+.HeaderBar_Description {font-size: 12px;line-height: 14px;color: #4acfa5;}
+.HeaderBar_PodHeader {font-size: 15px;line-height: 15px;color: #e4e4e4;}
+.HighlightsMarketGrid_ViewAllLink .MarketGroup, 
+.HighlightsMarketGrid_ViewAllLink .MarketCouponFixtureLabelBase, 
+.HighlightsMarketGrid_ViewAllLink .MarketCouponValuesExplicit10, 
+.HighlightsMarketGrid_ViewAllLink .MarketCouponValuesExplicit21, 
+.HighlightsMarketGrid_ViewAllLink .MarketCouponValuesExplicit22 {border-bottom: none;}
+.CouponParticipantWithBookClosesDouble { position: relative;width: 100%;height: 59px; padding: 0 11px;background-color: #666;color: #ddd;border-bottom: 1px solid #757575;}
+.CouponParticipantWithBookClosesDouble_TopRowContainer {display: flex;justify-content: space-between;}
+.CouponParticipantWithBookClosesDouble_StatsIconPadding {padding-right: 24px;}
+.CouponParticipantWithBookClosesDouble_NameContainer {display: flex;flex: 1 1 auto;flex-direction: column;overflow: hidden;padding-top: 4px;}
+.CouponParticipantWithBookClosesDouble_Name {text-overflow: ellipsis;white-space: nowrap;font-size: 12px;color: #ddd;line-height: 17px;overflow: hidden;}
+.CouponParticipantWithBookClosesDouble_BottomRowContainer {display: table;table-layout: fixed;padding-top: 2px;line-height: 15px;font-size: 11px;color: #bbb;}
+.CouponParticipantWithBookClosesDouble_BottomRowItem {display: table-cell;padding-right: 11px;vertical-align: top;}
+.CouponParticipantWithBookClosesDouble_MoreMarkets:after {content: "\e602";font-family: bet365UI;font-size: 10px;speak: none;font-style: normal;font-weight: 400;font-variant: normal;text-transform: none;line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+.CouponParticipantOddsOnlyHigh {display: flex;align-items: center;justify-content: center;height: 59px; width: 100%;font-size: 12px;color: #ffdf1b;background-color: #585858;white-space: nowrap;}
+.CouponParticipantOddsOnlyHigh_Odds {display: inline-block;color: inherit;}
+.ViewAllLink {height: 44px;padding: 0 10px;background-color: #666;border-color: #757575;border-top: 1px solid #757575;}
+.ViewAllLink_Title {display: inline-block;font-size: 13px;line-height: 43px;color: #ddd;}
+.ViewAllLink_Chevron {position: absolute;right: 10px;display: inline-block;margin-top: 1px;line-height: 43px;}
+.ViewAllLink_Chevron:after {content: "\e602";text-transform: none;font-family: bet365UI;speak: none;font-style: normal;font-weight: 400;font-variant: normal; font-size: 10px;color: #888;line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;}
+
+.GamingLinksModule, 
+.GamingLinksModule *, 
+.GamingLinksModule :after, 
+.GamingLinksModule :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.GamingLinksModule {display: flex;flex-direction: column;margin-top: 2px;line-height: 0;}
+.GamingLinksContainer .GamingLinksModule {margin-top: 1px;}
+.GamingLinksModule_Title {align-items: center;min-height: 33px;padding: 0 11px;
+font-family: -apple-system,Helvetica Neue,Roboto,Droid Sans,Segoe UI,Verdana,Arial,Lucida Grande,sans-serif;font-weight: 400;line-height: 18px;background-color: #14805e;color: #ddd;}
+.GamingLinksModule_GamesContainer, 
+.GamingLinksModule_Title {display: flex;font-size: 15px;}
+.HorizontalScroller {position: relative;width: 100%;min-height: 44px;padding: 0;margin: 0;
+backface-visibility: hidden;
+transform: translateZ(0);}
+.GameLink {display: inline-flex;flex: 1 0 33.333%;align-items: center;justify-content: center;line-height: 44px;min-width: 100px;}
+a.GameLink {color: #e4e4e4;}
+.GameLink:before {content: " ";display: inline-block;min-height: 21px;margin-right: 10px; vertical-align: middle;background-image: url('/img/GamingLinksModule/ProductIcon.svg');background-repeat: no-repeat;}
+.GameLink.GameLink_Casino:before {width: 21px;height: 21px;background-position: -8px -9px;}
+.GameLink.GameLink_Gaming:before {width: 23px;height: 19px;background-position: -8px -46px;}
+.GameLink.GameLink_Vegas:before {width: 24px;height: 18px;background-position: -9px -81px;}
+.moreAppsPod {position: relative;display: block;margin: 1px 0;font-size: 13px;color: #ddd;}
+.moreAppsPod .podSplashRow {   display: flex;align-items: center;height: 44px;padding-left: 11px;background-color: #14805e;}
+.moreAppsPod .podSplashRow {width: 100%;float: none;}
+
+.top_coupons_block {margin: 1px 0 0 0;background-color: #666;}
+.top_coupons_buttons .coupon_btn {height: initial;min-height: 44px;}
+.coupon_btn_text {font-size: 15px;line-height: 18px;color: #bbb;}
+
+.InstantGamesModule,
+.InstantGamesModule *,
+.InstantGamesModule :after,
+.InstantGamesModule :before {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+.InstantGamesModule {flex-direction: column;margin-top: 1px; line-height: 0;color: #ddd;}
+.InstantGamesModule,
+.InstantGamesModule_Title {display: flex;}
+.InstantGamesModule_Title {min-height: 33px;padding: 0 11px;align-items: center;font-family: -apple-system,Helvetica Neue,Roboto,Droid Sans,Segoe UI,Verdana,Arial,Lucida Grande,sans-serif;font-weight: 400;font-size: 15px;line-height: 18px;background-color: #14805e;}
+.HorizontalScroller {position: relative;width: 100%;min-height: 44px;padding: 0;margin: 0;backface-visibility: hidden;transform: translateZ(0);}
+.GameItem {display: inline-flex;flex: 0 0 150px;flex-direction: column;align-items: center;justify-content: center;background-color: #666;}
+.GameItem_Image {display: block;width: 150px;height: 110px;}
+.GameItem_ImageName {display: flex;align-items: center;height: 33px;}
+
+}
+
+/*@media (min-width: 420px) {*/
+/*.sidebar_wrapper.SidebarWrapper {}*/
+/*.HeaderPod.SidebarVisible,*/
+/*.main_content .page.SidebarVisible,*/
+/*.inner_footer.SidebarVisible .footer_wrapper {transform: translateX(330px);}*/
+
+/*}*/
+
+/*
+== ------------------------------------------------------------------- ==
+== @@ Temple Styles
+== ------------------------------------------------------------------- ==
+*/
+.TabNavigation {width: 100%;background: #FFF;}
+.TabNavigation ul {width: 100%;margin: 0 0 -1px 0;padding: 8px 0 0 0;list-style-type: none;border-bottom: 1px solid #ccc;}
+.TabNavigation ul .ItemLink {display: inline-block;height: 28px;padding-left: 10px;}
+.TabNavigation ul .ItemLink a {position: relative;top: 0;height: 13px;padding: 8px 10px 8px 10px;font-size: 11px;color: #06855f;background-color: #eee;border: solid 1px #ccc;border-bottom: none;}
+.TabNavigation ul .ItemLink.active a { top: 1px;height: 14px; padding-top: 9px;text-decoration: none;font-weight: bold;color: #545454;border-bottom: 1px solid #FFF;background-color: #fff;}
+.TabContainer {height: 100%;min-height: 437px;padding: 18px 20px 140px 20px;background-color: #fff;border: solid 1px #ccc;}
+.TabContainer .DetailsSteck {}
+.TabContainer .DetailsSteck_Header {display: flex;padding: 0 0 8px 0;border-bottom: 1px solid #d4d4d4;}
+.TabContainer .DetailsSteck_Title {font-family: Verdana,Arial,Helvetica,sans-serif;font-weight: bold;color: #545454;font-size: 11px}
+.timeout_wrapp .DetailsSteck_Title.active {font-family: Verdana,Arial,Helvetica,sans-serif;font-weight: bold;color: #545454;border-bottom: 2px solid #000;}
+.TabContainer .DetailsSteck_Content {}
+.TabContainer .DetailsSteck_ContentText p {width: 100%;padding: 5px 0 5px 0;line-height: 19px;font-family: Verdana,Arial,Helvetica,sans-serif;font-size: 11px;color: #545454;}
+.TabContainer .DetailsSteck_ContentText a {text-decoration: none;color: #06855f;cursor: pointer;}
+.TabContainer .DetailsSteck_ContentText a:hover {text-decoration: underline;}
+.TabContainer .DetailsSteck_Form {padding: 12px 0;}
+.TabContainer .DetailsSteck_Form .FormRow {position: relative;display: flex;width: 100%;padding: 5px 0 5px 0;line-height: 22px;}
+.TabContainer .DetailsSteck_Form .FormMeaning {min-width: 210px;font-size: 11px;line-height: 16px;color: #545454;}
+.TabContainer .DetailsSteck_Form .FormRow.action .FormMeaning {display: flex;width: 100%;}
+.TabContainer .DetailsSteck_Form .FormRow.action.center .FormMeaning {justify-content: center;}
+.TabContainer .DetailsSteck_Form .FormLabel {float: left;height: 22px;width: 180px;line-height: 22px;margin-right: 20px;text-align: right;font-size: 11px;vertical-align: middle;color: #545454;}
+.TabContainer .DetailsSteck_Form .FormFieldSet {position: relative;padding: 0 30px 0 0;}
+.TabContainer .DetailsSteck_Form input {width: 210px;height: 22px;padding: 2px 0 0 3px;line-height: 22px;font-size: 11px;color: #545454;}
+.TabContainer .DetailsSteck_Form .valid_icon {position: absolute;right: 0;top: 3px;height: 19px;width: 19px;background-image: url(/img/Invalid.gif);background-position: center;}
+.TabContainer .DetailsSteck_Form .message.error {position: absolute;right: 0;top: 0;transform: translateX(250px);}
+.TabContainer .DetailsSteck_Form .FormBtn {height: 22px;width: 100%;max-width: 170px;margin: 0 1px;text-align: center;line-height: 19px;font-size: 11px;font-weight: bold;color: #fff;border: solid 1px #185a41;background-position: top;background-repeat: repeat-x;cursor: pointer;overflow: visible;}
+.TabContainer .DetailsSteck_Form .FormBtn:hover {text-decoration: underline;background-position: bottom;background-repeat: repeat-x;cursor: pointer;outline: #000 dotted 1px;overflow: hidden;}
+.TabContainer .DetailsSteck_Form .FormBtn.submit {background-image: url(/img/1x40-grad-btn.gif);}
+.TabContainer .DetailsSteck_Form a {text-decoration: none;color: #06855f;cursor: pointer;}
+.TabContainer .DetailsSteck_Form a:hover {text-decoration: underline;}
+
+.CollapseBox {height: 30px;border: solid 1px #e1e1e1;transition: all 0.3s ease;overflow: hidden;}
+.CollapseBox.show {height: 100%;}
+.CollapseBox_Action {position: relative;display: block;height: 30px;padding: 8px 10px 0 30px;font-family: Verdana,Arial,Helvetica,sans-serif;font-size: 11px;border-bottom: solid 1px #e1e1e1;color: #545454;background-position: top;background-repeat: repeat-x;background-position: left 1px;cursor: pointer;background-image: url(/img/Members/bg_grad.gif);}
+.CollapseBox_Action:before {content: '';position: absolute;left: 10px; bottom: 4px; border: 4px solid transparent;border-top: 8px solid #545454;}
+.CollapseBox_Content {padding: 10px 10px 10px 10px;opacity: 0;transition: all 0.3s ease;}
+.CollapseBox.show .CollapseBox_Content {opacity: 1;}
+    
+    

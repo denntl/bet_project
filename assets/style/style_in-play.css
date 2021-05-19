@@ -1,0 +1,4691 @@
+@import url(fonts.css);
+
+
+/*~~~~~~~~~~~~~~~~~~ page_in-play~~~~~~~~~~~~~~~~~~~~~~*/
+.home_page_header.in-play{
+    justify-content: space-between;
+}
+.home_page_header.in-play:before{
+    display: none;
+}
+.home_page_header .nav-tabs{
+    border-bottom: none;
+    padding-left: 15px;
+}
+.home_page_header .scoreboard_btn{
+    font-size: 11px;
+    color: #bbb;
+    vertical-align: top;
+    line-height: 29px;
+    pointer-events: auto;
+    padding-right: 25px;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    transition: opacity .2s;
+    cursor: pointer;
+    opacity:0;
+    z-index: -1;
+}
+.home_page_header .scoreboard_btn.appear{
+    opacity:1;
+    z-index: 1;
+}
+.tabs_match{
+    border-bottom: 1px solid transparent;
+    justify-content: center;
+}
+.main_content.in-play .page_right_content .right_column_table{
+    display: none;
+}
+.page_right_content.in-play.stretch .tabs_match .nav-link,
+.home_page_header .nav-tabs .nav-link{
+    font-size: 12px;
+    color: #bbb;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 29px;
+    pointer-events: auto;
+    padding:0;
+    padding-right: 25px;
+}
+.page_right_content.in-play.stretch .tabs_match .nav-link{
+    font-size: 13px;
+    background-image: none;
+    text-indent: inherit;
+    width: 100%;
+}
+.page_right_content.in-play.stretch .tabs_match .nav-link:hover,
+.page_right_content.in-play .tabs_match .nav-link:hover,
+.page_right_content.in-play .tabs_match .nav-link.active,
+.home_page_header .nav-tabs .nav-link:hover,
+.home_page_header .nav-tabs .nav-link.active{
+    color: #ffdf1b;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.main_content.in-play .home_page{
+    padding-bottom:0;
+}
+.main_content.in-play .column_one{
+    min-width: 100%;
+    max-width: 100%;
+    width: 567px;
+    border-right: 1px solid #373737;
+}
+.schedule_table_wrapper,
+.overview_tab_tables{
+    padding-bottom: 60px;
+    min-height: calc(100vh - 223px);
+    background-color: #545454;
+    background-image: url(/img/bg_bet365.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.play_classNameification.in-play .play_classification_header{
+    justify-content: space-between;
+}
+.play_classification.in-play .play_classification_header .sport_events,
+.play_classification.in-play .play_classification_header .markets_block{
+    display: flex;
+}
+.play_classification.in-play .play_classification_header .sport_events{
+    margin: 0 auto;
+}
+.play_classification.in-play .play_classification_header .sport_events .events_btn,
+.play_classification.in-play .play_classification_header .markets_block .markets_btn{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #ddd;
+    font-size: 12px;
+    opacity: .5;
+    padding: 0 10px;
+    line-height: 29px;
+    vertical-align: middle;
+    position: relative;
+}
+.play_classification.in-play .play_classification_header .sport_events .events_btn:hover,
+.play_classification.in-play .play_classification_header .sport_events .events_btn.selected,
+.play_classification.in-play .play_classification_header .markets_block .markets_btn.selected{
+    opacity: 1;
+}
+.play_classification.in-play .play_classification_header .markets_block .markets_btn:hover{
+    color: #e4e4e4;
+}
+.play_classification.in-play .play_classification_header .markets_block .markets_btn.main_markets{
+    padding: 0 14px;
+}
+.play_classification.in-play .play_classification_header .markets_block .markets_btn.main_markets:after{
+    content: "\e801";
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    position: absolute;
+    font-size: 5px;
+    top: 14px;
+    color: #e4e4e4;
+    right: 0;
+    width: 10px;
+}
+.participant_group_wrapper{
+    display: table-cell;
+    white-space: nowrap;
+    background-color: #666;
+    vertical-align: middle;
+}
+.play_classification.in-play .participant_group{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    height: 100%;
+    max-height: 100%;
+    background-color: #666;
+}
+.play_classification.in-play .participant_group .column{
+
+    align-items: flex-start;
+}
+
+.extra_time{
+    padding: 0 3px;
+    color: #444;
+    background-color: #a7a7a7;
+    border-radius: 1px;
+    margin-left: 10px;
+    line-height: 14px;
+    margin-top: 4px;
+    font-size: 11px;
+    display: inline-block;
+    text-align: center;
+}
+.participant_goal{
+    margin: 0 5px;
+    padding: 1px 3px!important;
+    background: #ffdf1b;
+    font-size: 11px;
+    color: #333;
+    border-radius: 1px;
+    line-height: 18px;
+    display: none;
+}
+.play_league_group_wrapp participant_group{
+  overflow: visible;
+    max-width: 100%;
+}
+.participant_stack{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 25px;
+}
+.participant_wrapper{
+    width:100%;
+}
+.play_icon_wrapper{
+    padding-right: 10px;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    min-height: 52px;
+}
+.play_icon{
+    width: 23px;
+    height: 13px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(/img/ML1BW.svg);
+}
+.play_icon:hover,
+.play_icon.selected{
+    background-image: url(/img/ML1.svg);
+}
+
+.participant_group .column.data{
+    width: 33.34%;
+    padding-left: 0;
+    flex-direction: column;
+}
+.column.data .participant_odds{
+    background-color: #585858;
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 10px;
+    white-space: nowrap;
+    border-bottom: 1px solid #757575;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column.data .participant_odds:hover{
+    background-color: #707070;
+}
+.competition_btn{
+    background-color: #a7a7a7;
+    border-bottom: 1px solid transparent;
+    font-size: 12px;
+    color: #444;
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+.competition_btn:after{
+    content: " ";
+    width: 50px;
+    display: table-cell;
+}
+.competition_btn:hover{
+    background-color: #bbb;
+}
+.competition_btn .league_name{
+    display: table-cell;
+    padding: 0 10px;
+    line-height: inherit;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 50%;
+}
+.competition_btn .league_header_buttons{
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    white-space: nowrap;
+}
+.competition_btn .league_header_buttons .event_label{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    width: 33%;
+    text-align: center;
+    padding: 0 5px;
+
+
+}
+.competition_btn .league_header_buttons{
+    opacity: 0;
+    transition-timing-function: cubic-bezier(.77,0,.175,1);
+    transition-property: opacity;
+    transition-duration: .35s;
+}
+.competition_btn .league_header_buttons.visible{
+    opacity: 1;
+}
+.event_odds{
+    width: 55%;
+    display: table-cell;
+    background-color: #585858;
+    white-space: nowrap;
+}
+.event_odds div{
+    min-height: 30px;
+}
+.play_league_group_wrapp.opened{
+    display: table-row;
+}
+.play_league_group_wrapp.opened{
+    min-height: 61px;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+    border-bottom: 1px solid #757575;
+}
+.card-panel .play_league_group_wrapp.opened{
+    min-height: 0;
+}
+.play_league_group_wrapp .participant_group_wrapper .participant_name{
+    color: #ddd;
+}
+.event_odds .column{
+    display: flex;
+    width: 100%;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.event_odds.mainMarket{
+    display: flex;
+    width: 100%;
+}
+.event_odds.mainMarket .column{
+    flex-direction: column;
+    border-right: none;
+}
+.play_league{
+    position: relative;
+}
+.favourite_icon{
+   height: 20px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+.favourite_icon:after{
+    font-family: bet365UI;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e80D";
+    color: #888;
+    position: absolute;
+    top: 0;
+    left: 18px;
+    font-size: 14px;
+    width: 15px;
+}
+.favourite_icon:hover:after{
+    color:#999;
+}
+.favourite_icon:hover:after{
+    color: #ddd;
+}
+.event_count_btn{
+    display: table-cell;
+    width: 49px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #666;
+    position: relative;
+}
+.event_count_btn .event_count{
+    font-size: 12px;
+    text-align: center;
+    color: #bbb;
+    line-height: 17px;
+    cursor: pointer;
+    display: block;
+    padding-top: 4px;
+}
+.event_count_btn .event_count:after{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e813";
+    font-size: 9px;
+    padding: 0 0 0 5px;
+    top: -1px;
+    position: relative;
+}
+.event_count_btn .event_count:hover{
+    color: #e4e4e4;
+}
+/*~~~~~~~~~~~~~~~right column~~~~~~~~~~~~~~~~*/
+.page_right_content.in-play .icon_buttons{
+    padding: 0 31px 0 32px;
+    text-align: center;
+    font-size: 0;
+    height: 29px;
+    position: relative;
+}
+.page_right_content.in-play .icon_buttons .icon_sound{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 10px;
+    background-color: #474747;
+    color: #999;
+    border-left: 1px solid #545454;
+    border-right: 1px solid #545454;
+    cursor: pointer;
+}
+.video_control_container .lock_btn:hover,
+.video_control_container .lock_btn.active,
+.page_right_content.in-play .icon_buttons .icon_view:hover,
+.page_right_content.in-play .icon_buttons .icon_sound:hover{
+    color: #e4e4e4;;
+}
+.page_right_content.in-play .icon_buttons .icon_sound:before{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e811";
+}
+.page_right_content.in-play .icon_buttons .icon_resize{
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 31px;
+    width: 31px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #474747;
+    border-left: 1px solid #545454;
+    color: #999;
+    cursor: pointer;
+}
+.page_right_content.in-play .icon_buttons .icon_view{
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 31px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 5px;
+    background-color: #474747;
+    color: #999;
+    border-left: 1px solid #545454;
+    cursor: pointer;
+}
+.page_right_content.in-play .icon_buttons .icon_view:before{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e801";
+}
+.page_right_content.in-play .nav-link{
+    font-size: 13px;
+    text-indent: -9999px;
+    width: 23px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-image: url(/img/live_stream_icon.svg);
+}
+.page_right_content.in-play .nav-link.match_live{
+      background-image: url(/img/ML1BW.svg);
+  }
+.page_right_content.in-play .nav-link.active{
+    background-image: url(/img/live_stream_icon_active.svg);
+}
+.page_right_content.in-play .nav-link.match_live:hover,
+.page_right_content.in-play .nav-link.match_live.active{
+    background-image: url(/img/ML1.svg);
+}
+.page_right_content.in-play .nav-link.live_stream:hover{
+    background-image: url(/img/live_stream_icon_hover.svg);
+}
+.page_right_content.in-play.stretch .nav-link.live_stream:hover,
+.page_right_content.in-play.stretch .nav-link.match_live:hover,
+.page_right_content.in-play.stretch .nav-link.active{
+    background-image: none;
+}
+/*~~~~~~~~~~~~~.live_stream tab~~~~~~~~~~~~~~~~*/
+.live_stream_video{
+    border-top: 1px solid #303030;
+    position: relative;
+    background-color: #000;
+}
+.video_control_container{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 31px;
+    background-color: #545454;
+    border-bottom: 1px solid #303030;
+}
+.tab-content{
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    outline: none;
+}
+.video_control_container .select_video{
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    font-size: 12px;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-group.select_video:after{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 10px;
+    font-size: 5px;
+    content: "\e801";
+    color: #a7a7a7;
+}
+.btn-group.select_video{
+    cursor: pointer;
+}
+.btn-group.select_video:hover:after{
+    color: #ddd;
+}
+.video_control_container .select_video .option{
+    color: #333;
+    font-family: Verdana,sans-serif;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+.video_control_container button.select_video .option{
+    color: #ddd;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.video_control_container .select_video:focus{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.video_control_container .lock_btn{
+    display: table-cell;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #a7a7a7;
+    background-color: #545454;
+    cursor: pointer;
+}
+.video_control_container .lock_btn:before{
+    font-family: bet365UI-icomoon!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+     -webkit-font-smoothing: antialiased;
+    content: "\e921";
+}
+.btn-group.select_video .dropdown-menu{
+    background-color: #bbb;
+    border-radius: 0 0 2px 2px;
+    overflow: hidden;
+    height: 180px;
+    overflow-y: scroll;
+    width: 100%;
+}
+.btn-group.select_video .dropdown-menu li{
+    background-color: #bbb;
+    line-height: 29px;
+    padding: 0 10px 0 38px;
+    cursor: pointer;
+    transition: background-color .1s;
+    transition-timing-function: ease-in-out;
+    position: relative;
+    border-top: 1px solid #a7a7a7;
+}
+.btn-group.select_video .dropdown-menu li:first-child{
+    border-top: none;
+}
+.btn-group.select_video .dropdown-menu li:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: auto 16px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.btn-group.select_video .dropdown-menu li.tennis_video:before{
+    background-image: url(/img/tennis_icon.svg);
+}
+.btn-group.select_video .dropdown-menu li.football_video:before{
+    background-image: url(/img/football_icon.svg);
+}
+.btn-group.select_video .dropdown-menu li a{
+    font-size: 12px;
+    color: #333;
+}
+.btn-group.select_video .dropdown-menu li:hover{
+    background-color: #c7c7c7;
+}
+/*~~~~~~~~~~~~~~ live_stream player~~~~~~~~~~~~~*/
+
+.page_right_content .media_player{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #303030;
+    padding-top: 168px;
+}
+.page_right_content.stretch .media_player{
+    padding-top: 333px;
+}
+.media_player_container{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.media_player_wrapper{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.media_player_message{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 16%;
+    width: 100%;
+}
+.media_player_message_header{
+    font-size: 15px;
+    line-height: 22px;
+    color: #e4e4e4;
+}
+.media_player_message_text{
+    font-size: 13px;
+    line-height: 19px;
+    color: #c7c7c7;
+    cursor: default;
+}
+/*~~~~~~~~~~~~~~ end live_stream player~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~ match_live view~~~~~~~~~~~~~~*/
+.match_live_view{
+    background-color: #393939;
+    border-top: 1px solid #303030;
+}
+.match_live_view_container{
+    margin: 0 auto;
+    max-width: 450px;
+}
+.match_live_view_module{
+    transition-property: max-width,padding-left,padding-right;
+    transition-duration: .65s;
+    transition-timing-function: cubic-bezier(.77, 0, .175, 1);
+    background-color: #393939;
+    padding-left: 4px;
+    padding-right: 4px;
+    max-width: 286px;
+    margin: auto;
+}
+.page_right_content.stretch .match_live_view_module{
+    padding-left: 25px;
+    padding-right: 25px;
+    max-width: 451px;
+}
+.score_header{
+    padding: 7px 1px 6px;
+    font-size: 0;
+    position: relative;
+}
+.score_header_column{
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: top;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 50%;
+}
+.score_header_column.column_left{
+    padding-right: 2px;
+}
+.score_header_column.column_right{
+    padding-left: 2px;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.scoreHeader_team{
+    transition-property: font-size,line-height;
+    transition-duration: .65s;
+    transition-timing-function: cubic-bezier(.77, 0, .175, 1);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    min-width: 0;
+    font-size: 12px;
+    color: #e4e4e4;
+    line-height: 15px;
+    margin-bottom: 2px;
+}
+.page_right_content.stretch .scoreHeader_team{
+    font-size: 14px;
+    line-height: 17px;
+}
+.score_header_column.column_left .scoreHeader_team{
+    padding-left: 8px;
+    padding-right: 10px;
+}
+.score_header_column.column_right .scoreHeader_team{
+    padding-left: 10px;
+    padding-right: 8px;
+    text-align: right;
+}
+.scoreHeader_team_border{
+    position: absolute;
+    height: 15px;
+    margin-top: 1px;
+}
+.score_header_column.column_left .scoreHeader_team_border{
+    border-left: 3px solid #fff;
+    left: 0;
+}
+
+.score_header_column.column_right .scoreHeader_team_border{
+    border-right: 3px solid #fff;
+    right: 0;
+}
+.score_header_column.column_right .scoreHeader_team_border.winner,
+.score_header_column.column_left .scoreHeader_team_border.winner{
+    border-left: 3px solid #ffdf1b;
+}
+.scoreHeader_team_text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.scoreHeader_score_container{
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    font-size: 0;
+}
+.score_header_column.column_left .scoreHeader_score_container{
+    text-align: right;
+}
+.scoreHeader_score{
+    transition-property: font-size,line-height;
+    transition-duration: .65s;
+    transition-timing-function: cubic-bezier(.77, 0, .175, 1);
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0 7px;
+    min-width: 22px;
+    text-align: center;
+    color: #ffdf1b;
+    background-color: #4d4d4d;
+    border-radius: 1px;
+}
+.page_right_content.stretch .scoreHeader_score{
+    font-size: 17px;
+    line-height: 24px;
+}
+.ml1-MatchLiveSoccerModule_PitchContainer {
+    width: 100%;
+    font-size: 0;
+    border: 1px solid #333;
+    position: relative;
+}
+.ml1-SoccerPitch_SVG {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+}
+.match_information{
+    width: 100%;
+    padding-bottom: 17px;
+    position: relative;
+    z-index: 10;
+}
+.match_information_container{
+    position: relative;
+    width: 176px;
+    display: block;
+    color: #999;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+.match_info_text{
+    display: inline;
+    font-size: 11px;
+    line-height: 13px;
+    padding-bottom: 7px;
+    position: relative;
+}
+.match_info_text:hover{
+    color: #ddd;
+}
+.match_info_text:before{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e823";
+    font-size: 11px;
+}
+.match_info_popup{
+    display: none;
+    position: absolute;
+    z-index: 50;
+    width: auto;
+    white-space: nowrap;
+    padding: 7px 12px 9px;
+    background: #ddd;
+    border-radius: 2px;
+    min-width: 130px;
+    min-height: 52px;
+}
+
+.match_info_popup:after{
+    content: "";
+    position: absolute;
+    color: #ddd;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 6px solid;
+    bottom: -5px;
+    left: 45%;
+}
+.match_info_popup.active{
+    display: block;
+    max-width: 276px;
+    bottom: 25px;
+}
+.match_info_popup_row{
+    display: block;
+    color: #444;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+}
+.match_info_popup_title{
+    display: inline;
+    color: #333;
+}
+.match_info_popup_value{
+    display: inline;
+    text-align: center;
+    color: #666;
+    opacity: .7;
+}
+.bw-BetslipWebModule_Frame {
+    width: 100%;
+    height: 82px;
+    border: none;
+    will-change: height;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+/*~~~~~~~~~~~~~~ end match_live view~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~ footer important info~~~~~~~~~~~~*/
+.important_info_header{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 1px solid #545454;
+    font-size: 11px;
+    color: #a7a7a7;
+    text-align: center;
+    line-height: 29px;
+    cursor: pointer;
+    position: relative;
+    background-color: #474747;
+}
+.important_info_header:hover{
+    color: #ffdf1b;
+}
+.important_info_header:after{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e801";
+    margin-left: 5px;
+    vertical-align: middle;
+    font-size: 5px;
+}
+.important_info_content{
+    padding: 34px 40px 41px;
+    background-color: #404040;
+    border-bottom: 1px solid #545454;
+    position: relative;
+    display: none;
+
+}
+.important_info_content.show{
+    display: block;
+}
+.important_info_content .close_btn{
+    position: absolute;
+    top: 17px;
+    right: 40px;
+    color: #a7a7a7;
+    font-size: 11px;
+    line-height: 17px;
+    cursor: pointer;
+    transition: max-height 1s cubic-bezier(0, 1, 0, 1);
+}
+
+.important_info_content .close_btn:after{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\00d7";
+    font-size: 17px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+}
+.important_info_content .close_btn:hover{
+    color: #e4e4e4;
+}
+.important_info_content .header_info{
+    color: #e4e4e4;
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 5px;
+}
+.important_info_content .important_info_text {
+    color: #b6b6b6;
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 5px;
+}
+.important_info_content .important_info_text:last-of-type{
+    margin-bottom: 0px;
+}
+/*~~~~~~~~~~~~~ end footer important info~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~~schedule_slider~~~~~~~~~~~~~~~~~~*/
+.schedule_slider{
+    background-color: #404040;
+    border-bottom: 1px solid #545454;
+    padding-left: 20px;
+}
+.schedule_slider .slider_content{
+    padding: 0 5px;
+}
+.schedule_slider .slider_content .title{
+    color: #999;
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 3px solid transparent;
+ }
+.schedule_slider .slider_content.selected .title{
+    border-bottom: 3px solid #4acfa5;
+    color: #e4e4e4;;
+}
+.schedule_slider .slider_content.selected:after{
+    display: none;
+}
+/*~~~~~~~~~~~~~~~~~~end schedule_slider~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~ schedule_tables~~~~~~~~~~~~~~~~~~~~~*/
+.play_results_header{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #a7a7a7;
+    position: relative;
+}
+.play_results_header_label{
+    display: table-cell;
+    height: 25px;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #444;
+}
+.play_results_header_data{
+    width: 58%;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.play_results_header_video,
+.play_results_header_audio{
+    width: 8%;
+    position: relative;
+    cursor: pointer;
+    color: #545454;
+    padding-left: 10px;
+}
+.play_results_header_video.active,
+.play_results_header_audio.active,
+.play_results_header_video:hover,
+.play_results_header_audio:hover{
+    color: #e4e4e4;
+}
+.play_results_header_time{
+    width: 10%;
+    padding-left: 10px;
+}
+.play_results_header_channel{
+    width: 16%;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.play_results_header_label .DropDownContainer_Button{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    color: #545454;
+    cursor: pointer;
+    position: relative;
+    padding-right: 15px;
+    height: 16px;
+}
+.DropDownContainer_Button:after{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 10px;
+    content: "\e801";
+    font-size: 4px;
+    color: inherit;
+}
+.DropDownContainer_Button:hover{
+    color: #116b4f;
+}
+.play_results_header_video:before,
+.play_results_header_audio:before {
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 11px;
+}
+.play_results_header_video:before{
+    font-family: bet365UI-icomoon!important;
+    content: "\E924";
+}
+.play_results_header_audio:before{
+    content: "\E811";
+}
+.event_row{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #666;
+    height: 35px;
+    border-bottom: 1px solid #757575;
+    cursor: pointer;
+}
+.event_row:hover{
+    background-color: #737373;
+}
+.event_row_item{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px;
+    padding-left: 10px;
+    line-height: 34px;
+    position: relative;
+}
+.event_row_item:before{
+    font-family: bet365UI-icomoon;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #999;
+}
+.event_row_video_icon:before{
+    content: "\E924";
+}
+.event_row_audio_icon:before{
+    font-family: bet365UI;
+    content: "\E811";
+}
+.event_row_cat{
+    width: 16%;
+    color: #a7a7a7;
+    padding-left: 25px;
+}
+.event_row_name{
+    width: 42%;
+    color: #ddd;
+    padding-right: 10px;
+}
+.event_row_video,
+.event_row_audio{
+    width: 8%;
+    position: relative;
+    top: -1px;
+}
+.event_row_time{
+    width: 10%;
+    color: #a7a7a7;
+}
+.event_row_channel{
+    width: 16%;
+    color: #a7a7a7;
+    padding-right: 10px;
+}
+/*~~~~~~~~~~~~~ end schedule_tables~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*~~~~~~~~~~~~~~~~~~table for tennis~~~~~~~~~~~~~~~~~~~*/
+
+
+#tennis .participant_name{
+    align-items: center;
+    display: flex;
+}
+.player_indicator_wrapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.player_indicator_wrapp.allMarkets{
+    height: auto;
+}
+.player_indicator{
+    width: 5px;
+    height: 5px;
+    margin: -2px 10px 0 8px;
+    background-color: #8d8d8d;
+    padding: 0 !important;
+
+}
+.player_indicator.active{
+    background-color: #ffdf1b;
+}
+.participant_stack.info_game{
+    justify-content:flex-start;
+    margin-left:23px;
+}
+.participant_stack.info_game .participant_name{
+    font-size: 11px;
+    color: #bbb;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.right_content .play_icon.video,
+.play_icon_wrapper .play_icon.video{
+    background-image: url(/img/MLVideoBW.svg);
+}
+.play_icon_wrapper .play_icon.video:hover,
+.play_icon_wrapper .play_icon.video.selected{
+    background-image: url(/img/MLVideo.svg);
+}
+
+/*~~~~~~~~~~~~~~~~~~end table for tennis~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~table for baseball~~~~~~~~~~~~~~~~~~~*/
+.column .value_wrapp,
+.play_league_group_wrapp .Market_table .Participant{
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    /*border-top: .5px solid #666;*/
+    border-right: 1px solid #666;
+    border-bottom: .5px solid #666;
+    background-color: #585858;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+.card-panel .play_league_group_wrapp .Market_table .Participant{
+    background-color: #5e5e5e;
+}
+.right_column_table .Market_table .Participant,
+.coupon_table .play_league_group_wrapp .Market_table .Participant{
+    background-color: #666;
+}
+.right_column_table .Participant{
+    justify-content: flex-start;
+}
+.coupon_table .play_league_group_wrapp .Market_table .Participant .participant_name{
+    color: #ddd;
+}
+.column .value_wrapp .participant_handicap,
+.play_league_group_wrapp .Market_table .Participant .participant_handicap{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #ddd;
+}
+.play_icon{
+    width: 19px;
+    height: 19px;
+
+}
+.play_icon.iceHockey_field{
+    background-image: url(/img/overview_ice_hockey.svg);
+}
+.play_icon.iceHockey_field.selected,
+.play_icon.iceHockey_field:hover{
+    background-image: url(/img/overview_ice_hockey_h.svg);
+}
+.play_icon.tennis_field{
+    background-image: url(/img/overview_tennis.svg);
+}
+.play_icon.tennis_field.selected,
+.play_icon.tennis_field:hover{
+    background-image: url(/img/overview_tennis_h.svg);
+}
+
+.play_icon.basketball_field{
+    background-image: url(/img/overview_basketball.svg);
+}
+.play_icon.basketball_field.selected,
+.play_icon.basketball_field:hover{
+    background-image: url(/img/overview_basketball_h.svg);
+}
+
+.play_icon.cricket_field{
+    background-image: url(/img/overview_cricket.svg);
+}
+.play_icon.cricket_field.selected,
+.play_icon.cricket_field:hover{
+    background-image: url(/img/overview_cricket_h.svg);
+}
+
+.play_icon.volleyball_field{
+    background-image: url(/img/overview_volleyball.svg);
+}
+.play_icon.volleyball_field.selected,
+.play_icon.volleyball_field:hover{
+    background-image: url(/img/overview_volleyball_h.svg);
+}
+.play_icon.handball_field{
+    background-image: url(/img/overview_handball.svg);
+}
+.play_icon.handball_field.selected,
+.play_icon.handball_field:hover{
+    background-image: url(/img/overview_handball_h.svg);
+}
+.play_icon.soccer_field{
+background-image: url(/img/ML1BW.svg);
+}
+.play_icon.soccer_field:hover,
+.play_icon.soccer_field.selected{
+    background-image: url(/img/ML1.svg);
+}
+.value_wrapp:hover,
+.play_league_group_wrapp .Market_table .Participant:hover{
+    background-color: #707070;
+    outline: 1px solid transparent;
+}
+#baseball .participant_name{
+    padding-left: 10px;
+}
+/*~~~~~~~~~~~~~~~~~~end table for baseball~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~event_view tab~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#event_view.active{
+    display: flex;
+    width: 100%;
+}
+.event_sidebar{
+    transition-timing-function: cubic-bezier(.77,0,.175,1);
+    background-color: #333;
+    transition-duration: .65s;
+    transition-property: width;
+    width: 245px;
+    max-width: 200px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid #303030;
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 800px;
+}
+
+.control_bar{
+    background-color: #3d3d3d;
+    height: 30px;
+    position: relative;
+    border-bottom: 1px solid #3d3d3d;
+    transition-property: border,background-color,width;
+    transition-duration: .3s;
+    max-width: 201px;
+}
+.control_bar_btn{
+    width: 50px;
+    text-align: center;
+    vertical-align: middle;
+    height: 29px;
+    border-bottom: 2px solid #3d3d3d;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .3s;
+    transition-delay: .3s;
+    display: inline-block;
+    color: #777;
+    font-size: 11px;
+}
+.control_bar_btn:hover{
+    color: #c7c7c7;
+}
+.control_bar_btn.active{
+    color: #c7c7c7;
+    border-bottom: 2px solid #999;
+}
+.control_bar_btn.media{
+    background-position: 50% 55%;
+    background-repeat: no-repeat;
+    background-image: url(/img/tabVideo.svg);
+    height: 29px;
+    display: inline-block;
+    }
+.control_bar_btn.media:hover{
+    background-image: url(/img/tabVideo_h.svg);
+}
+.collapse_btn{
+    position: absolute;
+    right: 0;
+    transition: right .65s,background-color;
+    padding: 11px 10px 10px 13px;
+    margin-top: 8px;
+    background-repeat:no-repeat;
+    background-image: url(/img/control_bar_btn.svg);
+}
+.collapse_btn:hover{
+    background-image: url(/img/control_bar_btn_hover.svg);
+}
+.collapse_btn.collapsed {
+    transform: rotate(180deg);
+    right: 22px;
+    margin-top: 0;
+}
+
+.classification_block{
+    max-width: 200px;
+    width: 100%;
+    transition-timing-function: cubic-bezier(.77,0,.175,1);
+    transition-duration: .65s;
+    transition-property: width;
+}
+
+.classification_header{
+    height: 30px;
+    line-height: 30px;
+    max-height: 30px;
+    max-width: 200px;
+    position: relative;
+    top: 0;
+    color: #e4e4e4;
+    width: 100%;
+    transition-property: background-color,border-color,opacity;
+    transition-duration: .65s;
+    transition-timing-function: cubic-bezier(.77,0,.175,1);
+    opacity: 1;
+}
+.classification_header.sport_olive_header{
+    height: 30px;
+}
+.classification_header.green_header{
+    padding: 0;
+}
+.classification_header.favourite{
+    background-color: #666;
+    border-bottom: 1px solid #5a5a5a;
+    font-weight: 400;
+    font-size: 13px;
+    bottom: 2px;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: 1;
+    transition-property: opacity;
+}
+.classification_header_label{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 75%;
+    font-weight: 400;
+    padding-left: 10px;
+    font-size: 13px;
+    position: relative;
+    bottom: 1px;
+    -moz-osx-font-smoothing: grayscale;
+    opacity: 1;
+}
+.classification_header_icon{
+    position: absolute;
+    right: 17px;
+    top: 0;
+    width: 24px;
+    height: 28px;
+    transition: right .65s;
+    background-size: auto 15px;
+    display: block;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    
+}
+.classification_block.favourite .classification_header_icon{
+    background-image: url(/img/yellow_star.svg);
+}
+.classification_block.sport_green_header .classification_header_icon{
+    background-image: url(/img/classification_header_soccer.svg);
+}
+.classification_block.sport_olive_header .classification_header_icon{
+    background-image: url(/img/tennis_icon.svg);
+}
+.classification_block.sport_orange_header .classification_header_icon{
+    background-image: url(/img/classification_header_baseball.svg);
+}
+.classification_block.sport_blue_header .classification_header_icon{
+    background-image: url(/img/classification_header_badminton.svg);
+}
+.classification_block.sport_pumpkin_header .classification_header_icon{
+    background-image: url(/img/basketball_icon.svg);
+}
+.classification_block.sport_golf_header .classification_header_icon{
+    background-image: url(/img/classification_header_golf.svg);
+}
+.classification_block.sport_cricket_header .classification_header_icon{
+    background-image: url(/img/classification_header_cricket.svg);
+}
+.classification_block.sport_esports_header .classification_header_icon{
+    background-image: url(/img/classification_header_esports.svg);
+}
+.classification_block.sport_futsal_header .classification_header_icon{
+    background-image: url(/img/classification_header_futsal.svg);
+}
+.classification_block.sport_greyhounds_header .classification_header_icon{
+    background-image: url(/img/classification_header_grey.svg);
+}
+.classification_block.sport_handball_header .classification_header_icon{
+    background-image: url(/img/classification_header_handball.svg);
+}
+.classification_block.sport_horseRacing_header .classification_header_icon{
+    background-image: url(/img/classification_header_horse.svg);
+}
+.classification_block.sport_tableTennis_header .classification_header_icon{
+    background-image: url(/img/classification_header_table-tennis.svg);
+}
+.classification_block.sport_iceHockey_header .classification_header_icon{
+    background-image: url(/img/classification_header_ice-hockey.svg);
+}
+.classification_block.sport_curling_header .classification_header_icon{
+    background-image: url(/img/curling-icon.svg);
+}
+.classification_block.sport_volleyball_header .classification_header_icon{
+    background-image: url(/img/volleyball-icon.svg);
+}
+.classification_block.sport_hockey_header .classification_header_icon{
+    background-image: url(/img/hockey.svg);
+}
+.classification_block.sport_formula1_header .classification_header_icon{
+     background-image: url(/img/formula1-icon.svg);
+ }
+.classification_block.sport_sepak_header .classification_header_icon{
+    background-image: url(/img/sepak-icon.svg);
+}
+.classification_block.sport_squash_header .classification_header_icon{
+    background-image: url(/img/aquash-icon.svg);
+}
+.classification_block.sport_floorball_header .classification_header_icon{
+    background-image: url(/img/floorball-icon.svg);
+}
+.classification_noFavourites{
+    background-color: #3d3d3d;
+    padding: 8px 20px 6px;
+    font-size: 12px;
+    color: #c7c7c7;
+    line-height: 18px;
+}
+.classification_noFavourites .mCS_img_loaded{
+    display: inline-block;
+    margin: 0 3px;
+    margin-top: -4px;
+}
+
+ .competition_header{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #474747;
+    border-bottom: 1px solid #333;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 25px 0 10px;
+    color: #bbb;
+    font-size: 12px;
+    position: relative;
+}
+ .OneGameContainer .oneGame .competition_header_clone{
+     display: none;
+ }
+
+
+.Market,
+.ClassificationContainer .Market-Header{
+    position: relative;
+
+}
+.ClassificationContainer .Market-Header{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #474747;
+    border-bottom: 1px solid #333;
+    line-height: 30px;
+    height: 30px;
+    width: 200px;
+    padding: 0 25px 0 10px;
+    color: #bbb;
+    font-size: 12px;
+}
+.game_icon_favourite,
+ .competition_icon_favourite{
+    position: absolute;
+    width: 13px;
+    height: 12px;
+    background-image: url(/img/white_star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -5px;
+    right: 4px;
+    display: block;
+    z-index: -2;
+    opacity: 0;
+    transition: opacity .5s cubic-bezier(.77,0,.175,1);
+}
+
+.oneGame:hover .game_icon_favourite,
+.Market:hover ~ .competition_icon_favourite{
+    z-index: 10;
+    opacity: 1;
+
+ }
+.game_icon_favourite:hover,
+.competition_icon_favourite:hover{
+    background-image: url(/img/star.svg);
+    z-index: 10;
+    opacity: 1;
+}
+.MarketGroup_FavouriteButton.starBtnOn,
+.competition_icon_favourite.starBtnOn{
+    background-image: url(/img/star.svg);
+}
+
+.oneGame{
+position: relative;
+
+}
+.OneGameContainer{
+    width: 100% !important;
+}
+.header_clone{
+    animation: slow_appear 0.5s linear;
+    animation-delay: .7s;
+}
+@keyframes slow_appear {
+    from{
+        z-index: -2;
+        opacity: 0;
+    }
+    to{
+        z-index: 1;
+        opacity: 1;
+    }
+}
+.classification_noGames{
+    background-color: #3d3d3d;
+    padding: 8px 20px 6px;
+    color: #c7c7c7;
+    font-size: 12px;
+    line-height: 18px;
+    display: none;
+}
+
+.fixture{
+    position: relative;
+    background-color: #3d3d3d;
+    color: #ddd;
+    line-height: 18px;
+    max-width: 200px;
+    padding: 7px 0 6px;
+    font-size: 12px;
+    border-bottom: 1px solid #474747;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fixture:hover{
+    background-color: #545454;
+    color: #ddd;
+}
+.fixture.active{
+    background-color: #bbb;
+    border-bottom: 1px solid #bbb;
+    color: #474747;
+}
+.open_icon{
+    font-size: 5px;
+    display: block;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: .2s;
+    padding: 0 5px;
+    max-width: 20px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.open_icon:before{
+    font-family: bet365UI;
+    content: "\e855";
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    color: #bbb;
+    display: block;
+
+}
+.fixture.active:hover ~ .open_icon,
+.fixture:hover ~ .open_icon{
+    opacity: 1;
+}
+
+.fixture.active ~ .open_icon:before{
+    color: #888;
+}
+
+.open_icon:before{
+    transform: rotate(0);
+}
+
+.open_icon.down:before{
+    transform: rotate(180deg);
+}
+.Market-Cluster1{
+    position: relative;
+}
+.team_stack{
+    display: block;
+    overflow: hidden;
+    margin-top: -1px;
+    padding-right: 5px;
+    margin-left: 20px;
+    width: 50%;
+}
+.team_stack_team{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+.score_display_standart{
+    position: relative;
+    text-align: right;
+    padding-right: 10px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.score_display_standart .video_icon{
+    width: 25px;
+    height: 11px;
+    display: inline-block;
+    position: absolute;
+    bottom: 16px;
+    left: -22px;
+    background-position: 0 55%;
+    background-repeat: no-repeat;
+    background-image: url(/img/tabVideo_icon.svg);
+}
+.market_render{
+    display: flex;
+    width: 100%;
+
+}
+.participant_abbreviated{
+    background-color: #373737;
+    color: #ddd;
+    font-size: 12px;
+    height: 50px;
+    padding-top: 1px;
+    border-bottom: 1px solid #474747;
+    border-left: 1px solid #474747;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.participant_abbreviated.row{
+    flex-direction: row;
+}
+.participant_abbreviated:hover{
+    background-color: #474747;
+}
+.participant_abbreviated .participant_abbreviated_handicap{
+    margin-left: 5px;
+    color: #bbb;
+}
+.event_sidebar.collapsed{
+    overflow: hidden;
+    width: 64px;
+}
+.event_sidebar.collapsed .control_bar_btn{
+    opacity: 0;
+    display: none;
+}
+.classification_header.change_color{
+    background-color: #333;
+    border-bottom: 1px solid #474747;
+}
+.classification_header.change_color.favourite:hover{
+    background-color: #666;
+}
+.classification_block.sport_green_header .classification_header.change_color:hover{
+    background-color: #14805e;
+}
+.classification_block.sport_olive_header .classification_header.change_color:hover{
+    background-color: #5F6E37;
+}
+.classification_block.sport_blue_header .classification_header.change_color:hover{
+    background-color: #4C7D8B;
+}
+.classification_block.sport_orange_header .classification_header.change_color:hover{
+    background-color: #A15D38;
+}
+.classification_block.sport_tableTennis_header .classification_header.change_color:hover{
+    background-color: #396188;
+}
+.classification_block.sport_futsal_header .classification_header.change_color:hover{
+    background-color: #396188;
+}
+.classification_block.sport_horseRacing_header .classification_header.change_color:hover{
+    background-color: #6D5E4D;
+}
+.classification_block.sport_golf_header .classification_header.change_color:hover{
+    background-color: #708245;
+}
+.classification_block.sport_esports_header .classification_header.change_color:hover{
+    background-color: #624B6E;
+}
+.classification_block.sport_greyhounds_header .classification_header.change_color:hover{
+    background-color: #6D5E4D;
+}
+.classification_block.sport_pumpkin_header .classification_header.change_color:hover{
+    background-color: #C18C00;
+}
+.classification_block.sport_volleyball_header .classification_header.change_color:hover{
+    background-color: #857563;
+}
+.classification_block.sport_iceHockey_header .classification_header.change_color:hover{
+    background-color: #7C98A6;
+}
+.classification_block.sport_cricket_header .classification_header.change_color:hover{
+    background-color: #556031;
+}
+.classification_block.sport_hockey_header .classification_header.change_color:hover{
+    background-color: #50714D;
+}
+.classification_block.sport_handball_header .classification_header.change_color:hover{
+    background-color: #24556F;
+}
+.classification_block.sport_curling_header .classification_header.change_color:hover{
+    background-color: #5C6A95;
+}
+.classification_block.sport_snooker_header .classification_header.change_color:hover{
+    background-color: #346543;
+}
+.classification_block.sport_sepak_header .classification_header.change_color:hover{
+    background-color: #73352D;
+}
+.classification_block.sport_squash_header .classification_header.change_color:hover{
+    background-color: #9B6F3D;
+}
+.classification_block.sport_formula1_header .classification_header.change_color:hover{
+    background-color: #687175;
+}
+.event_sidebar.collapsed .classification_header_icon{
+    left: 5px;
+    width: 100%;
+    background-position: 0;
+}
+
+.ClassificationContainer{
+    max-height: 100%;
+    width: 100%!important;
+}
+
+
+.GameGroup{
+    position: relative;
+}
+.GameGroup .oneGame .marker_row_wrapp_wrapp {
+    display: flex;
+    width: 100%;
+}
+/*~~~~~~~~~~~~~~~~end event_view~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~~~~~~~ event_view_detail~~~~~~~~~~~~~~~~~~~~~~*/
+.event_view_detail{
+    max-width: calc(100% - 200px);
+    max-height: 800px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: inline-block;
+    width: 100%
+}
+.score_board_container{
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: -10;
+    transition: transform .2s,height .2s,-webkit-transform .2s;
+    will-change: transform,height;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+
+}
+.score_board_container.show{
+    height: 149px;
+    z-index: 10;
+}
+.event_view_detail_soccer .score_board_container .event-icon{
+    z-index: -11;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #bbb;
+    padding: 5px;
+    left: -100px;
+    top: 50%;
+    transform: translate(120px, -50%);
+    opacity: 0;
+    -webkit-transition: .35s;
+    -moz-transition: .35s;
+    -ms-transition: .35s;
+    -o-transition: .35s;
+    transition: .35s;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 2px;
+}
+.event_view_detail_soccer .score_board_container .event-icon.show{
+    transform: translate(0px, -50%);
+    opacity: 1;
+    visibility: visible;
+}
+.event-icon .event-icon-img{
+    width: 100%;
+    height: 50px;
+    display: table;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.event-icon .event-icon-title{
+    color: #333;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+.event_view_detail_soccer .score_board_container{
+    background-image: url(/img/football_board.jpg);
+}
+.event_view_detail_tennis .score_board_container{
+    background-image: url(/img/tennis_board.jpg);
+}
+.event_view_detail_basketball .score_board_container{
+    background-image: url(/img/basketball_board.jpg);
+}
+.event_view_detail_baseball .score_board_container{
+    background-image: url(/img/baseball_board.jpg);
+}.team_stack
+.event_view_detail_badminton .score_board_container{
+    background-image: url(/img/badminton_board.jpg);
+}
+.score_board_container:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-image: radial-gradient(1200px 850px at center 750px,transparent 0,transparent 80%,#1e1e1e 95%);
+}
+.score_board_hide_bth{
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    z-index: 20;
+    padding: 3px 5px;
+    color: hsla(0,0%,100%,.3);
+    font-size: 11px;
+    -webkit-font-smoothing: antialiased;
+    background: rgba(0,0,0,.1);
+    text-decoration: none;
+    cursor: pointer;
+}
+.score_board_hide_bth:hover{
+    color: #ddd;
+    background: rgba(0,0,0,.25);
+}
+.soccer_header_layout{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 450px;
+    z-index: 30;
+    background-color: #404040;
+}
+.soccer_header_layout:before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgba(0,0,0,.4);
+    width: 448px;
+    margin: 0 1px 0 -1px;
+    box-shadow: 1px 1px 8px 6px rgba(0,0,0,.4);
+    padding: 0;
+    z-index: -1;
+    height: 2px;
+    border-radius: 5px;
+    bottom: -2px;
+}
+.soccer_header_layout_data{
+    z-index: 2;
+    cursor: default;
+    position: absolute;
+    padding: 0 9px;
+    background-color: #333;
+    font-size: 11px;
+    color: #a7a7a7;
+    line-height: 20px;
+}
+.score_grid_container{
+    display: table;
+    table-layout: fixed;
+    background-color: #404040;
+    border: 1px solid #303030;
+    position: relative;
+    z-index: 1;
+}
+.score_grid_container .eventIcon{
+    background-color: #bbb;
+    border-radius: 2px;
+    padding: 5px;
+    right: calc(100% + 10px);
+    position: absolute;
+    z-index: 0;
+    width: 90px;
+    height: 90px;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score_grid_container .eventIcon img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.score_grid_container .eventIcon.show{
+    opacity: 1;
+    visibility: visible;
+}
+.team_kit_cell {
+    font-size: 0;
+    line-height: 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    color: #999;
+    height: 20px;
+    text-align: center;
+    padding: 9px 10px 0;
+    width: 22px;
+    background-color: #333;
+}
+.team_kit_cell.full{
+    height: 33px;
+    background-color: #404040;
+    min-height: 34px;
+    border-top-color: #545454;
+    padding-top: 10px;
+}
+.team_kit_cell.full:nth-child(2){
+    border-top-color: transparent;
+}
+.team_kit_cell_element{
+    width: 12px;
+    height: 14px;
+}
+.team_kit_cell_element img{
+    width: 100%;
+    height: 100%;
+}
+.grid_column{
+    display: table-cell;
+    vertical-align: top;
+}
+.grid_column_header{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    min-height: 20px;
+    background-color: #333;
+    font-size: 11px;
+    color: #a7a7a7;
+    text-align: center;
+}
+.grid_column_team_name{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    cursor: default;
+    border-top: 1px solid #545454;
+    border-bottom: 1px solid transparent;
+    height: 34px;
+}
+.grid_column_team_name:nth-child(2){
+    border-top: 1px solid transparent;
+}
+.grid_column_team_name .grid_cell{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #c7c7c7;
+    line-height: 30px;
+    cursor: default;
+    border-top: 1px solid transparent;
+}
+.grid_column.with_icon{
+    width: 30px;
+}
+.grid_column.with_icon .grid_cell{
+    cursor: default;
+    border-top: 1px solid #545454;
+    line-height: 34px;
+    height: 34px;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    padding-bottom: 1px;
+}
+.grid_column.with_icon .grid_cell:nth-child(2){
+    border-top: 1px solid transparent;
+}
+.grid_column.with_icon .grid_column_header.soccer{
+    background-repeat: no-repeat;
+    -webkit-background-size:17px;
+    background-size:17px;
+    background-image: url(/img/icons_event_view_detail.svg);
+}
+.grid_column.with_icon.column_corner .grid_column_header.soccer{
+    background-position: 7px 3px;
+}
+.grid_column.with_icon.column_yellow_card .grid_column_header.soccer{
+    background-position: 7px -27px;
+}
+.grid_column.with_icon.column_red_card .grid_column_header.soccer{
+    background-position: 7px -57px;
+}
+.grid_column.with_icon.column_penalty .grid_column_header.soccer{
+    background-position: 6px -206px;
+}
+.grid_column.with_icon.column_goal .grid_column_header.soccer{
+    background-position: 8px -236px;
+}
+.grid_header{
+    display: block;
+    width: 100%;
+    line-height: 33px;
+    background-color: #585858;
+    padding-bottom: 60px;
+}
+.grid_header_rowOne{
+    display: flex;
+    table-layout: fixed;
+}
+
+.grid_header_fixtureTable{
+    display: flex;
+    table-layout: fixed;
+    vertical-align: top;
+    width: 100%;
+}
+.grid_header_fixture_cell{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #e4e4e4;
+    padding: 0 20px 0 10px;
+    font-size: 15px;
+    display: inherit;
+}
+.grid_header_league{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #a7a7a7;
+    padding-left: 10px;
+    font-size: 15px;
+    max-width: 200px;
+}
+.summary_btn{
+    display: table-cell;
+    vertical-align: top;
+}
+.summary_btn_wrapper{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    max-width: 205px;
+    min-width: 150px;
+    align-items: center;
+}
+.summary_btn_wrapper:before{
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    left: 0;
+}
+.summary_label{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    color: #bbb;
+    position: relative;
+    margin-left: 5px;
+}
+.summary_btn_wrapper:hover .summary_label,
+.summary_btn_wrapper:hover .summary_icon:before{
+    color: #e4e4e4;
+}
+.summary_icon{
+    color: #a7a7a7;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    vertical-align: top;
+    padding: 0 10px 0 5px;
+    line-height: 29px;
+    cursor: pointer;
+    position: relative;
+}
+.summary_icon:before{
+    font-size: 5px;
+    color: #a7a7a7;
+    content: "\e801";
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.grid_header_rowTwo{
+    border-top: 1px solid #6e6e6e;
+    width: 100%;
+    height: 35px;
+    display: table;
+    position: relative;
+}
+
+.grid_header_rowTwo_left{
+    line-height: 30px;
+    height: 35px;
+    padding-left: 11px;
+    display: table-cell;
+}
+.market_select_btn{
+    color: #bbb;
+    font-size: 13px;
+    cursor: pointer;
+    height: 34px;
+    display: block;
+    position: relative;
+}
+.market_select_btn.bet_builder{
+    margin-left:11px;
+}
+.market_select_btn.active{
+    color: #e4e4e4;
+    box-shadow: inset 0 -3px 0 0 #e4e4e4;
+    text-decoration: none;
+}
+.market_select_btn:hover{
+    color: #bbb;
+    text-decoration: none;
+}
+.market_select_btn.bet_builder span{
+    position: absolute;
+    top: 2px;
+    right: -5px;
+    background-color: #4acfa5;
+    border-radius: 1px;
+    font-size: 9px;
+    color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 11px;
+    height: 11px;
+    min-width: 20px;
+    padding: 0 2px;
+    text-align: center;
+    -webkit-transform: translatex(100%);
+    -ms-transform: translatex(100%);
+    transform: translatex(100%);
+}
+.grid_header_rowTwo_right{
+    line-height: 30px;
+    height: 35px;
+    text-align: right;
+    padding-right: 10px;
+    display: table-cell;
+}
+.grid_header_rowTwo_right .event_view{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+}
+.grid_header_rowTwo_right .event_view:first-child{
+    padding-left:0;
+}
+.match_alert_btn,
+.league_table_btn{
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.match_alert_btn_icon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding-left: 18px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-image: url(/img/alert.svg);
+}
+
+.match_alert_btn:hover .match_alert_btn_icon{
+    background-image: url(/img/alert_hover.svg);
+}
+.match_alert_btn_label,
+.league_table_btn_label {
+    font-size: 12px;
+    line-height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+}
+.league_table_btn:hover .league_table_btn_icon:before,
+.league_table_btn:hover .league_table_btn_label,
+.match_alert_btn:hover .match_alert_btn_label{
+    color: #e4e4e4;
+}
+.league_table_btn_icon{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 5px;
+}
+.league_table_btn_icon:before{
+    font-family: bet365UI-icomoon!important;
+    content: "\e914";
+    font-size: 12px;
+    color: #999;
+}
+.MarketGroup{
+    position: relative;
+
+}
+
+.MarketGroupButton{position: relative;z-index: 10;display: flex; justify-content:space-between;min-height: 29px;padding: 0 60px 0 10px;line-height: 29px;text-overflow: ellipsis;font-size: 14px;color: #e4e4e4;overflow: hidden;white-space: nowrap;clear: both;background-color: #14805e;font-size: 14px;color: #e4e4e4;cursor: pointer;transition: background-color .4s cubic-bezier(0,.26,0,1);}
+.MarketGroupButton:hover{color: #fff;background-color: #168c67;}
+.MarketGroupButton:after{content: "\e801";position: absolute;top: 12px;right: 10px;text-transform: none;line-height: 1;font-family: bet365UI;font-size: 5px;font-style: normal;font-weight: 400;font-variant: normal;color: #ddd;speak: none; opacity: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition-timing-function: cubic-bezier(.77,0,.175,1);
+    transition-property: opacity;
+    transition-duration: .45s;cursor: pointer;}
+.MarketGroup:hover .MarketGroupButton:after{opacity: 1;}
+
+.MarketGroupButton_Text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+}
+.MarketGroup_Wrapper{
+    width: 100%!important;
+    border-top: 1px solid #116b4f;
+    height: 100%;
+    opacity: 1;
+
+}
+.MarketGroup_FavouriteButton{
+    transition-timing-function: cubic-bezier(.77,0,.175,1);
+    transition-property: opacity;
+    transition-duration: .45s;
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    right: 31px;
+    top: -2px;
+    opacity: 0;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 8px 10px;
+    background-image: url(/img/green_star.svg);
+
+}
+
+.MarketGroup:hover .MarketGroup_FavouriteButton{
+    opacity: 1;
+    z-index: 12;
+}
+.MarketGroup_FavouriteButton:hover{
+    background-image: url(/img/white_star.svg);
+}
+.MarketGroupContainer{
+    display: table;
+    table-layout: fixed;
+    background-color: #666;
+    width: 100%;
+    font-size: 0;
+}
+
+.MarketGroup_Half .MarketGroupContainer{
+    display: flex;
+}
+.Market_table{
+    display: flex;
+    width: 100%;
+    background-color: #585858;
+}
+.Market_table.wrap{
+    flex-wrap: wrap;
+}
+.MarketGroup_Half_wrapp{
+    display: flex;
+}
+.MarketGroup_Half{
+    width: 50%;
+    display: inline-block;
+}
+/*.MarketGroup .tab-content{*/
+    /*display: none;*/
+/*}*/
+/*.MarketGroup .tab-content.opened{*/
+    /*display: block;*/
+/*}*/
+.MarketGroup_Half.right{
+    padding-left: 1px;
+}
+.MarketGroup_Half .Market_table{
+    flex-direction: column;
+}
+.Participant{
+    background-color: #5e5e5e;
+    font-size: 12px;
+    width: 100%;
+    padding: 0 10px;
+    white-space: nowrap;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    border-right: 1px solid #6e6e6e;
+    border-bottom: 1px solid #6e6e6e;
+}
+.Participant.centered{
+    justify-content: center;
+}
+.Participant:hover{
+    background-color: #707070;
+}
+.MarketValues:last-child .Participant,
+.MarketValues:last-child .ParticipantOddsOnly,
+.MarketValues:last-child .ParticipantRowValue{
+    border-right: none;
+}
+.Participant_Handicap,
+.Participant_Name{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    color: #ddd
+}
+.Participant_Handicap{
+    padding: 0 10px;
+}
+.Participant_Odds{
+    display: flex;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.MarketGroup_Half .Participant{
+    justify-content: center;
+}
+
+.Participant.centered .Participant_Odds,
+.MarketGroup_Half .Participant_Odds{
+    flex: 0;
+    padding-left: 10px;
+}
+.Participant_Name + .Participant_Odds{
+    padding-left:10px;
+}
+.MarketLabel{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+}
+.MarketLabel.width_25{
+    width: 25%;
+    text-align: center;
+}
+.MarketLabel.width_50{
+    width: 50%;
+    text-align: center;
+}
+.Participant.grid3{
+    width: 33.33%;
+}
+.MarketValues.width_33 .ParticipantOddsOnly{
+    justify-content: flex-start;
+}
+.MarketValues.width_33 .ParticipantOddsOnly .ParticipantOddsOnly_Odds{
+    padding-left: 10px;
+}
+.MarketColumnHeader{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #a7a7a7;
+    line-height: 20px;
+    height: 20px;
+    font-size: 12px;
+    color: #444;
+    text-align: center;
+    padding: 0;
+    position: relative;
+}
+
+.MarketValues{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    background-color: #5e5e5e;
+}
+.MarketValues.width_37_5{
+    width: 37.5%;
+}
+.MarketValues.width_25{
+    width: 25%;
+}
+.MarketValues.width_50{
+    width: 50%;
+}
+.MarketValues.width_75{
+    width: 75%;
+}
+.MarketValues.width_100{
+    width: 100%;
+}
+.ParticipantRowValue_Name{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 12px;
+    color: #ddd;
+}
+.tab-content .ParticipantOddsOnly{
+    font-size: 12px;
+}
+.tab-content .ParticipantOddsOnly,
+.tab-content .ParticipantRowValue{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 35px;
+    border-right: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+    cursor: pointer;
+    background-color: #5e5e5e;
+}
+.MarketGroup_Wrapper .MarketLabel .ParticipantRowValue{
+    border-bottom: 1px solid #757575;
+    background-color: #666;
+}
+.ParticipantOddsOnly:hover,
+.ParticipantRowValue:hover{
+    background-color: #707070;
+}
+.MarketGroup_ButtonBar{
+    padding: 0 60px 0 25px;
+    display: inline-block;
+    text-align: right;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.MarketGroup_ButtonBar .nav-item{
+    display: inline-block;
+}
+.MarketGroup_ButtonBar .nav-item:first-child{
+    margin-right: 15px;
+}
+.MarketGroup_ButtonBar .nav-item .nav-link{
+    padding: 0 1em;
+}
+.MarketGroup_btn{
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 27px;
+    pointer-events: auto;
+    padding: 0;
+}
+.MarketGroup_btn:hover{
+    color: #ddd;
+}
+.MarketGroup_btn.active{
+    color: #ddd;
+    border-bottom: 2px solid #e4e4e4;
+}
+/*
+.MarketSliders{
+    background: #666;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 31px;
+    padding-right: 31px;
+    position: relative;
+}
+.MarketSliders_Gap{
+    width: 41px;
+    display: table-cell;
+}
+.MarketSliders_SliderOneContainer,
+.MarketSliders_SliderTwoContainer{
+    height: 100px;
+    position: relative;
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.MarketSliders_SliderTitle{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+*/
+/*input[type='range'] {*/
+    /*overflow: hidden;*/
+    /*width: 100%;*/
+    /*height: 6px;*/
+    /*-webkit-appearance: none;*/
+    /*background-color: #757575;*/
+    /*outline: 0;*/
+/*}*/
+/*input[type='range']::-webkit-slider-runnable-track {*/
+    /*height: 6px;*/
+    /*-webkit-appearance: none;*/
+    /*color: #757575;*/
+/*}*/
+/*input[type='range']::-webkit-slider-thumb {*/
+    /*width: 15px;*/
+    /*height: 15px;*/
+    /*border-radius: 50%;*/
+    /*-webkit-appearance: none;*/
+    /*cursor: pointer;*/
+    /*background: #ddd;*/
+    /*box-shadow: -9999px 0 0 9999px #189670;;*/
+    /*z-index:999;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*input[type="range"]::-moz-range-progress {*/
+    /*background-color: #189670;;*/
+/*}*/
+/*input[type="range"]::-moz-range-track {*/
+    /*background-color: #757575;*/
+/*}*/
+/*input[type="range"]::-ms-fill-lower {*/
+    /*background-color: #189670;*/
+/*}*/
+/*input[type="range"]::-ms-fill-upper {*/
+    /*background-color: #757575;*/
+/*}*/
+.range_container{
+    position: relative;
+    width: 100%; /*input range width*/
+    height: 16px; /*input range height*/
+    overflow: hidden;
+}
+/*
+input[type='range'] {
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    -webkit-appearance: none;
+    background-color: #757575;
+    top: 0;
+    outline: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    color: #ddd;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 15px;
+    -webkit-appearance: none;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #ddd;
+    box-shadow: -9999px 0 0 9999px #189670;
+    overflow: hidden;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: #189670;
+}
+input[type="range"]::-moz-range-track {
+    background-color: #757575;
+}
+input[type="range"]::-ms-fill-lower {
+    background-color: #43e5f7;
+}
+input[type="range"]::-ms-fill-upper {
+    background-color: #757575;
+}
+
+*/
+.MarketSliders_OddsContainer{
+    display: table;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+.ParticipantSliderResultField{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #5e5e5e;
+}
+.ParticipantSliderResultField:hover{
+    background-color: #707070;
+}
+.ParticipantSliderResultField_Name{
+    color: #ddd;
+    font-size: 12px;
+    margin-right: 9px;
+}
+.ParticipantSliderResultField_Odds{
+    font-size: 12px;
+}
+.Additional_Text{
+    font-size: 13px;
+    margin-left:10px;
+    margin-top: 1px;
+
+}
+.SlipTitle{
+    display: table;
+    width: 100%;
+    background-color: #14805e;
+    height: 29px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.SlipTitle_Text{
+    font-size: 14px;
+    color: #ddd;
+    line-height: 17px;
+    padding: 6px 0;
+    display: table-cell;
+}
+.Slip_SelectionPane{
+    display: table;
+    text-align: center;
+    background-color: #666;
+    width: 100%;
+}
+.Slip_SelectionListWrapper{
+    padding-left: 10px;
+}
+.Slip_EmptyMessage{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #ddd;
+    padding: 42px 0;
+}
+.BetBuilderModule .ControlBar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #474747;
+}
+.BetBuilderModule .ControlBar_AddSelection{
+    display: flex;
+    height: 29px;
+    width: 65%;
+    background-color: #666;
+    font-size: 12px;
+    color: #e4e4e4;
+    border-top: 1px solid #757575;
+    line-height: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.ControlBar_AddSelection span{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.ControlBar_AddSelection.plus:before{
+    position: relative;
+    font-size: 12px;
+    color: #54e8b9;
+    content: "\e90e";
+    padding: 8px 10px;
+    font-family: bet365UI-icomoon!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.ControlBar_AddSelection:hover{
+    background-color: #6e6e6e;
+}
+.bbs-OddsButton{
+    display: table-cell;
+    vertical-align: middle;
+    height: 29px;
+    width: 35%;
+    text-align: center;
+}
+.bbs-OddsButton_NoSelections{
+    /*background-color: #585858;*/
+    padding: 0 10px;
+    line-height: 29px;
+    color: rgba(255,223,27,.45);
+    cursor: default;
+    font-size: 12px;
+}
+.bbw-Wizard {
+    color: #ddd;
+    width: 100%;
+    border-radius: 4px;
+    z-index: 99;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    top: 30%;
+    bottom: 5%;
+    left: 50%;
+    overflow: hidden;
+    height: 552px;
+
+}
+.new_window.choose_market .modal_content{
+    width: 435px;
+}
+.bbw-Menu {
+    background-color: #ddd;
+}
+.bbw-Menu_Title-container {
+    background-color: #14805e;
+    font-size: 12px;
+    color: #ddd;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 37px;
+    border-bottom: 1px solid rgba(74,207,165,.5);
+}
+.bbw-Menu_Title{
+    font-size: 12px;
+    color: #ddd;
+    line-height: 37px;
+    display: inline-block;
+}
+.bbw-Menu_Close {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 10px;
+    color: #ddd;
+    position: absolute;
+    right: 0;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 37px;
+}
+.bbw-Menu_Close:before {
+    font-family: bet365UI-icomoon!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e90f";
+}
+
+.bbw-Menu_ItemContainer {
+    height: 420px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 231px;
+}
+.bbw-Menu_ItemContainer.first_step{
+    height: 552px;
+}
+.bbw-Menu_MarketGroup{
+    cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #ddd;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 1px solid #c7c7c7;
+    height: 38px;
+    line-height: 37px;
+    padding: 0 10px;
+    position: relative;
+}
+.bbw-Menu_MarketGroup:hover{
+    background-color: #e4e4e4;
+}
+
+.bbm-HowTo_Button{
+    width: 100%;
+    font-size: 13px;
+    color: #bbb;
+    text-align: center;
+    padding: 37px 0 27px;
+    line-height: 16px;
+    cursor: pointer;
+}
+.bbm-HowTo_Button:hover,
+.bbm-HowTo_Button.active{
+    color: #ddd;
+}
+.bbm-HowTo_content{
+    max-height: 0;
+    transition: all .5s cubic-bezier(.77,0,.175,1);
+    opacity: 0;
+}
+.bbm-HowTo_content.show{
+    opacity: 1;
+    max-height: 100%;
+}
+.bbm-HowTo_Title {
+    color: #bbb;
+    font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+    padding: 0 29px 30px;
+}
+.bbm-HowTo_Wrapper {
+    display: table;
+    text-align: center;
+    padding: 0 29px 42px;
+    width: 100%;
+}
+.bbm-HowTo_Selection {
+    display: table-cell;
+    vertical-align: middle;
+    color: #bbb;
+    font-size: 12px;
+    border: 1px solid #666;
+    line-height: 18px;
+    width: 22%;
+    margin-top: 30px;
+    padding: 11px 9px;
+}
+.bbm-HowTo_Equals,
+.bbm-HowTo_Symbol {
+    color: #4acfa5;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+.bbm-HowTo_Equals:after,
+.bbm-HowTo_Symbol:after {
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bbm-HowTo_Symbol:after {
+    content: "\e90e";
+    font-size: 13px;
+}
+.bbm-HowTo_Equals:after {
+    content: "\e928";
+    font-size: 7px;
+}
+.bbm-HowTo_Odds {
+    font-size: 17px;
+    color: #ddd;
+    border: 1px solid #888;
+    display: table-cell;
+    vertical-align: middle;
+    min-width: 100px;
+}
+.ParticipantRowName {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 10px;
+    line-height: 34px;
+    border-bottom: 1px solid #757575;
+    border-right: 1px solid #757575;
+}
+/*~~~~~~~~~~~~~~~~~~~~ end event_view_detail~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~pop_up sport when event_sidebar collapsed~~~~~~~~~~~~~~~~*/
+.pop_up_sport{
+    position: absolute;
+    width: 450px;
+    max-height: 0;
+    opacity: 0;
+    z-index: -1;
+    left: 64px;
+    top: 7%;
+}
+.pop_up_sport.appear{
+    opacity: 1;
+    max-height: 100%;
+    z-index: 40;
+}
+.pop_up_sport_wrapper{
+    background-color: #ddd;
+    border-radius: 2px;
+    position: relative;
+}
+.pop_up_sport_wrapper:before{
+    content: '';
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #ddd;
+    left: -10px;
+    top:37px;
+}
+.pop_up_sport_header{
+    border-bottom: 2px solid;
+    padding: 7px 10px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #333;
+    text-align: left;
+}
+.pop_up_sport_header.soccer{
+    border-color: #25765C;
+}
+.Scroller_Content{
+    max-height: 683px;
+    overflow-y: scroll;
+}
+.Competition_Header{
+    background-color: #ccc;
+    color: #545454;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+}
+.classification_block .classification_header:after,
+.Market-Header:after{
+    font-family: bet365UI;
+    content: "\E855";
+    position: absolute;
+    font-size: 5px;
+    right: 6px;
+    top: 4%;
+    color: #bbb;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .2s;
+}
+.classification_block .classification_header:hover:after,
+.Market-Header:hover:after{
+    opacity: 1;
+}
+.classification_block .classification_header.change_color:hover:after{
+    opacity: 0;
+}
+.classification_block .classification_header[aria-expanded = "false"]:after,
+.Market-Header[aria-expanded = "false"]:after{
+    transform: rotate(180deg);
+}
+.classification_block .classification_header[aria-expanded = "true"]:after,
+.Market-Header[aria-expanded = "true"]:after{
+    transform: rotate(0);
+}
+.classification_block .classification_header:after{
+    right: 5px;
+    top: 3%;
+}
+.Competition_FavouriteButton{
+    position: absolute;
+    right: 5px;
+    top: -4px;
+    width: 13px;
+    height: 31px;
+    vertical-align: middle;
+    background-position: 50% 109%;
+    background-repeat: no-repeat;
+    background-image: url(/img/star.svg);
+    cursor: pointer;
+}
+.Fixture_FavouriteButton:hover,
+.Competition_FavouriteButton:hover{
+    background-position: 50%;
+}
+.pop_up_CompetitionContainer .Fixture{
+    line-height: 26px;
+    position: relative;
+    background-color: #DDDDDD;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    max-width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
+.pop_up_CompetitionContainer .Fixture .Fixture_GameTimer{
+    color: #757575;
+    flex: 0 0 auto;
+    text-align: right;
+    padding-left: 15px;
+}
+.pop_up_CompetitionContainer .Fixture .Fixture_TeamName{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    height: 26px;
+    flex: 1 1 auto;
+}
+.pop_up_CompetitionContainer .Fixture .Fixture_Score{
+    height: 26px;
+    flex: 0 0 auto;
+    padding-right: 10px;
+    text-align: right;
+}
+.Fixture_FavouriteButton{
+    min-width: 23px;
+    height: 26px;
+    background-repeat:no-repeat;
+    background-position: 50% 100%;
+    background-image: url(/img/star.svg);
+    cursor: pointer;
+
+}
+/*~~~~~~~~~~end pop_up sport when event_sidebar collapsed~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~event_view_detail_tennis~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.TennisHeaderLayout {
+    font-size: 0;
+    line-height: 0;
+    width: 450px;
+    z-index: 30;
+    border: 1px solid #303030;
+    background-color: #404040;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.TennisHeaderLayout_Header {
+    display: table;
+    table-layout: fixed;
+    background-color: #333;
+    padding: 0 9px 0 10px;
+    color: #a7a7a7;
+    width: 100%;
+}
+.TennisHeaderLayout_HeaderTitle {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 190px;
+}
+.TennisHeaderLayout_HeaderTitle,
+.TennisHeaderLayout_HeaderAdditionalData{
+    cursor: default;
+    display: table-cell;
+    vertical-align: top;
+    font-size: 11px;
+    line-height: 20px;
+}
+.TennisHeaderLayout_RulesText {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 18px;
+    font-size: 11px;
+    width: 288px;
+    text-align: left;
+    position: absolute;
+    top: 21px;
+    left: 10px;
+}
+.TennisHeaderLayout_HeaderAdditionalData{
+    width: 230px;
+    text-align: right;
+}
+.TennisHeaderLayout_Column {
+    display: table-cell;
+    vertical-align: top;
+}
+.TennisHeaderLayout_Cell {
+    cursor: default;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-size: 11px;
+    color: #a7a7a7;
+    background-color: #333;
+    text-align: center;
+    display: table;
+    width: 100%;
+    line-height: 25px;
+    height: 20px;
+}
+.TennisHeaderLayout_Cell {
+    cursor: default;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-size: 11px;
+    color: #a7a7a7;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    line-height: 25px;
+}
+.TennisHeaderLayout_Cell + .TennisHeaderLayout_Cell {
+    background-color: transparent;
+    height: 34px;
+}
+.ScoreGridCell.Service_on,
+.ScoreGridCell.Service_off,
+.TennisHeaderLayout_Cell.Service_off,
+.TennisHeaderLayout_Cell.Service_on{
+    padding: 1px 0 0 7px;
+    position: relative;
+}
+.ScoreGridCell.Service_on:before,
+.ScoreGridCell.Service_off:before,
+.TennisHeaderLayout_Cell.Service_off:before,
+.TennisHeaderLayout_Cell.Service_on:before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    display: block;
+    margin: 12px 10px 12px 3px;
+}
+.ScoreGridCell.Service_off:before,
+.TennisHeaderLayout_Cell.Service_off:before{
+    border: 1px solid #303030;
+    background-color: #545454;
+}
+.ScoreGridCell.Service_on:before,
+.TennisHeaderLayout_Cell.Service_on:before{
+    border: 1px solid #303030;
+    background-color: #ffdf1b;
+}
+.TennisHeaderLayout_TeamName {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    line-height: 31px;
+}
+.TennisHeaderLayout_TextTeamName {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 0 10px 1px;
+    color: #ddd;
+    text-align: left;
+}
+.TennisHeaderLayout_Seed {
+    color: #ddd;
+    font-size: 14px;
+    display: inline-block;
+    max-width: 15%;
+    vertical-align: middle;
+    margin-left: -5px;
+    line-height: 30px;
+}
+.TennisGridColumn {
+    display: table-cell;
+    vertical-align: top;
+}
+.TennisGridColumn.width_30{
+
+    width: 30px;
+}
+/*.TennisGridColumn.width_50{*/
+    /*width: 50px;*/
+/*}*/
+.TennisGridColumn.width_55{
+
+    width: 55px;
+}
+.TennisGridColumn_Cell {
+    display: table;
+    table-layout: fixed;
+    cursor: default;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-size: 11px;
+    color: #a7a7a7;
+    background-color: #333;
+    text-align: center;
+    width: 100%;
+    line-height: 18px;
+}
+.TennisGridColumn_Cell + .TennisGridColumn_Cell {
+    background-color: transparent;
+    font-size: 13px;
+    color: #ddd;
+    padding-bottom: 0;
+    min-height: 20px;
+    line-height: 32px;
+}
+.TennisGridColumn.hidden{
+    display: none;
+}
+.TennisGridColumn_Cell:last-of-type,
+.TennisHeaderLayout_Column .TennisHeaderLayout_Cell:last-of-type{
+    border-top: 1px solid #545454;
+}
+/*~~~~~~~~~~~~~~end event_view_detail_tennis~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.invisible{
+
+    height: 0;
+    opacity: 0;
+}
+/*~~~~~~~~~~~~~~event_view_detail_basketball~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.ScoreGridHeaderLayout {
+    font-size: 0;
+    line-height: 0;
+    width: 450px;
+    z-index: 30;
+    border: 1px solid #303030;
+    background-color: #404040;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.ScoreGridHeaderLayout_ExtraData{
+    position: absolute;
+    cursor: default;
+    top: 1px;
+    left: 1px;
+    padding: 0 10px;
+    background-color: #333;
+    font-size: 11px;
+    color: #a7a7a7;
+    line-height: 20px;
+}
+.ScoreGridContainer{
+    display: table;
+    table-layout: fixed;
+    background-color: #404040;
+    border: 1px solid #303030;
+}
+.ScoreGridColumn {
+    display: table-cell;
+    vertical-align: top;
+}
+.ScoreGridCell {
+    cursor: default;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    line-height: 32px;
+    font-size: 13px;
+    color: #ddd;
+    min-height: 20px;
+    background-color: #333;
+    text-align: center;
+}
+.ScoreGridCell.Kit{
+    height: 32px;
+    padding: 0px 10px 0;
+}
+.ScoreGridCell_KitElement{
+    width: 12px;
+    height: 14px;
+    font-size: 0;
+    line-height: 0;
+    display: inline-block;
+}
+.ScoreGridCell_KitElement img{
+    width: 100%;
+    height: 100%;
+}
+.ScoreGridCell_TextHeader {
+    font-size: 11px;
+    color: #a7a7a7;
+    line-height: 18px;
+    cursor: default;
+}
+.ScoreGridCell.TeamName{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.ScoreGridCell_TextTeamName {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: default;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #c7c7c7;
+    text-align: left;
+}
+.ScoreGridColumn + .ScoreGridColumn + .ScoreGridColumn .ScoreGridCell_TextTeamName {
+    padding-left: 0;
+}
+.ScoreGridColumn.width_30{
+    width: 30px;
+}
+.ScoreGridColumn.width_40{
+   width: 40px;
+}
+.ScoreGridColumn.width_45{
+    width: 45px;
+}
+.ScoreGridColumn.width_20{
+    width: 20px;
+}
+.ScoreGridCell.Text{
+    color: #999;
+}
+.ScoreGridCell.Text.half{
+    color: #ddd;
+}
+/*~~~~~~~~~~~~~~end event_view_detail_basketball~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~event_view_detail_baseball~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.BaseballHeaderLayout .ScoreGridHeaderLayout_ExtraData .BaseballHeaderLayout_Data {
+    display: inline-block;
+}
+.BaseballHeaderLayout_Data + .BaseballHeaderLayout_Data {
+    padding-left: 9px;
+}
+.BaseballContainer_Column{
+    display: table-cell;
+    width: 62px;
+}
+.BaseballContainer_Column .BaseballContainer_PitchCell {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    line-height: 32px;
+    font-size: 13px;
+    color: #ddd;
+    min-height: 20px;
+    background-color: #333;
+    text-align: center;
+}
+.BaseballContainer_Column .BaseballContainer_PitchCell + .BaseballContainer_PitchCell {
+    padding-bottom: 1px;
+    background-color: transparent;
+    border-bottom-color: #545454;
+    height: 35px;
+}
+.BaseballContainer_Pitch{
+    background-image: url(/img/BaseballContainer_Pitch.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    /*width: 58px;*/
+    /*height: 58px;*/
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    /*top: 26px;*/
+    top: 37px;
+    left: 10px;
+    border-bottom-color: transparent;
+}
+.ScoreGridCell+.ScoreGridCell {
+    background-color: transparent;
+}
+/*~~~~~~~~~~~~~~end event_view_detail_baseball~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~~~~event_view_detail_badminton~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.ScoreGridColumn {
+    display: table-cell;
+    vertical-align: top;
+}
+/*~~~~~~~~~~~~~~end event_view_detail_badminton~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~~~overview tab_Favourites~~~~~~~~~~~~~~~~~~~~*/
+.NoFavouritesMessage {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 0;
+    cursor: default;
+}
+.NoFavouritesMessage_Line1{
+    font-size: 14px;
+    color: #c7c7c7;
+    line-height: 18px;
+    padding-top: 22px;
+}
+.NoFavouritesMessage_Line2 {
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+    padding-top: 6px;
+}
+/*~~~~~~~~~~~end overview tab_Favourites~~~~~~~~~~~~~~~~~~~~*/
+
+/*~~~~~~~~~summaryContainer in grid_header_rowOne~~~~~~~~~~~~*/
+.SummaryContainer_wrapper{
+    position: relative;
+    z-index: 30;
+    height:0;
+    width: 0;
+}
+.SummaryContainer {
+    position: absolute;
+    z-index: 30;
+    top: 36px;
+    right: 10px;
+    display: block;
+    min-width: 450px;
+    border-radius: 2px;
+    background-color: #d7d7d7;
+}
+.SummaryContainer.scroll_block{
+    background-color: #d7d7d7;
+}
+.MarketSwitcherScroller.scroll_block,
+.SummaryContainer.scroll_block,
+.MarketSwitcherScroller.scroll_block .mCustomScrollBox,
+.SummaryContainer.scroll_block .mCustomScrollBox{
+    border-right: 1px solid transparent;
+    padding-right: 0;
+}
+.SummaryItem_Neutral{
+    line-height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+    color: #545454;
+    background-color: #d7d7d7;
+    border-bottom: 1px solid #c7c7c7;
+    width: 100%;
+}
+.SummaryItem_Icon {
+    margin-right: 10px;
+}
+.SummaryItem_Icon:before {
+    content: " ";
+    display: inline-block;
+    width: 11px;
+    top: 1px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    background-size: contain;
+}
+.SummaryItem_Icon-4:before{
+    height: 10px;
+    /*top: 1px;*/
+    /*left: 1px;*/
+    background-image: url(/img/SummaryItem_Icon-4.svg);
+}
+.SummaryItem_Icon-7:before{
+    height: 14px;
+    left: 1px;
+    background-image: url(/img/SummaryItem_Icon-7.svg);
+}
+.SummaryItem_Icon-2:before{
+    height: 10px;
+    background-image: url(/img/SummaryItem_Icon-2.svg);
+}
+.fouls-icon:before,
+.SummaryItem_Icon-1:before{
+    height: 8px;
+    background-image: url(/img/SummaryItem_Icon-1.svg);
+}
+.SummaryItem_Icon-3:before{
+    height: 10px;
+    background-image: url(/img/SummaryItem_Icon-3.svg);
+}
+.SummaryItem_Icon-redCard:before{
+    height: 15px;
+    background-image: url(/img/icons_event_view_detail.svg);
+    background-position: -4px -57px;
+}
+.SummaryItem_Icon-penalty:before{
+    height: 14px;
+    background-image: url(/img/icons_event_view_detail.svg);
+    background-position: -4px -208px;
+
+}
+.three_points_icon:before{
+     height: 10px;
+     background-image: url(/img/threePoints-Iconjpg.jpg);
+ }
+.two_points_icon:before{
+    height: 10px;
+    background-image: url(/img/basketball-clip-art-27.png);
+}
+.time_outs:before{
+    height: 10px;
+    background-image: url(/img/TimeOuts.png);
+}
+.free_throws:before{
+    height: 10px;
+    background-image: url(/img/free_throws.png);
+}
+/*~~~~~~~~~end summaryContainer in grid_header_rowOne~~~~~~~~~~~~*/
+
+.table_row{
+    display: table-row;
+    background-color: #585858;
+}
+.MarketSwitcherClosableContainer{
+    position: relative;
+    width: 100%;
+}
+.MarketSwitcherButton {
+    text-align: left;
+    background-color: #585858;
+    color: #bbb;
+    padding: 0 10px;
+    font-size: 11px;
+    cursor: pointer;
+    vertical-align: top;
+    height: 24px;
+    border-right: 1px solid #666;
+    position: relative;
+
+}
+.MarketSwitcherButton:hover{
+    color: #e4e4e4;
+}
+.marketSwitcherButton:after{
+    content: "\E801";
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: block;
+    position: absolute;
+    font-size: 5px;
+    top: 10px;
+    color: #bbb;
+    right: -4px;
+    width: 10px;
+}
+.marketSwitcherButton:hover:after{
+    color: #e4e4e4;
+}
+.MarketSwitcherButton_Text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    color: #bbb;
+}
+
+.MarketSwitcherButton_Icon {
+    padding: 0 6px;
+    cursor: pointer;
+    display: inline-block;
+    color: #a7a7a7;
+    vertical-align: top;
+}
+.MarketSwitcherButton_Icon:after {
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    top: 2px;
+    font-size: 5px;
+    content: "\e801";
+}
+.MarketSwitcherButton_Icon:hover:after{
+    color: #ddd;
+}
+.MarketSwitcherScroller {
+    position: absolute;
+    z-index: 30;
+    display: none;
+    width: 250px;
+    border-radius: 0 0 2px 2px;
+    background-color: #d8d8d8;
+    max-height: 0;
+}
+.MarketSwitcherScroller.opened{
+    max-height: 300px;
+    display: block;
+}
+.schedule_data_list_item,
+.channel_list_item,
+.MarketSwitcherItem {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #333;
+    text-align: left;
+    padding: 0 15px 0 11px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    line-height: 28px;
+    cursor: pointer;
+    position: relative;
+}
+.schedule_data_list_item+.schedule_data_list_item,
+.MarketSwitcherItem+.MarketSwitcherItem {
+    border-top-color: #ccc;
+}
+
+.MarketSwitcherItem_Label {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    position: relative;
+}
+
+.play_classification.in-play .play_classification_league{
+    overflow: visible;
+}
+.play_classification_league{
+    position: relative;
+}
+.play_classification.in-play .play_league_group_wrapp{
+    display: none;
+}
+.play_classification.in-play .play_league_group_wrapp.opened{
+    display: table;
+}
+.schedule_data_list_item:hover,
+.channel_list_item:hover,
+.MarketSwitcherItem:hover {
+    background-color: #e4e4e4;
+}
+.schedule_data_list_item.selected,
+.channel_list_item.selected,
+.MarketSwitcherItem.selected{
+    color: #14805e;
+    background-color: #f0f0f0;
+}
+.schedule_data_list_item.selected:before,
+.channel_list_item.selected:before,
+.MarketSwitcherItem.selected:before{
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 4px;
+    height: 31px;
+    content: "";
+    background-color: #4acfa5;
+}
+.marketSwitcherButton_Text:hover{
+    color: #e4e4e4;
+}
+
+/*style for input type range*/
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+.marketSwitcherButton{
+    text-align: left;
+    background-color: #585858;
+    color: #bbb;
+    padding: 0 10px;
+    font-size: 11px;
+    cursor: pointer;
+    height: 24px;
+    position: relative;
+}
+.marketSwitcherButton_Text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 23px;
+}
+.schedule_data_list,
+.channel_list,
+.marketSwitcher_list{
+    position: absolute;
+    overflow: hidden;
+    width: 250px;
+    border-radius: 0 0 2px 2px;
+    background-color: #d8d8d8;
+    max-height: 300px;
+    overflow-y: scroll;
+    display: none;
+    z-index: 10;
+}
+.schedule_data_list{
+    height: auto;
+    overflow-y: auto;
+}
+.schedule_data_list,
+.channel_list{
+    width: 180px;
+}
+.schedule_data_list.show,
+.channel_list.show,
+.marketSwitcher_list.show{
+    display: block;
+}
+/*~~~~~~~~~~~~~*/
+.other_sport_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #c7c7c7;
+    height: 23px;
+    background-color: #777;
+    width: 100%;
+    padding: 0 0 0 9px;
+    position: relative;
+}
+.other_sport_header .header_tabs{
+    position: absolute;
+    left: 9px;
+}
+.header_tabs_wrapp{
+    display: table-cell;
+    padding: 0 25px 0 0;
+    vertical-align: middle;
+    float: left;
+    line-height: 23px;
+    cursor: pointer;
+}
+.header_tabs_label.selected{
+    color: #e4e4e4;
+    border-bottom: 2px solid;
+}
+.header_go_coupon{
+    color: #e4e4e4;
+    cursor: pointer;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    line-height: 25px;
+}
+.header_go_coupon:after{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    padding-left: 6px;
+    font-size: 10px;
+    content: "\e813";
+    cursor: pointer;
+    color: #c7c7c7;
+    top: -1px;
+}
+.header_go_coupon:hover,
+.header_go_coupon:hover:after{
+    color: #ffdf1b;
+}
+.other_sport .competition_btn .add_media_info{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25px;
+    font-size: 12px;
+    color: #5e5e5e;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+
+}
+
+.other_sport .competition_btn .media_btn{
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-left: 10px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.media_btn .btn_loader_video{
+    width: 23px;
+    height: 13px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(/img/MLVideoBW.svg);
+    cursor: pointer;
+}
+.media_btn .btn_loader_video:hover{
+    background-image: url(/img/MLVideo.svg);
+}
+.ParticipantStemRenderer{
+    font-size: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: default;
+}
+.Participant_General{
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: #666;
+    border-bottom: 1px solid #757575;
+    border-left: 1px solid #757575;
+    cursor: pointer;
+    border-right: 1px solid #757575;
+}
+/*.Participant_General:nth-child(odd){*/
+    /*border-left: none;*/
+/*}*/
+.Participant_General:last-child{
+    border-right: 1px solid #757575;
+}
+.Participant_General:hover{
+    background-color: #707070;
+}
+.ParticipantImgContainer{
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 10px;
+    width: 50px;
+}
+.ParticipantImgContainer .ParticipantImg{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-image: url(/img/greyhounds_icons.svg);
+    
+}
+.ParticipantImg2{
+    background-position: 0 -25px;
+}
+.ParticipantImg3{
+    background-position: 0 -50px;
+}
+.ParticipantImg4{
+    background-position: 0 -75px
+}
+.ParticipantImg5{
+    background-position: 0 -100px;
+}
+.ParticipantImg6{
+    background-position: 0 -125px;
+}
+.ParticipantRunnerInfo{
+    display: flex;
+    height: 50px;
+    line-height: 17px;
+    padding-top: 10px;
+    width: 50%;
+    flex-direction: column;
+}
+.ParticipantRunner{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #e4e4e4;
+    max-width: 100%;
+    display: inline-block;
+    line-height: 17px;
+}
+.ParticipantJockey{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 11px;
+    color: #bbb;
+    line-height: 17px;
+}
+.ParticipantRunnerOdds{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding: 0 10px;
+    font-size: 13px;
+    width: 50%;
+    justify-content: flex-end;
+}
+.play_league.other_sport{
+    background-color: #666;
+}
+.ParticipantCard{
+    width: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.ParticipantCard .CardText{
+    text-align: center;
+    font-size: 13px;
+    color: #e4e4e4;
+    line-height: 17px;
+}
+.ParticipantRunnerInfo.horse_fav{
+    height: 35px;
+}
+.no_events_schedule {
+    width: 245px;
+    margin: 0 auto;
+    padding: 25px 0;
+    font-size: 13px;
+    color: #ddd;
+    line-height: 20px;
+    text-align: center;
+}
+/*.in-play-slider, .sport_classification_slider, .schedule_slider {*/
+    /*display: none;*/
+/*}*/
+.match_alert_menu_list{
+    position: absolute;
+    z-index: -15;
+    color: #333;
+    font-size: 15px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #ddd;
+    margin: 0 11px 0 5px;
+    width: 43%;
+    right: 0;
+    left: auto;
+    top: 36px;
+    list-style: none;
+    text-shadow: none;
+    box-shadow: 0 2px 0 rgba(0,0,0,.2);
+    display: none;
+}
+.match_alert_menu_list.show{
+    display: block;
+    z-index: 15;
+}
+.match_alert_menu_list ul li{
+    line-height: 46px;
+    border-bottom: 1px solid #a6a6a6;
+    padding: 0 11px;
+    cursor: pointer;
+}
+.match_alert_menu_list ul li.LiveMatchAlertSubMenu{
+    padding: 0;
+}
+.LiveMatchAlertSubMenu{
+    display: none;
+}
+.LiveMatchAlertSubMenu.show{
+    display: block;
+}
+.SingleMatchPopUp_SubItem label,
+.SingleMatchPopUp_Team label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.SingleMatchPopUp_SubItem  label .choose_alerts_item_title,
+.SingleMatchPopUp_Team label .choose_alerts_item_title{
+    width: 95%;
+}
+.SingleMatchListNotificationPopUp-HeaderText{
+    overflow: hidden;
+    min-width: 0;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: initial;
+    color: #666;
+    font-size: 13px;
+    position: relative;
+}
+.SingleMatchListNotificationPopUp-HeaderText:after{
+    font-family: "bet365UI";
+    content: "\E600";
+    color: #999;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    display: inline-block;
+    margin-left: 5px;
+}
+.SingleMatchPopUp_SubItem:last-of-type{
+    border-bottom: none;
+}
+.match_alert_btn.selected .match_alert_btn_icon{
+    background-image: url(/img/alert_selected.svg);
+}
+.OpenBetItem_name.edited{
+    color: #4acfa5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.OpenBetItem_name.edited {
+    color: #54e8b9;
+}
+.bbw-Menu_Title-container .back{
+    position: relative;
+}
+.bbw-Menu_Title-container .back:before{
+    font-family: bet365UI;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e817";
+    font-size: 10px;
+    color: #ddd;
+    padding-right: 5px;
+    margin-top: -2px;
+}
+.secondStep .tab_submenu{
+    width: 100%;
+    min-height: 38px;
+    background-color: #14805e;
+    padding: 6px 0 11px 7px;
+}
+.tab.select_players{
+    background-color: #116b4f;
+    color: #54e8b9;
+    font-size: 13px;
+    padding: 0 4px;
+    Line-height: 21px;
+    display: inline-block;
+}
+.tab_submenu_text{
+    display: inline-block;
+    position: relative;
+    color: #4acfa5;
+    padding: 0 3.5px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.tab.underline{
+    display: inline-block;
+    position: relative;
+    color: #ddd;
+    padding: 0 3.5px;
+    cursor: pointer;
+    line-height: 18px;
+    font-size: 12px;
+}
+.tab.underline:after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(74,207,165,.5);
+}
+.tab.underline.active{
+    color: #fff;
+}
+.tab.underline.active:after{
+    background-color: #fff;
+}
+.choose_message{
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    font-size: 11px;
+    color: #333;
+    background-color: #e4e4e4;
+    border-bottom: 1px solid #c7c7c7;
+}
+.bbw-MarketControlBar{
+    display: flex;
+    height: 38px;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.priceContainer{
+    background-color: #333;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.priceContainer .controlBar_Price{
+    color: #e4e4e4;
+    font-size: 12px;
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+.priceContainer .controlBar_Price_Label{
+    color: #bbb;
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+.addButton{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    z-index: 20;
+    position: relative;
+    background-color: #14805e;
+}
+.addButton.disabled{
+    background-color: #666;
+    color: #888;
+    cursor: auto;
+}
+.full_Selection {
+    position: relative;
+    text-align: left;
+    padding: 17px 0 14px 20px;
+}
+.full_Selection:last-child {
+    padding: 0 0 20px 20px;
+}
+.full_Selection:only-child{
+    padding: 17px 0 20px 20px;
+}
+.full_Selection:after,
+.full_Selection:before{
+    content: "";
+    width: 1px;
+    left: 3px;
+    background: #a7a7a7;
+    display: block;
+    position: absolute;
+    -webkit-animation: showConnector .7s .7s forwards;
+    animation: showConnector .7s .7s forwards;
+    height: 0;
+}
+@keyframes showConnector{0%{height:0}to{height:51%}}
+
+.full_Selection:before{
+    top: 30px;
+}
+.full_Selection:after{
+    bottom: -13px;
+}
+.full_Selection:last-of-type:after,
+.full_Selection:last-of-type:before,
+.full_Selection:only-child:after,
+.full_Selection:only-child:before{
+    height: 0;
+    -webkit-animation: none;
+    animation: none;
+}
+.bbs-OddsButton_full{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #585858;
+    padding: 0px 10px;
+    line-height: 15px;
+    font-size: 12px;
+
+}
+.bbs-OddsButton_full:hover{
+    background-color: #777;
+}
+.bbs-OddsButton_text{
+    cursor: pointer;
+    color: #bbb;
+    padding-right: 11px;
+}
+.full-Selection_Dot{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    transition: border .2s;
+    border: 1px solid #a7a7a7;
+    background: #666;
+    position: absolute;
+    left: 0;
+    margin-top: 8px;
+}
+.full-Sentence{
+    display: flex;
+}
+.full-Sentence_Field{
+    font-size: 12px;
+    color: #ddd;
+    border-bottom: 1px solid rgba(74,207,165,.5);
+    margin-right: 5px;
+    cursor: pointer;
+}
+.full-Sentence_Field:hover{
+    color: #fff;
+}
+.full-Sentence_Matter{
+    margin-right: 5px;
+    font-size: 12px;
+    color: #bbb;
+}
+.Selected_MarketGroupName{
+    font-size: 11px;
+    color: #bbb;
+    line-height: 13px;
+    display: inline-block;
+}
+.full-Selection_Remove{
+    cursor: pointer;
+    font-size: 10px;
+    color: #aaa;
+    padding-left: 6px;
+}
+.full-Selection_Remove:before{
+    font-family: bet365UI-icomoon!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e90f";
+}
+.full-Selection_Remove:hover{
+    color: #e4e4e4;
+}
+.SlipTitle .clear_all{
+    font-size: 11px;
+    color: #4acfa5;
+    height: 20px;
+    border: 1px solid #4acfa5;
+    border-radius: 1px;
+    min-width: 60px;
+    padding: 2px 7px 3px;
+    cursor: pointer;
+    position: relative;
+    top: -2px;
+}
+.SlipTitle .clear_all:hover{
+    color: #54e8b9;
+    border: 1px solid rgba(84,232,185,.5);
+}
+
+.BetBuilderModule .SlipTitle{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.bbw-Menu_MarketGroup.selected{
+    color: #14805e;
+}
+.bbw-Menu_MarketGroup.selected:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: -1px;
+    width: 3px;
+    content: "";
+    background: #4acfa5;
+}
+
+.Market-Cluster{
+    width: 100%!important;
+    display: block;
+}
+.Market-Cluster.hidden{
+    display: none;
+}
+.Market-Cluster .fixture.currentGame{
+    background-color: #bbb;
+    border-bottom: 1px solid #bbb;
+    color: #474747;
+}
+.score_board_container.tennis{
+    background-image: url(/img/13c.jpg);
+}
+.soccer_header_layout.tennis .table_top_header{
+    background-color: #333;
+    padding: 0 9px 0 10px;
+    color: #a7a7a7;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    height: 20px;
+    align-items: center;
+}
+.header_layout_additional_data{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.header_layout_additional_data .headerCell{
+    padding-left: 10px;
+}
+.grid_column.with_icon.tennis .grid_column_header{
+    background-image: none;
+}
+.grid_column.with_icon.width_55{
+    width: 55px;
+}
+.grid_column.with_icon.width_50{
+     width: 50px;
+ }
+.grid_column.with_icon.width_40{
+    width: 40px;
+}
+.grid_column.with_icon.width_45{
+    width: 45px;
+}
+.grid_column.with_icon.width_35{
+    width: 35px;
+}
+.grid_column.with_icon.whiteText .grid_cell,
+.grid_column.with_icon.tennis .grid_cell{
+    color: #ddd;
+}
+.team_kit_cell.full.serviceOn:before,
+.team_kit_cell.full.serviceOff:before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: block;
+    margin: 3px 3px;
+}
+.team_kit_cell.full.serviceOff:before{
+    border: 1px solid #303030;
+    background-color: #545454;
+}
+.team_kit_cell.full.serviceOn:before{
+    border: 1px solid #303030;
+    background-color: #ffdf1b;
+}
+.score_board_container.basketball{
+    background-image: url(/img/18.jpg);
+}
+.score_board_container.iceHockey{
+    background-image: url(/img/17.jpg);
+}
+.score_board_container.volleyball{
+    background-image: url(/img/91.jpg);
+}
+.score_board_container.handball{
+    background-image: url(/img/78.jpg);
+}
+.score_board_container.tableTennis{
+    background-image: url(/img/92.jpg);
+}
+.team_kit_column_wrapp{
+    display: flex;
+}
+.range_wrapp .CONTAINER{
+    width: 580px;
+    max-width: 100%;
+}
+.сolumnW33{
+    width: 33.4%;
+    /*display: inline-block;*/
+}
+.Market_table.сolumnW33{
+    flex-direction: column;
+}
+.сolumnW33 .participant_name{
+    color: #bbb;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+    max-width: 130px;
+}
+.marker_row_wrapp_wrapp.mainMarketColumns{
+    display: flex;
+}
+.SummaryContainerAll{
+    max-height: 350px;
+    overflow-y: scroll;
+}

@@ -1,0 +1,714 @@
+body {width: 100%;margin: 0;font-family: "Verdana","Geneva","Arial",sans-serif;color: #e4e4e4;-webkit-font-smoothing: antialiased;overflow-y: scroll;
+position: relative;-webkit-tap-highlight-color: transparent;-webkit-touch-callout: none;background-color: #222;}
+header * { -moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;-webkit-font-smoothing: antialiased;}
+header {position: relative;display: block;table-layout: fixed;width: 100%;height: auto;font-size: 11px;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.top-container {display: table;table-layout: fixed;width: 100%;padding: 0 25px;border-bottom: 1px solid #444;}
+.top-container .logo-container {display: table-cell;height: 25px;width: 119px;padding-bottom: 25px;vertical-align: bottom;font-size: 11px;text-decoration: none;outline: none;}
+.top-container .logo-container .logo {display: inline;height: 25px;width: 118px;}
+.top-container .navigation-inner-container {float: none;display: table;table-layout: fixed;height: auto;margin: 0 auto;border-spacing: 20px 0;}
+.top-container .navigation-inner-container a {display: table-cell; height: 80px;vertical-align: middle;text-align: center;font-size: 14px;color: #e4e4e4;line-height: 1;border-bottom: 3px solid transparent;}
+.top-container .navigation-inner-container a.selected {color: #fff;border-bottom: 3px solid #ffdf1b;}
+.top-container .right-hand-side-container {display: table-cell;width: 244px;vertical-align: top;}
+.top-container .right-hand-side-container div.loginFieldsContainer {display: table;table-layout: fixed;margin: 16px 0 0 auto;}
+.top-container .right-hand-side-container div.loginFieldsContainer .username-wrapper,
+.top-container .right-hand-side-container div.loginFieldsContainer .password-wrapper {position: relative;display: inline-block;vertical-align: top;text-align: right;}
+.top-container .right-hand-side-container div.LoginContainer input {display: none;width: 100px;height: 25px;padding: 0 5px 0 6px;vertical-align: top;line-height: 20px;font-size: 11px;color: #888;border-radius: 1px;border: 1px solid #888;background-color: #333;box-shadow: none;}
+.top-container .right-hand-side-container div.LoginContainer input.txtUserName,
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus {display: inline-block;}
+.top-container .right-hand-side-container div.LoginContainer input:focus {outline: none;}
+.top-container .right-hand-side-container div.loginFieldsContainer a {display: block;line-height: 25px;font-size: 11px;color: #ffdf1b;cursor: pointer;}
+.top-container .right-hand-side-container div.loginFieldsContainer a.aGo {position: relative;display: inline-block;font-family: Verdana,Geneva,Arial,sans-serif;font-weight:800;font-size: 12px;color: #333;text-align: center;min-width: 25px;height: 23px;padding: 0 2px;margin-left: 1px;margin-top: 1px;line-height: 23px;background-color: #ddd;
+border-radius: 1px;cursor: pointer;outline: 1px solid transparent;border: none;}
+.top-container .right-hand-side-container .username-wrapper a.JoinNow:hover,
+.top-container .right-hand-side-container .password-wrapper a.lost-login:hover {text-decoration: underline;}
+.top-container .right-hand-side-container div.LoginContainer input.txtUserName,
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus {display: inline-block;}
+.top-container .right-hand-side-container div.LoginContainer input.passwordTogglefocus,
+.top-container .right-hand-side-container div.LoginContainer input.passwordToggle { margin-left: 5px;}
+.top-container .right-hand-side-container div.LoginContainer a.aGo {position: relative;display: inline-block;height: 23px;min-width: 25px;padding: 0 2px;margin-left: 1px;margin-top: 1px;line-height: 23px;text-align: center;font-family: Verdana,Geneva,Arial,sans-serif;font-weight: 800;background-color: #ddd;color: #333;font-size: 12px;border-radius: 1px;background-color: #ddd;cursor: pointer;outline: 1px solid transparent;border: none;}
+.top-container .right-hand-side-container div.LoginContainer a.aGo:hover {background-color: #ffdf1b;color: #444;}
+
+.bottom-container { height: 50px;width: 100%;padding: 14px 20px 20px 20px;}
+.bottom-container .clock-container {position: relative;z-index: 10002;float: left;height: 14px;padding: 8px 0;line-height: 14px;color: #888;}
+.bottom-container .clock-container .time-zone {padding-left: 5px;}
+.bottom-bar-right-hand-side {position: relative;float: right;display: flex;align-items: center;padding: 0 0;text-align: right;z-index: 10002;}
+.bottom-container .links {position: absolute;left: 25px;display: block;}
+.bottom-container .links a {padding: 0;font-size: 11px;color: #999;}
+
+.language-selector {position: relative;float: none;display: inline-block;margin-left: 25px;cursor: pointer;}
+.language-selector__title-wrapper {}
+.language-selector__header-text {color: #888;}
+.language-selector--active .language-selector__header-sub-text {color: #fff;}
+.language-selector--active .language-selector__arrow {background-image: url(//content001.bet365.com/Casino/Header-V7/chevronsheet.png);background-position: 0 -6px;}
+.language-selector__language-list {position: absolute;right: -90px;top: 20px;z-index: 1;display: none;width: 320px;margin: 0;padding: 0;font-size: 12px;background-color: #ddd;border: none;border-radius: 0 0 2px 2px;list-style: none;}
+.language-selector--active .language-selector__language-list {display: block;}
+.language-selector__language-list-item {float: left;width: 50%;line-height: 30px;    background-color: #ddd;border-bottom: 1px solid #b5b5b5;}
+.language-selector__language-list-item--selected {background-color: #f0f0f0;}
+.language-selector__description {float: left;height: 30px;padding-left: 10px;font-size: 12px;color: #333;cursor: pointer;border: 0;}
+.language-selector__description--selected {background-color: #f0f0f0;border-left: 4px solid #4acfa5;color: #14805e;cursor: default;}
+
+.bottom-bar-right-hand-side .service-selector {position: relative;display: inline-block;margin-left: 25px;}
+.bottom-bar-right-hand-side .service-selector .services-text {color: #e4e4e4;cursor: pointer;background-repeat: no-repeat;}
+.bottom-bar-right-hand-side .service-selector .service-arrow {display: inline-block;width: 9px;height: 6px;margin-left: 5px;background-repeat: no-repeat;}
+.service-arrow {background-image: url(//content001.bet365.com/Casino/Header-V7/chevronsheet.png');}
+.bottom-bar-right-hand-side .service-selector .services-container {position: absolute;top: 28px;right: -5px;display: none;width: 180px;}
+.bottom-bar-right-hand-side .service-selector .services-container-inner { border-radius: 2px;}
+.bottom-bar-right-hand-side .service-selector .services-container-inner a {display: inline-table;table-layout: fixed;width: 100%;padding: 0 10px; line-height: 28px;text-align: left;font-size: 12px;color: #333;background-color: #ddd;border-bottom: 1px solid #b5b5b5;white-space: nowrap;}
+
+.content {position: relative;}
+.top-navigation {position: absolute; top: -27px;width: 100%; height: 25px;padding-right: 124px;padding-left: 45px;-webkit-box-sizing: border-box;box-sizing: border-box;overflow: hidden;z-index: 1;}
+.top-navigation__link-container-wrapper {position: relative;width: 100%;height: 25px;padding-right: 45px;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.top-navigation__link-container {position: relative;display: table;height: 25px; margin: auto;padding: 0 11px 0 0;white-space: nowrap;z-index: 10000;}
+.top-navigation__item {margin-right: 25px;line-height: 16px;font-size: 12px;color: #e4e4e4;}
+.top-navigation__item--selected {color: #ffdf1b;}
+.search-bar {position: relative;width: auto;max-width: 1250px;height: 70px;margin: 10px auto;color: #e4e4e4;}
+.search-bar__icon-wrapper {cursor: pointer;}
+.search-bar__icon {position: absolute; z-index: 100;  top: 14px; right: 69px;left: auto;bottom: 0;width: 35px;margin: auto;background-repeat: no-repeat;background-size: 20px 20px;background-position: 0 center; background-image: url('//content001.bet365.com/Casino/V3/Search/Search Icon.png');visibility: visible;}
+.search-bar__label {position: absolute;z-index: 100;right: 0;top: 42px;display: block;line-height: 22px;font-size: 18px;font-weight: bold; color: #e4e4e4;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
+.search-bar__input-wrapper {position: relative;float: right;height: 56px;width: 0;min-width: 0;margin-top: 14px;background-color: #444;overflow: hidden;transition: none;}
+.search-bar__input {height: 56px;width: 100%; padding: 0;padding-left: 50px;padding-right: 36px;font-size: 22px; color: #999;line-height: normal;background-color: #444; background-image: url('//content001.bet365.com/Casino/V3/Search/Search Icon.png');background-position: 15px center;background-repeat: no-repeat;background-size: 20px 20px;border: 0;box-sizing: border-box;outline: 0;}
+.search-bar__close {position: absolute;right: 0;top: 0;bottom: 0; width: 31px;padding-right: 0;background-repeat: no-repeat; background-position: 0 center;background-image: url(//content001.bet365.com/Casino/V3/Search/Close Icon.png);background-size: 16px 16px;cursor: pointer;opacity: 0;-webkit-transition: opacity .35s ease-out;transition: opacity .35s ease-out;-webkit-transition-delay: .35s;transition-delay: .35s;}
+
+footer.footer {width: 100%;max-width: 1000px;margin: 0 auto;padding: 0 10px; text-align: center;}
+.footer__logo {margin: 30px auto 24px;}
+.footer__links {margin-bottom: 22px;font-size: 11px;line-height: 20px;}
+.footer__link {display: inline-block;margin: 0 8px;text-decoration: none;color: #bbb;outline: none;}
+.footer__icons {display: block;margin-bottom: 15px;line-height: 42px;}
+.footer__icon {display: inline-block;height: 42px;margin: 0 14px;text-decoration: none;outline: none;}
+.footer__icon img {vertical-align: middle;}
+.footer__text {margin-bottom: 16px;font-size: 10px;line-height: 16px;color: #777;}
+.footer__text--copyright {margin-bottom: 24px;line-height: 13px;}
+.footer__social-links {display: block;line-height: 16px;margin-bottom: 30px;}
+.footer__social-link {display: inline;height: 16px;margin-right: 16px;text-align: center;font-size: 12px;color: #777;background-image: url(//content001.bet365.com/Casino/V3/Footer/SocialMediaSpriteVertical.png);background-repeat: no-repeat;}
+.footer__social-link--twitter {background-position: 0 -48px;padding-left: 26px;}
+.footer__social-link--facebook {background-position: 0 -16px;}
+.footer--hyperlink {color: #bbb;}
+
+/*** Alll ****/
+.yellow-btn {
+    font-size: 18px;
+    line-height: 33px;
+    color: #000;
+    min-width: 118px;
+    height: 33px;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0 10px;
+    border: 1px solid #ffdf1b;
+    border-radius: 2px;
+    background-color: #ffdf1b;
+}
+.divSubHeaderContainer {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    height: 25px;
+    padding: 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+.divSubHeaderContainer .navigation {
+    position: relative;
+        left: -60px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.divSubHeaderContainer .navigation ul {display: inline-flex; justify-content: center;}
+.divSubHeaderContainer .navigation ul li {
+    margin-left: 10px;
+    padding: 0 10px;
+    width: auto;
+}  
+.divSubHeaderContainer .navigation ul li.First {
+    margin-left: 0;
+}
+
+.divSubHeaderContainer .navigation ul li a {
+    color: #e4e4e4;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    z-index: 9996;
+    position: relative;
+}
+.divSubHeaderContainer .navigation ul li.Selected a {
+    color: #ffdf1b;
+}
+
+/*************************************
+-------- Home Page --------
+*************************************/
+.TopPromotionInner-page .TopPromotionInner__container>div {
+    position: relative!important;
+}
+.TopPromotionInner-page .TopPromotionInner__container>div>div {
+    background: #333 no-repeat bottom center/cover;
+    padding-bottom: 189px;
+    min-height: 639px;
+        text-align: center;}
+.TopPromotionInner-page .cover-header {
+    font-size: 46px;
+    margin-bottom: 10px;
+    padding-top: 63px;
+    max-width: 880px;
+    margin: 0 auto 10px;
+        text-align: center;
+    line-height: 56px;
+    color: #e4e4e4;
+    text-shadow: 0 2px 40px #000;
+    font-weight: normal;
+}
+.TopPromotionInner-page .cover-subheader {
+    font-size: 25px;
+    max-width: 787px;
+    margin: 0 auto 15px;
+    line-height: 30px;
+        text-align: center;
+    text-shadow: 0 2px 20px #000;
+    font-weight: normal;
+}
+.TopPromotionInner-page .cover-info {
+    margin-bottom: 25px;
+    font-size: 11px;
+    line-height: 15px;
+        text-align: center;
+    margin: 0 auto 20px;
+    max-width: 650px;
+    text-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+.TopPromotionInner-page .yellow-btn {
+    border-radius: 4px;
+}
+.TopPromotionInner-page .game-stream {
+    margin-bottom: 47px;
+    width: 502px;
+    height: 328px;
+    padding: 22px 20px;
+    margin: 28px auto 71px;
+    border: 2px solid #ffdf1b;
+    border-radius: 6px;
+    background: rgba(37,37,37,.7);
+    box-sizing: border-box;
+}
+.TopPromotionInner-page .game-stream.game-stream-mac {
+    width: 624px;
+    height: 328px;
+    margin-top: 40px;
+}
+.TopPromotionInner-page .cover-info a {
+    color: #fff;
+}
+
+.MiddlePodsWrapper {
+    overflow: hidden;
+}
+.MiddlePodsWrapper .MiddlePods {
+    margin: 0 auto;
+    width: 952px;
+    text-align: center;
+}
+.MiddlePodsWrapper .site-features {position: absolute;z-index: 100;display: flex;width: 952px;justify-content: space-between;margin-top: -270px;}
+.MiddlePodsWrapper .PromotionPod {
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+}
+.MiddlePodsWrapper .site-features .PromotionPod {
+    text-align: center;
+    vertical-align: top;
+}
+.MiddlePodsWrapper .site-features .PromotionPod img {
+    margin-bottom: 20px;
+    margin: 19px auto;
+    height: 50px;
+}
+.MiddlePodsWrapper .PromotionPod .MainHeader {
+    margin-bottom: 11px;
+    color: #e4e4e4;
+    font-size: 20px;
+    line-height: 28px;
+}
+.MiddlePodsWrapper .PromotionPod .TextContainer {
+    color: #aaa;
+    font-size: 16px;
+    line-height: 24px;
+}
+.MiddlePodsWrapper .MiddlePods .promotion-pods {display: flex;justify-content: space-between;margin-top: 64px;}
+.MiddlePodsWrapper .PromotionPod {
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+}
+.MiddlePodsWrapper .MiddlePods .promotion-pods .PromotionPod {
+    background-color: #333;
+    cursor: pointer;
+    transition: filter .15s;
+    min-height: 321px;
+    margin: 0 0 0 20px;
+}
+.MiddlePodsWrapper .MiddlePods .promotion-pods .PromotionPod:first-child {margin: 0 0 0 0;}
+.MiddlePodsWrapper .MiddlePods .promotion-pods .PromotionPod img {
+    height: 100px;
+    margin-bottom: 16px;
+}
+.MiddlePodsWrapper .PromotionPod .MainHeader {
+    margin-bottom: 11px;
+    color: #e4e4e4;
+    font-size: 20px;
+    line-height: 28px;
+}
+.MiddlePodsWrapper .MiddlePods .promotion-pods .PromotionPod .MainHeader {
+    margin-bottom: 12px;
+    line-height: 22px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+.MiddlePodsWrapper .MiddlePods .promotion-pods .PromotionPod .SubHeader {
+    margin-bottom: 10px;
+    line-height: 20px;
+    padding: 0 20px;
+    font-size: 13px;
+    color: #999;
+    font-size-adjust: .5;
+    min-height: 60px;
+}
+.MiddlePodsWrapper .MiddlePods .promotion-pods .PromotionPod .LinkContainer {
+    white-space: nowrap;
+}
+.MiddlePodsWrapper .MiddlePods .promotion-pods .PromotionPod .LinkContainer a {
+    line-height: 20px;
+    padding: 0 20px;
+    font-size: 17px;
+    color: #ffdf1b;
+}
+.MiddlePodsWrapper .MiddlePods .promotion-pods .PromotionPod .TextContainer {
+    line-height: 14px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 9px;
+    color: #999;
+    padding: 0 20px;
+    bottom: 0;
+}
+.MiddlePodsWrapper .poker-app {
+    margin-top: 64px;
+    text-align: center;
+}
+.MiddlePodsWrapper .poker-app>img {
+    margin: 44px auto 22px;
+}
+.MiddlePodsWrapper .poker-app>.infoTextContainer {
+    width: 787px;
+    margin: 0 auto 20px;
+    line-height: 30px;
+    font-size: 25px;
+    color: #ccc;
+}
+.MiddlePodsWrapper .poker-app a {
+    display: inline-flex;
+    height: 60px;
+    font-size: 14px;
+    min-width: 158px;
+    background-color: #444;
+    border-radius: 0 4px 4px 0;
+    margin-right: 2px;
+    padding: 10px 10px 5px 15px;
+    text-align: left;
+} 
+.MiddlePodsWrapper .poker-app a:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+.MiddlePodsWrapper .poker-app a img {
+    margin-right: 10px;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+.MiddlePodsWrapper .poker-app a>div {
+    display: inline-block;
+}
+.MiddlePodsWrapper .poker-app a .infoTextContainer {
+    line-height: 29px;
+    font-size: 21px;
+    color: #e4e4e4;
+    font-weight: normal;
+}
+.MiddlePodsWrapper .poker-app a .infoTextContainer:first-child {
+    line-height: 16px;
+    font-size: 12px;
+}
+
+#TermsAndConditionsWrapper, .ContentArea .MainContainer div.TermsAndConditionsWrapper {
+    width: 940px;
+    margin: 0 auto;
+    color: #888;
+}
+#TermsAndConditionsWrapper>div:first-child {
+    padding-top: 40px;
+}
+#TermsAndConditionsWrapper .infoTextContainer, .ContentArea .MainContainer div.TermsAndConditionsWrapper .infoTextContainer {
+    font-size: 11px;
+    display: inline;
+    line-height: 15px;
+    color: #999;
+}
+#TermsAndConditionsWrapper>div:last-child>.infoTextContainer {
+    margin-top: 40px;
+    padding-bottom: 14px;
+    display: block;
+}
+#TermsAndConditionsWrapper>div:last-child>.infoTextContainer:first-child {
+    margin-top: 0;
+}
+#TermsAndConditionsWrapper ol, .ContentArea .MainContainer div.TermsAndConditionsWrapper ol {
+    counter-reset: item;
+}
+#TermsAndConditionsWrapper li, .ContentArea .MainContainer div.TermsAndConditionsWrapper li {
+    font-size: 11px;
+    display: table;
+}
+#TermsAndConditionsWrapper li:before, .ContentArea .MainContainer div.TermsAndConditionsWrapper li:before {
+    display: table-cell;
+    content: counter(item) ".";
+    counter-increment: item;
+    padding-right: 15px;
+}
+#TermsAndConditionsWrapper .infoTextContainer, .ContentArea .MainContainer div.TermsAndConditionsWrapper .infoTextContainer {
+    font-size: 11px;
+    display: inline;
+    line-height: 15px;
+    color: #999;
+}
+#TermsAndConditionsWrapper a, .ContentArea .MainContainer div.TermsAndConditionsWrapper a {
+    color: #e4e4e4;
+    display: inline-block;
+}
+
+/*************************************
+-------- Play Page --------
+*************************************/
+
+
+
+/*************************************
+-------- Promotions Page --------
+*************************************/
+.TopPromotion {
+    text-align: center;
+}
+.TopPromotionInner>div {
+    height: 400px;
+    width: 1280px;
+    margin: 0 auto;
+    position: relative!important;
+    overflow: hidden;
+}
+.TopPromotion .TopPromotionInner div>img {
+    width: 100%;
+}
+.SubNavigationWrapper {
+    background-color: #333;
+    text-align: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+.SubNavigation {
+    min-width: 950px;
+    margin: 11px 0 9px;
+    display: inline-block;
+}
+.SubNavigation li {
+    display: inline;
+    float: left;
+    text-align: left;
+    margin: 0 5px;
+}
+.SubNavigation li:first-child {
+    margin-left: 0;
+}
+.SubNavigation li:last-child {
+    margin-right: 0;
+}
+.NavGreyScaleImageWrapper {
+    margin-bottom: 8px;
+    position: relative;
+}
+.SubNavigation .active div {
+    color: #ffdf1b;
+}
+.SubNavLinkImage {
+    width: 150px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+        border: 1px solid #777;
+    transition: filter .15s;
+}
+.ListElement.current .SubNavLinkImage {
+    border: 3px solid #ffdf1b;
+    -webkit-filter: brightness(115%);
+    filter: brightness(115%);
+    width: 146px;
+    height: 46px;
+}
+.SubNavigation .active div {
+    color: #ffdf1b;
+}
+.SubNavLinkImageCover {
+    box-shadow: inset 0 0 0 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: box-shadow .15s;
+}
+.SubNavigation .active div {
+    color: #ffdf1b;
+    }
+.SubNavigation .infoTextContainer {
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 150px;
+}
+.SubNavigation .ListElement.current div {
+    color: #ffdf1b;
+}
+.SubNavigation .ListElement div {
+    color: #999;
+}
+
+.ContentRow {
+    /*width: 950px;*/
+    /*margin: 43px auto 0;*/
+    /*clear: both;*/
+    /*display: table;*/
+}
+
+.ContentRow .LeftColumn {
+    width: 260px;
+    float: left;
+    margin-right: 20px;
+}
+.ContentRow .infoTextContainer {
+    clear: both;
+}
+.ContentRow .LeftColumn h1 {
+    font-weight: normal;
+    font-size: 25px;
+    color: #ffdf1b;
+    line-height: 30px;
+}
+.ContentRow .infoTextContainer {
+    clear: both;
+}
+.ContentRow .RightColumn {
+    width: 660px;
+    float: left;
+}
+.ContentRow .RightColumn h1.infoTextContainer {
+    font-size: 22px;
+    font-weight: normal;
+    color: #e4e4e4;
+    line-height: 32px;
+}
+.ContentRow .RightColumn div .Separator {
+    display: block;
+}
+.ContentRow .FullSpanColumn div.infoTextContainer,
+.ContentRow .FullSpanColumn span.infoTextContainer,
+.ContentRow .FullSpanColumn p.infoTextContainer,
+.ContentRow .RightColumn div.infoTextContainer,
+.ContentRow .RightColumn span.infoTextContainer,
+.ContentRow .RightColumn p.infoTextContainer {
+    display: inline;
+    font-size: 15px;
+    color: #999;
+    line-height: 25px;
+}
+.ContentRow .RightColumn .ListContainer {
+    padding-left: 18px;
+    color: #999;
+}
+.ContentRow .RightColumn .ListContainer li {
+    list-style-type: disc;
+    padding-left: 10px;
+    padding-bottom: 25px;
+}
+.ContentRow .RightColumn a,
+.ContentRow .FullSpanColumn a {
+    font-size: 15px;
+    color: #e4e4e4;
+    line-height: 25px;
+}
+.ContentRow .RightColumn .ListContainer.significant-terms {
+    padding-left: 0;
+}
+.ContentRow .RightColumn .ListContainer.significant-terms~a {
+    font-size: 12px;
+    color: #ffdf1b;
+    margin: 10px 0 37px;
+    display: block;
+}
+
+/*************************************
+-------- Tournaments Page --------
+*************************************/
+
+
+
+/*************************************
+-------- Loyalty Club Page --------
+*************************************/
+
+
+
+/*************************************
+-------- Get The App Page --------
+*************************************/
+
+
+
+/*************************************
+-------- How To Play Page --------
+*************************************/
+
+.modal.login {
+    width: 94%;
+    height: 246px;
+    max-width: 310px;
+    padding: 0 18px;
+    background-color: #ddd;
+    border-radius: 0 0 2px 2px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    transition: transform .5s,visibility .5s;
+    font-family: "Verdana","Geneva","Arial",sans-serif;
+    top: 0;
+}
+.login .title-container {
+    width: 100%;
+}
+.login .title-container .align-left {
+    width: 48.5%;
+    display: inline-block;
+}
+.modal.login .title {
+    color: #444;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    margin-top: 10px;
+}
+.login .title-container .align-left .title {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #4d4d4d;
+    text-align: left;
+}
+.login .title-container .align-right {
+    width: 49%;
+    display: inline-block;
+    text-align: right;
+}
+.modal a {
+    color: #14805e;
+    text-decoration: none;
+} 
+.login a {
+    font-size: 12px;
+}
+.modal a:link {
+    text-decoration: none;
+}
+.login .title-container .align-right .cancel-button {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #777;
+    border: 1px solid #bbb;
+    padding: 7px 11px;
+    border-radius: 0 0 2px 2px;
+    cursor: pointer;
+    user-select: none;
+}
+.modal .LoginPanel.poker-desktop {
+    margin: 13px 0 0 0;
+}
+.login .input {
+    position: relative;
+    height: 42px;
+    margin: 6px auto 0 auto;
+}
+.modal input {
+    display: block;
+    float: none;
+    padding: 0 6px;
+    margin: 0 auto 5px auto;
+    width: 166px;
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #14805e;
+    border-radius: 4px;
+    background-color: #aaa;
+    font-size: 12px;
+    color: #777;
+    box-shadow: none;
+}
+.login input[type=text],
+.login input[type=password] {
+    -webkit-appearance: none;
+    position: relative;
+    background-color: #e4e4e4;
+    color: #545454;
+    font-size: 15px;
+    padding: 0 11px 0 11px;
+    width: 100%;
+    height: 42px;
+    border: 1px solid #aaa;
+    color: #777;
+    height: 42px;
+    border-radius: 2px;
+}
+.login input[type="text"] {
+    padding-right: 36px;
+    -webkit-text-fill-color: #333;
+}
+.login .button { display: inline-block;height: 42px;width: 100%;min-width: 132px;margin: 12px 0 17px 0; padding: 0 20px 0 20px;text-align: center;
+line-height: 42px;font-size: 15px;font-weight: bold;border: none;background: #14805e;border-radius: 2px;box-sizing: border-box;cursor: pointer;}
+.login a.loginButton.button {border: 0;}
+.modal .button.primary {background-color: #14805e;color: #ddd; }
+.login .loginButton span {
+    font-weight: normal;
+    color: #fff;
+}
+.login .link-container {
+    height: 30px;
+    width: 100%;
+}
+.login .link-container a {
+    font-size: 13px;
+    line-height: 18px;
+    color: #777;
+    width: 50%;
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 17px;
+    text-align: left;
+}
+.login .link-container a.JoinNow {
+    text-align: right;
+}
+
+
+
+

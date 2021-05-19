@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="9px" height="6px" viewBox="0 0 9 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Chevron down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="HELP-General" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.900000036">
+        <g id="Common-Assets" transform="translate(-432.000000, -423.000000)" stroke="#14805E">
+            <g id="Chevron-down" transform="translate(432.000000, 424.000000)">
+                <polyline id="Path-52" transform="translate(4.500000, 2.000000) scale(1, -1) rotate(90.000000) translate(-4.500000, -2.000000) " points="6.5 -2.5 2.5 2 6.5 6.5"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

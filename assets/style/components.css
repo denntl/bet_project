@@ -1,0 +1,68 @@
+.player-guides-animated-banner__card1{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;z-index:1}
+.player-guides-animated-banner__card1.player-guides-animated-banner--animate{-webkit-animation:animateHeaderCard1 .75s ease-in-out 110ms forwards;animation:animateHeaderCard1 .75s ease-in-out 110ms forwards}
+.player-guides-animated-banner__card2{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;z-index:3}
+.player-guides-animated-banner__card2.player-guides-animated-banner--animate{-webkit-animation:animateHeaderCard2 .5s ease-in-out 110ms forwards;animation:animateHeaderCard2 .5s ease-in-out 110ms forwards}
+.player-guides-animated-banner__card3{opacity:1;z-index:4}
+.player-guides-animated-banner__card4{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;z-index:3}
+.player-guides-animated-banner__card4.player-guides-animated-banner--animate{-webkit-animation:animateHeaderCard4 .5s ease-in-out 110ms forwards;animation:animateHeaderCard4 .5s ease-in-out 110ms forwards}
+.player-guides-animated-banner__card5{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;z-index:1}
+.player-guides-animated-banner__card5.player-guides-animated-banner--animate{-webkit-animation:animateHeaderCard5 .75s ease-in-out 110ms forwards;animation:animateHeaderCard5 .75s ease-in-out 110ms forwards}
+.player-guides-animated-banner__chip1{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;z-index:2}
+.player-guides-animated-banner__chip1.player-guides-animated-banner--animate{-webkit-animation:animateHeaderChip1 1.25s ease-in-out 110ms forwards;animation:animateHeaderChip1 1.25s ease-in-out 110ms forwards}
+.player-guides-animated-banner__chip2{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;z-index:5}
+.player-guides-animated-banner__chip2.player-guides-animated-banner--animate{-webkit-animation:animateHeaderChip2 1.25s ease-in-out 110ms forwards;animation:animateHeaderChip2 1.25s ease-in-out 110ms forwards}
+.player-guides-animated-banner__chip3{-webkit-transform-origin:center center;-ms-transform-origin:center center;transform-origin:center center;z-index:2}
+.player-guides-animated-banner__chip3.player-guides-animated-banner--animate{-webkit-animation:animateHeaderChip3 1.25s ease-in-out 110ms forwards;animation:animateHeaderChip3 1.25s ease-in-out 110ms forwards}
+.old-ie .player-guides-animated-banner{text-align:center}
+.player-guides-animated-banner__static{display:none;max-width:100%;visibility:hidden}
+.old-ie .player-guides-animated-banner__static{display:block;height:125%;margin:0 auto;visibility:visible}
+@-webkit-keyframes animateHeaderCard1{0%{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+100%{-webkit-transform:translate(-145%,18%) rotate(-20deg);transform:translate(-145%,18%) rotate(-20deg)}
+}
+@keyframes animateHeaderCard1{0%{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+100%{-webkit-transform:translate(-145%,18%) rotate(-20deg);transform:translate(-145%,18%) rotate(-20deg)}
+}
+@-webkit-keyframes animateHeaderCard2{0%{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+100%{-webkit-transform:translate(-83%,13%) rotate(-10deg);transform:translate(-83%,13%) rotate(-10deg)}
+}
+@keyframes animateHeaderCard2{0%{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+100%{-webkit-transform:translate(-83%,13%) rotate(-10deg);transform:translate(-83%,13%) rotate(-10deg)}
+}
+@-webkit-keyframes animateHeaderCard4{0%{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+100%{-webkit-transform:translate(83%,13%) rotate(10deg);transform:translate(83%,13%) rotate(10deg)}
+}
+@keyframes animateHeaderCard4{0%{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+100%{-webkit-transform:translate(83%,13%) rotate(10deg);transform:translate(83%,13%) rotate(10deg)}
+}
+@-webkit-keyframes animateHeaderCard5{0%{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+100%{-webkit-transform:translate(145%,18%) rotate(20deg);transform:translate(145%,18%) rotate(20deg)}
+}
+@keyframes animateHeaderCard5{0%{-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+100%{-webkit-transform:translate(145%,18%) rotate(20deg);transform:translate(145%,18%) rotate(20deg)}
+}
+@-webkit-keyframes animateHeaderChip1{0%{opacity:0;-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+25%{opacity:1}
+100%{opacity:1;-webkit-transform:translate(-406%,161%) rotate(-225deg);transform:translate(-406%,161%) rotate(-225deg)}
+}
+@keyframes animateHeaderChip1{0%{opacity:0;-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+25%{opacity:1}
+100%{opacity:1;-webkit-transform:translate(-406%,161%) rotate(-225deg);transform:translate(-406%,161%) rotate(-225deg)}
+}
+@-webkit-keyframes animateHeaderChip2{0%{opacity:0;-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+25%{opacity:1}
+100%{opacity:1;-webkit-transform:translate(27%,130%) rotate(-225deg);transform:translate(27%,130%) rotate(-225deg)}
+}
+@keyframes animateHeaderChip2{0%{opacity:0;-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+25%{opacity:1}
+100%{opacity:1;-webkit-transform:translate(27%,130%) rotate(-225deg);transform:translate(27%,130%) rotate(-225deg)}
+}
+@-webkit-keyframes animateHeaderChip3{0%{opacity:0;-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+25%{opacity:1}
+100%{opacity:1;-webkit-transform:translate(467%,-35%) rotate(-225deg);transform:translate(467%,-35%) rotate(-225deg)}
+}
+@keyframes animateHeaderChip3{0%{opacity:0;-webkit-transform:translate(0,0) rotate(0deg);transform:translate(0,0) rotate(0deg)}
+25%{opacity:1}
+100%{opacity:1;-webkit-transform:translate(467%,-35%) rotate(-225deg);transform:translate(467%,-35%) rotate(-225deg)}
+}
+.player-guides-pai-gow{position:relative}
+.player-guides-pai-gow__animation-container{height:76px;margin:0 auto;position:relative}

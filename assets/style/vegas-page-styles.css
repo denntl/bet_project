@@ -1,0 +1,758 @@
+button:focus{
+    outline: none;
+}
+.VegasPage{
+    background-color: #272727;
+    width: 100%;
+    min-width: 990px;
+}
+.SubHeaderContainer{
+    width: 100%;
+    position: relative;
+}
+.SubHeaderContainer .NavigationWrapper{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.NavigationWrapper .Navigation ul{
+    list-style-type: none;
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 812px;
+    background: rgba(0,0,0,.3);
+}
+.NavigationWrapper .Navigation a{
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.NavigationWrapper .Navigation a:hover,
+.NavigationWrapper .Navigation li.active a,
+.NavigationWrapper .Navigation a.active{
+    color: #ffdf1b;
+}
+.Banner-slider{
+    height: 405px;
+}
+.Banner-slider .owl-nav button{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    height: 405px;
+    width: calc(50% - 406px);
+    background-color: #000!important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: .7;
+    top: 0;
+}
+.Banner-slider .owl-nav button.owl-prev{
+    left: 0;
+}
+.Banner-slider .owl-nav button.owl-next{
+    right: 0;
+}
+.Banner-slider .owl-nav button span{
+    display: none;
+}
+.Banner-slider .owl-stage-outer{
+    height: 405px;
+}
+.Banner-slider .owl-item{
+    height: 405px;
+    width: 812px!important;
+}
+.Banner-slider .owl-item .item {
+    display: block;
+    width: 100%;
+    max-width: 812px;
+    overflow: hidden;
+    text-align: center;
+}
+.Banner-slider .owl-item a{
+    display: block;
+    height: 100%;
+    position: relative;
+}
+.Banner-slider .owl-item img{
+    height: 100%;
+}
+.banner_infoTextContainer{
+    background-color: rgba(0,0,0,.8);
+    display: inline-block;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    padding: 10px 10px 10px 15px;
+    overflow: hidden;
+    font-size: 7px;
+    line-height: 9px;
+    font-weight: normal;
+    color: #888;
+    min-width: 787px;
+}
+.MainContainerGames{
+    padding: 0 10px 10px 10px;
+    background-color: #151515;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1230px;
+    min-width: 950px;
+
+}
+.GamesNavigator{
+    list-style-type: none;
+    height: 72px;
+    line-height: 72px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 812px;
+}
+.GamesNavigator .game-link{
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 25px 0 25px;
+    color: #c5c5c5;
+    text-shadow: 0 1px 1px #101010;
+}
+.GamesNavigator .game-link.active{
+    color: #ffdf1b;
+}
+.GamesInner,
+.GamesProdWrapper{
+    display: flex;
+    width: 100%;
+}
+.GamesProd{
+    width: 25%;
+    min-height: 60px;
+    max-width: 100%;
+    cursor: pointer;
+    display: inline-block;
+}
+.ProdImageWrapper{
+    position: relative;
+}
+.ProdImageWrapper img{
+    width: 100%;
+}
+.advertPod:before,
+.ProdImageWrapper:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .2);
+    opacity: 0;
+}
+.ProdJackpot{
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #151515;
+    background: rgba(0,0,0,.75);
+    ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    filter: grayscale(100%) alpha(opacity=75);
+    filter: white alpha(opacity=75);
+    position: absolute;
+    width: 100%;
+    padding: 8px 0 8px 0;
+    bottom: 0;
+}
+.ProdName{
+    text-align: center;
+    font-size: 11px;
+    width: 100%;
+    color: #737373;
+    height: 25px;
+    line-height: 25px;
+    padding-top: 6px;
+    padding-bottom: 37px;
+}
+.GamesProd:hover .ProdImageWrapper:before{
+    opacity: 1;
+}
+.GamesProd:hover .ProdName{
+    color: #fff;
+}
+.GamesInner .RightColumn{
+    width: 145px;
+    margin-left: 10px;
+}
+.advertPod{
+    width: 145px;
+    height: 350px;
+    display: block;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    background-size:100% ;
+    position: relative;
+    margin-bottom: 5px;
+}
+.advertPod.playOffer{
+    background-image: url(/img/advertPod1.jpg);
+}
+.advertPod.gameLaunch{
+    background-image: url(/img/advertPod2.jpg);
+}
+.advertPod:hover:before{
+    opacity: 1;
+}
+/*~~~~~~~~~~ vegas footer ~~~~~~~~~~~~~~~~~~*/
+.vegas_footer{
+    width: 100%;
+    min-width: 990px;
+    background-color: #151515;
+    margin-top: 45px;
+}
+.CompleteGamesList{
+    margin: 0 auto;
+    max-width: 1230px;
+    min-width: 950px;
+}
+.InnerCompleteGamesList{
+    padding: 0 15px 0 25px;
+    max-width: 1230px;
+    min-width: 950px;
+    margin: 0 auto;
+}
+.CompleteGamesListHeader{
+    color: #ddd;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 51px 0 11px 0;
+}
+.PremiumSlotsList li{
+    display: inline-block;
+    width: 25%;
+}
+.PremiumSlotsList li a{
+    font-size: 11px;
+    color: #777;
+    cursor: pointer;
+    padding-left: 11px;
+    display: block;
+    position: relative;
+    line-height: 19px;
+}
+.PremiumSlotsList li a:before{
+    content: '';
+    width: 4px;
+    height: 11px;
+    background-image: url(/img/4x7px-Game-Name-Arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.vegas_footer .footer_logo{
+    padding-top: 85px;
+    border-top: none;
+}
+.vegas_footer .footer_wrapper{
+    max-width: 990px;
+}
+.vegas_footer .footer_menu_link{
+    color: #727272;
+}
+.vegas_footer .footer_menu_link:hover,
+.PremiumSlotsList li a:hover{
+    color: #fff;
+}
+.vegas_footer .footer_info_text{
+    color: #525252;
+    margin-bottom: 30px;
+    line-height: 18px;
+}
+.vegas_footer .footer_info_text.vegas{
+    font-size: 10px;
+}
+.vegas_footer .footer_info_text a{
+    font-size: 11px;
+    color: #727272;
+}
+.vegas_footer .footer_info_text a:hover{
+    color: #727272;
+}
+.vegas_footer .footer_socials a{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    background-color: #242424;
+    font-size: 11px;
+    font-weight: normal;
+    color: #707070;
+    text-decoration: none;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -o-border-radius-topright: 3px;
+    -o-border-radius-bottomright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    _width: 80px;
+    _overflow: visible;
+    _white-space: nowrap;
+    min-width: 80px;
+    vertical-align: top;
+}
+.vegas_footer .footer_socials a.facebook {
+    margin-left: 1px;
+    margin-right: 12px;
+}
+.backToTop{
+    padding: 0 20px;
+}
+.vegas_footer .footer_socials{
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+.vegas_footer .footer_socials a:hover{
+    background-color: #2f2f2f;
+}
+.vegas_footer .footer_socials a.facebook:before{
+    background-image: url(/img/vegas_facebook.png);
+    background-position: 0% 0;
+    background-repeat: no-repeat;
+}
+.vegas_footer .footer_socials a.twitter:before{
+    background-image: url(/img/vegas_twitter.png);
+    background-position: 0% 0;
+    background-repeat: no-repeat;
+}
+
+/*~~~~~~~~~~~~promotions tab~~~~~~~~~~~~~~~~~*/
+.MainContainerGames.vegas_promotions,
+.MainContainerGames.vegas_new_games,
+.MainContainerGames.vegas_mobile{
+    width: 950px;
+}
+
+.MainContainerGames.vegas_mobile{
+    padding: 0 0 25px 0;
+    margin-top: 10px;
+}
+.MainContainerGames:first-child.vegas_mobile{
+    margin-top: 0;
+}
+.topPromotions{
+    margin-top: 65px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.PromotionProd{
+    width: 460px;
+}
+.PromotionHeader{
+    font-size: 18px;
+    color: #ddd;
+    font-weight: bold;
+    padding: 12px 0 0 0;
+}
+.SubPromotionHeader{
+    font-size: 13px;
+    color: #777;
+    line-height: 18px;
+    font-weight: normal;
+    margin-top: 10px;
+    width: 450px;
+    height: 20px;
+}
+.Terms-Conditions{
+    font-weight: normal;
+    font-size: 7px;
+    text-align: left;
+    color: #888;
+    float: left;
+    width: 450px;
+    padding: 10px 10px 10px 0;
+    overflow: hidden;
+    line-height: 9px;
+}
+.PromotionImgWrapper{
+    position: relative;
+}
+.PromotionImgWrapper:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .2);
+    opacity: 0;
+}
+.PromotionProd:hover .PromotionImgWrapper:before{
+    opacity: 1;
+}
+.PromotionProd:hover .SubPromotionHeader{
+    color: #fff;
+}
+
+/*~~~~~~~~~~~~~new games tab~~~~~~~~~~~~~~~*/
+.NewGames{
+    margin-top: 65px;
+}
+.NewGameProd{
+    display: flex;
+    align-items: flex-start;
+    margin: 16px 10px 0 8px;
+    cursor: pointer;
+}
+.NewGameProd .ProdText{
+    margin-right: 5px;
+}
+.NewGameProd .MainHeader{
+    font-size: 22px;
+    font-weight: normal;
+    color: #ddd;
+    padding: 0 0 10px 0;
+}
+.NewGameProd .SubHeader{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #777;
+    padding: 0 0 45px 0;
+}
+.NewGameProd .PlayButton{
+    background-color: #a1a1a1;
+    color: #333;
+    display: block;
+    width: 80px;
+    padding: 0 10px 0 10px;
+    font-size: 11px;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+}
+.NewGameProd .ProdImageWrapper{
+    display: flex;
+}
+.NewGameProd .ProdImageWrapper img{
+    width: auto;
+    height: 200px;
+}
+.NewGameProd:hover .ProdImageWrapper:before{
+    opacity: 1;
+}
+.NewGameProd:hover .PlayButton{
+    background-color: #fff;
+}
+.NewGameProd:hover .SubHeader{
+    color: #fff;
+}
+/*~~~~~~~~~~~vegas_mobile tab~~~~~~~~~~~~*/
+.TopImage img{
+    width: 100%;
+}
+.DescriptionBlock{
+    margin-top: 39px;
+    margin-bottom: 6px;
+    font-weight: normal;
+}
+.DescriptionBlock .InfoText{
+    text-align: center;
+    font-size: 18px;
+}
+.AvailableOn{
+    font-size: 35px;
+    font-weight: bold;
+    color: #ddd;
+    text-align: center;
+}
+.DownloadAppBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+    margin-bottom: 17px;
+}
+.AdvancedTextList{
+    margin: 0 30px;
+    column-count: 3;
+    padding-top: 5px;
+}
+.AdvancedTextList li{
+    display: block;
+    margin-top: 9px;
+    margin-bottom: 18px;
+    padding-top: 9px;
+    padding-left: 50px;
+    padding-right: 10px;
+    min-height: 50px;
+    line-height: 24px;
+    font-size: 15px;
+    color: #777;
+    text-align: left;
+    position: relative;
+}
+.AdvancedTextList li:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 28px;
+    height: 25px;
+    background-image: url(/img/advancedImg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.NoDownloadContainer{
+    margin-top: 18px;
+    margin-bottom: 19px;
+    text-align: center;
+}
+.NoDownloadContainer span{
+    font-size: 29px;
+}
+.NoDownloadContainer span.NoDownload{
+    color: #a0a0a0;
+}
+.NoDownloadContainer span.PlayInfo{
+    color: #5f5f5f;
+}
+.VisitContainer{
+    margin: 0 30px 0 30px;
+    background-color: #ddd;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.VisitContainer .VisitUrl{
+    font-size: 46px;
+    color: #333;
+    display: block;
+    margin-top: 0;
+}
+
+.VisitContainer .AppleLogo{
+     position: absolute;
+     right: 85px;
+ }
+.VisitContainer .AndroidLogo{
+    position: absolute;
+    right: 30px;
+}
+.DesktopMobileGrid{
+    margin-top: 10px;
+    background-color: #151515;
+    padding: 10px;
+}
+.DesktopMobileGamesGridHeader{
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.DesktopMobileGamesGridHeader .viewGames{
+    font-size: 18px;
+    color: #ddd;
+    margin-left: 13px;
+}
+.DesktopMobileGamesGridHeader .filterLabel{
+    font-size: 13px;
+    color: #777;
+    margin-left: 22px;
+    margin-right: 14px;
+}
+.DesktopMobileGamesGridHeader .SelectGameBtn{
+    width: 150px;
+    display: inline-block;
+    margin-right: 26px;
+    text-align: center;
+    background-color: #dfdfdf;
+    color: #161616;
+    height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.DesktopMobileGamesGridHeader .SelectGameBtn:hover{
+    background-color: #fff;
+}
+#selectDev,
+#selectGameCat{
+    display: block;
+    height: 30px;
+    width: 160px;
+    background-color: #777;
+    font-size: 13px;
+    padding-top: 6px;
+    padding-left: 10px;
+    color: #222;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    position: relative;
+}
+#selectDev:after,
+#selectGameCat:after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    background-image: url(/img/8x6px-Mobile-Drop-Down.gif);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    right: 10px;
+    top: 40%;
+
+}
+.selectGameCategory,
+.selectDevice{
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: height 1.5s linear;
+    height: 0;
+
+}
+.selectGameCategory li,
+.selectDevice li{
+    cursor: pointer;
+    background-color: #777;
+    font-size: 13px;
+    padding-left: 10px;
+    color: #222;
+    font-family: Verdana, sans-serif;
+    height: 24px;
+    line-height: 24px;
+    display: block;
+}
+.selectGameCategory li:hover,
+.selectDevice li:hover,
+#selectDev:hover,
+#selectGameCat:hover{
+    background-color: #929292;
+}
+.selectGameCategory li:hover,
+.selectDevice li:hover{
+    color: #fff;
+}
+#selectDev:hover .selectDevice,
+#selectGameCat:hover .selectGameCategory{
+    height: auto;
+    z-index: 1;
+}
+.DesktopMobileGamesGridProds{
+    margin-top: 29px;
+}
+.DesktopMobileGamesGridProds .ProdImageWrapper:before{
+    display: none;
+}
+.ProdImageWrapper .IsNew{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54px;
+    height: 54px;
+    background-image: url(/img/New-Corner-Asset.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-style: italic;
+    padding: 4px;
+    color: #000;
+    font-weight: bold;
+    font-size: 11px;
+
+}
+.DesktopMobileGamesGridProds .GamesProd:hover .ProdName{
+    color: #777;
+}
+.DesktopMobileGamesGridProds .GamesProd{
+    cursor: auto;
+}
+.FAQ-group{
+    margin-left: 30px;
+    padding-top: 31px;
+    padding-bottom: 37px;
+}
+.FAQ-panel{
+    margin-top: 19px;
+}
+.faqHeader{
+    font-size: 20px;
+    color: #a1a1a1;
+    margin-bottom: 30px;
+}
+.accordion-toggle:hover,
+.accordion-toggle:focus,
+.accordion-toggle{
+    font-size: 16px;
+    color: #777;
+    font-weight: bold;
+    padding-left: 19px;
+    position: relative;
+}
+
+.accordion-toggle:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 14px;
+    background-image: url(/img/FAQ-Arrows.gif);
+    background-position: 0 5px;
+    background-repeat: no-repeat;
+}
+.accordion-toggle.collapsed:before{
+    background-position: 0 -44px;
+}
+.panel-collapse{
+    padding-right: 10px;
+    line-height: 24px;
+    width: 650px;
+    color: #777;
+    margin: 20px 0 29px 38px;
+    font-size: 15px;
+}

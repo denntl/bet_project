@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="18px" viewBox="0 0 26 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Cards_26x18px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="-8.8817842e-15" y="7.10542736e-15" width="12.4615385" height="16" rx="1"></rect>
+        <rect id="path-2" x="3" y="7.10542736e-15" width="12" height="16" rx="1"></rect>
+        <rect id="path-3" x="6" y="7.10542736e-15" width="12.4615385" height="16" rx="1"></rect>
+        <rect id="path-4" x="9" y="7.10542736e-15" width="12.4615385" height="16" rx="1"></rect>
+        <rect id="path-5" x="12" y="-7.10542736e-15" width="12" height="16" rx="1"></rect>
+    </defs>
+    <g id="//Published-Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.2-|-Home" transform="translate(-191.000000, -747.000000)">
+            <g id="Cards_26x18px" transform="translate(192.000000, 748.000000)">
+                <g id="Group-3">
+                    <g id="Rectangle-620">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#666666" stroke-width="1" x="-0.5" y="-0.5" width="13.4615385" height="17" rx="1"></rect>
+                    </g>
+                    <g id="Rectangle-620">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <rect stroke="#666666" stroke-width="1" x="2.5" y="-0.5" width="13" height="17" rx="1"></rect>
+                    </g>
+                    <g id="Rectangle-620">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <rect stroke="#666666" stroke-width="1" x="5.5" y="-0.5" width="13.4615385" height="17" rx="1"></rect>
+                    </g>
+                    <g id="Rectangle-620">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <rect stroke="#666666" stroke-width="1" x="8.5" y="-0.5" width="13.4615385" height="17" rx="1"></rect>
+                    </g>
+                    <g id="Rectangle-620">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <rect stroke="#666666" stroke-width="1" x="11.5" y="-0.5" width="13" height="17" rx="1"></rect>
+                    </g>
+                    <rect id="Rectangle-69" fill="#666666" x="14" y="2" width="1" height="2"></rect>
+                    <rect id="Rectangle" fill="#666666" transform="translate(17.828427, 7.828427) rotate(45.000000) translate(-17.828427, -7.828427) " x="15.8284271" y="5.82842712" width="4" height="4"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" transform="translate(17.914214, 7.914214) rotate(45.000000) translate(-17.914214, -7.914214) " x="16.9142136" y="6.91421356" width="2" height="2"></rect>
+                    <rect id="Rectangle-69" fill="#666666" x="21" y="12" width="1.03846154" height="2.07692308"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

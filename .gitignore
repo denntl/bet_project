@@ -1,0 +1,13 @@
+protected/runtime/*
+!protected/runtime/.gitignore
+protected/data/*.db
+themes/classic/views/
+node_modules/
+bakup/
+dist/bundle.js
+dist/bundle.js.map
+dist/api/
+backend/
+package-lock.json
+.idea
+

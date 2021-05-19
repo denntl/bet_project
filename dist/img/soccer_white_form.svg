@@ -1,0 +1,69 @@
+ <svg class="tk-TeamKit_SVG" width="48" height="52"
+                                                                     viewBox="0 0 48 52" xmlns="http://www.w3.org/2000/svg"
+                                                                     xmlns:xlink="http://www.w3.org/1999/xlink"><title>
+                                                                        K1-1</title>
+                                                                    <defs>
+                                                                        <path d="M24 3.714C27.874 3.64 30 0 30 0l6.554.997L48 13.685l-6.6 7.588L36 17v19H12V17l-5.387 4.273L0 13.68 11.377 1.238 18 0s2.126 3.79 6 3.714z"
+                                                                              id="path-1"></path>
+                                                                        <mask id="mask-2" x="0" y="0" width="48" height="36"
+                                                                              fill="#fff">
+                                                                            <use xlink:href="#path-1"></use>
+                                                                        </mask>
+                                                                        <mask id="mask-3" x="0" y="0" width="48" height="36"
+                                                                              fill="#fff">
+                                                                            <use xlink:href="#path-1"></use>
+                                                                        </mask>
+                                                                        <path id="path-4"
+                                                                              d="M7 52l5-17h24l5 17H26.4L24 45.81 21.6 52z"></path>
+                                                                        <mask id="mask-5" x="0" y="0" width="34" height="17"
+                                                                              fill="#fff">
+                                                                            <use xlink:href="#path-4"></use>
+                                                                        </mask>
+                                                                        <mask id="mask-6" x="0" y="0" width="34" height="17"
+                                                                              fill="#fff">
+                                                                            <use xlink:href="#path-4"></use>
+                                                                        </mask>
+                                                                    </defs>
+                                                                    <g id="SVG-Team-Kits-Separated" fill="none"
+                                                                       fill-rule="evenodd">
+                                                                        <g id="K1-1">
+                                                                            <path id="color7" fill="#F0F0F0"
+                                                                                  d="M7 52l5-16h24l5 16H26.4L24 45.81 21.6 52z"></path>
+                                                                            <path d="M24 3.714C27.874 3.64 30 0 30 0l6.554.997L48 13.685l-6.6 7.588L36 17v19H12V17l-5.387 4.273L0 13.68 11.377 1.238 18 0s2.126 3.79 6 3.714z"
+                                                                                  id="color1" fill="#F0F0F0"></path>
+                                                                            <path id="color3" fill="#F0F0F0"
+                                                                                  d="M36 36H12.65l23.9-35L48 13.68l-6.584 7.611L36 17z"></path>
+                                                                            <path id="color2" fill="#F0F0F0"
+                                                                                  d="M36.55 1l2.476 2.708L16.984 36H12v-8.83L31.276.184z"></path>
+                                                                            <g id="hires-detail">
+                                                                                <g id="Outline1">
+                                                                                    <g id="Shape">
+                                                                                        <use stroke-opacity=".07"
+                                                                                             stroke="#FFF"
+                                                                                             mask="url(https://www.bet365.com/?lng=1&amp;rurl=games.bet365.com#mask-2)"
+                                                                                             stroke-width="4"
+                                                                                             xlink:href="#path-1"></use>
+                                                                                        <use stroke="#272727"
+                                                                                             mask="url(https://www.bet365.com/?lng=1&amp;rurl=games.bet365.com#mask-3)"
+                                                                                             stroke-width="2"
+                                                                                             xlink:href="#path-1"></use>
+                                                                                    </g>
+                                                                                    <g id="Shape">
+                                                                                        <use stroke-opacity=".07"
+                                                                                             stroke="#FFF"
+                                                                                             mask="url(https://www.bet365.com/?lng=1&amp;rurl=games.bet365.com#mask-5)"
+                                                                                             stroke-width="4"
+                                                                                             xlink:href="#path-4"></use>
+                                                                                        <use stroke="#272727"
+                                                                                             mask="url(https://www.bet365.com/?lng=1&amp;rurl=games.bet365.com#mask-6)"
+                                                                                             stroke-width="2"
+                                                                                             xlink:href="#path-4"></use>
+                                                                                    </g>
+                                                                                    <path d="M13 36h22v1H13v-1zm11 1h1v6h-1v-6zM34 7h1v10.818h-1V7zM13 7h1v10.818h-1V7z"
+                                                                                          id="shadow" fill="#000"
+                                                                                          opacity=".2"></path>
+                                                                                </g>
+                                                                            </g>
+                                                                        </g>
+                                                                    </g>
+                                                                </svg>

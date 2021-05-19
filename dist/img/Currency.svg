@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Currency</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M5.85932799,0.000152514655 C2.15737076,-0.0193589573 0,1.83973084 0,1.83973084 L5.20201197e-16,11.1729751 C5.20201197e-16,11.1729751 2.74999998,13 5.49999999,13 C8.24999999,13 11,11.1729751 11,11.1729751 L11,4.48319344 L11,1.91330905 C11,1.91330905 9.56128522,0.0196639866 5.85932799,0.000152514655 Z" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11" height="13" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M14.0101398,3.59016728 C11.0985268,3.57227856 8.15081181,5.2798584 8.15081181,5.2798584 L8.15081181,13.8526383 C8.15081181,13.8526383 10.4145799,15.5900277 14.0101399,15.5900277 C17.6057,15.5900277 19.1508118,13.8526383 19.1508118,13.8526383 L19.1508118,5.34744152 C19.1508118,5.34744152 16.9217529,3.608056 14.0101398,3.59016728 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="11" height="12" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="HELP-General" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Common-Assets" transform="translate(-803.000000, -232.000000)" stroke="#545454">
+            <g id="Currency" transform="translate(803.000000, 232.000000)">
+                <g id="Coins">
+                    <g>
+                        <use id="Path-1-Copy" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" transform="translate(5.500000, 6.500000) scale(-1, 1) translate(-5.500000, -6.500000) " xlink:href="#path-1"></use>
+                        <path d="M0.659614509,7.73684211 C0.659614509,7.73684211 3.27845923,8.91164996 5.76736368,8.91164996 C8.25626813,8.91164996 10.6596145,7.73684211 10.6596145,7.73684211" id="Path-2-Copy-5" transform="translate(5.659615, 8.324246) scale(-1, 1) translate(-5.659615, -8.324246) "></path>
+                        <path d="M0.659614509,4.50138504 C0.659614509,4.50138504 3.27845923,5.6761929 5.76736368,5.6761929 C8.25626813,5.6761929 10.6596145,4.50138504 10.6596145,4.50138504" id="Path-2-Copy-6" transform="translate(5.659615, 5.088789) scale(-1, 1) translate(-5.659615, -5.088789) "></path>
+                        <use id="Path-1" mask="url(#mask-4)" stroke-width="2" fill="#FFFFFF" transform="translate(13.650812, 9.590028) scale(-1, 1) translate(-13.650812, -9.590028) " xlink:href="#path-3"></use>
+                        <path d="M8.141378,10.3268698 C8.141378,10.3268698 10.9484378,11.5016777 13.6162185,11.5016777 C16.2839992,11.5016777 18.8600729,10.3268698 18.8600729,10.3268698" id="Path-2-Copy-2" transform="translate(13.500725, 10.914274) scale(-1, 1) translate(-13.500725, -10.914274) "></path>
+                        <path d="M8.141378,7.09141274 C8.141378,7.09141274 11.5260713,8.2662206 14.0149758,8.2662206 C16.5038802,8.2662206 18.9072266,7.09141274 18.9072266,7.09141274" id="Path-2-Copy-3" transform="translate(13.524302, 7.678817) scale(-1, 1) translate(-13.524302, -7.678817) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

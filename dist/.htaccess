@@ -1,0 +1,11 @@
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /var/www/bet/dist/.htpasswd
+Require valid-user
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]

@@ -1,0 +1,72 @@
+{
+  "name": "bet365",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors --config ./webpack.dev.config.js --history-api-fallback",
+    "dist": "webpack --progress -p --colors --config ./webpack.prod.config.js"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "file-loader": "^1.1.6",
+    "react-hot-loader": "^3.1.3",
+    "svg-inline-loader": "^0.8.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "@vtex/react-csv-parse": "^2.0.0-beta.1",
+    "axios": "^0.17.1",
+    "base-64": "^0.1.0",
+    "bootstrap": "^4.0.0",
+    "css-loader": "^0.28.11",
+    "font-awesome": "^4.7.0",
+    "highcharts": "^6.0.6",
+    "input-moment": "^0.4.0",
+    "jquery": "^3.3.1",
+    "material-ui": "^0.20.0",
+    "moment": "^2.20.1",
+    "numeral": "^2.0.6",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.12.9",
+    "query-string": "^6.2.0",
+    "react": "^16.2.0",
+    "react-cookies": "^0.1.0",
+    "react-csv": "^1.0.14",
+    "react-csv-reader": "^0.3.2",
+    "react-currency-formatter": "^1.1.0",
+    "react-datepicker": "^1.8.0",
+    "react-dom": "^16.2.0",
+    "react-highcharts": "^16.0.2",
+    "react-measure": "^2.0.2",
+    "react-responsive-modal": "^2.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-transition": "^1.1.2",
+    "react-search": "^2.0.5",
+    "react-sizeme": "^2.3.6",
+    "react-spinners": "^0.2.6",
+    "react-stockcharts": "^0.7.0-beta.24",
+    "react-toastify": "^3.3.2",
+    "react-toggle": "^4.0.2",
+    "react-toggle-switch": "^3.0.4",
+    "react-waypoint": "^8.0.0",
+    "reactstrap": "^5.0.0-beta",
+    "reboron": "^0.4.5",
+    "sendbird": "^3.0.54",
+    "style-loader": "^0.21.0"
+  }
+}

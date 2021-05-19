@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Soccer Corner</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Scoreboard-Alerts" transform="translate(-354.000000, -47.000000)">
+            <g id="Soccer-Corner" transform="translate(354.000000, 47.000000)">
+                <path d="M21,36 C21,26.0588745 12.9411255,18 3,18" id="Oval-296" stroke="#888888" stroke-width="4"></path>
+                <path d="M0,37.047619 L0,38.0009319 C0,38.552702 0.454791525,39 1.00341185,39 L1.96086957,39 L37.1551482,39 C37.7107381,39 38.1611328,38.5520741 38.1611328,37.9944267 L38.1611328,36.1008111 C38.1611328,35.5454483 37.7047255,35.0952378 37.1587335,35.0952378 L4.05029297,35.0952378 L3.92551685,1.90573267 C3.92343046,1.35076731 3.47186576,0.900878993 2.91179384,0.900878979 L1.00994527,0.900878931 C0.452167897,0.900878917 0,1.35790726 0,1.90537617 L0,37.047619 Z" id="Shape" fill="#888888"></path>
+            </g>
+        </g>
+    </g>
+</svg>

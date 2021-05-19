@@ -1,0 +1,1328 @@
+.BingoPage .Navigation{
+    background: rgba(0,0,0,.2);
+}
+.BingoPage .Navigation ul{
+    background: none;
+    height: 45px;
+    line-height: 45px;
+}
+.NavigationWrapper .Navigation ul.bingo_nav_list{
+    width: 950px;
+    justify-content: center;
+    position: relative;
+}
+.NavigationWrapper .Navigation ul.bingo_nav_list li{
+    padding-right: 65px;
+}
+.NavigationWrapper .Navigation ul.bingo_nav_list a{
+    color: #aa60a4;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0;
+}
+.NavigationWrapper .Navigation ul.bingo_nav_list a:hover{
+    color: #bd84b8;
+}
+.NavigationWrapper .Navigation ul.bingo_nav_list a.active{
+    color: #f1e8f0;
+}
+.HeaderBanner{
+    position: relative;
+    display: block;
+    height: 400px;
+    background-color: #400f36;
+    overflow: hidden;
+}
+
+.HeaderBannerContainer{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 950px;
+    height: 100%;
+    display: flex;
+}
+.BannerItemBig{
+    background-image: url(/img/WelcomePackage_Feb18_950x400_V4.png);
+    background-repeat: no-repeat;
+    width: 80%;
+
+}
+.bingo_footer{
+    background-color: #2d0a26;
+}
+.BannerItemColumn{
+    position: relative;
+    width: 27%;
+}
+.bannerColumn{
+    background-repeat: no-repeat;
+    border: 1px solid #000;
+    position: absolute;
+    right: 0;
+    width: 235px;
+    height: 148px;
+    cursor: pointer;
+}
+.bannerColumn.Top{
+    background-image: url(/img/235x148-Top-Right-Promotions-Example.jpg);
+    top: 55px;
+}
+.bannerColumn.Bottom{
+    background-image: url(/img/SeeAllGames_Oct17_235x148.jpg);
+    bottom: 25px;
+}
+.banner_btn{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    padding: 2px 0;
+    text-align: center;
+}
+.banner_btn span{
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px 15px;
+    min-width: 115px;
+    background-color: #400f36;
+    font-size: 13px;
+    color: #f1e8f0;
+    cursor: pointer;
+}
+.bannerColumn:hover .banner_btn span{
+    background-color: #53274a;
+
+}
+.banner_btn_big{
+    moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0 15px;
+    height: 45px;
+    min-width: 150px;
+    _width: 165px;
+    background-color: #ffdf1b;
+    color: #464431;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    left: 285px;
+    top: 290px;
+}
+.banner_btn_big:hover{
+    color: #464431;
+    background-color: #ffe549;
+}
+.banner_text_description{
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    color: #e75dde;
+    width: 75%;
+    padding-bottom: 10px;
+}
+.Mostpopular-Header{
+    background-color: #651d60;
+    height: 70px;
+    text-align: center;
+    color: #ddd;
+}
+.Mostpopular-Header_Alt {
+    background-color: #7e267c;
+    width: 948px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    border-left: 1px solid #400f36;
+    border-right: 1px solid #400f36;
+}
+.Mostpopular-Header_Alt img {
+    margin-top: 24px;
+}
+.Mostpopular-Slider{
+    height: 287px;
+    background-color: #651d60;
+    position: relative;
+}
+.Mostpopular-Slider .owl-nav.disabled{
+    display: block;
+}
+.Mostpopular-Slider .owl-nav button{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    height: 100%;
+    width: calc(50% - 474px);
+    background-color: rgba(0,0,0,.7)!important;
+    /*-webkit-filter: blur(7px);*/
+    /*-moz-filter: blur(3px);*/
+    /*-o-filter: blur(3px);*/
+    /*-ms-filter: blur(3px);*/
+
+    top: 0;
+}
+.Mostpopular-Slider .owl-nav button:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 57px;
+    background-color: #651d60;
+    position: absolute;
+    bottom: 0;
+
+}
+.Mostpopular-Slider .owl-nav button span{
+    font-size: 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 230px;
+    display: block;
+    position: absolute;
+    top: 0;
+
+}
+.Mostpopular-Slider .owl-nav button.owl-prev span{
+    background-image: url(/img/60x237-Slide-Left-Arrows-IE.png);
+    right: 0;
+}
+.Mostpopular-Slider .owl-nav button.owl-prev span:hover{
+    background-position: 100% 0;
+}
+.Mostpopular-Slider .owl-nav button.owl-next span{
+    background-image: url(/img/60x237-Slide-Right-Arrows-IE.png);
+    left: 0;
+}
+.Mostpopular-Slider .owl-nav button.owl-next span:hover{
+    background-position: 100% 0;
+}
+.bingo_table_block{
+    background-color: #591952;
+    border-top: solid 1px #400f36;
+    border-bottom: solid 1px #400f36;
+}
+.bingo_table_container{
+    margin: 0 auto;
+    width: 948px;
+    border-left: 1px solid #400f36;
+    border-right: 1px solid #400f36;
+    background-color: #f1e8f0;
+
+}
+.bingo_table_wrap{
+    display: flex;
+}
+.bingo_table_wrap .table_column{
+    width: 100%;
+}
+.public_column{
+    border-left: 1px solid #400f36;
+    width: 317px;
+    min-height: 500px;
+    _height: 500px;
+    overflow: hidden;
+}
+.public_column .ScheduledContent {
+    background-image: url(/img/300kHeavenlyGiveaway_v2_237x349.jpg);
+    height: 349px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #400f36;
+}
+.ScheduledContent_btn{
+    bottom: 6px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+.ScheduledContent_btn span{
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 6px 18px;
+    min-width: 100px;
+    _width: 100px;
+    background-color: #400f36;
+    font-size: 13px;
+    color: #f1e8f0;
+    cursor: pointer;
+
+}
+.public_column .ScheduledContent:hover .ScheduledContent_btn span{
+    background-color: #53274a;
+}
+.followUs_header{
+    display: block;
+    margin: 27px auto 26px auto;
+}
+.socials_list{
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.BingoLobbyHeader{
+    height: 99px;
+    line-height: 99px;
+    margin: 0 15px 0 15px;
+    border-bottom: 1px solid #ceadcd;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.BingoLobbyHeader img{
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.gameBingobtn{
+    background-color: #7e267c;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    height: 35px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #f2eaf2;
+    font-size: 12px;
+    min-width: 173px;
+
+}
+.BingoLobbyTable {
+    margin: 0 15px 0 15px;
+    width: 680px;
+    height: 375px;
+    overflow: hidden;
+}
+.LobbyGame{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ceadcd;
+    height: 74px;
+}
+.timeCell{
+    border-right: 1px solid #ceadcd;
+    padding-left: 10px;
+
+    width: 20%;
+}
+.currentTime{
+    font-size: 15px;
+    color: #7e267c;
+    font-weight: bold;
+    padding-left: 31px;
+    height: 21px;
+    line-height: 21px;
+    margin-top: 15px;
+    position: relative;
+
+}
+.currentTime:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 21px;
+    height: 21px;
+    background-image: url(/img/21x21px-Active-clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.timeCell .cost{
+    font-size: 12px;
+    color: #726cc3;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.roomCell{
+    padding-left: 15px;
+    overflow: hidden;
+    padding-top: 14px;
+    width: 45%;
+}
+.prizeCell,
+.roomName{
+    font-size: 15px;
+    color: #7e267c;
+    font-weight: bold;
+}
+.roomCell .type{
+    font-size: 12px;
+    color: #726cc3;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.prizeCell{
+    padding-left: 15px;
+    border-right: 1px solid #ceadcd;
+    border-left: 1px solid #ceadcd;
+    width: 20%;
+}
+.prizeCell span{
+    height: 18px;
+    line-height: 18px;
+    margin-top: 27px;
+    padding-left: 35px;
+    position: relative;
+    display: block;
+}
+.prizeCell span:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 18px;
+    background-image: url(/img/25x18px-Active-Cup.png);
+}
+.playCell{
+    width: 15%;
+}
+.playCell .play_btn{
+    margin: 20px 10px 20px 20px;
+    background-color: #746cc3;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 0 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #f1f1f1;
+    height: 35px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.playCell .play_btn:hover{
+    background-color: #827bc9;
+}
+.bingoNewsBlock{
+    background-color: #5f1b59;
+}
+.bingoNewsBlockContainer{
+    margin: 0 auto;
+    width: 948px;
+    border-left: 1px solid #400f36;
+    border-right: 1px solid #400f36;
+    background-color: #f1e8f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bingoNews{
+    background-color: #f1e8f0;
+    width: 315px;
+    border-right: 1px solid #400f36;
+    border-bottom: 1px solid #400f36;
+    position: relative;
+    height: 470px;
+}
+.newsImg{
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #400f36;
+    background-color: #5f1b59;
+}
+.newsImg img{
+max-width: 100%;
+}
+.bingoNewsContent{
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.bingoNewsContent .MainHeader{
+    font-size: 17px;
+    color: #5f1959;
+    margin-bottom: 9px;
+}
+.bingoNewsContent .shortDesc{
+    font-size: 13px;
+    color: #7c4377;
+    margin-bottom: 21px;
+    line-height: 18px;
+    min-height: 83px;
+}
+.news_btn_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.MoreInfo{
+    color: #f1e8f0;
+    background-color: #7e267c;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    height: 35px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 34px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    white-space: nowrap;
+}
+.Share{
+    color: #996d95;
+    font-size: 13px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.Share:hover{
+    color: #7e267c;
+}
+.MoreInfo:hover{
+    color: #f1e8f0;
+}
+
+.TermsText{
+    font-size: 9px;
+    line-height: 12px;
+    color: #996d95;
+    position: absolute;
+    bottom: 15px;
+    width: 285px;
+}
+.bingoNews:hover .MoreInfo{
+    background-color: #8b3c89;
+}
+.ShareDropDown{
+    position: absolute;
+    top: 27px;
+    left: -28px;
+    display: none;
+}
+.ShareDropDownList{
+    webkit-box-shadow: 1px 1px 8px 0 rgba(0,0,0,.5);
+    -moz-box-shadow: 1px 1px 8px 0 rgba(0,0,0,.5);
+    box-shadow: 1px 1px 8px 0 rgba(0,0,0,.5);
+    background-color: #7e267c;
+    border-radius: 4px;
+    position: relative;
+}
+.ShareDropDownList:before{
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 6px solid #7e267c;
+    margin: -6px auto 0 auto;
+    content: " ";
+    position: absolute;
+    left: 40px;
+}
+.ShareDropDownList li{
+    border-radius: 4px;
+    line-height: 45px;
+    list-style-type: none;
+    width: 100px;
+    height: 44px;
+}
+.ShareDropDownList li:first-child{
+    border-bottom: 1px solid #2d0a26;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.ShareDropDownList li a{
+    color: #f1e7f0;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.ShareDropDownList li a img{
+    margin-left: 13px;
+    margin-right: 9px;
+    vertical-align: text-bottom;
+}
+.ShareDropDownList li:hover{
+    background-color: #8b3c89;
+}
+.Share:hover .ShareDropDown{
+    display: block;
+}
+.Content.BingoPage{
+    background-color: #5f1b59;
+}
+.Content.BingoPage .MainContainerGames{
+    background-color: #400f36;
+    padding-top: 45px;
+    width: 950px;
+    overflow: visible;
+}
+.Content.BingoPage .MainContainerGames.bingoMobile{
+    padding: 0;
+}
+.GamesNavigator.Bingo{
+    align-items: center;
+    line-height: inherit;
+}
+.GamesNavigator.Bingo .game-link{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 10px 3px 10px;
+    color: #f1e8f0;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 2px solid transparent;
+    text-transform: capitalize;
+}
+.GamesNavigator.Bingo .game-link:hover{
+    color: #fff;
+}
+.GamesNavigator.Bingo .game-link.active{
+    color: #c875c2;
+    border: 2px solid #7c3e74;
+}
+.games_list_bingo .GamesProd{
+    width: 230px;
+    height: 230px;
+    margin-right: 1px;
+}
+.GamesProd{
+    position: relative;
+}
+.ProdDetailsWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 10px 15px 0 15px;
+    color: #3f0e35;
+    z-index: -2;
+    background-color: rgba(221,221,221,.95);
+    height: 100%;
+
+}
+.ProdDetailsWrapper img{
+    width: 100%;
+    height: 155px;
+}
+.ProdDetailsTable{
+    margin-top: 17px;
+    font-size: 11px;
+}
+.ProdDetailsTable .GameDetails{
+    width: 99%;
+    vertical-align: top;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.ProdDetailsWrapper .Title1{
+    width: 50px;
+    padding-bottom: 8px;
+    padding-top: 2px;
+}
+.ProdDetailsWrapper .Title1Text{
+    font-weight: bold;
+    padding-top: 2px;
+}
+.ProdDetailsWrapper .Title2Text{
+    font-weight: bold;
+}
+.MinimumBet{
+    font-size: 22px;
+    font-weight: bold;
+    min-width: 60px;
+    padding-right: 5px;
+    letter-spacing: -1px;
+}
+.MinimumBet span{
+    white-space: nowrap;
+}
+.gameButton{
+    min-width: 17px;
+    font-size: 12px;
+    padding: 7px;
+    margin-top: 2px;
+    cursor: pointer;
+    background-color: #746cc3;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+.games_list_bingo .GamesProd:hover .ProdDetailsWrapper{
+    display: block;
+    z-index: 2;
+}
+.MainContainerGames.Community,
+.MainContainerGames.Promotions{
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+.MainContainerGames.Community{
+    padding-top: 0!important;
+}
+.PromotionalText{
+    font-size: 9px;
+    text-align: left;
+    vertical-align: top;
+    line-height: 13px;
+    padding-top: 8px;
+}
+.BigPromo{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    border-right: 1px solid #400f36;
+    border-left: 1px solid #400f36;
+}
+.BingoPod{
+    background-color: #f1e8f0;
+    border-bottom: 1px solid #400f36;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    min-height: 0;
+}
+.BingoPod .PodImage{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #5f1b59;
+    background-image: url(/img/300kHeavenlyGiveaway_v2_948x300.jpg);
+}
+.BingoPodContent{
+    margin: 0 0 0 30px;
+    height: 100%;
+    width: 315px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.BingoPodContent .MainHeader{
+    margin: 20px 15px 10px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #fff;
+}
+.BingoPodContent .SubHeader{
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0 15px;
+    color: #fff;
+}
+.BingoPodContent .MoreInfo{
+    margin-left: 15px;
+
+}
+.MoreInfo a{
+    color: #f1e8f0;
+}
+.BingoPodContent .TermsText{
+    line-height: 1.1;
+    font-size: 9px;
+    color: #fff;
+    left: 15px;
+    bottom: 10px;
+}
+.popstrip-Header {
+    background-color: #7e2679;
+    height: 81px;
+    text-align: center;
+    color: #ddd;
+    border-right: 1px solid #400f36;
+    border-left: 1px solid #400f36;
+    border-bottom: 1px solid #400f36;
+    border-top: 1px solid #400f36;
+    width: 100%;
+}
+.popstrip-Header img {
+    margin-top: 26px;
+}
+.MainContainerGames.fullArticle{
+    padding: 0;
+    position: relative;
+
+}
+.topBanner img{
+    width: 100%;
+}
+.textSection{
+    padding-left: 147px;
+    padding-right: 147px;
+    padding-top: 42px;
+    padding-bottom: 25px;
+    background-color: #f1e8f0;
+}
+.textSectionWrapp{
+    margin-left: 13px;
+    margin-right: 13px;
+}
+.textSectionWrapp .header_block{
+    color: #5f1a59;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.textSectionWrapp .sub_header_block{
+    color: #3f0e35;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 33px;
+}
+.AdvancedList ul{
+    padding: 0 0 0 20px;
+    color: #cdabcd;
+}
+.AdvancedList ol{
+    padding: 0 0 0 20px;
+}
+.AdvancedList ol li{
+    margin-bottom: 21px;
+    color: #633a5a;
+}
+.AdvancedList ul{
+    list-style: inherit;
+}
+.AdvancedList ul li{
+    display: list-item;
+    list-style-type: disk;
+    margin-bottom: 21px;
+}
+.AdvancedList ol li span,
+.AdvancedList ul li span{
+    color: #633a5a;
+    font-size: 15px;
+    line-height: 21px;
+}
+.AdvancedList ul li span.blue_text{
+    color: #746cc3;
+}
+.textLink{
+    font-size: 15px;
+    color: #746cc3;
+    line-height: 21px;
+    font-weight: bold;
+}
+.textLink:hover{
+    color: #958cff;
+}
+.PinkButton{
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 0 15px;
+    height: 25px;
+    min-width: 34px;
+    background-color: #c438bb;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 21px;
+    margin-top: 21px;
+    font-size: 15px;
+    line-height: 21px;
+}
+.PinkButton:hover{
+    background-color: #ca4cc2;
+    color: #fff;
+}
+.infoTextContainer p{
+    color: #633a5a;
+    margin-bottom: 21px;
+    font-size: 15px;
+    line-height: 21px;
+}
+.TermsListHeader{
+    margin-bottom: 21px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #591952;
+}
+.TermsListHeader.withNumbers{
+    font-size: 13px;
+}
+.TableContainer{
+    width: 619px;
+    display: inline;
+}
+.ContentTable{
+    border-collapse: collapse;
+    border-style: hidden;
+    border-bottom: 1px solid #ceadcd;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-top: 20px;
+}
+table.ContentTable td, table.ContentTable th {
+    border: 1px solid #ceadcd;
+    font-size: 13px;
+    color: #5f1b59;
+}
+table.ContentTable th {
+    line-height: 18px;
+    height: 50px;
+    vertical-align: middle;
+    padding: 6px 12px 0 13px;
+    text-align: left;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+table.ContentTable td {
+    line-height: 15px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: left;
+    padding: 5px 15px 5px 15px;
+}
+
+.animationContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.animatedImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    display: block;
+    background-repeat: no-repeat;
+}
+#animatedImg1{
+    -webkit-animation: bgSmall 20s alternate both infinite;
+    animation: bgSmall 20s alternate both infinite;
+    background-position: 50% 50%;
+    background-image: url(/img/1900x400-bubblesofjoy-small.png);
+}
+#animatedImg2{
+    -webkit-animation: bgMedium 10s alternate both infinite;
+    animation: bgMedium 10s alternate both infinite;
+    background-position: 50% top;
+    background-image: url(/img/1900x400-bubblesofjoy-medium.png);
+}
+#animatedImg3{
+    -webkit-animation: bgLarge 15s alternate both infinite;
+    animation: bgLarge 15s alternate both infinite;
+    background-position: 80% -30px;
+    background-image: url(/img/1900x400-bubblesofjoy-large.png);
+}
+@-webkit-keyframes bgSmall{
+    50%{
+        -webkit-transform:translate3d(180px,60px,8px)
+    }}
+@keyframes bgSmall{
+    50%{
+        transform:translate3d(180px,60px,8px)
+    }}
+@-webkit-keyframes bgMedium{
+    50%{
+        -webkit-transform:translate3d(-40px,0,40px)
+    }}
+@keyframes bgMedium{
+    50%{
+        transform:translate3d(-40px,0,40px)
+    }}
+@-webkit-keyframes bgLarge{
+    50%{
+        -webkit-transform:translate3d(-40px,50px,5px)
+    }}
+@keyframes bgLarge{
+    50%{
+        transform:translate3d(-40px,50px,5px)
+    }}
+
+.BannerItemOuterContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 85px;
+    position: relative;
+}
+
+.bannerItem {
+    height: 304px;
+    position: relative;
+}
+.banner_header{
+    height: 88px;
+}
+.banner_content{
+    margin-left: 25px;
+}
+.banner_content .text_block{
+    font-size: 16px;
+    line-height: 22px;
+    color: #ddcfdb;
+    width: 251px;
+    margin-top: 14px;
+    margin-bottom: 25px;
+    min-height: 85px;
+}
+.bannerItem:hover .MoreInfo{
+    background-color: #8b3c89;
+}
+.BannerTermsText{
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    font-size: 10px;
+    color: #fff;
+}
+.mainContainerBingoMobile,
+.mainContainerCommunity{
+    border-left: 1px solid #400f36;
+    border-right: 1px solid #400f36;
+    position: relative;
+    background-color: #f1e8f0;
+
+}
+.MiddlePods {
+    display: flex;
+    color: #5f1b59;
+    border-bottom: 1px solid #7e267c;
+}
+.MiddlePods .BingoPod{
+    font-size: 13px;
+    font-weight: normal;
+    color: #633859;
+    position: relative;
+    border-right: 1px solid #7e267c;
+    width: 100%;
+    height: 208px;
+    background-color: #f1e8f0;
+}
+.MiddlePods .BingoPod img {
+    display: block;
+    margin: 36px auto 22px auto;
+}
+.MiddlePods .BingoPod .infoTextContainer {
+    line-height: 18px;
+    padding: 0 25px 25px 25px;
+    color: #633859;
+    font-size: 13px;
+}
+.Buttons{
+    color: #f1e8f0;
+    background-color: #5f1b59;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    height: 35px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    min-width: 236px;
+    margin-left: 25px;
+}
+.Buttons:hover{
+    background-color: #6f326a;
+    color: #f1e8f0;
+}
+.WinnersSection{
+    padding-top: 36px;
+}
+.PastWinnersHeader img{
+    display: block;
+    margin: 0 auto;
+}
+.PastWinners{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.PastWinnerPod{
+    cursor: pointer;
+    width: 266px;
+    /*height: 55px;*/
+    margin: 21px 25px 0 25px;
+    padding-bottom: 25px;
+    position: relative;
+    border-bottom: 1px solid #ceadcd;
+}
+.PastWinner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PastWinnerPod .name {
+    color: #c438ba;
+
+    font-size: 12px;
+}
+.PastWinnerPod .won {
+    color: #5f1959;
+}
+.PastWinnerPod .amount {
+    color: #5f1b59;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.PastWinnerPod .playing {
+    line-height: 14px;
+    color: #7c4477;
+    font-size: 12px;
+}
+.play_btn{
+    background-color: #746cc3;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 0 15px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #f1f1f1;
+    min-width: 40px;
+    height: 35px;
+    line-height: 34px;
+    cursor: pointer;
+}
+.PastWinnerPod:hover .play_btn{
+    background-color: #827bc9;
+    color: #f1f1f1;
+}
+.lastRow .PastWinnerPod{
+    border-bottom: 1px solid transparent;
+}
+.BingoMobileWrapper .BannerItemOuterContainer{
+    background-image: url(/img/GetTheApp_Feb18_948x355_v7.jpg);
+    background-position: center;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 22px;
+}
+.TopSection{
+    border-Bottom: 1px solid #400f36;
+    padding-top: 28px;
+    padding-bottom: 38px;
+}
+.TopSection .MainTitle{
+    font-size: 45px;
+    color: #400f36;
+    font-weight: normal;
+    text-align: center;
+}
+.TopSection .SubText{
+    font-size: 20px;
+    font-weight: bold;
+    color: #7e267c;
+    margin-top: 12px;
+    text-align: center;
+}
+.TopSection .DeviceIcons {
+    position: relative;
+    width: 345px;
+    height: 54px;
+    margin: 18px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.TopSection .DeviceIcons .DeviceLink{
+    width: 165px;
+    height: 49px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    display: block;
+}
+.TopSection .DeviceIcons .DeviceLink.Apple{
+    background-image: url(/img/165x49px-App-Store-Button.gif);
+}
+.TopSection .DeviceIcons .DeviceLink.Android{
+    background-image: url(/img/165x49px-Android-Button.png);
+}
+.TopSection .DeviceIcons .DeviceLink.Apple:hover{
+    background-position: 0 100%;
+}
+.BingoFAQ .faqHeader{
+    color: #7e267c;
+}
+.BingoFAQ .accordion-toggle:before{
+    background-image: url(/img/10x40-Drop-Down-Arrows2.png);
+}
+.BingoFAQ .accordion-toggle.collapsed:before {
+    background-position: 0 100%;
+}
+.BingoFAQ .accordion-toggle{
+    color: #400f36;
+    padding-left: 25px;
+}
+.BingoFAQ .panel-collapse{
+    color: #400f36;
+}
+.slider_wrapp{
+    position: relative;
+}
+.ItemRow td:nth-child(1),
+.ItemRow td:nth-child(3){
+    white-space: nowrap;
+}
+.MainContainerGames.fullCommunity{
+    padding: 0;
+}
+.bannerContainer{
+    background-image: url(/img/950x254px-H-Small-Banner-Background.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 254px;
+    position: relative;
+}
+.bannerHeader{
+    position: absolute;
+    left: 162px;
+    top: 112px;
+}
+.MainContainerGames.fullCommunity .contentContainer{
+    padding: 38px 147px 25px 147px;
+    background-color: #f1e8f0;
+    border-left: 1px solid #400f36;
+    border-right: 1px solid #400f36;
+    box-sizing: border-box;
+}
+.communityTitle{
+    color: #3f0e35;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 14px;
+}
+.bingoProd{
+    width: 301px;
+    height: 401px;
+    background-color: #fff;
+    margin: 0 13px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.bingoProd .prodImg{
+    background-image: url(/img/300x140-I-SuperFreeBingo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 140px;
+}
+.bingoProd .prodContent{
+    padding-top: 8px;
+    padding-left: 21px;
+    padding-right: 19px;
+}
+.prodTitle{
+    font-size: 13px;
+    color: #824b7a;
+    font-weight: bold;
+    margin-top: 21px;
+}
+.prodSubTitle{
+    font-size: 13px;
+    color: #824b7a;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.bingoProd .MoreInfo{
+    bottom: 23px;
+    left: 19px;
+    position: absolute;
+}
+.termsListContainer{
+    margin-top: 21px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+.termsListTitle{
+    margin-bottom: 21px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #633a5a;
+    font-weight: bold;
+}
+ol.termsList{
+    padding: 5px 0 0 24px;
+}
+.termsList li{
+    color: #633a5a;
+    font-size: 15px;
+    line-height: 21px;
+    padding: 0 0 15px 7px;
+}
+.termsList li a,
+.infoTextContainer p a{
+    font-size: 15px;
+    color: #746cc3;
+    line-height: 21px;
+    font-weight: bold;
+}
+.termsList li a:hover,
+.infoTextContainer p a:hover{
+    color: #958cff;
+}
+.depositButton{
+    position: absolute;
+    right: 0;
+}
+.depositButton a.depositLink{
+    color: #474435!important;
+    font-weight: bold!important;
+    background-color: #ffdf1b;
+    padding: 0 13px!important;
+    line-height: 23px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    vertical-align: middle;
+    margin-top: 11px;
+    font-size: 11px!important;
+    text-transform: none!important;
+}
+.depositButton a.depositLink:hover{
+    color: #474435;
+    background-color: #ffe549;
+}

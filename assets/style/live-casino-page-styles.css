@@ -1,0 +1,49 @@
+.live-casino {background-color: #333;}
+.live-casino-page__wrapper {width: 100%;max-width: 1230px;margin: 0 auto;text-align: center;font-weight: normal;}
+.live-casino-main-banner {position: relative;z-index: 1;display: flex; justify-content: space-between;max-height: 400px;font-family: "Futura PT Book";-webkit-box-sizing: border-box;box-sizing: border-box;}
+.live-casino-main-banner__container {position: absolute;z-index: -1;top: 0;left: 50%;height: 400px;width: 100%;margin: auto;overflow: hidden;
+-webkit-transform: translateX(-50%);
+transform: translateX(-50%);}
+.live-casino-main-banner {background-image: url('/img/Casino/Live-Casino-Banner.jpg');background-size: cover;background-position: center;}
+.live-casino-main-banner__left {position: relative;height: 400px;width: 45%;margin-left: 5%;padding: 0;background-color: transparent; display: flex; justify-content: center; flex-direction: column;}
+.live-casino-main-banner__title--deposit {display: block;padding-bottom: 22px;text-align: left;font-size: 40px;line-height: 55px;color: #e4e4e4;}
+.live-casino-main-banner__left .casino_btn{
+    max-width: 130px;
+}
+.live-casino-main-banner__right {position: relative;height: 400px;width: 50%;overflow: hidden}
+.live-casino-main-banner__girls {min-height: 400px;}
+.live-casino-main-banner__girls-image {position: absolute;left: 0;bottom: 0;display: inline-block;height: 380px; width: auto;max-height: 400px;margin: 0 auto;}
+.live-casino-main-grid {min-height: 300px;background-color: #333;overflow: hidden;}
+.live-casino-main-grid:before,
+.live-casino-main-grid:after {content: '';display: table;}
+.live-casino-grid__no-flash-box-wrapper {left: 0;right: 0;display: table; max-width: 400px;margin: auto;}
+.live-casino-grid__no-flash-box {display: table-cell;height: 300px;width: 100%;vertical-align: middle;color: #222;}
+.live-casino-grid__no-flash-title { padding: 13px 20px;font-size: 14px;font-weight: bold;background-color: #999;}
+.live-casino-grid__no-flash-message {padding: 0 20px 13px;font-size: 13px;background-color: #999;padding: 0 20px 13px;}
+.live-casino-main-grid .live-casino-main-grid__title {display: table;height: 100%;width: 100%;min-height: 86px;padding: 0 44px;font-size: 26px;font-family: "Futura PT Book"; color: #f0f0f0;-webkit-box-sizing: border-box;box-sizing: border-box;}
+.live-casino-main-grid .live-casino-main-grid__title-text {display: table-cell;vertical-align: middle;}
+.live-casino-lobby {position: relative;width: 100%;padding-bottom: 50px;font-family: "Futura PT Book";overflow: hidden;}
+.live-casino-lobby__title {display: table;width: 100%;min-height: 86px;padding: 0 44px;margin-bottom: -2px;font-size: 26px;color: #f0f0f0;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+.live-casino-lobby__title-text {display: table-cell;vertical-align: middle;}
+
+.live-casino .casino-pre-footer {position: relative;width: 100%;margin: 0 auto;text-align: center;background-color: #404040;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+.cross-sell_wrapper {width: 100%;max-width: 1230px;margin: 0 auto;text-align: center;font-weight: normal;}
+.casino-games-grid-cross-sell__header {display: table;table-layout: fixed;width: 100%;min-height: 80px;margin: 0;font-family: "Futura PT Book";}
+.casino-games-grid-cross-sell__header-elements {display: flex;justify-content: space-between;padding: 40px 0 0 0;}
+.casino-games-grid-cross-sell__header-element {padding: 5px 0 11px;vertical-align: bottom;}
+.casino-games-grid-cross-sell__title {margin: 0;padding-left: 0;text-align: left;vertical-align: bottom;font-size: 18px;line-height: 27px;color: #f0f0f0;}
+.casino-games-grid-cross-sell__link-element {margin: 0;padding-right: 0;text-align: right;vertical-align: bottom;font-family: "Verdana","Geneva","Arial",sans-serif;font-size: 12px;line-height: 20px;color: #00fff2;}
+.casino-games-grid-cross-sell__hyperlink {color: #00fff2;}
+.casino-games-grid-cross-sell__hyperlink:hover {color: #fff;}
+.casino-games-grid-cross-sell__pods {display: flex;margin: auto;max-width: 1250px;padding-bottom: 45px;}
+/*.casino-games-grid-cross-sell__pods:before,
+.casino-games-grid-cross-sell__pods:after {content: '';display: table;}*/
+.casino-games-grid-cross-sell__pod {width: 25%;padding: 0 2px;}
+.casino-games-grid-cross-sell__pod-image {width: 100%;max-height: 216px;max-width: 306px;}
+.casino-games-grid-cross-sell__pod-game-name {float: inherit;width: 100%;height: 40px;max-height: 40px;min-height: 15px;padding-top: 10px;margin: 0;text-align: center;font-size: 13px;line-height: 40px;color: #e4e4e4;}
+
+.live-casino .inner_footer {background-color: #303030;}
